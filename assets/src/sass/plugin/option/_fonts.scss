@@ -48,6 +48,8 @@ $globalFontsPath : "../../fonts";
 // https://www.font-converter.net/en
 @font-face {
   font-family: "CocoGothicHeavy";
+  font-style: normal;
+  font-weight: normal;
   src: url("#{$globalFontsPath}/coco-gothic/coco-gothic-heavy.eot"); /* IE9 Compat Modes */
   src: url("#{$globalFontsPath}/coco-gothic/coco-gothic-heavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
   url("#{$globalFontsPath}/coco-gothic/coco-gothic-heavy.otf") format("opentype"), /* Open Type Font */
@@ -55,6 +57,4 @@ $globalFontsPath : "../../fonts";
   url("#{$globalFontsPath}/coco-gothic/coco-gothic-heavy.ttf") format("truetype"), /* Safari, Android, iOS */
   url("#{$globalFontsPath}/coco-gothic/coco-gothic-heavy.woff") format("woff"), /* Modern Browsers */
   url("#{$globalFontsPath}/coco-gothic/coco-gothic-heavy.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
 }
