@@ -1,0 +1,54 @@
+.sitetabs{
+
+  .nav{
+
+    &-center{
+      @include flexbox-justify-content(center);
+    }
+
+    &-space-between{
+      @include flexbox-justify-content(space-between);
+
+      .nav-item{
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        max-width: 100%;
+      }
+    }
+
+    &-tabs{
+      border-bottom: none;
+      padding-left: 2px;
+      padding-right: 2px;
+      @include border-radius(4px);
+    }
+
+    &-item{
+      text-align: center;
+      margin: 4px 2px;
+    }
+
+    &-link{
+      color: $global-clr-text-dark;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 10px 8px;
+      line-height: 1;
+      border: 1px solid transparent;
+      @include border-radius(4px);
+      @include transition-multiple(background-color 0.15s ease-in-out, border-color 0.3s ease-in-out, color 0.15s ease-in-out);
+
+      &:hover{
+        color: $global-clr-red;
+        border-color: transparentize($global-clr-red, 0.5);
+      }
+
+      &.active{
+        background-color: $global-clr-red;
+        border-color: $global-clr-red;
+        color: $global-clr-white;
+      }
+    }
+  }
+
+}

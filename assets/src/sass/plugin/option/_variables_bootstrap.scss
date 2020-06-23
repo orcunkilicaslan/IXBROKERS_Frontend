@@ -1,0 +1,248 @@
+/* Bootstrap Grid Columns Settings */
+$bootstrap-grid-columns:          12;
+$bootstrap-grid-gutter-width:     30px;
+$bootstrap-grid-row-columns:      6;
+$bootstrap-container-max-widths:(
+        xs: 500px,
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        hd: 1220px,
+        1k: 1300px
+);
+$bootstrap-grid-breakpoints:(
+        xz: 0,
+        xm: 400px,
+        xs: 480px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1400px,
+        hd: 1620px,
+        1k: 1940px,
+        2k: 2580px
+);
+/* Bootstrap Grid Columns Settings */
+
+/* Bootstrap Variables Settings */
+$bootstrap-font-family-default:           $global-font-family-default;
+$bootstrap-font-size:                     16;
+$bootstrap-font-size-base:                $bootstrap-font-size;
+$bootstrap-font-size-lg:                  $bootstrap-font-size * 1.143;
+$bootstrap-font-size-sm:                  $bootstrap-font-size; //$bootstrap-font-size * 0.8571;
+$bootstrap-h1-font-size:                  $bootstrap-font-size * 2.5;
+$bootstrap-h2-font-size:                  $bootstrap-font-size * 2;
+$bootstrap-h3-font-size:                  $bootstrap-font-size * 1.75;
+$bootstrap-h4-font-size:                  $bootstrap-font-size * 1.5;
+$bootstrap-h5-font-size:                  $bootstrap-font-size * 1.25;
+$bootstrap-h6-font-size:                  $bootstrap-font-size;
+$bootstrap-font-weight-lighter:           lighter;
+$bootstrap-font-weight-light:             300;
+$bootstrap-font-weight-normal:            400;
+$bootstrap-font-weight-bold:              500;
+$bootstrap-font-weight-bolder:            700;
+$bootstrap-paragraph-margin-bottom:       1.071rem;
+$bootstrap-line-height-base:              1.4;
+$bootstrap-line-height-lg:                1.6;
+$bootstrap-line-height-sm:                1.2;
+
+$bootstrap-body-bg:                       $global-clr-white;
+$bootstrap-body-clr:                      $global-clr-text-dark;
+$bootstrap-white:                         $global-clr-white;
+$bootstrap-black:                         $global-clr-dark-black;
+$bootstrap-gray-100:                      $global-clr-white;
+$bootstrap-gray-200:                      $global-clr-soft-gray;
+$bootstrap-gray-300:                      #dee2e6;
+$bootstrap-gray-400:                      $global-input-border-light;
+$bootstrap-gray-500:                      #adb5bd;
+$bootstrap-gray-600:                      #6c757d;
+$bootstrap-gray-700:                      #495057;
+$bootstrap-gray-800:                      $global-clr-dark-gray;
+$bootstrap-gray-900:                      #212529;
+$bootstrap-blue:                          $global-clr-soft-blue;
+$bootstrap-indigo:                        #6610f2;
+$bootstrap-purple:                        #6f42c1;
+$bootstrap-pink:                          #e83e8c;
+$bootstrap-red:                           $global-clr-red;
+$bootstrap-orange:                        $global-clr-orange;
+$bootstrap-yellow:                        $global-clr-orange;
+$bootstrap-green:                         $global-clr-green;
+$bootstrap-teal:                          #20c997;
+$bootstrap-cyan:                          #17a2b8;
+$bootstrap-primary:                       $global-clr-dark-blue;
+$bootstrap-secondary:                     $bootstrap-gray-600;
+$bootstrap-success:                       $bootstrap-green;
+$bootstrap-info:                          $global-clr-soft-blue;
+$bootstrap-warning:                       $bootstrap-yellow;
+$bootstrap-danger:                        $bootstrap-red;
+$bootstrap-light:                         $bootstrap-gray-100;
+$bootstrap-dark:                          $bootstrap-gray-800;
+
+$bootstrap-link-color:                    $global-clr-text-dark;
+$bootstrap-link-decoration:               none;
+$bootstrap-link-hover-color:              darken($bootstrap-link-color, 15%);
+$bootstrap-link-hover-decoration:         underline;
+
+$bootstrap-border-width:                  1px;
+$bootstrap-border-color:                  $global-border-light-gray;
+$bootstrap-border-radius:                 4px;
+$bootstrap-border-radius-lg:              4px;
+$bootstrap-border-radius-sm:              4px;
+$bootstrap-rounded-pill:                  50rem;
+$bootstrap-box-shadow-sm:                 none;
+$bootstrap-box-shadow:                    none;
+$bootstrap-box-shadow-lg:                 none;
+
+$bootstrap-input-btn-font-family:         $global-font-family-default;
+$bootstrap-input-btn-font-size:           $bootstrap-font-size-base;
+$bootstrap-input-btn-font-size-sm:        $bootstrap-font-size-sm;
+$bootstrap-input-btn-font-size-lg:        $bootstrap-font-size-lg;
+$bootstrap-input-btn-padding-y:           .375rem;
+$bootstrap-input-btn-padding-x:           .75rem;
+$bootstrap-input-btn-padding-y-sm:        .25rem;
+$bootstrap-input-btn-padding-x-sm:        .5rem;
+$bootstrap-input-btn-padding-y-lg:        .5rem;
+$bootstrap-input-btn-padding-x-lg:        1rem;
+$bootstrap-input-btn-line-height:         1.5;
+$bootstrap-input-btn-line-height-sm:      1.5;
+$bootstrap-input-btn-line-height-lg:      1.5;
+$bootstrap-input-btn-border-width:        $bootstrap-border-width;
+$bootstrap-input-btn-focus-width:         .2rem;
+$bootstrap-input-btn-focus-color:         transparent;
+$bootstrap-input-btn-focus-box-shadow:    none;
+$bootstrap-component-active-bg:           $global-input-border-light-focus;
+
+$bootstrap-btn-font-family:               $bootstrap-input-btn-font-family;
+$bootstrap-btn-font-weight:               $bootstrap-font-weight-normal;
+$bootstrap-btn-font-size:                 $bootstrap-input-btn-font-size;
+$bootstrap-btn-font-size-sm:              $bootstrap-input-btn-font-size-sm;
+$bootstrap-btn-font-size-lg:              $bootstrap-input-btn-font-size-lg;
+$bootstrap-btn-padding-y:                 $bootstrap-input-btn-padding-y;
+$bootstrap-btn-padding-x:                 $bootstrap-input-btn-padding-x;
+$bootstrap-btn-padding-y-sm:              $bootstrap-input-btn-padding-y-sm;
+$bootstrap-btn-padding-x-sm:              $bootstrap-input-btn-padding-x-sm * 1.5;
+$bootstrap-btn-padding-y-lg:              $bootstrap-input-btn-padding-y-lg;
+$bootstrap-btn-padding-x-lg:              $bootstrap-input-btn-padding-x-lg * 1.5;
+$bootstrap-btn-line-height:               1.6;
+$bootstrap-btn-line-height-sm:            1.35;
+$bootstrap-btn-line-height-lg:            1.9;
+$bootstrap-btn-border-width:              1px;
+$bootstrap-btn-border-radius:             4px;
+$bootstrap-btn-border-radius-lg:          4px;
+$bootstrap-btn-border-radius-sm:          4px;
+$bootstrap-btn-focus-width:               $bootstrap-input-btn-focus-width;
+$bootstrap-btn-focus-box-shadow:          $bootstrap-input-btn-focus-box-shadow;
+$bootstrap-btn-box-shadow:                none;
+$bootstrap-btn-active-box-shadow:         none;
+$bootstrap-btn-disabled-opacity:          .65;
+$bootstrap-btn-link-disabled-color:       $bootstrap-gray-600;
+
+$bootstrap-input-padding-y:               $bootstrap-input-btn-padding-y;
+$bootstrap-input-padding-x:               $bootstrap-input-btn-padding-x;
+$bootstrap-input-font-family:             $bootstrap-input-btn-font-family;
+$bootstrap-input-font-size:               $bootstrap-input-btn-font-size;
+$bootstrap-input-padding-y-sm:            $bootstrap-input-btn-padding-y-sm;
+$bootstrap-input-padding-x-sm:            $bootstrap-input-btn-padding-x-sm;
+$bootstrap-input-font-size-sm:            $bootstrap-input-btn-font-size-sm;
+$bootstrap-input-padding-y-lg:            $bootstrap-input-btn-padding-y-lg;
+$bootstrap-input-padding-x-lg:            $bootstrap-input-btn-padding-x-lg;
+$bootstrap-input-font-size-lg:            $bootstrap-input-btn-font-size-lg;
+$bootstrap-input-bg:                      $bootstrap-white;
+$bootstrap-input-disabled-bg:             $global-input-disabled-light;
+$bootstrap-input-color:                   $global-clr-text-dark;
+$bootstrap-input-border-color:            $global-input-border-light;
+$bootstrap-input-border-width:            $bootstrap-input-btn-border-width;
+$bootstrap-input-box-shadow:              none;
+$bootstrap-input-border-radius:           $bootstrap-border-radius;
+$bootstrap-input-border-radius-lg:        $bootstrap-border-radius;
+$bootstrap-input-border-radius-sm:        $bootstrap-border-radius;
+$bootstrap-input-focus-bg:                $bootstrap-input-bg;
+$bootstrap-input-focus-border-color:      $global-input-border-light-focus;
+$bootstrap-input-focus-color:             $bootstrap-input-color;
+$bootstrap-input-focus-width:             $bootstrap-input-btn-focus-width;
+$bootstrap-input-focus-box-shadow:        $bootstrap-input-btn-focus-box-shadow;
+$bootstrap-input-placeholder-color:       $bootstrap-gray-600;
+$bootstrap-input-plaintext-color:         $bootstrap-body-clr;
+
+$bootstrap-custom-select-padding-y:                                     $bootstrap-input-padding-y;
+$bootstrap-custom-select-padding-x:                                     $bootstrap-input-padding-x;
+$bootstrap-custom-select-font-family:                                   $bootstrap-input-font-family;
+$bootstrap-custom-select-font-size:                                     $bootstrap-input-font-size;
+$bootstrap-custom-select-indicator-padding:                             1rem; // Extra padding to account for the presence of the background-image based indicator
+$bootstrap-custom-select-color:                                         $bootstrap-input-color;
+$bootstrap-custom-select-disabled-color:                                $bootstrap-input-color;
+$bootstrap-custom-select-bg:                                            $bootstrap-input-bg;
+$bootstrap-custom-select-disabled-bg:                                   $global-input-disabled-light;
+$bootstrap-custom-select-bg-size:                                       8px 10px; // In pixels because image dimensions
+$bootstrap-custom-select-border-width:                                  $bootstrap-input-border-width;
+$bootstrap-custom-select-border-color:                                  $bootstrap-input-border-color;
+$bootstrap-custom-select-border-radius:                                 $bootstrap-border-radius;
+$bootstrap-custom-select-box-shadow:                                    none;
+$bootstrap-custom-select-focus-border-color:                            $bootstrap-input-focus-border-color;
+$bootstrap-custom-select-focus-width:                                   $bootstrap-input-focus-width;
+$bootstrap-custom-select-focus-box-shadow:                              none;
+$bootstrap-custom-select-padding-y-sm:                                  $bootstrap-input-padding-y-sm;
+$bootstrap-custom-select-padding-x-sm:                                  $bootstrap-input-padding-x-sm;
+$bootstrap-custom-select-font-size-sm:                                  $bootstrap-input-font-size-sm;
+$bootstrap-custom-select-padding-y-lg:                                  $bootstrap-input-padding-y-lg;
+$bootstrap-custom-select-padding-x-lg:                                  $bootstrap-input-padding-x-lg;
+$bootstrap-custom-select-font-size-lg:                                  $bootstrap-input-font-size-lg;
+
+$bootstrap-custom-control-gutter:                                       .5rem;
+$bootstrap-custom-control-spacer-x:                                     1.4rem;
+$bootstrap-custom-control-cursor:                                       null;
+$bootstrap-custom-control-indicator-size:                               1.4rem;
+$bootstrap-custom-control-indicator-bg:                                 $bootstrap-input-bg;
+$bootstrap-custom-control-indicator-box-shadow:                         $bootstrap-input-box-shadow;
+$bootstrap-custom-control-indicator-border-color:                       $bootstrap-input-border-color;
+$bootstrap-custom-control-indicator-border-width:                       $bootstrap-input-border-width;
+$bootstrap-custom-control-label-color:                                  null;
+$bootstrap-custom-control-indicator-disabled-bg:                        $bootstrap-input-disabled-bg;
+$bootstrap-custom-control-label-disabled-color:                         $bootstrap-gray-600;
+$bootstrap-custom-control-indicator-checked-disabled-bg:                $global-input-disabled-light;
+$bootstrap-custom-control-indicator-checked-box-shadow:                 none;
+$bootstrap-custom-control-indicator-checked-border-color:               $bootstrap-component-active-bg;
+$bootstrap-custom-control-indicator-focus-box-shadow:                   $bootstrap-input-focus-box-shadow;
+$bootstrap-custom-control-indicator-focus-border-color:                 $bootstrap-input-focus-border-color;
+$bootstrap-custom-control-indicator-active-color:                       $bootstrap-white;
+$bootstrap-custom-control-indicator-active-bg:                          transparent;
+$bootstrap-custom-control-indicator-active-box-shadow:                  none;
+$bootstrap-custom-control-indicator-active-border-color:                $bootstrap-custom-control-indicator-active-bg;
+$bootstrap-custom-checkbox-indicator-border-radius:                     2px;
+$bootstrap-custom-checkbox-indicator-indeterminate-bg:                  $bootstrap-component-active-bg;
+$bootstrap-custom-checkbox-indicator-indeterminate-color:               $bootstrap-component-active-bg;
+$bootstrap-custom-checkbox-indicator-indeterminate-box-shadow:          none;
+$bootstrap-custom-checkbox-indicator-indeterminate-border-color:        $bootstrap-custom-checkbox-indicator-indeterminate-bg;
+$bootstrap-custom-radio-indicator-border-radius:                        50%;
+
+$bootstrap-label-margin-bottom:                                         0rem;
+$bootstrap-form-grid-gutter-width:                                      10px;
+$bootstrap-form-group-margin-bottom:                                    1.071rem;
+$bootstrap-input-group-addon-color:                                     $bootstrap-input-color;
+$bootstrap-input-group-addon-bg:                                        $global-input-disabled-light;
+$bootstrap-input-group-addon-border-color:                              $bootstrap-input-border-color;
+
+$bootstrap-table-cell-padding:                                          .75rem;
+$bootstrap-table-cell-padding-sm:                                       .3rem;
+$bootstrap-table-color:                                                 $bootstrap-body-clr;
+$bootstrap-table-bg:                                                    null;
+$bootstrap-table-accent-bg:                                             rgba($bootstrap-black, .05);
+$bootstrap-table-hover-color:                                           $bootstrap-table-color;
+$bootstrap-table-hover-bg:                                              rgba($bootstrap-black, .075);
+$bootstrap-table-active-bg:                                             $bootstrap-table-hover-bg;
+$bootstrap-table-border-width:                                          $bootstrap-border-width;
+$bootstrap-table-border-color:                                          $global-border-light-gray-opacity !global;
+$bootstrap-table-head-bg:                                               $bootstrap-gray-200;
+$bootstrap-table-head-color:                                            $bootstrap-gray-700;
+$bootstrap-table-dark-color:                                            $bootstrap-white;
+$bootstrap-table-dark-bg:                                               $bootstrap-gray-800;
+$bootstrap-table-dark-accent-bg:                                        rgba($bootstrap-white, .05);
+$bootstrap-table-dark-hover-color:                                      $bootstrap-table-dark-color;
+$bootstrap-table-dark-hover-bg:                                         rgba($bootstrap-white, .075);
+$bootstrap-table-dark-border-color:                                     lighten($bootstrap-table-dark-bg, 7.5%);
+$bootstrap-table-striped-order:                                         odd;
+$bootstrap-table-caption-color:                                         $bootstrap-gray-600;
+$bootstrap-table-bg-level:                                              -9;
+$bootstrap-table-border-level:                                          -6;
+/* Bootstrap Variables Settings */

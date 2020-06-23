@@ -1,0 +1,62 @@
+/* General Color Settings */
+$global-clr-white: #FFFFFF;
+$global-clr-green: #29a644;
+$global-clr-red: #d51820;
+$global-clr-orange: #FF5800;
+$global-clr-cyan: #6397be;
+$global-clr-dark-black: #000000;
+$global-clr-soft-black: #3e3b44;
+$global-clr-dark-blue: #12407D;
+$global-clr-soft-blue: #5a9fff;
+$global-clr-dark-gray: #282a2e;
+$global-clr-soft-gray: #8b8b8b;
+$global-clr-soft-purple: #9175b6;
+/* General Color Settings */
+
+/* Auxiliary Color Settings */
+$site-aux-clr-dark-gray: #1f1f1f;
+/* Auxiliary Color Settings */
+
+/* Site Main Settings */
+$global-font-family-cocogothic-heavy:     'CocoGothicHeavy';
+$global-font-family-default:              'Jost';
+$global-font-size:                        16px;
+$global-clr-text-light:                   $global-clr-soft-black;
+$global-clr-text-dark:                    $global-clr-soft-black;
+$global-border-light-gray:                #d0d0d0;
+$global-border-light-gray-opacity:        lighten($global-border-light-gray, 10%);
+$global-border-light-gray-focus:          $global-clr-soft-blue;
+$global-input-border-light:               $global-border-light-gray;
+$global-input-border-light-focus:         $global-border-light-gray-focus;
+$global-input-disabled-light:             lighten($global-border-light-gray, 10%);
+/* Site Main Color Settings */
+
+/* Site Gradient Background Color */
+$global-sitebg-darkblue01:  #002960;
+$global-sitebg-darkblue02:  #002960;
+$global-grdint-darkblue01: #002960;
+$global-grdint-darkblue02: #0D78C4;
+$global-grdint-red01: #e50000;
+$global-grdint-red02: #890000;
+$global-grdint-turquoise01: #00157B;
+$global-grdint-turquoise02: #00FFE5;
+/* Site Gradient Background Color */
+
+/* Site Main Image Path Settings */
+$global-img-path: "../../img";
+$global-img-path-header: "../../img/header";
+$global-img-path-footer: "../../img/footer";
+$global-img-path-slider: "../../img/slider";
+$global-img-path-section: "../../img/section";
+$global-img-path-icons: "../../img/icons";
+$global-img-path-svg: "../../img/svg";
+/* Site Main Image Path Settings */
+
+/* Site Main Class Settings */
+$headerclassname: ".header";
+$footerclassname: ".footer";
+$formclassname: ".form";
+$forminputclassname: ".input";
+$formcustomclassname: ".custom";
+$btnclassname: ".btn";
+/* Site Main Class Settings */

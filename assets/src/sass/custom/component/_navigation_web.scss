@@ -1,0 +1,337 @@
+/* Header Web Menu */
+.dfn{
+  $dfnnavclassname: &;
+
+  &-nav{
+    background-color: transparent;
+  }
+
+  &-menu{
+    color:#FFFFFF;
+    font-size: 18px;
+    padding:0;
+
+    @include BootstrapMaxWidthResponsive(lg){
+      background-color: darken($global-sitebg-darkblue01, 5%);
+    }
+
+    &.activenavbar{
+      @include BootstrapMinWidthResponsive(lg){
+        #{$dfnnavclassname}-menu-list{
+          position: relative;
+
+          &::before{
+            content: "";
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: transparentize($global-clr-red, 0.5);
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+          }
+        }
+        #{$dfnnavclassname}-menu-underline{
+          opacity: 1;
+        }
+      }
+    }
+
+    &-underline {
+      position: absolute;
+      border-bottom: 3px solid $global-clr-red !important;
+      @include translateX(-60px);
+      @include transition-multiple(left 0.3s ease-in-out, width 0.3s ease-in-out);
+      z-index: -1;
+      bottom: -1px;
+      opacity: 0;
+    }
+
+    &-list{
+      min-height: 38px;
+      margin: 0;
+      @include flexbox-display-flex();
+      @include flexbox-justify-content(center);
+
+      @include BootstrapMaxWidthResponsive(lg){
+        width: 100%;
+        @include flexbox-flex-direction(column);
+      }
+
+      &-item{
+
+        @include BootstrapMaxWidthResponsive(lg){
+          border-bottom: 1px solid $global-sitebg-darkblue01;
+        }
+
+        > a{
+          color:#FFFFFF;
+          display: block;
+          padding:10px 20px;
+          margin: 0;
+          position:relative;
+          height: 100%;
+          white-space: nowrap;
+          z-index: 1;
+          cursor: pointer;
+          @include transition-multiple(color 0.3s ease-in-out, padding 0.3s ease-in-out);
+
+          @include BootstrapMaxWidthResponsive(xl){
+            padding: 10px 10px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            padding: 10px 15px;
+            font-size: 14px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            margin: 0;
+            padding: 10px 0;
+          }
+
+          &[data-toggle="dropdown"]{
+            &::before{
+              @include BootstrapMinWidthResponsive(lg){
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 3px;
+                position: relative;
+                @include transition-multiple(transform 0.3s ease-in-out, filter 0.3s ease-in-out);
+                display: none !important;
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                border-right-color: $global-clr-red !important;
+                border-top-color: $global-clr-red !important;
+              }
+            }
+          }
+
+          &[aria-expanded="true"]{
+            color: $global-clr-red;
+
+            &::before{
+              @include BootstrapMinWidthResponsive(lg){
+                @include rotate(90);
+                @include svg-filter(0%, 1, 0, 100%);
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                border-right-color: $global-clr-red !important;
+                border-top-color: $global-clr-red !important;
+              }
+            }
+          }
+        }
+
+        .dropdown-menu{
+          background-color: transparentize(darken($global-clr-dark-gray, 3%), 0.05) !important;
+          transform: none !important;
+          position: fixed !important;
+          z-index: -1 !important;
+          top: 0 !important;
+          padding: 0;
+          padding-top: 70px;
+          margin: 0;
+          border: none;
+          width: 100%;
+          @include animation-duration(0.75s);
+          @include transition-multiple(top 0.3s ease-in-out);
+          @include backdrop-filter-multiple(blur(5px));
+
+          a{
+            color: $global-clr-soft-gray;
+            @include transition-multiple(color 0.15s ease-in-out);
+
+            &:hover{
+              color: lighten($global-clr-soft-gray, 20%);
+            }
+          }
+
+          &.show{}
+
+          .menunav{
+            font-size: 16px;
+            line-height: 1.8;
+
+            ul{
+              li{
+                position: relative;
+                padding-left: 15px;
+                padding-left: 0;
+
+                &:hover::after{
+                  border-color: $global-clr-white;
+                }
+
+                &::before {
+                  visibility: hidden;
+                  position: absolute;
+                  left: 0;
+                  display: inline-block;
+                }
+
+                &::after{
+                  content:"";
+                  position:absolute;
+                  width: 8px;
+                  height: 8px;
+                  top: 10px;
+                  left: 0;
+                  border-top:2px solid $global-clr-red;
+                  border-right:2px solid $global-clr-red;
+                  @include rotate(45);
+                  @include transition-multiple(border 0.15s ease-in-out);
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .megamenu{
+            @include flexbox-display-flex();
+            @include flexbox-flex-wrap(wrap);
+            @include flexbox-align-items(center);
+            //min-height: 200px;
+
+            &-nav{
+              @include flexbox-flex(0 0 auto);
+              width: auto;
+              max-width: 100%;
+              padding: 10px 5px 60px;
+            }
+          }
+
+          .megamultimenu{
+            @include flexbox-display-flex();
+            @include flexbox-flex-wrap(wrap);
+            @include flexbox-align-items(center);
+
+            &-row{
+              @include flexbox-display-flex();
+              @include flexbox-flex-wrap(wrap);
+              margin-left: auto;
+            }
+
+            &-col{
+              @include flexbox-flex(0 0 auto);
+              width: auto;
+              max-width: 100%;
+              min-width: 200px;
+              padding-right: 75px;
+            }
+
+            &-desc{
+              &-title{
+                color: $global-clr-white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.6;
+                text-align: left;
+              }
+            }
+
+            &-nav{}
+          }
+
+        }
+      }
+    }
+  }
+
+  &-headnav{
+    #{$dfnnavclassname}-menu{
+      &-list{
+        &-item{}
+      }
+    }
+  }
+
+  &-footnav{
+    #{$dfnnavclassname}-menu{
+      &-list{
+        &-item{}
+      }
+    }
+  }
+
+  /* Header Mobile Menu */
+  @include BootstrapMaxWidthResponsive(lg){
+
+    &-menu{
+
+      &-list{
+        > li{
+          a{
+            height: auto;
+          }
+
+          > a{
+            position: relative;
+
+            &[data-toggle^="dropdown"]{
+              &::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                right: 15px;
+                top: calc(50% - 5px);
+                border-right: 2px solid #FFFFFF;
+                border-top: 2px solid #FFFFFF;
+                z-index: 5;
+                @include rotate(135);
+                @include transition(transform, 0.3s, ease-in-out);
+              }
+            }
+            &[aria-expanded^="true"]{
+              &::before{
+                @include rotate(-45);
+              }
+            }
+          }
+
+          .dropdown-menu{
+            position: relative !important;
+            top: 0 !important;
+            z-index: 1 !important;
+
+            .megamenu{
+              padding: 0 !important;
+              max-width: none !important;
+              display: block !important;
+              min-height: inherit;
+
+              &-desc{
+                display: none !important;
+              }
+            }
+
+            .megamultimenu{
+              @include flexbox-align-items(flex-start);
+
+              &-row{
+                @include flexbox-flex-direction(column);
+              }
+              &-col{
+                min-width: inherit;
+                padding: 0;
+                margin-top: 15px;
+                &:first-child{
+                  margin-top: 0;
+                }
+              }
+              &-desc{
+                margin-bottom: 2px;
+                &-title{
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  /* Header Mobil Menu */
+
+}

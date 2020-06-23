@@ -1,0 +1,199 @@
+.header{
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  z-index: 10;
+  @include transition-multiple(background 0.15s ease-in-out, padding 0.15s ease-in-out);
+
+  &-web{
+    position: relative;
+
+    @include BootstrapMinWidthResponsive(lg){
+      > .container{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &-navigation{
+    &-logo{
+      width: 120px;
+      height: 40px;
+
+      @include BootstrapMinWidthResponsive(lg){
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+
+      &-link{}
+    }
+
+    &-navbar{}
+
+    &-userarea{
+      @include flexbox-display-flex();
+      @include flexbox-align-items(center);
+
+      @include BootstrapMinWidthResponsive(lg){
+        position: absolute;
+        top: 5px;
+        right: 0;
+      }
+
+      > *{
+        margin: 0 5px;
+
+        &:first-child{margin-left: 0}
+        &:last-child{margin-right: 0}
+      }
+
+      &-icons{
+        @include flexbox-display-flex();
+
+        > a{
+          color: $global-clr-white;
+          width: 35px;
+          height: 35px;
+          border: 1px solid $global-clr-white;
+          @include border-radius(50%);
+          margin: 0 5px;
+          @include transition-multiple(all 0.15s ease-in-out);
+
+          &:first-child{margin-left: 0}
+          &:last-child{margin-right: 0}
+
+          &:hover{
+            color: $global-clr-dark-gray;
+            background-color: $global-clr-white;
+
+            i{@include svg-filter(40%, 0, 0, 100%);}
+          }
+        }
+        .userareaiconscall{
+          position: relative;
+
+          i.iconscall{
+            width: 33px;
+            height: 33px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS42MTMiIGhlaWdodD0iMTkuNTk5IiB2aWV3Qm94PSIwIDAgMTkuNjEzIDE5LjU5OSI+DQogIDxwYXRoIGlkPSJDYWxsIiBkPSJNLTI1Ljk4MSwxNS42MDdjLjg1NS0uNzg0LDEuNjM5LTEuNjM5LDIuNDIzLTIuNDIzYTIuMDY2LDIuMDY2LDAsMCwxLDIuOTkzLDBsLjE0My4wNzFjLjQyOC40MjguODU1Ljc4NCwxLjI4MywxLjI4M2EuMjYyLjI2MiwwLDAsMSwuMjE0LS4wNzEsMi4xMzQsMi4xMzQsMCwwLDAsLjU3LS4yODVBMTUuMjg4LDE1LjI4OCwwLDAsMC0xNC43MjEsMTAuOSw4LjE4LDguMTgsMCwwLDAtMTMuNTEsOS4wNWwtMS4wNjktMS4wNjktLjI4NS0uMjg1YTIuMDM3LDIuMDM3LDAsMCwxLDAtMy4wNjVsLjg1NS0uODU1LjIxNC0uMzU2aDBsLjM1Ni0uMzU2Ljg1NS0uODU1YTIuMDY2LDIuMDY2LDAsMCwxLDIuOTkzLDBsLjY0MS42NDEuODU1Ljg1NWEzLjMzOSwzLjMzOSwwLDAsMSwxLDIuMDY3LDYuNiw2LjYsMCwwLDEtLjU3LDMuMjc4LDIxLjMxNiwyMS4zMTYsMCwwLDEtMy4zNSw1LjYzLDIwLjc0LDIwLjc0LDAsMCwxLTYuODQyLDUuMzQ1LDEwLjM4OCwxMC4zODgsMCwwLDEtMy45MiwxLjE0aC0uMjg1YTMuMTE4LDMuMTE4LDAsMCwxLTIuNTY2LTEuMTRsLS44NTUtLjg1NWEzLjEsMy4xLDAsMCwwLS41LS40MjhBMi4xMTYsMi4xMTYsMCwwLDEtMjUuOTgxLDE1LjYwN1ptLjkyNiwyLjIwOWEzLjEsMy4xLDAsMCwwLC41LjQyOCwxMi43NDIsMTIuNzQyLDAsMCwxLC45MjYsMSwyLjA3MywyLjA3MywwLDAsMCwxLjg1My42NDEsMTAuNiwxMC42LDAsMCwwLDMuNDIxLTEsMjEuMDYxLDIxLjA2MSwwLDAsMCw2LjQ4NS01LjA2LDE5LjEsMTkuMSwwLDAsMCwzLjEzNi01LjIsNy44ODMsNy44ODMsMCwwLDAsLjQyOC0yLjcwOEExLjkzNSwxLjkzNSwwLDAsMC04Ljg3Nyw0LjcsMTEuMzU2LDExLjM1NiwwLDAsMS05LjgsMy43NzZsLS41Ny0uNTdhMS4zMjksMS4zMjksMCwwLDAtLjcxMy0uMzU2Ljk4NS45ODUsMCwwLDAtLjY0MS4zNTZsLS44NTUuODU1LS4zNTYuMzU2LS4zNTYuMzU2LS44NTUuODU1Yy0uNS41LS41Ljg1NSwwLDEuMjgzbC4zNTYuMjg1Yy4zNTYuMzU2Ljc4NC43ODQsMS4yMTIsMS4xNGEuOTExLjkxMSwwLDAsMSwuMjE0LDEuMDY5LDkuNDIyLDkuNDIyLDAsMCwxLTEuNDI1LDIuMzUyLDE1LjIxOSwxNS4yMTksMCwwLDEtMy45MiwzLjU2MywyLjg4OSwyLjg4OSwwLDAsMS0uNjQxLjM1NmMtLjE0My4wNzEtLjIxNC4wNzEtLjM1Ni4xNDNhMS4wNzksMS4wNzksMCwwLDEtMS4yMTItLjE0M2MtLjUtLjQyOC0uOTI2LS45MjYtMS4zNTQtMS4zNTRsLS4xNDMtLjA3MWEuOC44LDAsMCwwLTEuMjgzLDBsLTIuNDIzLDIuNDIzQy0yNS40ODIsMTYuODktMjUuNDgyLDE3LjM4OC0yNS4wNTUsMTcuODE2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjYuNjc2IC0xLjU2NykiIGZpbGw9IiNmZmYiLz4NCjwvc3ZnPg0K");
+            background-repeat: no-repeat;
+            background-position: center center;
+            //background-size: contain;
+            overflow: hidden;
+            display: inline-block;
+          }
+        }
+        .userareaiconslang{
+          font-size: 16px;
+          line-height: 2.2;
+          text-align: center;
+        }
+      }
+
+      &-btns{
+        @include flexbox-display-flex();
+        position: relative;
+
+        .dropdownbtns{
+
+          &:first-child{
+            .btn{@include border-radii(4px,0,0,4px);}
+          }
+          &:last-child{
+            .btn{@include border-radii(0,4px,4px,0);}
+          }
+
+          > .btn{
+            color: $global-clr-white;
+            width: 105px;
+            height: 36px;
+            font-size: 16px;
+            line-height: 1.4;
+            border-color: $global-clr-green;
+
+            &.btn-light{
+              background-color: transparentize($global-clr-white, 0.85);
+            }
+            &.btn-success{
+              background-color: $global-clr-green;
+
+            }
+          }
+        }
+
+        .dropdown-menu{
+          background-color: #EBEBED;
+          width: 100%;
+          min-width: auto;
+          padding: 10px;
+          margin: 0;
+          top: 40px !important;
+          @include transform(none !important);
+          @include border-radius(10px);
+        }
+      }
+
+      .headuserareaform{
+        .formtitle{
+          color: $global-clr-soft-black;
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center;
+          margin: 0 0 7px;
+        }
+        .custom-control-group-vertical{
+          margin: 10px 0;
+
+          .custom-checkbox,
+          .recaptcha-area{
+            label{
+              color: $global-clr-soft-gray !important;
+              font-size: 12px;
+              line-height: 1;
+            }
+          }
+
+          .custom-control{
+            padding-left: 1.5rem;
+          }
+
+          .custom-control-label:after,
+          .custom-control-label:before{
+            width: 1rem;
+            height: 1rem;
+            top: 0;
+            left: -1.5rem;
+          }
+
+          .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+            width: 8px;
+            height: 5px;
+            top: 5px;
+            left: -20px;
+          }
+
+          .recaptcha-check{
+            width: 1rem;
+            height: 1rem;
+
+            .g-recaptcha{
+              top: -30px;
+              left: -65px;
+              @include scale(0.65);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.navscroll{
+    background-color: transparentize(darken($global-clr-dark-gray, 3%), 0.30) !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include backdrop-filter-multiple(blur(5px));
+  }
+
+}

@@ -1,0 +1,84 @@
+
+.products{
+
+  &-sitefeaturesicons{
+    padding: 40px 0;
+    padding-top: 70px;
+
+    .sitetitle{
+      padding-bottom: 40px;
+    }
+  }
+
+  &-summarytable{
+    padding: 40px 0;
+
+    .sitetitle{
+      padding-bottom: 30px;
+    }
+  }
+
+  &-news{
+    padding: 60px 0 30px;
+
+    .sitetitle{
+      padding-bottom: 55px;
+    }
+  }
+
+  &-aboutus{
+    padding-top: 30px;
+
+    &-row{
+      @include flexbox-align-items(center);
+    }
+
+    &-img{}
+
+    &-txt{
+
+      .sitetitle{
+        height: 100%;
+        padding-right: 50px;
+      }
+
+      .groupbtns{
+        @include flexbox-display-flex-inline();
+        margin: 20px 0 0;
+
+        > .btn{
+          width: 210px;
+          font-size: 18px;
+          font-weight: 600;
+
+          &:first-child{
+            @include border-radii(4px,0,0,4px);
+          }
+          &:last-child{
+            @include border-radii(0,4px,4px,0);
+          }
+
+          &.btn-light{
+            color: $global-clr-red;
+            background-color: $global-clr-white;
+            border-color: $global-clr-red;
+          }
+          &.btn-danger{
+            color: $global-clr-white;
+            background-color: $global-clr-red;
+            border-color: $global-clr-red;
+          }
+        }
+      }
+    }
+  }
+
+  &-platforms{
+    padding: 70px 0 160px;
+
+    .sitetitle-center{
+      padding-bottom: 60px;
+    }
+  }
+
+}

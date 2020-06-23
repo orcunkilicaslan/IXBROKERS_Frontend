@@ -1,0 +1,125 @@
+.sitetable{
+  color: $global-clr-text-dark;
+  margin: 0;
+
+  thead tr th, tbody tr td{
+    vertical-align: middle;
+    line-height: 1;
+  }
+
+  thead{
+    tr{
+      th{
+        font-size: 18px;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  tbody{
+    tr{
+
+      &:last-child{
+        td{
+          border-bottom: 1px solid;
+          border-color: $global-border-light-gray-opacity;
+        }
+      }
+
+      td{
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  &.theadsoftdark{
+    thead{
+      tr{
+        th{
+          background-color: transparentize($global-border-light-gray, 0.50);
+        }
+      }
+    }
+  }
+
+  &.tbodyodd{
+    tbody{
+      tr{
+        &:nth-child(even){
+          background-color: transparentize($global-border-light-gray, 0.75);
+        }
+        td{}
+      }
+    }
+  }
+
+  &.smalltable{
+    thead{
+      tr{
+        th{
+          font-size: 14px;
+          padding-top: 9px;
+          padding-bottom: 9px;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          font-size: 12px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+        }
+      }
+    }
+  }
+
+  &.linetable{
+    thead tr th{
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    tbody tr td{
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &.hovergreentable{
+    thead tr th{
+      border-bottom: 1px solid darken($global-border-light-gray, 10%);
+      border-bottom: none;
+    }
+    tbody tr{
+      //@include transition-multiple(box-shadow 0.15s ease-in-out);
+
+      &:first-child td{
+        border-top: 1px solid darken($global-border-light-gray, 10%);
+      }
+
+      td{
+        &:first-child{border-left: 1px solid transparent;}
+        &:last-child{border-right: 1px solid transparent;}
+      }
+      &:hover{
+        //@include box-shadow(0 0 10px transparentize($global-clr-green, 0.5));
+
+        td{
+          border-bottom: 1px solid;
+          border-color: $global-clr-green;
+          &:first-child{border-left-color: $global-clr-green;}
+          &:last-child{border-right-color: $global-clr-green;}
+        }
+      }
+    }
+  }
+
+  &.fixedtable{table-layout: fixed;}
+
+  .centercell{text-align: center;}
+}
