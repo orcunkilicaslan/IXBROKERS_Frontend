@@ -9,48 +9,19 @@
   &-menu{
     color:#FFFFFF;
     font-size: 18px;
+    line-height: 1;
     padding:0;
 
     @include BootstrapMaxWidthResponsive(lg){
       background-color: darken($global-sitebg-darkblue01, 5%);
     }
 
-    &.activenavbar{
-      @include BootstrapMinWidthResponsive(lg){
-        #{$dfnnavclassname}-menu-list{
-          position: relative;
-
-          &::before{
-            content: "";
-            width: calc(100% - 40px);
-            height: 1px;
-            background-color: transparentize($global-clr-red, 0.5);
-            position: absolute;
-            bottom: 0;
-            left: 20px;
-          }
-        }
-        #{$dfnnavclassname}-menu-underline{
-          opacity: 1;
-        }
-      }
-    }
-
-    &-underline {
-      position: absolute;
-      border-bottom: 3px solid $global-clr-red !important;
-      @include translateX(-60px);
-      @include transition-multiple(left 0.3s ease-in-out, width 0.3s ease-in-out);
-      z-index: -1;
-      bottom: -1px;
-      opacity: 0;
-    }
+    &.activenavbar{}
 
     &-list{
       min-height: 38px;
       margin: 0;
       @include flexbox-display-flex();
-      @include flexbox-justify-content(center);
 
       @include BootstrapMaxWidthResponsive(lg){
         width: 100%;
@@ -66,7 +37,7 @@
         > a{
           color:#FFFFFF;
           display: block;
-          padding:10px 20px;
+          padding: 10px 15px;
           margin: 0;
           position:relative;
           height: 100%;
@@ -100,14 +71,14 @@
                 display: none !important;
               }
               @include BootstrapMaxWidthResponsive(lg){
-                border-right-color: $global-clr-red !important;
-                border-top-color: $global-clr-red !important;
+                border-right-color: $global-clr-green !important;
+                border-top-color: $global-clr-green !important;
               }
             }
           }
 
           &[aria-expanded="true"]{
-            color: $global-clr-red;
+            color: $global-clr-green;
 
             &::before{
               @include BootstrapMinWidthResponsive(lg){
@@ -115,8 +86,8 @@
                 @include svg-filter(0%, 1, 0, 100%);
               }
               @include BootstrapMaxWidthResponsive(lg){
-                border-right-color: $global-clr-red !important;
-                border-top-color: $global-clr-red !important;
+                border-right-color: $global-clr-green !important;
+                border-top-color: $global-clr-green !important;
               }
             }
           }
@@ -129,7 +100,7 @@
           z-index: -1 !important;
           top: 0 !important;
           padding: 0;
-          padding-top: 70px;
+          padding-top: 115px;
           margin: 0;
           border: none;
           width: 100%;
@@ -176,8 +147,8 @@
                   height: 8px;
                   top: 10px;
                   left: 0;
-                  border-top:2px solid $global-clr-red;
-                  border-right:2px solid $global-clr-red;
+                  border-top:2px solid $global-clr-green;
+                  border-right:2px solid $global-clr-green;
                   @include rotate(45);
                   @include transition-multiple(border 0.15s ease-in-out);
                   display: none;
@@ -196,7 +167,7 @@
               @include flexbox-flex(0 0 auto);
               width: auto;
               max-width: 100%;
-              padding: 10px 5px 60px;
+              padding: 10px 0 60px;
             }
           }
 

@@ -13,6 +13,20 @@ $('#headbigsliderowl').owlCarousel({
 });
 /* Head Big Slider */
 
+/* Head Big Slider */
+$('#headslidervideoowl').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:10000,
+    autoplayHoverPause:false,
+    items:1,
+    margin:0,
+    autoWidth:false
+});
+/* Head Big Slider */
+
 /* Features Icons Component */
 $('#sitefeaturesiconsowl').owlCarousel({
     loop:false,

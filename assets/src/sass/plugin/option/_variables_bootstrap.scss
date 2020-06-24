@@ -3,22 +3,22 @@ $bootstrap-grid-columns:          12;
 $bootstrap-grid-gutter-width:     30px;
 $bootstrap-grid-row-columns:      6;
 $bootstrap-container-max-widths:(
-        xs: 500px,
-        sm: 540px,
+        xs: 480px,
+        sm: 580px,
         md: 720px,
-        lg: 960px,
-        xl: 1140px,
-        hd: 1220px,
-        1k: 1300px
+        lg: 980px,
+        xl: 1200px,
+        hd: 1320px,
+        1k: 1480px
 );
 $bootstrap-grid-breakpoints:(
         xz: 0,
         xm: 400px,
-        xs: 480px,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1400px,
+        xs: 520px,
+        sm: 620px,
+        md: 820px,
+        lg: 1060px,
+        xl: 1380px,
         hd: 1620px,
         1k: 1940px,
         2k: 2580px
