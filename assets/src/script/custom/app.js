@@ -16,7 +16,7 @@ $('#headbigsliderowl').owlCarousel({
 /* Head Big Slider */
 $('#headslidervideoowl').owlCarousel({
     loop:true,
-    nav:false,
+    nav:true,
     dots:true,
     autoplay:true,
     autoplayTimeout:10000,

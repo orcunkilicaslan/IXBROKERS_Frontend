@@ -19,16 +19,19 @@
     .row{
       @include flexbox-align-items(center);
       height: 100%;
+      position: static;
     }
   }
 
   &-slider{
     height: 100%;
+    position: static;
 
     &-owl{
       width: calc(100% - 100px);
       height: 100%;
       padding: 50px 0;
+      position: static;
 
       .owl-stage-outer,
       .owl-stage,
@@ -37,8 +40,59 @@
       }
 
       .owl-nav{
-        button.owl-next{}
-        button.owl-prev{}
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: calc(50% + 10px);
+        @include translateY(-50%);
+
+        button[class*='owl-']{
+          width: 40px;
+          height: 40px;
+          background-color: transparent;
+          margin: 0;
+          position: absolute;
+          opacity: 0.25;
+          @include transition-multiple(opacity 0.15s ease-in-out);
+
+          &::before{
+            content: "";
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC44NDUiIGhlaWdodD0iMjguOTQ2IiB2aWV3Qm94PSIwIDAgMTguODQ1IDI4Ljk0NiI+DQogIDxwYXRoIGlkPSJQYXRoXzk0IiBkYXRhLW5hbWU9IlBhdGggOTQiIGQ9Ik0yOTMuMTM0LDkxLjQ5MmwtMTAtMTMuNTgxLDguOTc5LTEzLjU3NGExLDEsMCwwLDAsLjIzNC0uNmMwLS4yLS4xNTQtLjI5Mi0uNDY4LS4yOTJoLTcuMDQ2YTMuMzg4LDMuMzg4LDAsMCwwLS43ODUuMDc2LDEuMzcsMS4zNywwLDAsMC0uNjY2LjU0OGwtOC41NjIsMTMuMTU3YTEuMywxLjMsMCwwLDAtLjI3Ny42OTMsMS4xNjcsMS4xNjcsMCwwLDAsLjE0MS41NjhsOS41NjMsMTMuMDQ3YTIuMDI1LDIuMDI1LDAsMCwwLC41MDcuNjQyLDEuMTA4LDEuMTA4LDAsMCwwLC43MDYuMjE1aDcuNGMuNiwwLC42OS0uMy4yNzEtLjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5My4zOTEgOTIuMzg4KSByb3RhdGUoMTgwKSIgZmlsbD0iIzBlYWYzNCIvPg0KPC9zdmc+DQo=");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include translate(-50%, -50%);
+            @include svg-filter(0%, 1, 0, 100%);
+            @include transition-multiple(filter 0.15s ease-in-out);
+          }
+
+          &:hover{
+            background-color: transparent;
+            opacity: 1;
+
+            &::before{
+              @include svg-filter(100%, 0, 0, 100%);
+            }
+          }
+
+          span[aria-label]{display: none;}
+        }
+
+        button.owl-next{
+          left: -75px;
+          @include rotate(180);
+        }
+        button.owl-prev{
+          right: -75px;
+          @include rotate(0);
+        }
       }
 
       button.owl-dot{}
@@ -46,11 +100,9 @@
       .owl-dots{
         margin: 0 !important;
         position: absolute;
-        bottom: -120px;
-        left: 0;
-        //bottom: 15px;
-        //left: 50%;
-        //@include translateX(-50%);
+        bottom: 15px;
+        left: 50%;
+        @include translateX(-50%);
 
         .owl-dot{
           padding: 6px !important;
