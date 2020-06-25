@@ -200,7 +200,7 @@
   }
 
   &.navscroll{
-    //background-color: transparentize(darken($global-clr-dark-gray, 3%), 0.30) !important;
+    background-color: transparentize($global-clr-black, 0.2) !important;
     //@include backdrop-filter-multiple(blur(5px));
   }
 

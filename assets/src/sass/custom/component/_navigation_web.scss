@@ -94,7 +94,7 @@
         }
 
         .dropdown-menu{
-          background-color: transparentize(darken($global-clr-dark-gray, 3%), 0.05) !important;
+          background-color: transparentize($global-clr-black, 0.2) !important;
           transform: none !important;
           position: fixed !important;
           z-index: -1 !important;
