@@ -5,22 +5,32 @@
   @include flexbox-flex-direction(column);
   color: $global-clr-white;
   background-color: $site-aux-clr-dark-gray;
-  height: calc(100vh - 350px);
+  height: calc(100vh - 300px);
   min-height: 700px;
   position: relative;
 
-  > .container{
-    height: 100%;
-    padding-top: 350px;
-    padding-bottom: 150px;
+  &-top{
+    &.container{
+      height: 100%;
+      padding-top: 330px;
+      padding-bottom: 120px;
+      position: relative;
+      z-index: 1;
+
+      .row{
+        @include flexbox-align-items(center);
+        height: 100%;
+        position: static;
+      }
+    }
+  }
+
+  &-bottom{
+    width: 100%;
+    padding: 40px 0 0;
     position: relative;
     z-index: 1;
-
-    .row{
-      @include flexbox-align-items(center);
-      height: 100%;
-      position: static;
-    }
+    @include background-linear(transparent, $global-clr-black, -90);
   }
 
   &-slider{
@@ -45,7 +55,7 @@
         padding: 0;
         position: absolute;
         left: 0;
-        top: calc(50% + 10px);
+        top: calc(50% + 75px);
         @include translateY(-50%);
 
         button[class*='owl-']{
@@ -258,6 +268,55 @@
           }
         }
       }
+    }
+  }
+
+  &-feature{
+    @include flexbox-display-flex();
+    @include flexbox-justify-content(space-between);
+    text-align: center;
+
+    .owl {
+      &-stage {
+        &-outer {
+          @include BootstrapMinWidthResponsive(lg){
+            overflow: visible !important;
+          }
+        }
+      }
+    }
+
+    li{}
+
+    &-box{
+      padding: 30px;
+      position: relative;
+      top: 0;
+      @include transition-multiple(top 0.5s ease);
+
+      &:hover{
+        top: -10px;
+
+        .boxcontent-title{
+          color: lighten($global-clr-green, 10%);
+        }
+      }
+    }
+
+    i[class*="icons"]{
+      display: block;
+      margin: auto;
+    }
+
+    .boxcontent-title{
+      color: $global-clr-white;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.2;
+      position: relative;
+      @include transition-multiple(color 0.3s ease-in-out);
+
+      span{display: block;}
     }
   }
 

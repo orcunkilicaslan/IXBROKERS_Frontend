@@ -72,6 +72,26 @@
       &.icons-tradingplatforms{background-position: -1100px 0;}
     }
 
+    &.sprite-100-site-features-green{
+      background-image: url(#{$global-img-path-icons}/icons_spite_100_site_features_green.svg);
+      background-position: 0 0;
+      width: 100px;
+      height: 80px;
+
+      &.icons-traders{background-position: 0 0;}
+      &.icons-executions{background-position: -100px 0;}
+      &.icons-locations{background-position: -200px 0;}
+      &.icons-regulations{background-position: -300px 0;}
+      &.icons-instruments{background-position: -400px 0;}
+      &.icons-executionsunder{background-position: -500px 0;}
+      &.icons-zerospreads{background-position: -600px 0;}
+      &.icons-moreproducts{background-position: -700px 0;}
+      &.icons-upleverage{background-position: -800px 0;}
+      &.icons-prosupport{background-position: -900px 0;}
+      &.icons-moneytransfers{background-position: -1000px 0;}
+      &.icons-tradingplatforms{background-position: -1100px 0;}
+    }
+
     &.sprite-200-site-features{
       background-image: url(#{$global-img-path-icons}/icons_spite_200_site_features.svg);
       background-position: 0 0;
