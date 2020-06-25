@@ -6,7 +6,6 @@
   color: $global-clr-white;
   background-color: $site-aux-clr-dark-gray;
   height: 100%;
-  min-height: 100vh;
   position: relative;
 
   @include BootstrapMinWidthResponsive(1k){
