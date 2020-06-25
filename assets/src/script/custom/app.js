@@ -23,7 +23,10 @@ $('#headslidervideoowl').owlCarousel({
     autoplayHoverPause:false,
     items:1,
     margin:0,
-    autoWidth:false
+    autoWidth:false,
+    mouseDrag:false,
+    animateIn: 'fadeInUp',
+    animateOut: 'fadeOutUp',
 });
 /* Head Big Slider */
 
