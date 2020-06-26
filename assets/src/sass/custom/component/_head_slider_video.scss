@@ -215,7 +215,7 @@
       border: 1px solid transparentize($global-clr-white, 0.75);
       padding: 30px 25px;
       text-align: center;
-      @include border-radius(0px);
+      @include border-radius(3px);
       @include backdrop-filter-multiple(blur(5px));
 
 
@@ -306,11 +306,38 @@
     @include flexbox-justify-content(space-between);
     text-align: center;
 
-    .owl {
-      &-stage {
-        &-outer {
+    .owl{
+      &-stage{
+        &-outer{
           @include BootstrapMinWidthResponsive(lg){
             overflow: visible !important;
+          }
+        }
+      }
+
+      &-item{
+
+        &:first-child::before{
+          display: none;
+        }
+
+        &::before{
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: $global-clr-green;
+          opacity: 0;
+          position: absolute;
+          left: -4px;
+          top: 50%;
+          @include translateY(-50%);
+          @include border-radius(50%);
+          @include animation-multi(homepageSliderFeatureDot 0.5s linear forwards);
+          @include animation-delay(1s);
+
+          @include keyframes(homepageSliderFeatureDot){
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
           }
         }
       }
