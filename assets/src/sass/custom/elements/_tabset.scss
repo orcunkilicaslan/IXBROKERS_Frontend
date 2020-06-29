@@ -18,35 +18,34 @@
 
     &-tabs{
       border-bottom: none;
-      padding-left: 2px;
-      padding-right: 2px;
-      @include border-radius(4px);
+      @include border-radii(6px,6px,0,0);
+      margin-bottom: 20px;
+      overflow: hidden;
     }
 
     &-item{
       text-align: center;
-      margin: 4px 2px;
     }
 
     &-link{
-      color: $global-clr-text-dark;
+      color: $global-clr-soft-gray;
+      background-color: $global-clr-white;
       font-size: 18px;
-      font-weight: 600;
-      padding: 10px 10px 8px;
+      font-weight: 500;
+      padding: 20px 5px;
       line-height: 1;
-      border: 1px solid transparent;
-      @include border-radius(4px);
-      @include transition-multiple(background-color 0.15s ease-in-out, border-color 0.3s ease-in-out, color 0.15s ease-in-out);
+      border: none;
+      border-bottom: 5px solid darken($global-clr-light-gray, 10%);
+      @include transition-multiple(background-color 0.15s ease-in-out, border-color 0.1s ease-in-out, color 0.15s ease-in-out);
 
       &:hover{
-        color: $global-clr-red;
-        border-color: transparentize($global-clr-red, 0.5);
+        color: $global-clr-text-dark;
+        border-color: $global-clr-soft-gray;
       }
 
       &.active{
-        background-color: $global-clr-red;
-        border-color: $global-clr-red;
-        color: $global-clr-white;
+        border-color: $global-clr-green;
+        color: $global-clr-green;
       }
     }
   }

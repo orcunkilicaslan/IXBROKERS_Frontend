@@ -11,6 +11,7 @@
     tr{
       th{
         font-size: 18px;
+        font-weight: 500;
         border-top-width: 1px;
         border-bottom-width: 1px;
         padding-top: 10px;
@@ -24,8 +25,7 @@
 
       &:last-child{
         td{
-          border-bottom: 1px solid;
-          border-color: $global-border-light-gray-opacity;
+          border-bottom: 1px solid transparent;
         }
       }
 
@@ -91,29 +91,26 @@
   }
 
   &.hovergreentable{
+
+    thead tr th,
+    tbody tr td{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     thead tr th{
-      border-bottom: 1px solid darken($global-border-light-gray, 10%);
       border-bottom: none;
     }
+
     tbody tr{
-      //@include transition-multiple(box-shadow 0.15s ease-in-out);
 
       &:first-child td{
-        border-top: 1px solid darken($global-border-light-gray, 10%);
-      }
-
-      td{
-        &:first-child{border-left: 1px solid transparent;}
-        &:last-child{border-right: 1px solid transparent;}
+        border-top: 1px solid $global-border-light-gray;
       }
       &:hover{
-        //@include box-shadow(0 0 10px transparentize($global-clr-green, 0.5));
-
         td{
           border-bottom: 1px solid;
           border-color: $global-clr-green;
-          &:first-child{border-left-color: $global-clr-green;}
-          &:last-child{border-right-color: $global-clr-green;}
         }
       }
     }
