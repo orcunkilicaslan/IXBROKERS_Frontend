@@ -262,8 +262,8 @@
         &-iconstexttypes{
           color: $global-clr-dark-black;
           font-family: $global-font-family-cocogothic-heavy !important;
-          height: 34px;
-          font-size: 46px;
+          height: 32px;
+          font-size: 42px;
           font-style: normal;
           line-height: 1;
           display: block;
@@ -374,55 +374,55 @@
 
   &-newsbox{
 
-    .headbignews{
-      border-bottom: 1px solid $global-border-light-gray-opacity;
-      padding-bottom: 30px;
+    .bignewsbox{
+      width: 100%;
+      max-width: 640px;
 
-      &-content{
-
-        .sitetitle{
-          padding: 0 75px 0 0;
-        }
-
-        &-btn{
-          width: 190px;
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 1.35;
-          border: none;
-          margin: 20px auto 0 0;
-          display: block;
-        }
-      }
       &-videos{
         .pretty-embed img{
-          min-height: 350px;
-          @include border-radius(10px);
+          @include border-radius(3px);
         }
         .pretty-embed iframe{
-          min-height: 350px;
-          @include border-radius(10px);
+          @include border-radius(3px);
+        }
+      }
+
+      &-content{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.3;
+
+        h3{
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        .btn{
+          margin-top: 20px;
         }
       }
     }
 
-    .listsmallnews{
+    .smallnewsbox{
 
       .listnews{
 
-        li{
-          padding-top: 20px;
-        }
+        li{}
 
         &-title{
-
-          h4,p{
-            font-size: 18px;
-            line-height: 1.22;
-          }
+          height: 300px;
+          line-height: 1.3;
+          overflow: hidden;
 
           h4{
-            margin-bottom: 5px;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+
+          p{
+            font-size: 18px;
           }
 
         }
@@ -432,16 +432,17 @@
           @include flexbox-justify-content(space-between);
           margin-top: 5px;
           padding-bottom: 15px;
-          border-bottom: 1px solid $global-border-light-gray-opacity;
 
-          &-date{}
+          &-date{
+            color: $global-clr-green;
+          }
 
           &-more{
-            font-weight: bold;
+            font-weight: 700;
 
             svg{
               line,
-              path{stroke: $global-clr-red !important;}
+              path{stroke: $global-clr-green !important;}
             }
           }
         }

@@ -30,6 +30,34 @@ $('#headslidervideoowl').owlCarousel({
 });
 /* Head Big Slider */
 
+/* News Smal List Owl Carousel */
+$('#newssmalllistowl').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    items:2,
+    margin:50,
+    autoWidth:false,
+    mouseDrag:false,
+    animateIn: 'slideInRight',
+    animateOut: 'slideOutLeft',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            loop:true,
+            autoplay:true,
+        },
+        767:{
+            items:2
+        }
+    }
+});
+/* News Smal List Owl Carousel */
+
 /* Features Icons Component */
 $('#sitefeaturesiconsowl').owlCarousel({
     loop:false,
