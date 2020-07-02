@@ -207,14 +207,27 @@
           }
         }
 
-        tbody tr{
-          &:hover{
-            .btn-light{
-              color: $global-clr-white;
-              background-color: $global-clr-green;
-              border-color: $global-clr-green;
+        tbody{
+          tr{
+
+            &:hover{
+              .btn-light{
+                color: $global-clr-white;
+                background-color: $global-clr-green;
+                border-color: $global-clr-green;
+              }
+            }
+
+            td{
+              &:first-child{
+                font-weight: 500;
+              }
             }
           }
+        }
+
+        tbody tr{
+
         }
 
         .btn-light{
