@@ -26,7 +26,7 @@ $('#headslidervideoowl').owlCarousel({
     autoWidth:false,
     mouseDrag:false,
     animateIn: 'fadeInUp',
-    animateOut: 'fadeOutUp',
+    animateOut: 'fadeOutUp'
 });
 /* Head Big Slider */
 
@@ -42,8 +42,8 @@ $('#newssmalllistowl').owlCarousel({
     margin:50,
     autoWidth:false,
     mouseDrag:false,
-    animateIn: 'slideInRight',
-    animateOut: 'slideOutLeft',
+    animateIn: 'fadeInUp',
+    animateOut: 'fadeOutUp',
     responsiveClass:true,
     responsive:{
         0:{

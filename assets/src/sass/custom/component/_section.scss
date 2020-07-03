@@ -183,9 +183,13 @@
   &-summarytable{
     .summarytable{
 
-      &-tabnav{}
+      &-tabnav{
+        background-color: $global-clr-white;
+      }
 
-      &-tabcontent{}
+      &-tabcontent{
+        background-color: $global-clr-white;
+      }
 
       &-tablearea{}
 
@@ -404,6 +408,8 @@
         margin-top: 20px;
         font-size: 18px;
         line-height: 1.3;
+        height: 200px;
+        overflow: hidden;
 
         h3{
           font-size: 24px;
@@ -420,6 +426,38 @@
     .smallnewsbox{
 
       .listnews{
+
+        &.owl-carousel{
+          .owl-dots{
+            margin-top: 15px;
+
+            .owl-dot{
+              padding: 4px !important;
+              background-color: $global-clr-white !important;
+              border: 2px solid $global-border-light-gray-opacity;
+              @include border-radius(25px);
+              margin: 2px !important;
+              @include transition-multiple(background-color 0.3s ease-in-out, border 0.3s ease-in-out !important);
+
+              span{
+                background-color: $global-clr-soft-gray !important;
+                width: 10px !important;
+                height: 10px !important;
+                margin: 0 !important;
+                @include transition-multiple(background-color 0.3s ease-in-out !important);
+              }
+
+              &.active{
+                border-color: transparentize($global-clr-green, 0.55);
+
+                span{
+                  background-color: $global-clr-green !important;
+                  //width: 20px !important;
+                }
+              }
+            }
+          }
+        }
 
         li{}
 

@@ -1,8 +1,19 @@
 .header{
   width: 100%;
+  background-color: transparent;
   position: fixed;
   z-index: 10;
-  @include transition-multiple(background 0.15s ease-in-out, padding 0.15s ease-in-out);
+
+  &::before{
+    content: "";
+    background-color: transparentize($global-clr-black, 0.05);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include transition-multiple(height 0.15s ease-in-out);
+  }
 
   &-web{
     position: relative;
@@ -10,7 +21,7 @@
     &-top{
       background-color: transparentize($global-clr-black, 0.2);
       padding: 15px 0;
-      //border-bottom: 1px solid transparentize($global-clr-green, 0.1);
+      //@include transition-multiple(padding 0.5s ease-in-out);
 
       &-row{
         @include flexbox-align-items(center);
@@ -21,6 +32,7 @@
 
     &-btm{
       padding: 10px 0;
+      //@include transition-multiple(padding 0.5s ease-in-out);
 
       &-row{
         @include flexbox-align-items(center);
@@ -200,8 +212,13 @@
   }
 
   &.navscroll{
-    background-color: transparentize($global-clr-black, 0.05) !important;
-    //@include backdrop-filter-multiple(blur(5px));
+
+    &::before{
+      height: 100%;
+    }
+
+    #{$headerclassname}-web-top{}
+    #{$headerclassname}-web-btm{}
   }
 
 }

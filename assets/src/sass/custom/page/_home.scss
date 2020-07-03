@@ -49,11 +49,13 @@
       }
 
       .bignewsbox{
+        background-color: $global-clr-white;
         padding-right: 40px;
         border-right: 1px solid $global-border-light-gray-opacity;
       }
 
       .smallnewsbox{
+        background-color: $global-clr-white;
         padding-left: 40px;
       }
     }
