@@ -11,11 +11,11 @@
 
       > li{
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
         @include border-radius(6px);
 
         &:nth-of-type(even){
-          @include box-shadow(0 0 40px 0 transparentize($global-clr-dark-blue, 0.90));
+          @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
         }
 
       }
@@ -35,14 +35,48 @@
 
   }
 
+  &-platforms{
+    padding: 60px 0;
+    overflow: hidden;
+
+    .sitetitle-xl{
+      padding-bottom: 50px;
+    }
+
+    .component-platforms{
+      position: relative;
+
+      &::before,
+      &::after{
+        content: "";
+        background-color: $global-clr-white;
+        width: 5000px;
+        height: 100%;
+        @include border-radius(4px);
+        @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+        position: absolute;
+        top: 0;
+      }
+
+      &::before{
+        left: -5045px;
+      }
+
+      &::after{
+        right: -5045px;
+      }
+    }
+
+  }
+
   &-news{
-    padding: 40px 0;
+    padding: 80px 0;
 
     &-box{
       background-color: $global-clr-white;
       padding: 50px;
-      @include border-radius(10px);
-      @include box-shadow(0 0 40px 0 transparentize($global-clr-dark-blue, 0.90));
+      @include border-radius(4px);
+      @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
 
       .sitetitle-xl{
         padding-bottom: 40px;
@@ -62,7 +96,7 @@
   }
 
   &-aboutus{
-    padding-top: 80px;
+    padding-top: 60px;
 
     &-row{
       @include flexbox-align-items(center);
