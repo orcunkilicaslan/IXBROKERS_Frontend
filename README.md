@@ -2,7 +2,7 @@
 
 #### Web Public Area Frontend List
  - [01_Home_Page](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/01_Home_Page.html)
- - [22_Products_CFD](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/22_Products_CFD.html)
+ - [22_Products_Forex](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/22_Products_Forex.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/99_Component_Form_UI.html)
    
    

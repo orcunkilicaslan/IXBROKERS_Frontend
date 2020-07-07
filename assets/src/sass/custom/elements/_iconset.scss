@@ -117,6 +117,18 @@
       &.icons-commodities{background-position: -160px 0;}
       &.icons-stocks{background-position: -240px 0;}
     }
+
+    &.sprite-80-products-features{
+      background-image: url(#{$global-img-path-icons}/icons_spite_80_products_features.svg);
+      background-position: 0 0;
+      width: 80px;
+      height: 80px;
+
+      &.icons-licensed{background-position: 0 0;}
+      &.icons-support{background-position: -80px 0;}
+      &.icons-transparent{background-position: -160px 0;}
+      &.icons-secure{background-position: -240px 0;}
+    }
   }
 
 }

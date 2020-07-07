@@ -1,83 +1,55 @@
 
 .products{
 
-  &-sitefeaturesicons{
-    padding: 40px 0;
-    padding-top: 70px;
+  &-headcontent{
+    padding: 80px 0;
+    position: relative;
 
-    .sitetitle{
-      padding-bottom: 40px;
+    .products-feature{
+      margin-top: 70px;
     }
   }
 
-  &-summarytable{
-    padding: 40px 0;
+  &-feature{
 
-    .sitetitle{
-      padding-bottom: 30px;
-    }
-  }
+    .prodfeature{
+      @include flexbox-display-flex();
+      margin-left: -15px;
+      margin-right: -15px;
 
-  &-news{
-    padding: 60px 0 30px;
-
-    .sitetitle{
-      padding-bottom: 55px;
-    }
-  }
-
-  &-aboutus{
-    padding-top: 30px;
-
-    &-row{
-      @include flexbox-align-items(center);
-    }
-
-    &-img{}
-
-    &-txt{
-
-      .sitetitle{
-        height: 100%;
-        padding-right: 50px;
+      &-box{
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        min-width: 0;
+        max-width: 100%;
+        padding: 0 15px;
       }
 
-      .groupbtns{
-        @include flexbox-display-flex-inline();
-        margin: 20px 0 0;
+      &-wpr{
+        text-align: center;
+        padding: 30px;
+        height: 100%;
+        @include border-radius(6px);
+        @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+      }
 
-        > .btn{
-          width: 210px;
+      &-icons{
+        margin-bottom: 10px;
+      }
+
+      &-title{
+        h3{
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+
+        p{
           font-size: 18px;
-          font-weight: 600;
-
-          &:first-child{
-            @include border-radii(4px,0,0,4px);
-          }
-          &:last-child{
-            @include border-radii(0,4px,4px,0);
-          }
-
-          &.btn-light{
-            color: $global-clr-red;
-            background-color: $global-clr-white;
-            border-color: $global-clr-red;
-          }
-          &.btn-danger{
-            color: $global-clr-white;
-            background-color: $global-clr-red;
-            border-color: $global-clr-red;
-          }
+          line-height: 1.25;
         }
       }
-    }
-  }
 
-  &-platforms{
-    padding: 70px 0 160px;
-
-    .sitetitle-center{
-      padding-bottom: 60px;
     }
   }
 

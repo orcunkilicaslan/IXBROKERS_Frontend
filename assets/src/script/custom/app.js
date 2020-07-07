@@ -13,7 +13,7 @@ $('#headbigsliderowl').owlCarousel({
 });
 /* Head Big Slider */
 
-/* Head Big Slider */
+/* Head Video Slider */
 $('#headslidervideoowl').owlCarousel({
     loop:true,
     nav:true,
@@ -28,7 +28,21 @@ $('#headslidervideoowl').owlCarousel({
     animateIn: 'fadeInUp',
     animateOut: 'fadeOutUp'
 });
-/* Head Big Slider */
+/* Head Video Slider */
+
+/* Head Features Icons */
+$('#headfeaturesiconsowl').owlCarousel({
+    loop:false,
+    nav:false,
+    dots:false,
+    autoplay:false,
+    autoplayTimeout:1500,
+    autoplayHoverPause:false,
+    items:6,
+    margin:0,
+    autoWidth:false
+});
+/* Head Features Icons */
 
 /* News Smal List Owl Carousel */
 $('#newssmalllistowl').owlCarousel({
@@ -59,15 +73,15 @@ $('#newssmalllistowl').owlCarousel({
 /* News Smal List Owl Carousel */
 
 /* Features Icons Component */
-$('#sitefeaturesiconsowl').owlCarousel({
+$('#productsfeaturesiconsowl').owlCarousel({
     loop:false,
     nav:false,
     dots:false,
     autoplay:false,
     autoplayTimeout:1500,
     autoplayHoverPause:false,
-    items:6,
-    margin:0,
+    items:4,
+    margin:30,
     autoWidth:false
 });
 /* Features Icons Component */
