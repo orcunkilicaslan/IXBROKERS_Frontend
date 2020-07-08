@@ -187,7 +187,7 @@
       &-title{
         .slidertitle{
           font-family: $global-font-family-cocogothic-heavy !important;
-          font-size: 54px;
+          font-size: 50px;
           line-height: 1.2;
           position: relative;
 
@@ -208,7 +208,7 @@
 
   &-account{
     height: 100%;
-    width: 440px;
+    width: 460px;
 
     .startaccountbox{
       background-color: transparentize($global-clr-white, 0.98);

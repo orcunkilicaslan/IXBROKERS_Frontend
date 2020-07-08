@@ -43,30 +43,6 @@
       padding-bottom: 50px;
     }
 
-    .component-platforms{
-      position: relative;
-
-      &::before,
-      &::after{
-        content: "";
-        background-color: $global-clr-white;
-        width: 5000px;
-        height: 100%;
-        @include border-radius(4px);
-        @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
-        position: absolute;
-        top: 0;
-      }
-
-      &::before{
-        left: -5045px;
-      }
-
-      &::after{
-        right: -5045px;
-      }
-    }
-
   }
 
   &-news{
@@ -85,7 +61,7 @@
       .bignewsbox{
         background-color: $global-clr-white;
         padding-right: 40px;
-        border-right: 1px solid $global-border-light-gray-opacity;
+        border-right: 2px solid transparentize($global-clr-dark-blue, 0.95);
       }
 
       .smallnewsbox{

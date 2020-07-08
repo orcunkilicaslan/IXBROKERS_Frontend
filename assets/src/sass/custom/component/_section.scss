@@ -503,6 +503,26 @@
   &-platforms{
     position: relative;
 
+    &::before,
+    &::after{
+      content: "";
+      background-color: $global-clr-white;
+      width: 5000px;
+      height: 100%;
+      @include border-radius(4px);
+      @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+      position: absolute;
+      top: 0;
+    }
+
+    &::before{
+      left: -5045px;
+    }
+
+    &::after{
+      right: -5045px;
+    }
+
     .nav{
 
       &-head{
@@ -555,7 +575,7 @@
         background-color: $global-clr-white;
         min-height: 350px;
         margin: 0 335px;
-        padding: 60px 50px;
+        padding: 60px 50px 30px;
         @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
         @include border-radius(4px);
         position: relative;
@@ -568,7 +588,129 @@
         &-btns{
           @include flexbox-display-flex();
           @include flexbox-justify-content(center);
-          margin-top: 20px;
+          margin-top: 30px;
+
+          .btn{
+            margin: 0 5px;
+
+            &-platdown{
+              @include flexbox-display-flex();
+              @include flexbox-align-items(center);
+              height: auto;
+              padding: 8px 10px;
+              border: 1px solid $global-clr-green;
+              @include transition-multiple(none);
+
+              i.platdownicon{
+                width: 34px;
+                height: 34px;
+
+                svg{
+                  fill: $global-clr-text-dark;
+                }
+              }
+
+              p{
+                line-height: 1.2;
+                text-align: left;
+                padding: 0 5px;
+
+                small, strong{
+                  display: block;
+                }
+
+                small{
+                  color: $global-clr-green;
+                  font-size: 11px;
+                  font-weight: 500;
+                }
+
+                strong{
+                  font-size: 16px;
+                }
+
+              }
+
+              &:hover{
+                background-color: $global-clr-green;
+                border-color: $global-clr-green;
+
+                i.platdownicon{
+                  svg{
+                    fill: $global-clr-white;
+                  }
+                }
+
+                p{
+                  small, strong{
+                    color: $global-clr-white;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+        .startaccountbtns{
+          margin-top: 30px;
+          border-top: 2px solid transparentize($global-clr-dark-blue, 0.95);
+          padding-top: 30px;
+
+          .btn{
+            color: $global-clr-white;
+            display: block;
+            height: auto;
+            font-size: 18px;
+            text-align: left;
+            padding: 10px 15px;
+            position: relative;
+            border: none;
+            @include border-radius(2px);
+
+            span, small{
+              display: block;
+              line-height: 1.25;
+            }
+
+            span{
+              font-family: $global-font-family-cocogothic-heavy !important;
+              font-size: 22px;
+              font-weight: 500;
+              position: relative;
+              top: 4px;
+            }
+
+            small{
+              font-weight: 300;
+            }
+
+            .rightarrow{
+              position: absolute;
+              right: 15px;
+              top: calc(50% - 1px);
+              @include translateY(-50%);
+
+              svg{
+                fill: $global-clr-white;
+                height: 16px;
+                opacity: 0.75;
+                @include transition-multiple(opacity 0.15s ease-in-out);
+              }
+            }
+
+            &:hover{
+              .rightarrow svg{
+                opacity: 1;
+              }
+            }
+          }
+
+          .startaccountinfolinks{
+            color: $global-clr-text-dark;
+            font-size: 16px;
+            margin-top: 10px;
+          }
         }
       }
 
