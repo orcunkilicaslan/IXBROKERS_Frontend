@@ -1,7 +1,7 @@
 
 .headbigslider{
   color: $global-clr-white;
-  background-color: $site-aux-clr-dark-gray;
+  background-color: transparentize($global-clr-black, 0.05);
   position: relative;
 
   $headbigslider-bottom-icons-height: 330px;

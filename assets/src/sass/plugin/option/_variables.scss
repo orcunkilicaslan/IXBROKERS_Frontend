@@ -15,10 +15,6 @@ $global-clr-light-gray: #f7f7f7;
 $global-clr-soft-purple: #9175b6;
 /* General Color Settings */
 
-/* Auxiliary Color Settings */
-$site-aux-clr-dark-gray: #1f1f1f;
-/* Auxiliary Color Settings */
-
 /* Site Main Settings */
 $global-font-family-cocogothic-heavy:     'CocoGothicHeavy';
 $global-font-family-default:              'Jost';
@@ -27,7 +23,7 @@ $global-clr-text-light:                   $global-clr-soft-black;
 $global-clr-text-dark:                    $global-clr-soft-black;
 $global-border-light-gray:                #d0d0d0;
 $global-border-light-gray-opacity:        lighten($global-border-light-gray, 10%);
-$global-border-light-gray-focus:          $global-clr-soft-blue;
+$global-border-light-gray-focus:          transparentize($global-clr-black, 0.25);
 $global-input-border-light:               $global-border-light-gray;
 $global-input-border-light-focus:         $global-border-light-gray-focus;
 $global-input-disabled-light:             lighten($global-border-light-gray, 10%);
