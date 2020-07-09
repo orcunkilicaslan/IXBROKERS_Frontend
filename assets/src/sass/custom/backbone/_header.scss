@@ -116,97 +116,10 @@
     }
 
     &-btns{
-      @include flexbox-display-flex();
-      position: relative;
-
-      .dropdownbtns{
-
-        &:first-child{
-          .btn{@include border-radii(4px,0,0,4px);}
-        }
-        &:last-child{
-          .btn{@include border-radii(0,4px,4px,0);}
-        }
-
-        > .btn{
-          color: $global-clr-white;
-          width: 105px;
-          height: 36px;
-          font-size: 16px;
-          line-height: 1.4;
-          border-color: $global-clr-green;
-
-          &.btn-light{
-            background-color: transparentize($global-clr-white, 0.85);
-          }
-          &.btn-success{
-            background-color: $global-clr-green;
-
-          }
-        }
-      }
-
-      .dropdown-menu{
-        background-color: #EBEBED;
-        width: 100%;
-        min-width: auto;
-        padding: 10px;
-        margin: 0;
-        top: 40px !important;
-        @include transform(none !important);
-        @include border-radius(10px);
-      }
-    }
-
-    .headuserareaform{
-      .formtitle{
-        color: $global-clr-soft-black;
-        font-size: 18px;
-        font-weight: 600;
-        text-align: center;
-        margin: 0 0 7px;
-      }
-      .custom-control-group-vertical{
-        margin: 10px 0;
-
-        .custom-checkbox,
-        .recaptcha-area{
-          label{
-            color: $global-clr-soft-gray !important;
-            font-size: 12px;
-            line-height: 1;
-          }
-        }
-
-        .custom-control{
-          padding-left: 1.5rem;
-        }
-
-        .custom-control-label:after,
-        .custom-control-label:before{
-          width: 1rem;
-          height: 1rem;
-          top: 0;
-          left: -1.5rem;
-        }
-
-        .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
-          width: 8px;
-          height: 5px;
-          top: 5px;
-          left: -20px;
-        }
-
-        .recaptcha-check{
-          width: 1rem;
-          height: 1rem;
-
-          .g-recaptcha{
-            top: -30px;
-            left: -65px;
-            @include scale(0.65);
-          }
-        }
+      > .btn{
+        height: 36px;
+        font-size: 16px;
+        line-height: 1.4;
       }
     }
   }
