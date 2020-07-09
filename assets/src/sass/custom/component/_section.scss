@@ -514,7 +514,7 @@
     &::before,
     &::after{
       content: "";
-      background-color: $global-clr-white;
+      background-color: transparentize($global-border-light-gray-opacity, 0.85);
       width: 5000px;
       height: 100%;
       @include border-radius(4px);
@@ -580,7 +580,7 @@
       }
 
       &-mt{
-        background-color: $global-clr-white;
+        background-color: transparentize($global-border-light-gray-opacity, 0.85);
         min-height: 350px;
         margin: 0 335px;
         padding: 60px 50px 30px;
@@ -604,6 +604,7 @@
             &-platdown{
               @include flexbox-display-flex();
               @include flexbox-align-items(center);
+              background-color: $global-clr-white;
               height: auto;
               padding: 8px 10px;
               border: 1px solid $global-clr-green;
