@@ -4,6 +4,7 @@
  - [01_Home_Page](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/01_Home_Page.html)
  - [11_Account_Open_Demo](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/11_Account_Open_Demo.html)
  - [12_Account_Open_Live](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/12_Account_Open_Live.html)
+ - [13_Account_Types](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/13_Account_Types.html)
  - [21_Products_Forex](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/21_Products_Forex.html)
  - [22_Products_Indices](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/22_Products_Indices.html)
  - [23_Products_CFD](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/23_Products_CFD.html)
