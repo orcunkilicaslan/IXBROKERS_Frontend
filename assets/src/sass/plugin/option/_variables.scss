@@ -5,8 +5,8 @@ $global-clr-green: #0EAF34;
 $global-clr-red: #d51820;
 $global-clr-orange: #FF5800;
 $global-clr-cyan: #6397be;
-$global-clr-dark-black: #000000;
-$global-clr-soft-black: #3e3b44;
+$global-clr-dark-black: $global-clr-black;
+$global-clr-soft-black: #111927;
 $global-clr-dark-blue: #002b59;
 $global-clr-soft-blue: #1F6CB2;
 $global-clr-dark-gray: #282a2e;
@@ -19,19 +19,19 @@ $global-clr-soft-purple: #9175b6;
 $global-font-family-cocogothic-heavy:     'CocoGothicHeavy';
 $global-font-family-default:              'Jost';
 $global-font-size:                        16px;
-$global-clr-text-light:                   $global-clr-soft-black;
 $global-clr-text-dark:                    $global-clr-soft-black;
-$global-border-light-gray:                #d0d0d0;
-$global-border-light-gray-opacity:        lighten($global-border-light-gray, 10%);
-$global-border-light-gray-focus:          transparentize($global-clr-black, 0.25);
+$global-clr-text-light:                   #303f56;
+$global-border-light-gray:                #e0e5ec;
+$global-border-light-gray-opacity:        #F2F4F7;
+$global-border-light-gray-focus:          darken($global-border-light-gray, 15%);
 $global-input-border-light:               $global-border-light-gray;
 $global-input-border-light-focus:         $global-border-light-gray-focus;
 $global-input-disabled-light:             lighten($global-border-light-gray, 10%);
 /* Site Main Color Settings */
 
 /* Site Gradient Background Color */
-$global-sitebg-darkblue01:  #002960;
-$global-sitebg-darkblue02:  #002960;
+$global-sitebg-darkblue01: #09101b;
+$global-sitebg-darkblue02: #002960;
 $global-grdint-darkblue01: #002960;
 $global-grdint-darkblue02: #0D78C4;
 $global-grdint-red01: #e50000;

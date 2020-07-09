@@ -28,19 +28,19 @@
     }
 
     &-link{
-      color: $global-clr-soft-gray;
+      color: $global-clr-text-light;
       background-color: $global-clr-white;
       font-size: 18px;
       font-weight: 500;
       padding: 20px 5px;
       line-height: 1;
       border: none;
-      border-bottom: 5px solid darken($global-clr-light-gray, 10%);
+      border-bottom: 4px solid $global-border-light-gray;
       @include transition-multiple(background-color 0.15s ease-in-out, border-color 0.1s ease-in-out, color 0.15s ease-in-out);
 
       &:hover{
         color: $global-clr-text-dark;
-        border-color: $global-clr-soft-gray;
+        border-color: $global-border-light-gray-focus;
       }
 
       &.active{

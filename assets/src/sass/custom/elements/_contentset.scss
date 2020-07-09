@@ -6,24 +6,26 @@
   }
 
   &-desc{
-    h1{font-size: 36px; line-height: 1.15; letter-spacing: -1.14px;}
-    h2{font-size: 32px; line-height: 1.15; letter-spacing: -1.14px;}
-    h3{font-size: 28px; line-height: 1; letter-spacing: -0.84px;}
-    h4{font-size: 22px; line-height: 1.09; letter-spacing: -0.6px;}
+    color: $global-clr-text-light;
+
+    h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark;}
+    h1{font-size: 36px; line-height: 1.2;}
+    h2{font-size: 32px; line-height: 1.2;}
+    h3{font-size: 28px; line-height: 1.2;}
+    h4{font-size: 22px; line-height: 1.2;}
     h5{font-size: 18px;}
     h6{font-size: 16px;}
-    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 10px;}
+    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 15px;}
     h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul{margin-top: 5px;}
 
     p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
     p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
-    p+p,p+ul,p+ol{margin-top: 10px;}
-    p{font-size: 16px; font-weight: normal; line-height: 1.38; letter-spacing: -0.48px;}
-    ul, ol{font-size: 16px; font-weight: normal; line-height: 1.38; letter-spacing: -0.48px;}
+    p+p,p+ul,p+ol{margin-top: 15px;}
+    p, ul, ol{font-size: 18px; font-weight: normal; line-height: 1.4;}
     ul > li, ol > li{/*margin-bottom: 15px;*/}
     ul > li:last-child, ol > li:last-child{margin-bottom: 0;}
     strong,b{font-weight: 500;}
-    p a, li a{color: $global-clr-text-light; font-weight: 500;}
+    p a, li a{color: $global-clr-green; font-weight: 500;}
 
     @include BootstrapMaxWidthResponsive(1k){
       h2{font-size: 28px;}

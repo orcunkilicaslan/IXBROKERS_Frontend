@@ -34,7 +34,7 @@
 
     &-mobilemenu{
       &-mask{
-        background-color: transparentize($global-sitebg-darkblue01, 0.5);
+        background-color: transparentize($global-clr-dark-black, 0.5);
         position:fixed;
         display:none;
         width:100%;

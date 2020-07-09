@@ -28,7 +28,7 @@
         padding: 30px;
         height: 100%;
         @include border-radius(6px);
-        @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+        @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
       }
 
       &-icons{
@@ -37,12 +37,14 @@
 
       &-title{
         h3{
+          color: $global-clr-text-dark;
           font-size: 20px;
           font-weight: 700;
           margin-bottom: 5px;
         }
 
         p{
+          color: $global-clr-text-light;
           font-size: 18px;
           line-height: 1.25;
         }

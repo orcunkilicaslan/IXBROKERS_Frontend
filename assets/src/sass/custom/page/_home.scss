@@ -15,7 +15,7 @@
         @include border-radius(6px);
 
         &:nth-of-type(even){
-          @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+          @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
         }
 
       }
@@ -52,7 +52,7 @@
       background-color: $global-clr-white;
       padding: 50px;
       @include border-radius(4px);
-      @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+      @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
 
       .sitetitle-xl{
         padding-bottom: 40px;
@@ -61,7 +61,7 @@
       .bignewsbox{
         background-color: $global-clr-white;
         padding-right: 40px;
-        border-right: 2px solid transparentize($global-clr-dark-blue, 0.95);
+        border-right: 2px solid $global-border-light-gray-opacity;
       }
 
       .smallnewsbox{

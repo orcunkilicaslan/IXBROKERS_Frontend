@@ -236,7 +236,7 @@
 
         .btn-light{
           background-color: $global-clr-white;
-          border-color: $global-clr-soft-gray;
+          border-color: $global-border-light-gray;
           @include transition-multiple(background-color 0.15s ease-in-out);
 
           &:hover{
@@ -265,6 +265,7 @@
     }
 
     .boxcontent{
+      color: $global-clr-text-light;
       background-color: $global-clr-white;
 
       &-head{
@@ -411,9 +412,14 @@
         overflow: hidden;
 
         h3{
+          color: $global-clr-text-dark;
           font-size: 24px;
           font-weight: 700;
           margin-bottom: 10px;
+        }
+
+        p{
+          color: $global-clr-text-light;
         }
 
         .btn{
@@ -433,13 +439,13 @@
             .owl-dot{
               padding: 4px !important;
               background-color: $global-clr-white !important;
-              border: 2px solid $global-border-light-gray-opacity;
+              border: 2px solid $global-border-light-gray;
               @include border-radius(25px);
               margin: 2px !important;
               @include transition-multiple(background-color 0.3s ease-in-out, border 0.3s ease-in-out !important);
 
               span{
-                background-color: $global-clr-soft-gray !important;
+                background-color: darken($global-border-light-gray, 20%) !important;
                 width: 10px !important;
                 height: 10px !important;
                 margin: 0 !important;
@@ -466,12 +472,14 @@
           overflow: hidden;
 
           h4{
+            color: $global-clr-text-dark;
             font-size: 22px;
             font-weight: 700;
             margin-bottom: 10px;
           }
 
           p{
+            color: $global-clr-text-light;
             font-size: 18px;
           }
 
@@ -510,7 +518,7 @@
       width: 5000px;
       height: 100%;
       @include border-radius(4px);
-      @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+      @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
       position: absolute;
       top: 0;
     }
@@ -576,7 +584,7 @@
         min-height: 350px;
         margin: 0 335px;
         padding: 60px 50px 30px;
-        @include box-shadow(0 0 0 2px transparentize($global-clr-dark-blue, 0.95));
+        @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
         @include border-radius(4px);
         position: relative;
         z-index: 1;
@@ -654,7 +662,7 @@
 
         .startaccountbtns{
           margin-top: 30px;
-          border-top: 2px solid transparentize($global-clr-dark-blue, 0.95);
+          border-top: 2px solid $global-border-light-gray-opacity;
           padding-top: 30px;
 
           .btn{
