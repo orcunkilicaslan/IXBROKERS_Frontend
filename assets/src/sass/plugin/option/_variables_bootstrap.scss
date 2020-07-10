@@ -229,7 +229,7 @@ $bootstrap-table-color:                                                 $bootstr
 $bootstrap-table-bg:                                                    null;
 $bootstrap-table-accent-bg:                                             $global-border-light-gray-opacity;
 $bootstrap-table-hover-color:                                           $bootstrap-table-color;
-$bootstrap-table-hover-bg:                                              rgba($bootstrap-black, .075);
+$bootstrap-table-hover-bg:                                              $global-border-light-gray;
 $bootstrap-table-active-bg:                                             $bootstrap-table-hover-bg;
 $bootstrap-table-border-width:                                          $bootstrap-border-width;
 $bootstrap-table-border-color:                                          $global-border-light-gray;
@@ -237,10 +237,10 @@ $bootstrap-table-head-bg:                                               $bootstr
 $bootstrap-table-head-color:                                            $bootstrap-gray-700;
 $bootstrap-table-dark-color:                                            $bootstrap-white;
 $bootstrap-table-dark-bg:                                               $bootstrap-gray-800;
-$bootstrap-table-dark-accent-bg:                                        rgba($bootstrap-white, .05);
+$bootstrap-table-dark-accent-bg:                                        lighten($bootstrap-table-dark-bg, 2%);
 $bootstrap-table-dark-hover-color:                                      $bootstrap-table-dark-color;
-$bootstrap-table-dark-hover-bg:                                         rgba($bootstrap-white, .075);
-$bootstrap-table-dark-border-color:                                     lighten($bootstrap-table-dark-bg, 7.5%);
+$bootstrap-table-dark-hover-bg:                                         lighten($bootstrap-table-dark-bg, 5%);
+$bootstrap-table-dark-border-color:                                     lighten($bootstrap-table-dark-bg, 5%);
 $bootstrap-table-striped-order:                                         odd;
 $bootstrap-table-caption-color:                                         $bootstrap-gray-600;
 $bootstrap-table-bg-level:                                              -9;

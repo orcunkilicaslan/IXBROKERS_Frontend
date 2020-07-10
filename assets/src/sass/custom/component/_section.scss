@@ -1,185 +1,6 @@
 
 .component{
 
-  &-sitefeatureicons{
-    @include flexbox-display-flex();
-    @include flexbox-justify-content(space-between);
-    text-align: center;
-
-    .owl {
-      &-stage {
-        &-outer {
-          @include BootstrapMinWidthResponsive(lg){
-            overflow: visible !important;
-          }
-        }
-      }
-    }
-
-    li{
-      padding: 15px;
-
-      &:hover{
-        .boxcontent-title::before{
-          border-top-color: $global-clr-red;
-        }
-      }
-    }
-
-    i[class*="icons"]{
-      display: block;
-      margin: auto;
-    }
-
-    .boxcontent{
-      &-title{
-        font-family: $global-font-family-default !important;
-        font-size: 16px;
-        line-height: 1.25;
-        padding-top: 35px;
-        position: relative;
-
-        &::before{
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 0;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-top: 10px solid $global-clr-soft-black;
-          @include border-radius(3px);
-          top: 8px;
-          left: 50%;
-          @include translateX(-50%);
-          @include transition-multiple(border-color 0.3s ease-in-out);
-        }
-
-        &.darkbg::before{
-          border-top-color: $global-clr-white;
-        }
-
-        span{display: block;}
-      }
-    }
-  }
-
-  &-sitefeatureboxs{
-    @include flexbox-display-flex();
-    @include flexbox-justify-content(space-between);
-    text-align: center;
-
-    .owl {
-      &-stage {
-        &-outer {
-          @include BootstrapMinWidthResponsive(lg){
-            overflow: visible !important;
-          }
-        }
-      }
-    }
-
-    li{
-      background-color: $global-clr-white;
-      padding: 5px 45px 45px;
-      @include border-radius(4px);
-      @include box-shadow(0 0 20px transparentize($global-clr-dark-black, 0.90));
-      @include transition-multiple(box-shadow 0.3s ease-in-out);
-
-      &:hover{
-        @include box-shadow(0 0 30px transparentize($global-clr-dark-black, 0.80));
-
-        .boxicons{
-          i[class*="icons-out"]{
-            transform: rotate(30deg) scale(1.15);
-          }
-        }
-      }
-    }
-
-    .boxicons{
-      position: relative;
-      width: 200px;
-      height: 200px;
-      margin: auto;
-
-      i[class*="icons"]{
-        position: absolute;
-        top: 0;
-        display: block;
-        @include transition-multiple(transform 0.5s ease-in-out);
-      }
-      i[class*="icons-in"]{
-        z-index: 1;
-      }
-    }
-
-    .boxcontent{
-      margin-bottom: 15px;
-
-      &-title{
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 1.2;
-        position: relative;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-
-        &::before{
-          content: "";
-          position: absolute;
-          width: 30px;
-          height: 2px;
-          background-color: $global-clr-soft-black;
-          bottom: 0;
-          left: 50%;
-          @include translateX(-50%);
-        }
-      }
-
-      &-desc{
-        font-size: 18px;
-        font-weight: normal;
-        line-height: 1.22;
-      }
-
-      &-more{
-        color: $global-clr-red;
-        font-size: 18px;
-        font-weight: 500;
-      }
-    }
-
-    .featuresbox{
-      &starters{
-        .boxcontent-more{
-          color: $global-clr-green;
-          svg{
-            line,
-            path{stroke: $global-clr-green !important;}
-          }
-        }
-      }
-      &trader{
-        .boxcontent-more{
-          color: $global-clr-soft-purple;
-          svg{
-            line,
-            path{stroke: $global-clr-soft-purple !important;}
-          }
-        }
-      }
-      &follow{
-        .boxcontent-more{
-          color: $global-clr-red;
-          svg{
-            line,
-            path{stroke: $global-clr-red !important;}
-          }
-        }
-      }
-    }
-  }
-
   &-summarytable{
     .summarytable{
 
@@ -250,33 +71,13 @@
   }
 
   &-siteaccounttypes{
-    @include flexbox-display-flex();
-    @include flexbox-flex-wrap(wrap);
-    margin-left: -40px;
-    margin-right: -40px;
 
-    li{
-      @include flexbox-flex-basis(0);
-      @include flexbox-flex-grow(1);
-      min-width: 0;
-      max-width: 100%;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
+    .accounttypes{
 
-    .boxcontent{
-      color: $global-clr-text-light;
-      background-color: $global-clr-white;
-
-      &-head{
+      &-icons{
         @include flexbox-display-flex();
-        @include flexbox-justify-content(space-between);
 
-        &-icons{
-          @include flexbox-display-flex();
-        }
-
-        &-iconstexttypes{
+        &-text{
           color: $global-clr-dark-black;
           font-family: $global-font-family-cocogothic-heavy !important;
           height: 32px;
@@ -284,15 +85,6 @@
           font-style: normal;
           line-height: 1;
           display: block;
-        }
-
-        &-title{
-          font-size: 20px;
-          font-weight: normal;
-          line-height: 1;
-          padding: 0;
-          margin: 0;
-          position: relative;
         }
 
         &-pulse{
@@ -354,6 +146,47 @@
         }
       }
 
+      &-title{
+        color: $global-clr-text-light;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+        position: relative;
+      }
+
+    }
+
+    .accounttypesbox{
+      @include flexbox-display-flex();
+      @include flexbox-flex-wrap(wrap);
+      margin-left: -40px;
+      margin-right: -40px;
+
+      > li{
+        @include flexbox-flex-basis(0);
+        @include flexbox-flex-grow(1);
+        min-width: 0;
+        max-width: 100%;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        @include border-radius(6px);
+
+        &:nth-of-type(even){
+          @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+        }
+      }
+
+      &-content{}
+
+      &-head{
+        @include flexbox-display-flex();
+        @include flexbox-justify-content(space-between);
+      }
+
       &-list{
         font-size: 18px;
         line-height: 1.2;
@@ -382,11 +215,74 @@
         }
       }
 
-      &-desc{
-        font-size: 16px;
-        line-height: 1.25;
-      }
+      &-btn{}
+
     }
+
+    .accounttypestable{
+      margin: 0;
+
+      thead tr th,
+      tbody tr td{
+        border-left: 1px solid transparentize($global-border-light-gray, 0.35);
+        padding: 15px;
+        line-height: 1.25;
+
+        &:first-child{
+          border-left: none;
+          font-weight: 500;
+        }
+      }
+
+      thead{
+        tr{
+          th{
+            vertical-align: top;
+
+            .accounttypes-title{
+              margin-top: 10px;
+            }
+
+            &.firsttitle{
+              .accounttypes-title{
+                font-family: $global-font-family-cocogothic-heavy !important;
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 5px;
+
+                span{
+                  font-size: 28px;
+                  display: block;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      tbody{
+        tr{
+
+          &:nth-of-type(odd){
+            @include border-radius(6px);
+
+            td{
+              &:first-child{
+                @include border-radii(6px,0,0,6px);
+              }
+              &:last-child{
+                @include border-radii(0,6px,6px,0);
+              }
+            }
+          }
+
+          td{}
+        }
+      }
+
+    }
+
   }
 
   &-newsbox{
