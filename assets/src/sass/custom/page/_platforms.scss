@@ -7,9 +7,12 @@
     padding: 70px 0;
 
     &-box{
-      padding: 50px;
+      padding: 40px 50px;
       @include border-radius(4px);
       @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+      margin-top: 20px;
+
+      &:first-child{margin-top: 0}
 
       > .row{
         @include flexbox-align-items(center);

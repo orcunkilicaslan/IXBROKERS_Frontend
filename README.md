@@ -11,6 +11,11 @@
  - [24_Products_Stocks](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/24_Products_Stocks.html)
  - [25_Products_Crypto](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/25_Products_Crypto.html)
  - [31_Platforms_MT4_Desktop](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/31_Platforms_MT4_Desktop.html)
+ - [32_Platforms_MT4_Web](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/32_Platforms_MT4_Web.html)
+ - [33_Platforms_MT4_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/33_Platforms_MT4_Mobile.html)
+ - [41_Platforms_MT5_Desktop](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/41_Platforms_MT5_Desktop.html)
+ - [42_Platforms_MT5_Web](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/42_Platforms_MT5_Web.html)
+ - [43_Platforms_MT5_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/43_Platforms_MT5_Mobile.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/99_Component_Form_UI.html)
    
    
