@@ -544,6 +544,7 @@
 
 
   &-call2action{
+    background-color: $global-border-light-gray-opacity;
     padding: 80px 0;
 
 
@@ -554,7 +555,9 @@
 
       &-text{
         padding-right: 30px;
-        .sitetitle-xl{}
+        .sitetitle-xl{
+          padding-top: 40px;
+        }
 
         .sitecontent-desc{
           padding-top: 40px;
@@ -580,7 +583,10 @@
         }
 
         .siteformui{
-          padding-left: 30px;
+          background-color: $global-clr-white;
+          padding: 40px;
+          @include border-radius(6px);
+          @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
 
           #{$formclassname}-control{
             &[rows]{
