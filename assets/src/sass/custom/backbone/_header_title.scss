@@ -59,74 +59,11 @@
     &-account{
       width: 320px;
 
-      &-btns{
-        margin-top: 30px;
-
-        .btn{
-          color: $global-clr-white;
-          display: block;
-          height: auto;
-          font-size: 18px;
-          text-align: left;
-          padding: 10px 15px;
-          margin: 10px 0;
-          position: relative;
-          border: none;
-          @include border-radius(2px);
-
-          &:first-child{
-            margin-top: 0;
-          }
-
-          &:last-child{
-            margin-bottom: 0;
-          }
-
-          span, small{
-            display: block;
-            line-height: 1.25;
-          }
-
-          span{
-            font-family: $global-font-family-cocogothic-heavy !important;
-            font-size: 22px;
-            font-weight: 500;
-            position: relative;
-            top: 4px;
-          }
-
-          small{
-            font-weight: 300;
-          }
-
-          .rightarrow{
-            position: absolute;
-            right: 15px;
-            top: calc(50% - 1px);
-            @include translateY(-50%);
-
-            svg{
-              fill: $global-clr-white;
-              height: 16px;
-              opacity: 0.75;
-              @include transition-multiple(opacity 0.15s ease-in-out);
-            }
-          }
-
-          &:hover{
-            .rightarrow svg{
-              opacity: 1;
-            }
-          }
-        }
+      .openaccountbox{
+        margin-top: 15px;
       }
 
-      &-risk{
-        display: block;
-        font-size: 14px;
-        font-weight: 300;
-        margin-top: 10px;
-      }
+      .openaccountbtns{}
     }
   }
 

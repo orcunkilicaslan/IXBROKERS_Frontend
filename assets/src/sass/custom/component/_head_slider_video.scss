@@ -210,93 +210,18 @@
     height: 100%;
     width: 460px;
 
-    .startaccountbox{
+    .openaccountbox{
       background-color: transparentize($global-clr-white, 0.98);
       border: 1px solid transparentize($global-clr-white, 0.75);
       padding: 30px 25px;
       text-align: center;
       @include border-radius(3px);
       @include backdrop-filter-multiple(blur(5px));
+    }
 
-
-      &-title{
-        font-family: $global-font-family-cocogothic-heavy !important;
-        font-size: 20px;
-        line-height: 1.2;
-      }
-
-      &-desc{
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.2;
-        margin-top: 5px;
-      }
-
-      &-links{
+    .openaccountbtns{
+      .infolink{
         color: $global-clr-green;
-        font-size: 16px;
-      }
-
-      &-btns{
-        margin: 15px 0;
-
-        .btn{
-          color: $global-clr-white;
-          display: block;
-          height: auto;
-          font-size: 18px;
-          text-align: left;
-          padding: 10px 15px;
-          margin: 10px 0;
-          position: relative;
-          border: none;
-          @include border-radius(2px);
-
-          &:first-child{
-            margin-top: 0;
-          }
-
-          &:last-child{
-            margin-bottom: 0;
-          }
-
-          span, small{
-            display: block;
-            line-height: 1.25;
-          }
-
-          span{
-            font-family: $global-font-family-cocogothic-heavy !important;
-            font-size: 22px;
-            font-weight: 500;
-            position: relative;
-            top: 4px;
-          }
-
-          small{
-            font-weight: 300;
-          }
-
-          .rightarrow{
-            position: absolute;
-            right: 15px;
-            top: calc(50% - 1px);
-            @include translateY(-50%);
-
-            svg{
-              fill: $global-clr-white;
-              height: 16px;
-              opacity: 0.75;
-              @include transition-multiple(opacity 0.15s ease-in-out);
-            }
-          }
-
-          &:hover{
-            .rightarrow svg{
-              opacity: 1;
-            }
-          }
-        }
       }
     }
   }

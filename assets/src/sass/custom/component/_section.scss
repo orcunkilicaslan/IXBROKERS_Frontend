@@ -489,132 +489,18 @@
 
         &-head{}
 
-        &-btns{
-          @include flexbox-display-flex();
+        .platappdownbtns{
           @include flexbox-justify-content(center);
           margin-top: 30px;
-
-          .btn{
-            margin: 0 5px;
-
-            &-platdown{
-              @include flexbox-display-flex();
-              @include flexbox-align-items(center);
-              background-color: $global-clr-white;
-              height: auto;
-              padding: 8px 10px;
-              border: 1px solid $global-clr-green;
-              @include transition-multiple(none);
-
-              i.platdownicon{
-                width: 34px;
-                height: 34px;
-
-                svg{
-                  fill: $global-clr-text-dark;
-                }
-              }
-
-              p{
-                line-height: 1.2;
-                text-align: left;
-                padding: 0 5px;
-
-                small, strong{
-                  display: block;
-                }
-
-                small{
-                  color: $global-clr-green;
-                  font-size: 11px;
-                  font-weight: 500;
-                }
-
-                strong{
-                  font-size: 16px;
-                }
-
-              }
-
-              &:hover{
-                background-color: $global-clr-green;
-                border-color: $global-clr-green;
-
-                i.platdownicon{
-                  svg{
-                    fill: $global-clr-white;
-                  }
-                }
-
-                p{
-                  small, strong{
-                    color: $global-clr-white;
-                  }
-                }
-              }
-
-            }
-          }
         }
 
-        .startaccountbtns{
+        .openaccountbtns{
           margin-top: 30px;
           border-top: 2px solid $global-border-light-gray-opacity;
           padding-top: 30px;
 
-          .btn{
-            color: $global-clr-white;
-            display: block;
-            height: auto;
-            font-size: 18px;
-            text-align: left;
-            padding: 10px 15px;
-            position: relative;
-            border: none;
-            @include border-radius(2px);
-
-            span, small{
-              display: block;
-              line-height: 1.25;
-            }
-
-            span{
-              font-family: $global-font-family-cocogothic-heavy !important;
-              font-size: 22px;
-              font-weight: 500;
-              position: relative;
-              top: 4px;
-            }
-
-            small{
-              font-weight: 300;
-            }
-
-            .rightarrow{
-              position: absolute;
-              right: 15px;
-              top: calc(50% - 1px);
-              @include translateY(-50%);
-
-              svg{
-                fill: $global-clr-white;
-                height: 16px;
-                opacity: 0.75;
-                @include transition-multiple(opacity 0.15s ease-in-out);
-              }
-            }
-
-            &:hover{
-              .rightarrow svg{
-                opacity: 1;
-              }
-            }
-          }
-
-          .startaccountinfolinks{
-            color: $global-clr-text-dark;
-            font-size: 16px;
-            margin-top: 10px;
+          .infolink{
+            margin-top: 15px;
           }
         }
       }
@@ -631,5 +517,28 @@
 
     }
 
+  }
+
+  &-aboutus{
+    padding-top: 60px;
+
+    > .container .row{
+      @include flexbox-align-items(center);
+    }
+
+    .aboutustxt{
+
+      .sitetitle{
+        height: 100%;
+        padding-right: 50px;
+      }
+
+      .openaccountbtns{
+        max-width: 600px;
+        margin-top: 50px;
+      }
+    }
+
+    .aboutusimg{}
   }
 }

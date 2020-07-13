@@ -6,83 +6,18 @@
   &-area{
     padding: 70px 0;
 
-    > .row{
-      @include flexbox-align-items(center);
+    &-box{
+      padding: 50px;
+      @include border-radius(4px);
+      @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+
+      > .row{
+        @include flexbox-align-items(center);
+      }
     }
 
-    &-downloadbtns{
+    .platappdownbtns{
       margin-top: 20px;
-
-      .btn{
-        margin: 0 5px;
-        width: 300px;
-
-        &:first-child{
-          margin-left: 0;
-        }
-
-        &:last-child{
-          margin-right: 0;
-        }
-
-        &-platdown{
-          @include flexbox-display-flex();
-          @include flexbox-align-items(center);
-          background-color: $global-clr-white;
-          height: auto;
-          padding: 8px 10px;
-          border: 1px solid $global-clr-green;
-          @include transition-multiple(none);
-
-          i.platdownicon{
-            width: 34px;
-            height: 34px;
-
-            svg{
-              fill: $global-clr-text-dark;
-            }
-          }
-
-          p{
-            line-height: 1.2;
-            text-align: left;
-            padding: 0 5px;
-
-            small, strong{
-              display: block;
-            }
-
-            small{
-              color: $global-clr-green;
-              font-size: 11px;
-              font-weight: 500;
-            }
-
-            strong{
-              font-size: 16px;
-            }
-
-          }
-
-          &:hover{
-            background-color: $global-clr-green;
-            border-color: $global-clr-green;
-
-            i.platdownicon{
-              svg{
-                fill: $global-clr-white;
-              }
-            }
-
-            p{
-              small, strong{
-                color: $global-clr-white;
-              }
-            }
-          }
-
-        }
-      }
     }
   }
 
