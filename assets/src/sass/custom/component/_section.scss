@@ -520,7 +520,7 @@
   }
 
   &-aboutus{
-    padding-top: 60px;
+    padding-top: 30px;
 
     > .container .row{
       @include flexbox-align-items(center);
@@ -541,7 +541,6 @@
 
     .aboutusimg{}
   }
-
 
   &-call2action{
     background-color: $global-border-light-gray-opacity;
