@@ -18,6 +18,7 @@
  - [43_Platforms_MT5_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/43_Platforms_MT5_Mobile.html)
  - [71_Partnership_Affiliate_IB](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/71_Partnership_Affiliate_IB.html)
  - [72_Partnership_Affiliate_Partner](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/72_Partnership_Affiliate_Partner.html)
+ - [81_Company](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/81_Company.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/99_Component_Form_UI.html)
    
    
