@@ -26,6 +26,10 @@
   &-sign{
     padding: 160px 0;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 110px 0;
+    }
+
     > .container .row{
       position: relative;
       z-index: 1;
@@ -58,16 +62,6 @@
     padding: 40px 35px;
     @include border-radius(3px);
 
-    @include BootstrapMaxWidthResponsive(md){
-      padding: 30px;
-    }
-    @include BootstrapMaxWidthResponsive(sm){
-      padding: 25px;
-    }
-    @include BootstrapMaxWidthResponsive(xm){
-      padding: 20px;
-    }
-
     &-head{
       text-align: center;
       margin-bottom: 20px;
@@ -77,6 +71,10 @@
         font-family: $global-font-family-cocogothic-heavy !important;
         font-size: 24px;
         line-height: 1.2;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 22px;
+        }
       }
 
       &-desc{
@@ -85,6 +83,10 @@
         font-weight: 400;
         line-height: 1.2;
         margin-top: 5px;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 16px;
+        }
       }
     }
 

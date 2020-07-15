@@ -5,6 +5,10 @@
 
     .partners-feature{
       padding: 60px 0;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 40px 0;
+      }
     }
   }
 
@@ -16,6 +20,10 @@
     padding: 60px 40px;
     @include border-radius(6px);
     @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 40px 30px;
+    }
 
     &-wrp{
       max-width: 800px;
@@ -31,6 +39,10 @@
         font-family: $global-font-family-cocogothic-heavy !important;
         font-size: 30px;
         line-height: 1.2;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 26px;
+        }
       }
 
       &-desc{
@@ -39,6 +51,10 @@
         font-weight: 400;
         line-height: 1.2;
         margin-top: 5px;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 18px;
+        }
       }
     }
 
@@ -91,8 +107,16 @@
     padding: 60px 0;
     height: 100%;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 40px 0;
+    }
+
     .sitetitle-xl{
       margin-bottom: 50px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        margin-bottom: 30px;
+      }
     }
 
     &-list{
@@ -100,11 +124,22 @@
       @include flexbox-flex-wrap(wrap);
       //margin-left: -15px;
       //margin-right: -15px;
+      padding: 40px;
+      border: 1px dotted $global-border-light-gray-focus;
+      @include border-radius(6px);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 20px;
+      }
     }
 
     &-box{
       padding: 15px;
       border: 1px dotted $global-border-light-gray-focus;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 10px;
+      }
 
       @include BootstrapMinWidthResponsive(lg){
         @include flexbox-flex(0 0 calc(100%/3));
@@ -128,16 +163,29 @@
       padding: 10px 15px;
       height: 100%;
 
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 5px 10px;
+      }
+
       .icons-sprite{
         display: block;
         margin: 0 auto 15px;
         @include scale(0.75);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          @include scale(0.6);
+          margin: 0 auto;
+        }
       }
 
       h4{
         color: $global-clr-text-light;
         font-size: 18px;
         line-height: 1.25;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 16px;
+        }
       }
     }
   }

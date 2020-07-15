@@ -85,6 +85,11 @@
           font-style: normal;
           line-height: 1;
           display: block;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            font-size: 38px;
+            height: 30px;
+          }
         }
 
         &-pulse{
@@ -154,6 +159,10 @@
         padding: 0;
         margin: 0;
         position: relative;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 18px;
+        }
       }
 
     }
@@ -169,11 +178,12 @@
         @include flexbox-flex-grow(1);
         min-width: 0;
         max-width: 100%;
-        padding-top: 50px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 50px 40px 40px;
         @include border-radius(6px);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          padding: 35px 30px 30px;
+        }
 
         &:nth-of-type(even){
           @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
@@ -194,10 +204,19 @@
         margin-top: 25px;
         min-height: 320px;
 
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 16px;
+          min-height: 250px;
+        }
+
         li{
           position: relative;
           padding-left: 15px;
           margin: 10px 0;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            margin: 8px 0;
+          }
 
           &:first-child{margin-top: 0;}
           &:last-child{margin-bottom: 0;}
@@ -222,11 +241,19 @@
     .accounttypestable{
       margin: 0;
 
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 15px;
+      }
+
       thead tr th,
       tbody tr td{
         border-left: 1px solid transparentize($global-border-light-gray, 0.35);
         padding: 15px;
         line-height: 1.25;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          padding: 12px;
+        }
 
         &:first-child{
           border-left: none;
@@ -250,10 +277,18 @@
                 font-weight: 700;
                 margin-top: 5px;
 
+                @include BootstrapMaxWidthResponsive(1k){
+                  font-size: 20px;
+                }
+
                 span{
                   font-size: 28px;
                   display: block;
                   margin-top: 5px;
+
+                  @include BootstrapMaxWidthResponsive(1k){
+                    font-size: 26px;
+                  }
                 }
               }
             }
@@ -291,6 +326,10 @@
       width: 100%;
       max-width: 640px;
 
+      @include BootstrapMaxWidthResponsive(1k){
+        max-width: 580px;
+      }
+
       &-videos{
         .pretty-embed img{
           @include border-radius(3px);
@@ -307,11 +346,19 @@
         height: 200px;
         overflow: hidden;
 
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 16px;
+        }
+
         h3{
           color: $global-clr-text-dark;
           font-size: 24px;
           font-weight: 700;
           margin-bottom: 10px;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            font-size: 22px;
+          }
         }
 
         p{
@@ -367,16 +414,28 @@
           line-height: 1.3;
           overflow: hidden;
 
+          @include BootstrapMaxWidthResponsive(1k){
+            height: 245px;
+          }
+
           h4{
             color: $global-clr-text-dark;
             font-size: 22px;
             font-weight: 700;
             margin-bottom: 10px;
+
+            @include BootstrapMaxWidthResponsive(1k){
+              font-size: 20px;
+            }
           }
 
           p{
             color: $global-clr-text-light;
             font-size: 18px;
+
+            @include BootstrapMaxWidthResponsive(1k){
+              font-size: 16px;
+            }
           }
 
         }
@@ -386,6 +445,10 @@
           @include flexbox-justify-content(space-between);
           margin-top: 5px;
           padding-bottom: 15px;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            margin-top: 15px;
+          }
 
           &-date{
             color: $global-clr-green;
@@ -419,12 +482,12 @@
       top: 0;
     }
 
-    &::before{
-      left: -5045px;
-    }
+    &::before{left: -5045px;}
+    &::after{right: -5045px;}
 
-    &::after{
-      right: -5045px;
+    @include BootstrapMaxWidthResponsive(1k){
+      &::before{left: -5020px;}
+      &::after{right: -5020px;}
     }
 
     .nav{
@@ -433,6 +496,10 @@
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 15px;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 28px;
+        }
       }
 
       &-mt{
@@ -441,6 +508,10 @@
         height: 100%;
         position: absolute;
         padding: 60px 0;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          padding: 40px 0;
+        }
 
         &-sub{
           @include flexbox-flex-direction(column);
@@ -484,6 +555,11 @@
         @include border-radius(4px);
         position: relative;
         z-index: 1;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          margin: 0 320px;
+          padding: 40px 30px 20px;
+        }
 
         &-content{}
 
@@ -539,13 +615,24 @@
       }
     }
 
-    .aboutusimg{}
+    .aboutusimg{
+      img{
+        max-width: 740px;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          max-width: 600px;
+        }
+      }
+    }
   }
 
   &-call2action{
     background-color: $global-border-light-gray-opacity;
     padding: 80px 0;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 50px 0;
+    }
 
     .call2actionform{
       color: $global-clr-dark-black;
@@ -586,6 +673,10 @@
           padding: 40px;
           @include border-radius(6px);
           @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+
+          @include BootstrapMaxWidthResponsive(1k){
+            padding: 30px;
+          }
 
           #{$formclassname}-control{
             &[rows]{

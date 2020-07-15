@@ -21,6 +21,10 @@
       @include border-radii(6px,6px,0,0);
       margin-bottom: 20px;
       overflow: hidden;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        margin-bottom: 15px;
+      }
     }
 
     &-item{
@@ -37,6 +41,10 @@
       border: none;
       border-bottom: 4px solid $global-border-light-gray;
       @include transition-multiple(background-color 0.15s ease-in-out, border-color 0.1s ease-in-out, color 0.15s ease-in-out);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 16px;
+      }
 
       &:hover{
         color: $global-clr-text-dark;

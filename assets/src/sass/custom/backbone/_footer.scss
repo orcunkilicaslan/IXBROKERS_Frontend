@@ -9,9 +9,19 @@
     .row{
       @include flexbox-align-items(center);
       padding: 23px 0;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 15px 0;
+      }
     }
 
-    &-logo{}
+    &-logo{
+      img{
+        @include BootstrapMaxWidthResponsive(1k){
+          width: 160px;
+        }
+      }
+    }
 
     &-social{
       .sociallist{
@@ -50,6 +60,10 @@
   &-navigation{
     padding: 60px 0;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 35px 0 40px;
+    }
+
     &-col{}
 
     h4, h5{
@@ -66,6 +80,10 @@
       font-size: 22px;
       margin-bottom: 10px;
 
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 20px;
+      }
+
       a{
         color: $global-clr-white;
         @include transition-multiple(color 0.15s ease-in-out);
@@ -81,6 +99,10 @@
       font-size: 16px;
       margin-bottom: 5px;
 
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 15px;
+      }
+
       a{
         color: $global-clr-green;
       }
@@ -92,6 +114,10 @@
         font-size: 16px;
         line-height: 1.2;
         margin: 5px 0;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 15px;
+        }
 
         &:first-child{margin-top: 0;}
         &:last-child{margin-bottom: 0;}
@@ -114,6 +140,10 @@
       padding: 15px;
       border: 1px solid transparentize($global-clr-green, 0.5);
       @include border-radius(3px);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 10px;
+      }
     }
 
     h6{
@@ -121,12 +151,20 @@
       font-size: 16px;
       line-height: 1.2;
       margin-bottom: 5px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 15px;
+      }
     }
 
     p{
       font-size: 15px;
       line-height: 1.25;
       margin-bottom: 5px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 14px;
+      }
 
       &:last-child{margin-bottom: 0;}
 

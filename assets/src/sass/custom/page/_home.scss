@@ -5,9 +5,17 @@
     padding: 80px 0;
     position: relative;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 60px 0;
+    }
+
     .component-siteaccounttypes{
       margin-top: 80px;
       position: relative;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        margin-top: 60px;
+      }
     }
   }
 
@@ -28,6 +36,10 @@
     padding: 60px 0;
     overflow: hidden;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 50px 0;
+    }
+
     .sitetitle-xl{
       padding-bottom: 50px;
     }
@@ -37,11 +49,19 @@
   &-news{
     padding: 80px 0;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 50px 0;
+    }
+
     &-box{
       background-color: $global-clr-white;
       padding: 50px;
       @include border-radius(4px);
       @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 40px;
+      }
 
       .sitetitle-xl{
         padding-bottom: 40px;

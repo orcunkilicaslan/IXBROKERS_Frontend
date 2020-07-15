@@ -5,8 +5,10 @@
   @include flexbox-flex-direction(column);
   color: $global-clr-white;
   background-color: transparentize($global-clr-black, 0.05);
-  height: 100%;
+  //height: 100%;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 
   @include BootstrapMinWidthResponsive(1k){
     height: calc(100vh - 275px);
@@ -22,7 +24,7 @@
       z-index: 1;
 
       @include BootstrapMaxWidthResponsive(1k){
-        padding-top: 240px;
+        padding-top: 300px;
         padding-bottom: 35px;
       }
 
@@ -82,6 +84,10 @@
         left: 0;
         top: calc(50% + 75px);
         @include translateY(-50%);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          top: calc(50% + 70px);
+        }
 
         button[class*='owl-']{
           width: 40px;
@@ -192,7 +198,7 @@
           position: relative;
 
           @include BootstrapMaxWidthResponsive(1k){
-            font-size: 42px;
+            font-size: 38px;
           }
         }
 
@@ -201,6 +207,10 @@
           font-weight: 300;
           line-height: 1.2;
           margin-top: 10px;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            font-size: 18px;
+          }
         }
       }
     }
@@ -209,6 +219,10 @@
   &-account{
     height: 100%;
     width: 460px;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      width: 420px;
+    }
 
     .openaccountbox{
       background-color: transparentize($global-clr-white, 0.98);
@@ -288,6 +302,10 @@
     i[class*="icons"]{
       display: block;
       margin: auto;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        @include scale(0.8);
+      }
     }
 
     .boxcontent-title{
@@ -297,6 +315,10 @@
       line-height: 1.2;
       position: relative;
       @include transition-multiple(color 0.3s ease-in-out);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 16px;
+      }
 
       span{display: block;}
     }

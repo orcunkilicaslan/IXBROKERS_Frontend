@@ -19,9 +19,12 @@
     position: relative;
 
     &-top{
-      background-color: transparentize($global-clr-dark-black, 0.2);
+      background-color: transparentize($global-clr-dark-black, 0.5);
       padding: 15px 0;
-      //@include transition-multiple(padding 0.5s ease-in-out);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 12px 0;
+      }
 
       &-row{
         @include flexbox-align-items(center);
@@ -46,6 +49,11 @@
     &-link{
       width: 175px;
       height: 25px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        width: 160px;
+        height: 24px;
+      }
     }
   }
 
@@ -78,6 +86,12 @@
         @include border-radius(50%);
         margin: 0 5px;
         @include transition-multiple(all 0.15s ease-in-out);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          width: 28px;
+          height: 28px;
+          margin: 0 3px;
+        }
 
         &:first-child{margin-left: 0}
         &:last-child{margin-right: 0}
@@ -120,6 +134,11 @@
         height: 36px;
         font-size: 16px;
         line-height: 1.4;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 15px;
+          line-height: 1.5;
+        }
       }
     }
   }

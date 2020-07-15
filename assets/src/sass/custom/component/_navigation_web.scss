@@ -12,6 +12,9 @@
     line-height: 1;
     padding:0;
 
+    @include BootstrapMaxWidthResponsive(1k){
+      font-size: 17px;
+    }
     @include BootstrapMaxWidthResponsive(lg){
       background-color: darken($global-clr-dark-black, 5%);
     }
@@ -108,6 +111,10 @@
           @include transition-multiple(top 0.3s ease-in-out);
           @include backdrop-filter-multiple(blur(5px));
 
+          @include BootstrapMaxWidthResponsive(1k){
+            padding-top: 110px;
+          }
+
           a{
             color: lighten($global-clr-text-light, 30%);
             @include transition-multiple(color 0.15s ease-in-out);
@@ -122,6 +129,11 @@
           .menunav{
             font-size: 16px;
             line-height: 1.8;
+
+            @include BootstrapMaxWidthResponsive(1k){
+              font-size: 15px;
+              line-height: 1.6;
+            }
 
             ul{
               li{
@@ -168,6 +180,10 @@
               width: auto;
               max-width: 100%;
               padding: 10px 0 60px;
+
+              @include BootstrapMaxWidthResponsive(1k){
+                padding-bottom: 30px;
+              }
             }
           }
 
@@ -197,6 +213,10 @@
                 font-weight: 500;
                 line-height: 1.6;
                 text-align: left;
+
+                @include BootstrapMaxWidthResponsive(1k){
+                  font-size: 15px;
+                }
               }
             }
 

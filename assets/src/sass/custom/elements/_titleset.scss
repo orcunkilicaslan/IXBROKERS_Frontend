@@ -25,12 +25,22 @@
     h1,h2,h3{font-size: 40px; font-weight: 700;}
     p{font-size: 20px; line-height: 1.2;}
     h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 10px;}
+
+    @include BootstrapMaxWidthResponsive(1k){
+      h1,h2,h3{font-size: 34px;}
+      p{font-size: 18px;}
+    }
   }
 
   &-md{
     h1,h2,h3{font-size: 32px; font-weight: 700;}
     p{font-size: 18px; line-height: 1.2;}
     h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 10px;}
+
+    @include BootstrapMaxWidthResponsive(1k){
+      h1,h2,h3{font-size: 28px;}
+      p{font-size: 16px;}
+    }
   }
 
   &-left{text-align: left;}
@@ -51,6 +61,11 @@
   &-width1000{max-width: 1000px;}
   &-width1100{max-width: 1100px;}
   &-width1200{max-width: 1200px;}
+
+  @include BootstrapMaxWidthResponsive(1k){
+    &-width900{max-width: 750px;}
+  }
+
 }
 
 @media print{
