@@ -68,6 +68,15 @@
 
 }
 
+.Firefox{
+  .sitetitle{
+    &-xl,
+    &-md{
+      h1,h2,h3{font-weight: 500 !important;}
+    }
+  }
+}
+
 @media print{
   .sitetitle *{color: $global-clr-text-dark !important;}
 }

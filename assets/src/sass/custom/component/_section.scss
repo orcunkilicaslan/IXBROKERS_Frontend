@@ -699,3 +699,59 @@
     }
   }
 }
+
+.Firefox{
+  .component{
+
+    &-siteaccounttypes{
+      .accounttypestable{
+        thead{
+          tr{
+            th{
+              &.firsttitle{
+                .accounttypes-title{
+                  font-weight: 500 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-newsbox{
+      .bignewsbox{
+        &-content{
+          h3{
+            font-weight: 500 !important;
+          }
+        }
+      }
+      .smallnewsbox{
+        .listnews{
+
+          &-title{
+            h4{
+              font-weight: 500 !important;
+            }
+          }
+
+          &-info{
+            &-more{
+              font-weight: 500 !important;
+            }
+          }
+        }
+      }
+    }
+
+    &-platforms{
+      .nav{
+        &-head{
+          font-weight: 500 !important;
+        }
+      }
+    }
+
+  }
+}
