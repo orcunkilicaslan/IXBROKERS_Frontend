@@ -13,15 +13,14 @@
     h1{font-size: 36px; line-height: 1.2;}
     h2{font-size: 32px; line-height: 1.2;}
     h3{font-size: 28px; line-height: 1.2;}
-    h4{font-size: 22px; line-height: 1.2;}
-    h5{font-size: 18px;}
-    h6{font-size: 16px;}
-    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 15px;}
-    h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul{margin-top: 5px;}
+    h4{font-size: 24px; line-height: 1.2;}
+    h5{font-size: 20px;}
+    h6{font-size: 18px;}
+    h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 10px;} h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul{margin-top: 5px;}
+    p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
+    p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
 
-    p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
-    p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 30px;}
-    p+p,p+ul,p+ol{margin-top: 15px;}
+    p+p,p+ul,p+ol,ul+p,ol+p{margin-top: 10px;}
     p, ul, ol{font-size: 18px; font-weight: normal; line-height: 1.4;}
     ul > li, ol > li{/*margin-bottom: 15px;*/}
     ul > li:last-child, ol > li:last-child{margin-bottom: 0;}
@@ -33,24 +32,12 @@
       h3{font-size: 26px;}
       h4{font-size: 20px;}
       p, ul, ol{font-size: 16px;}
-      p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 20px;}
-      p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 20px;}
-    }
-    @include BootstrapMaxWidthResponsive(lg){
-      h2{font-size: 26px;}
-      h3{font-size: 24px;}
-      h4{font-size: 18px;}
-      p, ul, ol{font-size: 14px;}
-      p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 15px;}
-      p+h1,p+h2,p+h3,p+h4,p+h5,p+h6,ul+h1,ul+h2,ul+h3,ul+h4,ul+h5,ul+h6{margin-top: 15px;}
-    }
-    @include BootstrapMaxWidthResponsive(md){
-      h2{font-size: 24px;}
-      h3{font-size: 22px;}
-      h4{font-size: 16px;}
+      p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
+      p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
     }
 
     ul.ullist{
+
       li{
         position: relative;
         padding-left: 15px;
@@ -63,6 +50,10 @@
           background-size: contain;
           left: 0;
         }
+      }
+
+      p{
+        padding-left: 15px;
       }
 
       &-dotted{

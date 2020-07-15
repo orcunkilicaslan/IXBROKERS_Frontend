@@ -10,6 +10,7 @@
  - [23_Products_CFD](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/23_Products_CFD.html)
  - [24_Products_Stocks](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/24_Products_Stocks.html)
  - [25_Products_Crypto](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/25_Products_Crypto.html)
+ - [26_Products_Commodities](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/26_Products_Commodities.html)
  - [31_Platforms_MT4_Desktop](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/31_Platforms_MT4_Desktop.html)
  - [32_Platforms_MT4_Web](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/32_Platforms_MT4_Web.html)
  - [33_Platforms_MT4_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/33_Platforms_MT4_Mobile.html)
@@ -19,8 +20,9 @@
  - [71_Partnership_Affiliate_IB](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/71_Partnership_Affiliate_IB.html)
  - [72_Partnership_Affiliate_Partner](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/72_Partnership_Affiliate_Partner.html)
  - [81_Company](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/81_Company.html)
- - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/99_Component_Form_UI.html)
-   
+ - [91_Legal_Terms_And_Conditions](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/91_Legal_Terms_And_Conditions.html)
+ - [92_Legal_Privacy_Policy](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/92_Legal_Privacy_Policy.html)
+ - [93_Legal_Cookie_Policy](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/93_Legal_Cookie_Policy.html)
    
 
 # NodeJS Kurulumu
