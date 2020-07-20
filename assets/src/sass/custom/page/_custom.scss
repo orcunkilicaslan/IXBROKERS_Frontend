@@ -264,6 +264,19 @@
 }
 
 .Firefox{
+
+  .platappdownbtns{
+    .btn{
+      &-platdown{
+        p{
+          strong{
+            font-weight: 500 !important;
+          }
+        }
+      }
+    }
+  }
+
   .sectionfeaturebox{
     &-icons{
       font-weight: 500 !important;

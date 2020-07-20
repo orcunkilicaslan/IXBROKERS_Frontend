@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     <meta name="viewport" content="width=1920">
-    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
-    <link id="css-bootstrap" rel="stylesheet" href="assets/dist/css/bootstrap.css">
-    <link id="css-plugin-app" rel="stylesheet" href="assets/dist/css/plugin-app.css">
-    <link id="css-custom-app" rel="stylesheet" href="assets/dist/css/custom-app.css">
+    <link rel="shortcut icon" href="../assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
+    <link id="css-plugin-app" rel="stylesheet" href="../assets/dist/css/plugin-app.css">
+    <link id="css-custom-app" rel="stylesheet" href="../assets/dist/css/custom-app.css">
     <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script id="script-bootstrap" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -36,7 +36,7 @@
                             <div class="btntext"><small>MENÜ</small></div>
                         </a>
                         <a class="header-logo-link" href="01_Home_Page.html" title="IXBROKERS" rel="bookmark">
-                            <img src="assets/img/header/header_logo_dark_bg.svg" alt="IXBROKERS">
+                            <img src="../assets/img/header/header_logo_dark_bg.svg" alt="IXBROKERS">
                         </a>
                     </div>
                     <!-- Logo -->
@@ -190,136 +190,675 @@
 </header>
 <!-- Header End -->
 
-<!-- Header Title Start -->
-<section class="headtitle headtitle-bg">
-    <div class="headcontent">
-        <div class="container">
-            <div class="headcontent-wrapper">
-                <div class="headcontent-title">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">INDICES</h1>
-                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">TRADE <span class="sitecolorgreen">GLOBAL MARKET</span> INDICES WITH A <span class="sitecolorgreen">GLOBAL BROKER</span></h2>
-                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">Discover your trading opportunity with popular stock portfolios.</p>
-                </div>
-                <div class="headcontent-account">
-                    <div class="openaccountbox">
-                        <div class="openaccountbtns">
-                            <div>
-                                <a href="12_Account_Open_Live.html" class="btn btn-success" title="OPEN LIVE ACCOUNT" rel="bookmark">
-                                    <span>LIVE ACCOUNT</span>
-                                    <small>OPEN LIVE ACCOUNT</small>
-                                    <i class="rightarrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.845" height="28.946" viewBox="0 0 18.845 28.946">
-                                            <path id="Path_94" data-name="Path 94" d="M293.134,91.492l-10-13.581,8.979-13.574a1,1,0,0,0,.234-.6c0-.2-.154-.292-.468-.292h-7.046a3.388,3.388,0,0,0-.785.076,1.37,1.37,0,0,0-.666.548l-8.562,13.157a1.3,1.3,0,0,0-.277.693,1.167,1.167,0,0,0,.141.568l9.563,13.047a2.025,2.025,0,0,0,.507.642,1.108,1.108,0,0,0,.706.215h7.4c.6,0,.69-.3.271-.9" transform="translate(293.391 92.388) rotate(180)" />
-                                        </svg>
-                                    </i>
-                                </a>
-                                <a href="11_Account_Open_Demo.html" class="btn btn-info" title="OPEN DEMO ACCOUNT" rel="bookmark">
-                                    <span>DEMO ACCOUNT</span>
-                                    <small>OPEN DEMO ACCOUNT</small>
-                                    <i class="rightarrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.845" height="28.946" viewBox="0 0 18.845 28.946">
-                                            <path id="Path_94" data-name="Path 94" d="M293.134,91.492l-10-13.581,8.979-13.574a1,1,0,0,0,.234-.6c0-.2-.154-.292-.468-.292h-7.046a3.388,3.388,0,0,0-.785.076,1.37,1.37,0,0,0-.666.548l-8.562,13.157a1.3,1.3,0,0,0-.277.693,1.167,1.167,0,0,0,.141.568l9.563,13.047a2.025,2.025,0,0,0,.507.642,1.108,1.108,0,0,0,.706.215h7.4c.6,0,.69-.3.271-.9" transform="translate(293.391 92.388) rotate(180)" />
-                                        </svg>
-                                    </i>
-                                </a>
+<!-- Slider Start -->
+<div class="headbigslider">
+    <div class="headbigslider-slider">
+        <ul id="headbigsliderowl" class="headbigslider-slider-owl owl-carousel owl-theme">
+            <li class="headbigslider-slider-item">
+                <div class="headbigslider-slider-item-container container">
+                    <div class="headbigslider-slider-item-content">
+                        <div class="headbigslider-slider-item-title">
+                            <h2 class="slidertitle">LOREM IPSUM DOLOR SIT AMET <sup style="font-size: 15px; position: absolute; top: 0; right: -5px;">(01)</sup></h2>
+                            <p class="sliderdesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="sliderbtns">
+                                <a href="#" class="btn btn-success" title="OPEN DEMO ACCOUNT" rel="bookmark">OPEN DEMO ACCOUNT</a>
+                                <a href="#" class="btn btn-danger" title="OPEN LIVE ACCOUNT" rel="bookmark">OPEN LIVE ACCOUNT</a>
                             </div>
-                            <small class="inforisk">Trading is risky. Your capital is at risk.</small>
                         </div>
                     </div>
                 </div>
+                <div class="headbigslider-slider-item-bg">
+                    <img src="../assets/img/slider/sliderimg/home_bigslider_full_02.jpg" alt="slider" width="2560" height="1406" />
+                </div>
+            </li>
+            <li class="headbigslider-slider-item">
+                <div class="headbigslider-slider-item-container container">
+                    <div class="headbigslider-slider-item-content">
+                        <div class="headbigslider-slider-item-title">
+                            <h2 class="slidertitle">LOREM IPSUM DOLOR SIT AMET <sup style="font-size: 15px; position: absolute; top: 0; right: -5px;">(02)</sup></h2>
+                            <p class="sliderdesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="sliderbtns">
+                                <a href="#" class="btn btn-success" title="OPEN DEMO ACCOUNT" rel="bookmark">OPEN DEMO ACCOUNT</a>
+                                <a href="#" class="btn btn-danger" title="OPEN LIVE ACCOUNT" rel="bookmark">OPEN LIVE ACCOUNT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headbigslider-slider-item-bg">
+                    <img src="../assets/img/slider/sliderimg/home_bigslider_full_01.jpg" alt="slider" width="2560" height="1406" />
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="headbigslider-features">
+        <div class="headbigslider-features-container container">
+            <div class="headbigslider-features-headtitle">
+                <h1>Meet With th World’s Most Profitable Market!</h1>
             </div>
+            <ul id="sitefeaturesiconsowl" class="component-sitefeatureicons owl-carousel owl-theme">
+                <li>
+                    <i class="icons-sprite sprite-100-site-features-redwhite icons-traders"></i>
+                    <h4 class="boxcontent-title darkbg">20,000+ <span>Active Traders</span></h4>
+                </li>
+                <li>
+                    <i class="icons-sprite sprite-100-site-features-redwhite icons-executions"></i>
+                    <h4 class="boxcontent-title darkbg">300M+ <span>Executions</span></h4>
+                </li>
+                <li>
+                    <i class="icons-sprite sprite-100-site-features-redwhite icons-locations"></i>
+                    <h4 class="boxcontent-title darkbg">15 Offices, <span>14 languages</span></h4>
+                </li>
+                <li>
+                    <i class="icons-sprite sprite-100-site-features-redwhite icons-regulations"></i>
+                    <h4 class="boxcontent-title darkbg">BVI FSC <span>Regulated</span></h4>
+                </li>
+                <li>
+                    <i class="icons-sprite sprite-100-site-features-redwhite icons-instruments"></i>
+                    <h4 class="boxcontent-title darkbg">400+ <span>Instruments</span></h4>
+                </li>
+                <li>
+                    <i class="icons-sprite sprite-100-site-features-redwhite icons-executionsunder"></i>
+                    <h4 class="boxcontent-title darkbg">Executions under <span>0.1 secs</span></h4>
+                </li>
+            </ul>
         </div>
     </div>
-</section>
-<!-- Header Title End -->
+</div>
+<!-- Slider End -->
 
-<!-- Products Start -->
-<section class="products-section section-content">
+<!-- Account Types Component Start -->
+<section class="home-accounttypes">
     <div class="container">
 
         <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width1100">
-            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">MEET WITH TH WORLD'S <span class="sitecolorgreen">MOST PROFOTABLE</span> MARKET!</h2>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">When you trade indices with an industry-leading broker, you can expect to choose from an industry-leading selection of indices. IX Brokers offer CFD trading for spot indices on some of the world’s most active securities, meaning that you can choose to buy and sell indices at their spot price to suit you and your trading strategy.</p>
+        <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width900">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">ACCOUNT <span class="sitecolorgreen">TYPES</span></h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">IX Brokers delivers the best trading environment for any type of trader. Either you are a newbie or a pro trader, IX Brokers' trading infrastructure gives you the best one. Just pick one them and let our advisors guide you for your best.</p>
         </div>
         <!-- Title -->
 
-        <!-- Features -->
-        <div class="products-feature">
-            <ul id="productsfeaturesiconsowlx" class="sectionfeaturebox owl-carouselx owl-themex">
-                <li class="sectionfeaturebox-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="600">
-                    <div class="sectionfeaturebox-wpr">
-                        <div class="sectionfeaturebox-icons">
-                            <i class="icons-sprite sprite-80-products-features icons-licensed"></i>
+        <!-- Account Types -->
+        <div class="component-siteaccounttypes">
+            <ul class="accounttypesbox">
+                <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="accounttypesbox-content">
+                        <div class="accounttypesbox-head">
+                            <div class="accounttypes-icons">
+                                <i class="accounttypes-icons-text sitecolorgreen">SV</i>
+                                <div class="accounttypes-icons-pulse pulsegreen"></div>
+                            </div>
+                            <h4 class="accounttypes-title">Standard <strong>Variable</strong></h4>
                         </div>
-                        <div class="sectionfeaturebox-title">
-                            <h3>GLOBALLY REGULATED & LICENSED</h3>
-                            <p>Our brand is regulated and licensed under the FSC of the Republic of Mauritius and UK’s FCA, among others.</p>
-                        </div>
+                        <ul class="accounttypesbox-list">
+                            <li>FREE Demo Account</li>
+                            <li>Minimum contract size 1,000</li>
+                            <li>Leverage is up to 1:500</li>
+                            <li>Negative balance protection</li>
+                            <li>Spreads for majors are as low as 1 pips.</li>
+                            <li>No commission</li>
+                        </ul>
+                        <a class="accounttypesbox-btn btn btn-outline-success" href="13_Account_Types.html" title="Read More" rel="bookmark">Read More</a>
                     </div>
                 </li>
-                <li class="sectionfeaturebox-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="700">
-                    <div class="sectionfeaturebox-wpr">
-                        <div class="sectionfeaturebox-icons">
-                            <i class="icons-sprite sprite-80-products-features icons-support"></i>
+                <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="750">
+                    <div class="accounttypesbox-content">
+                        <div class="accounttypesbox-head">
+                            <div class="accounttypes-icons">
+                                <i class="accounttypes-icons-text sitecolorblue">FIX</i>
+                                <div class="accounttypes-icons-pulse pulseblue"></div>
+                            </div>
+                            <h4 class="accounttypes-title">Standard <strong>Fixed</strong></h4>
                         </div>
-                        <div class="sectionfeaturebox-title">
-                            <h3>DEDICATED SUPPORT IN 18 LANGUAGES</h3>
-                            <p>We speak your language so that you can feel at home while trading with us.</p>
-                        </div>
+                        <ul class="accounttypesbox-list">
+                            <li>FREE Demo Account</li>
+                            <li>Minimum contract size 100,000</li>
+                            <li>Leverage is up to 1:500</li>
+                            <li>Negative balance protection</li>
+                            <li>Spreads for majors are as low as 1 pips.</li>
+                            <li>No commission</li>
+                            <li>Crypto currencies</li>
+                        </ul>
+                        <a class="accounttypesbox-btn btn btn-outline-info" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <span>Read More</span>
+                        </a>
                     </div>
                 </li>
-                <li class="sectionfeaturebox-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="800">
-                    <div class="sectionfeaturebox-wpr">
-                        <div class="sectionfeaturebox-icons">
-                            <i class="icons-sprite sprite-80-products-features icons-transparent"></i>
+                <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="1000">
+                    <div class="accounttypesbox-content">
+                        <div class="accounttypesbox-head">
+                            <div class="accounttypes-icons">
+                                <i class="accounttypes-icons-text sitecolororange">VIP</i>
+                                <div class="accounttypes-icons-pulse pulseorange"></div>
+                            </div>
+                            <h4 class="accounttypes-title">VIP <strong>Variable</strong></h4>
                         </div>
-                        <div class="sectionfeaturebox-title">
-                            <h3>ULTIMATE TRANSPARENT</h3>
-                            <p>IX Brokers's Performance statistics, including Requote, Slippage and Order Execution, are checked by PwC.</p>
-                        </div>
+                        <ul class="accounttypesbox-list">
+                            <li>FREE Demo Account</li>
+                            <li>Minimum contract size 100,000</li>
+                            <li>Leverage is up to 1:200</li>
+                            <li>Negative balance protection</li>
+                            <li>Spreads for majors are as low as 1 pips.</li>
+                            <li>No commission</li>
+                            <li>Crypto currencies</li>
+                            <li>US and Europe stocks</li>
+                        </ul>
+                        <a class="accounttypesbox-btn btn btn-outline-warning" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <span>Read More</span>
+                        </a>
                     </div>
                 </li>
-                <li class="sectionfeaturebox-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="900">
-                    <div class="sectionfeaturebox-wpr">
-                        <div class="sectionfeaturebox-icons">
-                            <i class="icons-sprite sprite-80-products-features icons-secure"></i>
+                <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="1250">
+                    <div class="accounttypesbox-content">
+                        <div class="accounttypesbox-head">
+                            <div class="accounttypes-icons">
+                                <i class="accounttypes-icons-text sitecolorred">ZR</i>
+                                <div class="accounttypes-icons-pulse pulsered"></div>
+                            </div>
+                            <h4 class="accounttypes-title">Ecn Zero <strong>Account</strong></h4>
                         </div>
-                        <div class="sectionfeaturebox-title">
-                            <h3>SECURE & SAFE</h3>
-                            <p>Your funds are kept in segregated accounts, and your trades are secured by negative balance protection.</p>
-                        </div>
+                        <ul class="accounttypesbox-list">
+                            <li>Real STP account, proved by LPs</li>
+                            <li>Minimum contract size 100,000</li>
+                            <li>Leverage is up to 1:100</li>
+                            <li>Spreads for majors are as low as 0 pips.</li>
+                            <li>3 USD per side commission</li>
+                            <li>Crypto currencies</li>
+                        </ul>
+                        <a class="accounttypesbox-btn btn btn-outline-danger" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <span>Read More</span>
+                        </a>
                     </div>
                 </li>
             </ul>
         </div>
-        <!-- Features -->
-
-        <!-- Desc -->
-        <div class="sitecontent-desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-            <h3>WHAT IS INDEX TRADING?</h3>
-            <p>Index Trading is unlike commodity trading where a trader invests in a commodity or Forex trading where one invests in a currency. An index is basically a figure that reflects the health of a market or an economy so when you invest in an index you are essentially investing in a fund that mirrors the movement of the index. What index trading enables you to do is to invest in a very large segment of a market, or even an entire market itself. For example, in stock index trading, you have the option of investing in the FTSE 100, NASDAQ, the Dow Jones, or the S&P 500, among other indices, all of which reflect different broad market properties. By investing for instance in the Dow, you would be investing in a significant portion of the industrial market.</p>
-            <h3>WHY TRADE INDICES INSTEAD OF SHARES?</h3>
-            <p>Now the next question - What are Commodity Markets? So the answer is any place where all raw or primary products are exchanged is called commodity market. Commodity markets can include direct physical trading and derivatives trading in the form of spot prices, forwards, futures and options. Commodity Futures are contracts to buy/sell specific quantity of a particular commodity at a future date on an exchange platform. It is similar to the Index futures and Stock futures but the underlying happens to be commodities instead of Stocks and indices.</p>
-            <h3>WHERE ARE THEY BEING TRADED?</h3>
-            <p>Here are a few of the advantages of trading indices instead of individual shares:</p>
-            <ul class="ullist ullist-dotted">
-                <li>More available leverage than trading shares - The leverage possible with Index future contracts creates a profitable environment for even trades of a few percent index gain.</li>
-                <li>Less technical analysis - investors are able to spend more time on analyzing one chart, then trying to screen through thousands of stocks for the right company</li>
-                <li>High liquidity - The highly liquid market also creates tighter spreads which translates into less money spent per transaction.</li>
-                <li>No need to screen stocks for fundamental data - A lot of time is saved from not having to analyze financial reports. The trader will spend most of his time looking at the big picture and overall market sentiment.</li>
-            </ul>
-            <h3>HOW CAN I TRADE INDICES?</h3>
-            <p>You can trade indices via a CFD (contract for difference), ETF, index future or option. They all have their strengths and weaknesses. A CFD is not a standardized instrument listed on exchanges. It is essentially a betting instrument provided by a firm for you speculate in the particular market you are interested in. There are stock CFDs, commodity CFDs and other types of CFDs. The advantage of CFDs is the ability to trade in mini lot size.</p>
-        </div>
-        <!-- Desc -->
+        <!-- Account Types -->
 
     </div>
 </section>
-<!-- Products End -->
+<!-- Account Types Component End -->
+
+<!-- Summary Table Component Start -->
+<section class="home-summarytable">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width900">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><span class="sitecolorgreen">TRADE WITH</span> IX BROKERS ONLINE!</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Trade hundreds of financial assets in one and single trading platform with almost zero spreads and zero commissions.</p>
+        </div>
+        <!-- Title -->
+
+        <!-- Summary Table -->
+        <div class="component-summarytable sitetabs">
+
+            <!-- TabNav -->
+            <ul class="summarytable-tabnav nav nav-tabs nav-space-between" role="tablist" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <li class="nav-item"><a class="nav-link active" id="tab-Popular" data-toggle="tab" href="#Popular" role="tab" aria-controls="Popular" aria-selected="true"><span>POPULAR</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="tab-Forex" data-toggle="tab" href="#Forex" role="tab" aria-controls="Forex" aria-selected="false"><span>FOREX</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="tab-Commodities" data-toggle="tab" href="#Commodities" role="tab" aria-controls="Commodities" aria-selected="false"><span>COMMODITIES</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="tab-Indices" data-toggle="tab" href="#Indices" role="tab" aria-controls="Indices" aria-selected="false"><span>INDICES</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="tab-EquityCFD" data-toggle="tab" href="#EquityCFD" role="tab" aria-controls="EquityCFD" aria-selected="false"><span>EQUITY CFD</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="tab-Cryptocurrencies" data-toggle="tab" href="#Cryptocurrencies" role="tab" aria-controls="Cryptocurrencies" aria-selected="false"><span>CRYPTO</span></a></li>
+            </ul>
+            <!-- TabNav -->
+            <!-- TabContent -->
+            <div class="summarytable-tabcontent tab-content" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                <div class="tab-pane fade show active" id="Popular" role="tabpanel" aria-labelledby="tab-Popular">
+                    <div class="summarytable-tablearea">
+                        <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+                            <thead>
+                            <tr>
+                                <th><span>SYMBOL</span></th>
+                                <th><span>SELL</span></th>
+                                <th><span>BUY</span></th>
+                                <th><span>HIGH</span></th>
+                                <th><span>LOW</span></th>
+                                <th class="centercell btncell"><span>FREE BONUS</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>EUR/USD</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>58.61</span></td>
+                                <td><span>58.61</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>APPLE INC</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>34</span></td>
+                                <td><span>34</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WS30</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>67.3</span></td>
+                                <td><span>67.3</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMAZON.COM</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>90.1</span></td>
+                                <td><span>90.1</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DAX30</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>15</span></td>
+                                <td><span>15</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GBP/USD</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>60</span></td>
+                                <td><span>60</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUR/GBP</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>12.6</span></td>
+                                <td><span>12.6</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Forex" role="tabpanel" aria-labelledby="tab-Forex">
+                    <div class="summarytable-tablearea">
+                        <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+                            <thead>
+                            <tr>
+                                <th><span>SYMBOL</span></th>
+                                <th><span>SELL</span></th>
+                                <th><span>BUY</span></th>
+                                <th><span>HIGH</span></th>
+                                <th><span>LOW</span></th>
+                                <th class="centercell btncell"><span>FREE BONUS</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>EUR/USD</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>58.61</span></td>
+                                <td><span>58.61</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>APPLE INC</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>34</span></td>
+                                <td><span>34</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WS30</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>67.3</span></td>
+                                <td><span>67.3</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMAZON.COM</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>90.1</span></td>
+                                <td><span>90.1</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DAX30</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>15</span></td>
+                                <td><span>15</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GBP/USD</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>60</span></td>
+                                <td><span>60</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUR/GBP</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>12.6</span></td>
+                                <td><span>12.6</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Commodities" role="tabpanel" aria-labelledby="tab-Commodities">
+                    <div class="summarytable-tablearea">
+                        <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+                            <thead>
+                            <tr>
+                                <th><span>SYMBOL</span></th>
+                                <th><span>SELL</span></th>
+                                <th><span>BUY</span></th>
+                                <th><span>HIGH</span></th>
+                                <th><span>LOW</span></th>
+                                <th class="centercell btncell"><span>FREE BONUS</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>EUR/USD</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>58.61</span></td>
+                                <td><span>58.61</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>APPLE INC</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>34</span></td>
+                                <td><span>34</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WS30</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>67.3</span></td>
+                                <td><span>67.3</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMAZON.COM</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>90.1</span></td>
+                                <td><span>90.1</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DAX30</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>15</span></td>
+                                <td><span>15</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GBP/USD</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>60</span></td>
+                                <td><span>60</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUR/GBP</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>12.6</span></td>
+                                <td><span>12.6</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Indices" role="tabpanel" aria-labelledby="tab-Indices">
+                    <div class="summarytable-tablearea">
+                        <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+                            <thead>
+                            <tr>
+                                <th><span>SYMBOL</span></th>
+                                <th><span>SELL</span></th>
+                                <th><span>BUY</span></th>
+                                <th><span>HIGH</span></th>
+                                <th><span>LOW</span></th>
+                                <th class="centercell btncell"><span>FREE BONUS</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>EUR/USD</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>58.61</span></td>
+                                <td><span>58.61</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>APPLE INC</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>34</span></td>
+                                <td><span>34</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WS30</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>67.3</span></td>
+                                <td><span>67.3</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMAZON.COM</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>90.1</span></td>
+                                <td><span>90.1</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DAX30</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>15</span></td>
+                                <td><span>15</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GBP/USD</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>60</span></td>
+                                <td><span>60</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUR/GBP</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>12.6</span></td>
+                                <td><span>12.6</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="EquityCFD" role="tabpanel" aria-labelledby="tab-EquityCFD">
+                    <div class="summarytable-tablearea">
+                        <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+                            <thead>
+                            <tr>
+                                <th><span>SYMBOL</span></th>
+                                <th><span>SELL</span></th>
+                                <th><span>BUY</span></th>
+                                <th><span>HIGH</span></th>
+                                <th><span>LOW</span></th>
+                                <th class="centercell btncell"><span>FREE BONUS</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>EUR/USD</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>58.61</span></td>
+                                <td><span>58.61</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>APPLE INC</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>34</span></td>
+                                <td><span>34</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WS30</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>67.3</span></td>
+                                <td><span>67.3</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMAZON.COM</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>90.1</span></td>
+                                <td><span>90.1</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DAX30</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>15</span></td>
+                                <td><span>15</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GBP/USD</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>60</span></td>
+                                <td><span>60</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUR/GBP</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>12.6</span></td>
+                                <td><span>12.6</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Cryptocurrencies" role="tabpanel" aria-labelledby="tab-Cryptocurrencies">
+                    <div class="summarytable-tablearea">
+                        <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+                            <thead>
+                            <tr>
+                                <th><span>SYMBOL</span></th>
+                                <th><span>SELL</span></th>
+                                <th><span>BUY</span></th>
+                                <th><span>HIGH</span></th>
+                                <th><span>LOW</span></th>
+                                <th class="centercell btncell"><span>FREE BONUS</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>EUR/USD</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>58.61</span></td>
+                                <td><span>58.61</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>APPLE INC</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>34</span></td>
+                                <td><span>34</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>WS30</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>67.3</span></td>
+                                <td><span>67.3</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>AMAZON.COM</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>90.1</span></td>
+                                <td><span>90.1</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>DAX30</span></td>
+                                <td><span class="sitecolorgreen">13239.30</span></td>
+                                <td><span>13240.10</span></td>
+                                <td><span>15</span></td>
+                                <td><span>15</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>GBP/USD</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>60</span></td>
+                                <td><span>60</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            <tr>
+                                <td><span>EUR/GBP</span></td>
+                                <td><span>13239.30</span></td>
+                                <td><span class="sitecolorred">13240.10</span></td>
+                                <td><span>12.6</span></td>
+                                <td><span>12.6</span></td>
+                                <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- TabContent -->
+
+        </div>
+        <!-- Summary Table -->
+
+    </div>
+</section>
+<!-- Summary Table Component End -->
 
 <!-- Platforms Start -->
-<section class="products-platforms">
+<section class="home-platforms">
     <div class="container">
 
         <!-- Title -->
@@ -357,7 +896,7 @@
                             <a class="nav-link" data-toggle="pill" href="#plattabsmt4mobile" role="tab" aria-controls="plattabsmt4navlink" aria-selected="false">METATRADER 4 MOBILE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#plattabsmt4web" role="tab" aria-controls="plattabsmt4navlink" aria-selected="false">METATRADER 4 WEBTRADER</a>
+                            <a class="nav-link" data-toggle="pill" href="#plattabsmt4web" role="tab" aria-controls="plattabsmt4navlink" aria-selected="false">METATRADER 4 WEB TRADER</a>
                         </li>
                     </ul>
                 </li>
@@ -371,7 +910,7 @@
                             <a class="nav-link" data-toggle="pill" href="#plattabsmt5mobile" role="tab" aria-controls="plattabsmt5navlink" aria-selected="false">METATRADER 5 MOBILE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#plattabsmt5web" role="tab" aria-controls="plattabsmt5navlink" aria-selected="false">METATRADER 5 WEBTRADER</a>
+                            <a class="nav-link" data-toggle="pill" href="#plattabsmt5web" role="tab" aria-controls="plattabsmt5navlink" aria-selected="false">METATRADER 5 WEB TRADER</a>
                         </li>
                     </ul>
                 </li>
@@ -388,7 +927,7 @@
                                 <p>Trade with panels and modify orders in one click, indispensable functionality for active traders. Make the most of every possible trading opportunity with this software.</p>
                                 <p>MetaTrader 4 allows you to implement the strategy of any complexity thanks to the four types of orders (market, limit, stop loss, trailing stop).</p>
                             </div>
-                            <div class="platappdownbtns">
+                            <div class="tab-mt-btns">
                                 <a href="#" class="btn btn-platdown" title="METATRADER 4 DESKTOP" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
@@ -423,10 +962,10 @@
                         <div class="tab-pane fade show" id="plattabsmt4mobile" role="tabpanel">
                             <div class="sitetitle sitetitle-md sitetitle-dark sitetitle-center tab-mt-head">
                                 <h2>METATRADER <span class="sitecolororange">4</span> MOBILE</h2>
-                                <p>IX Brokers unique MetaTrader 4 mobile application allows trading on financial markets via iOS and Android powered smartphones and tablets. The functionality offered on the mobile versions includes interactive quote charts, full set of trading orders and the most popular analytical tools, very similar to the desktop version. You can monitor your account status, track the history of trades, as well as buy and sell financial instruments in a single click. The mobile applications also provide additional features such as convenient chat with other traders and push notifications.</p>
-                                <p>IX Brokers is with you wherever you go. The world's biggest financial market is now in your pocket!</p>
+                                <p>Pure Market provides you with free access to historical data and real-time quotes for 50 financial instruments.</p>
+                                <p>Use the power of technical analysis to forecast price movements. Upon installation of the terminal you get free access to: 4 types of charts, 9 timeframes, 33 indicators and 30 elements for graphical analysis.</p>
                             </div>
-                            <div class="platappdownbtns">
+                            <div class="tab-mt-btns">
                                 <a href="#" class="btn btn-platdown" title="DOWNLOAD APP STORE" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
@@ -479,12 +1018,12 @@
                         </div>
                         <div class="tab-pane fade show" id="plattabsmt4web" role="tabpanel">
                             <div class="sitetitle sitetitle-md sitetitle-dark sitetitle-center tab-mt-head">
-                                <h2>METATRADER <span class="sitecolororange">4</span> WEBTRADER</h2>
-                                <p>IX Brokers' MetaTrader 4 web platform allows you to trade hundreds of products including forex, CFDs, indices, stocks and crypto currencies from any browser and operating system (Windows, Mac, Linux) with no additional software. Access your account and start trading in just a couple of clicks. All you need is Internet connection.</p>
-                                <p>IX Brokers' MetaTrader 4 web version has all the advantages of the native solution since it is a regular part of the desktop platform. This ensures the web platform's high reliability and compatibility with the entire MetaTrader 4 ecosystem. The application is safe to use - all transmitted data is securely encrypted. </p>
+                                <h2>METATRADER <span class="sitecolororange">4</span> WEB TRADER</h2>
+                                <p>Copy trading from the best traders in the world Not enough experience or time for self-trading in the markets? You have the option to copy transactions of top traders from around the world.</p>
+                                <p>The only thing you need is to select the signal provider, subscribe and the transaction will be copied to your account automatically. Available for thousands of traders with different trading strategies and cooperation conditions.</p>
                             </div>
-                            <div class="platappdownbtns">
-                                <a href="#" class="btn btn-platdown" title="METATRADER 4 WEBTRADER" rel="bookmark">
+                            <div class="tab-mt-btns">
+                                <a href="#" class="btn btn-platdown" title="METATRADER 4 WEB" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                             <g id="Icon_Web" transform="translate(0 -12)">
@@ -513,14 +1052,14 @@
                                     </i>
                                     <p>
                                         <small>START TRADING NOW</small>
-                                        <strong>METATRADER 4 WEBTRADER</strong>
+                                        <strong>METATRADER 4 WEB</strong>
                                     </p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-btmimg">
-                        <img src="assets/img/section/platforms_tabs_img_mt4.jpg" alt="MT4" width="1400" height="700" />
+                        <img src="../assets/img/section/platforms_tabs_img_mt4.jpg" alt="MT4" width="1400" height="700" />
                     </div>
                 </div>
                 <div class="tab-pane fade" id="plattabsmt5" role="tabpanel">
@@ -531,7 +1070,7 @@
                                 <p>Trade with panels and modify orders in one click, indispensable functionality for active traders. Make the most of every possible trading opportunity with this software.</p>
                                 <p>MetaTrader 4 allows you to implement the strategy of any complexity thanks to the four types of orders (market, limit, stop loss, trailing stop).</p>
                             </div>
-                            <div class="platappdownbtns">
+                            <div class="tab-mt-btns">
                                 <a href="#" class="btn btn-platdown" title="METATRADER 5 DESKTOP" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
@@ -569,7 +1108,7 @@
                                 <p>Pure Market provides you with free access to historical data and real-time quotes for 50 financial instruments.</p>
                                 <p>Use the power of technical analysis to forecast price movements. Upon installation of the terminal you get free access to: 4 types of charts, 9 timeframes, 33 indicators and 30 elements for graphical analysis.</p>
                             </div>
-                            <div class="platappdownbtns">
+                            <div class="tab-mt-btns">
                                 <a href="#" class="btn btn-platdown" title="DOWNLOAD APP STORE" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
@@ -622,12 +1161,12 @@
                         </div>
                         <div class="tab-pane fade show" id="plattabsmt5web" role="tabpanel">
                             <div class="sitetitle sitetitle-md sitetitle-dark sitetitle-center tab-mt-head">
-                                <h2>METATRADER <span class="sitecolororange">5</span> WEBTRADER</h2>
+                                <h2>METATRADER <span class="sitecolororange">5</span> WEB TRADER</h2>
                                 <p>Copy trading from the best traders in the world Not enough experience or time for self-trading in the markets? You have the option to copy transactions of top traders from around the world.</p>
                                 <p>The only thing you need is to select the signal provider, subscribe and the transaction will be copied to your account automatically. Available for thousands of traders with different trading strategies and cooperation conditions.</p>
                             </div>
-                            <div class="platappdownbtns">
-                                <a href="#" class="btn btn-platdown" title="METATRADER 5 WEBTRADER" rel="bookmark">
+                            <div class="tab-mt-btns">
+                                <a href="#" class="btn btn-platdown" title="METATRADER 5 WEB" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                             <g id="Icon_Web" transform="translate(0 -12)">
@@ -656,17 +1195,17 @@
                                     </i>
                                     <p>
                                         <small>START TRADING NOW</small>
-                                        <strong>METATRADER 5 WEBTRADER</strong>
+                                        <strong>METATRADER 5 WEB</strong>
                                     </p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-btmimg">
-                        <img src="assets/img/section/platforms_tabs_img_mt5.jpg" alt="MT5" width="1400" height="700" />
+                        <img src="../assets/img/section/platforms_tabs_img_mt5.jpg" alt="MT5" width="1400" height="700" />
                     </div>
                 </div>
-                <div class="openaccountbtns">
+                <div class="startaccountbtns">
                     <div class="form-row">
                         <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="750">
                             <a href="12_Account_Open_Live.html" class="btn btn-success" title="OPEN LIVE ACCOUNT" rel="bookmark">
@@ -691,7 +1230,7 @@
                             </a>
                         </div>
                     </div>
-                    <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1250" class="infolink" href="13_Account_Types.html" title="AAA">Simply because it is <span class="sitecolorgreen">pain</span>?</a>
+                    <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1250" class="startaccountinfolinks" href="13_Account_Types.html" title="AAA">Simply because it is <span class="sitecolorgreen">pain</span>?</a>
                 </div>
             </div>
             <!-- Tabs Content -->
@@ -702,6 +1241,120 @@
     </div>
 </section>
 <!-- Platforms End -->
+
+<!-- News Component Start -->
+<section class="home-news">
+    <div class="container">
+        <div class="home-news-box">
+
+            <!-- News List -->
+            <div class="component-newsbox">
+                <div class="row">
+
+                    <!-- Videos Box -->
+                    <div class="bignewsbox col-auto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="bignewsbox-videos">
+                            <script id="script-plugin-prettyembed" src="../assets/thirdparty/jquery.prettyembed.min.js"></script>
+                            <script>
+                                $(document).ready(function() {
+                                    $('#homenewsvideo').prettyEmbed({
+                                        videoID: '_k6aNZ0df6g',
+                                        //useFitVids: true,
+                                        playerControls: false,
+                                        playerInfo: false
+                                    });
+                                });
+                            </script>
+                            <div id="homenewsvideo"></div>
+                        </div>
+                        <div class="bignewsbox-content">
+                            <h3><a href="#" title="" rel="bookmark">Neque Porro Quisquam Est Qui Dolorem Ipsum Quia Dolor Sit Amet...</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-outline-success d-none" title="Read More" rel="bookmark">Read More</a>
+                        </div>
+                    </div>
+                    <!-- Videos Box -->
+
+                    <!-- List Box -->
+                    <div class="smallnewsbox col" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+
+                        <!-- Title -->
+                        <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-left">
+                            <h2>FOREX <span class="sitecolorgreen">NEWS</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. tempor incididunt ut labore et dolore</p>
+                        </div>
+                        <!-- Title -->
+
+                        <!-- List -->
+                        <ul id="newssmalllistowl" class="listnews owl-carousel owl-theme">
+                            <li>
+                                <div class="listnews-title">
+                                    <h4><a href="#" title="" rel="bookmark">Maecenas Suscipit Lorem Ac Augue Vehicula Tempor...</a></h4>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia...</p>
+                                </div>
+                                <div class="listnews-info">
+                                    <time class="listnews-info-date">14 November 2019</time>
+                                    <a href="#" class="listnews-info-more" title="Read More" rel="bookmark">
+                                        <span>Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.421" height="13.273" viewBox="0 0 14.421 13.273">
+                                            <g id="arrow" transform="translate(1 1.414)">
+                                                <line id="Line_24" data-name="Line 24" x2="11.512" transform="translate(0 5.127)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+                                                <path id="Path_9592" data-name="Path 9592" d="M0,0V7.475H7.3" transform="translate(6.721 10.444) rotate(-135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="listnews-title">
+                                    <h4><a href="#" title="" rel="bookmark">Duis Eget Lectus Non Mi Posuere Accumsan Ut Eu Lacus...</a></h4>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
+                                </div>
+                                <div class="listnews-info">
+                                    <time class="listnews-info-date">14 November 2019</time>
+                                    <a href="#" class="listnews-info-more" title="Read More" rel="bookmark">
+                                        <span>Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.421" height="13.273" viewBox="0 0 14.421 13.273">
+                                            <g id="arrow" transform="translate(1 1.414)">
+                                                <line id="Line_24" data-name="Line 24" x2="11.512" transform="translate(0 5.127)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+                                                <path id="Path_9592" data-name="Path 9592" d="M0,0V7.475H7.3" transform="translate(6.721 10.444) rotate(-135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="listnews-title">
+                                    <h4><a href="#" title="" rel="bookmark">Donec Sed Tortor Luctus Nisl Aliquam Condimentum Nec Varius Erat...</a></h4>
+                                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham...</p>
+                                </div>
+                                <div class="listnews-info">
+                                    <time class="listnews-info-date">14 November 2019</time>
+                                    <a href="#" class="listnews-info-more" title="Read More" rel="bookmark">
+                                        <span>Read More</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.421" height="13.273" viewBox="0 0 14.421 13.273">
+                                            <g id="arrow" transform="translate(1 1.414)">
+                                                <line id="Line_24" data-name="Line 24" x2="11.512" transform="translate(0 5.127)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+                                                <path id="Path_9592" data-name="Path 9592" d="M0,0V7.475H7.3" transform="translate(6.721 10.444) rotate(-135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- List -->
+
+                    </div>
+                    <!-- List Box -->
+
+                </div>
+            </div>
+            <!-- News List -->
+
+        </div>
+    </div>
+</section>
+<!-- News Component End -->
 
 <!-- About Us Start -->
 <section class="component-aboutus">
@@ -742,7 +1395,7 @@
                 </div>
             </div>
             <div class="aboutusimg col-auto">
-                <img src="assets/img/section/home_about_us_new.jpg" alt="About Us" width="800" height="600" />
+                <img src="../assets/img/section/home_about_us_new.jpg" alt="About Us" width="800" height="600" />
             </div>
         </div>
     </div>
@@ -757,7 +1410,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-top-logo col">
-                    <img src="assets/img/footer/footer_logo_dark_bg.svg" alt="IXBROKERS" width="182" height="64" />
+                    <img src="../assets/img/footer/footer_logo_dark_bg.svg" alt="IXBROKERS" width="182" height="64" />
                 </div>
                 <div class="footer-top-social col-auto">
                     <ul class="sociallist">
@@ -866,28 +1519,26 @@
 </footer>
 <!-- Footer End -->
 
-
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5f0ff4315b59f94722bad30c/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5f0ff4315b59f94722bad30c/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
-    <!--End of Tawk.to Script-->
+</script>
+<!--End of Tawk.to Script-->
 
-    
 <!-- JavaScript Start -->
-<script id="script-owl-carousel" src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
-<script id="script-inputmask" src="assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-<script id="script-aos" src="assets/vendor/aos/dist/aos.js"></script>
-<script id="script-plugin-app" src="assets/dist/js/plugin-app.js"></script>
-<script id="script-mainpage-app" src="assets/dist/js/custom-app.js"></script>
+<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="../assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-aos" src="../assets/vendor/aos/dist/aos.js"></script>
+<script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/custom-app.js"></script>
 <!-- JavaScript End -->
 
 </body>
