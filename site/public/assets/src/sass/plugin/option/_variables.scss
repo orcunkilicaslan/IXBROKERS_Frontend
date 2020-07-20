@@ -1,0 +1,60 @@
+/* General Color Settings */
+$global-clr-white: #FFFFFF;
+$global-clr-black: #000000;
+$global-clr-green: #0EAF34;
+$global-clr-red: #d51820;
+$global-clr-orange: #FF5800;
+$global-clr-cyan: #6397be;
+$global-clr-dark-black: $global-clr-black;
+$global-clr-soft-black: #111927;
+$global-clr-dark-blue: #002b59;
+$global-clr-soft-blue: #1F6CB2;
+$global-clr-dark-gray: #111927;
+$global-clr-soft-gray: #808080;
+$global-clr-light-gray: #f7f7f7;
+$global-clr-soft-purple: #9175b6;
+/* General Color Settings */
+
+/* Site Main Settings */
+$global-font-family-cocogothic-heavy:     'CocoGothicHeavy';
+$global-font-family-default:              'Jost';
+$global-font-size:                        16px;
+$global-clr-text-dark:                    $global-clr-soft-black;
+$global-clr-text-light:                   #303f56;
+$global-border-light-gray:                #e0e5ec;
+$global-border-light-gray-opacity:        #F2F4F7;
+$global-border-light-gray-focus:          darken($global-border-light-gray, 15%);
+$global-input-border-light:               $global-border-light-gray;
+$global-input-border-light-focus:         $global-border-light-gray-focus;
+$global-input-disabled-light:             lighten($global-border-light-gray, 10%);
+/* Site Main Color Settings */
+
+/* Site Gradient Background Color */
+$global-sitebg-darkblue01: #09101b;
+$global-sitebg-darkblue02: #002960;
+$global-grdint-darkblue01: #002960;
+$global-grdint-darkblue02: #0D78C4;
+$global-grdint-red01: #e50000;
+$global-grdint-red02: #890000;
+$global-grdint-turquoise01: #00157B;
+$global-grdint-turquoise02: #00FFE5;
+/* Site Gradient Background Color */
+
+/* Site Main Image Path Settings */
+$global-img-path: "../../img";
+$global-img-path-header: "../../img/header";
+$global-img-path-footer: "../../img/footer";
+$global-img-path-slider: "../../img/slider";
+$global-img-path-section: "../../img/section";
+$global-img-path-icons: "../../img/icons";
+$global-img-path-svg: "../../img/svg";
+/* Site Main Image Path Settings */
+
+/* Site Main Class Settings */
+$headerclassname: ".header";
+$footerclassname: ".footer";
+$formclassname: ".form";
+$forminputclassname: ".input";
+$formcustomclassname: ".custom";
+$btnclassname: ".btn";
+/* Site Main Class Settings */

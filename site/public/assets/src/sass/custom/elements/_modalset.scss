@@ -1,0 +1,81 @@
+.sitemodal{
+
+  &-default{
+
+    .modal{
+
+      &-lg{
+        max-width: 870px;
+      }
+
+      &-dialog{
+        max-width: 540px;
+        margin: 80px auto;
+      }
+      &-content{
+        background-color: transparent;
+        border: none;
+
+        .close{
+          @include flexbox-display-flex();
+          @include flexbox-align-items(center);
+          color: $global-clr-white;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 1.17;
+          letter-spacing: -0.36px;
+          text-shadow: none;
+          text-align: right;
+          opacity: 1;
+          position: absolute;
+          right: 0;
+          top: -30px;
+
+          i.iconsclose{
+            width: 20px;
+            height: 20px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4NCiAgPGcgaWQ9ImNsb3NlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMSAtMC4wMDEpIj4NCiAgICA8cGF0aCBpZD0iUGF0aF83MzYiIGRhdGEtbmFtZT0iUGF0aCA3MzYiIGQ9Ik0xMS43NjksMTBsNy44NjUtNy44NjVBMS4yNTEsMS4yNTEsMCwwLDAsMTcuODY1LjM2N0wxMCw4LjIzMywyLjEzNS4zNjdBMS4yNTEsMS4yNTEsMCwwLDAsLjM2NiwyLjEzNkw4LjIzMiwxMCwuMzY2LDE3Ljg2NmExLjI1LDEuMjUsMCwxLDAsMS43NjksMS43NjhMMTAsMTEuNzY5bDcuODY1LDcuODY1YTEuMjUxLDEuMjUxLDAsMCwwLDEuNzY5LTEuNzY5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIuMDAxKSIgZmlsbD0iI2ZmZiIvPg0KICA8L2c+DQo8L3N2Zz4NCg==");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+  }
+
+  &-noclose{
+    padding-right: 0 !important;
+    .modal{
+      &-dialog{
+        max-width: 100%;
+        margin: 0;
+      }
+      &-content{
+        height: 100vh;
+      }
+    }
+
+    &-content{
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+      margin: 80px auto;
+    }
+  }
+
+}
+
+.modal-open{
+  padding: 0 !important;
+  overflow: inherit !important;
+}
+
+.modal-backdrop{
+  @include background-linear(darken($global-grdint-darkblue01, 1%), darken($global-grdint-darkblue02, 1%), -45);
+  &.show{
+    opacity: 0.99;
+  }
+}

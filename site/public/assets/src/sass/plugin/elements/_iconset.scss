@@ -1,0 +1,15 @@
+// Global Variables
+@import "../../plugin/option/variables";
+@import "../../plugin/option/variables_bootstrap";
+
+// Global Mixin
+@import "../../plugin/option/mixin";
+
+[class^="fa-"], [class*=" fa-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
