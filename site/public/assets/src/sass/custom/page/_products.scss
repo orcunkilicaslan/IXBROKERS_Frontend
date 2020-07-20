@@ -1,0 +1,27 @@
+
+.products{
+
+  &-section{
+
+    .products-feature{
+      padding: 70px 0;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 50px 0;
+      }
+    }
+  }
+
+  &-feature{}
+
+  &-platforms{
+    padding: 60px 0;
+    overflow: hidden;
+
+    .sitetitle-xl{
+      padding-bottom: 50px;
+    }
+
+  }
+
+}

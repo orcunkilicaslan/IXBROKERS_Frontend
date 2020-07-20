@@ -1,0 +1,360 @@
+
+.headslidervideo{
+  @include flexbox-display-flex();
+  @include flexbox-align-items(center);
+  @include flexbox-flex-direction(column);
+  color: $global-clr-white;
+  background-color: transparentize($global-clr-black, 0.05);
+  //height: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  @include BootstrapMinWidthResponsive(1k){
+    height: calc(100vh - 275px);
+    min-height: 1030px;
+  }
+
+  &-top{
+    &.container{
+      height: 100%;
+      padding-top: 330px;
+      padding-bottom: 120px;
+      position: relative;
+      z-index: 1;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding-top: 300px;
+        padding-bottom: 35px;
+      }
+
+      .row{
+        @include flexbox-align-items(center);
+        height: 100%;
+        position: static;
+      }
+    }
+  }
+
+  &-bottom{
+    width: 100%;
+    padding: 75px 0 0;
+    position: relative;
+    z-index: 1;
+    @include background-linear(transparent, $global-clr-black, -90);
+
+    &::after{
+      content: "";
+      width: 100%;
+      height: 75%;
+      position: absolute;
+      opacity: 0.5;
+      left: 0;
+      bottom: 0;
+      @include background-linear(transparent, $global-clr-black, -90);
+    }
+
+    .container{
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &-slider{
+    height: 100%;
+    position: static;
+
+    &-owl{
+      width: calc(100% - 100px);
+      height: 100%;
+      padding: 50px 0;
+      position: static;
+
+      .owl-stage-outer,
+      .owl-stage,
+      .owl-item{
+        height: 100%;
+      }
+
+      .owl-nav{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: calc(50% + 75px);
+        @include translateY(-50%);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          top: calc(50% + 70px);
+        }
+
+        button[class*='owl-']{
+          width: 40px;
+          height: 40px;
+          background-color: transparent;
+          margin: 0;
+          position: absolute;
+          opacity: 0.25;
+          @include transition-multiple(opacity 0.15s ease-in-out);
+
+          &::before{
+            content: "";
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC44NDUiIGhlaWdodD0iMjguOTQ2IiB2aWV3Qm94PSIwIDAgMTguODQ1IDI4Ljk0NiI+DQogIDxwYXRoIGlkPSJQYXRoXzk0IiBkYXRhLW5hbWU9IlBhdGggOTQiIGQ9Ik0yOTMuMTM0LDkxLjQ5MmwtMTAtMTMuNTgxLDguOTc5LTEzLjU3NGExLDEsMCwwLDAsLjIzNC0uNmMwLS4yLS4xNTQtLjI5Mi0uNDY4LS4yOTJoLTcuMDQ2YTMuMzg4LDMuMzg4LDAsMCwwLS43ODUuMDc2LDEuMzcsMS4zNywwLDAsMC0uNjY2LjU0OGwtOC41NjIsMTMuMTU3YTEuMywxLjMsMCwwLDAtLjI3Ny42OTMsMS4xNjcsMS4xNjcsMCwwLDAsLjE0MS41NjhsOS41NjMsMTMuMDQ3YTIuMDI1LDIuMDI1LDAsMCwwLC41MDcuNjQyLDEuMTA4LDEuMTA4LDAsMCwwLC43MDYuMjE1aDcuNGMuNiwwLC42OS0uMy4yNzEtLjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5My4zOTEgOTIuMzg4KSByb3RhdGUoMTgwKSIgZmlsbD0iIzBlYWYzNCIvPg0KPC9zdmc+DQo=");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include translate(-50%, -50%);
+            @include svg-filter(0%, 1, 0, 100%);
+            @include transition-multiple(filter 0.15s ease-in-out);
+          }
+
+          &:hover{
+            background-color: transparent;
+            opacity: 1;
+
+            &::before{
+              @include svg-filter(100%, 0, 0, 100%);
+            }
+          }
+
+          span[aria-label]{display: none;}
+        }
+
+        button.owl-next{
+          left: -75px;
+          @include rotate(180);
+        }
+        button.owl-prev{
+          right: -75px;
+          @include rotate(0);
+        }
+      }
+
+      button.owl-dot{}
+
+      .owl-dots{
+        display: none;
+        margin: 0 !important;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        @include translateX(-50%);
+
+        .owl-dot{
+          padding: 6px !important;
+          background-color: transparent !important;
+          border: 2px solid transparent;
+          @include border-radius(25px);
+          margin: 0 !important;
+          @include transition-multiple(background-color 0.3s ease-in-out, border 0.3s ease-in-out !important);
+
+          span{
+            background-color: $global-clr-white !important;
+            width: 10px !important;
+            height: 10px !important;
+            margin: 0 !important;
+            @include transition-multiple(background-color 0.3s ease-in-out !important);
+          }
+
+          &.active{
+            background-color: transparentize($global-clr-white, 0.95) !important;
+            border-color: transparentize($global-clr-green, 0.55);
+            @include backdrop-filter-multiple(blur(1px));
+
+            span{
+              background-color: $global-clr-green !important;
+              //width: 20px !important;
+            }
+          }
+        }
+      }
+    }
+
+    &-item{
+      @include flexbox-display-flex();
+      @include flexbox-align-items(center);
+      @include flexbox-flex-direction(column);
+      width: 100%;
+      height: 100%;
+
+      &-content{
+        //@include flexbox-display-flex();
+        //@include flexbox-align-items(center);
+        width: 100%;
+        height: 100%;
+      }
+
+      &-title{
+        .slidertitle{
+          font-family: $global-font-family-cocogothic-heavy !important;
+          font-size: 50px;
+          line-height: 1.2;
+          position: relative;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            font-size: 38px;
+          }
+        }
+
+        .sliderdesc{
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 1.2;
+          margin-top: 10px;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  &-account{
+    height: 100%;
+    width: 460px;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      width: 420px;
+    }
+
+    .openaccountbox{
+      background-color: transparentize($global-clr-white, 0.98);
+      border: 1px solid transparentize($global-clr-white, 0.75);
+      padding: 30px 25px;
+      text-align: center;
+      @include border-radius(3px);
+      @include backdrop-filter-multiple(blur(5px));
+    }
+
+    .openaccountbtns{
+      .infolink{
+        color: $global-clr-green;
+      }
+    }
+  }
+
+  &-feature{
+    @include flexbox-display-flex();
+    @include flexbox-justify-content(space-between);
+    text-align: center;
+
+    .owl{
+      &-stage{
+        &-outer{
+          @include BootstrapMinWidthResponsive(lg){
+            overflow: visible !important;
+          }
+        }
+      }
+
+      &-item{
+
+        &:first-child::before{
+          display: none;
+        }
+
+        &::before{
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: $global-clr-green;
+          opacity: 0;
+          position: absolute;
+          left: -4px;
+          top: 50%;
+          @include translateY(-50%);
+          @include border-radius(50%);
+          @include animation-multi(homepageSliderFeatureDot 0.5s linear forwards);
+          @include animation-delay(1s);
+
+          @include keyframes(homepageSliderFeatureDot){
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+          }
+        }
+      }
+    }
+
+    li{}
+
+    &-box{
+      padding: 30px;
+      position: relative;
+      top: 0;
+      @include transition-multiple(top 0.5s ease);
+
+      &:hover{
+        top: -10px;
+
+        .boxcontent-title{
+          color: lighten($global-clr-green, 10%);
+        }
+      }
+    }
+
+    i[class*="icons"]{
+      display: block;
+      margin: auto;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        @include scale(0.8);
+      }
+    }
+
+    .boxcontent-title{
+      color: $global-clr-white;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.2;
+      position: relative;
+      @include transition-multiple(color 0.3s ease-in-out);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 16px;
+      }
+
+      span{display: block;}
+    }
+  }
+
+  &-video{
+    width: 100%;
+    height: 100%;
+    background-image: url(#{$global-img-path-slider}/slidervideo/home_video_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    &-movie{
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include BootstrapMinWidthResponsive(1k){
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-mask{
+      background-color: transparentize($global-clr-black, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

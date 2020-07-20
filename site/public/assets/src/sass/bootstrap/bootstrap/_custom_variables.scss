@@ -1,0 +1,244 @@
+/* Grid Columns Settings */
+$grid-columns:                $bootstrap-grid-columns !global;
+$grid-gutter-width:           $bootstrap-grid-gutter-width !global;
+$grid-row-columns:            $bootstrap-grid-row-columns !global;
+$grid-breakpoints:            $bootstrap-grid-breakpoints !global;
+$container-max-widths:        $bootstrap-container-max-widths !global;
+/* Grid Columns Settings */
+
+/* Color Settings */
+$body-bg:                     $bootstrap-body-bg !global;
+$body-color:                  $bootstrap-body-clr !global;
+$white:                       $bootstrap-white !global;
+$black:                       $bootstrap-black !global;
+$gray-100:                    $bootstrap-gray-100 !global;
+$gray-200:                    $bootstrap-gray-200 !global;
+$gray-300:                    $bootstrap-gray-300 !global;
+$gray-400:                    $bootstrap-gray-400 !global;
+$gray-500:                    $bootstrap-gray-500 !global;
+$gray-600:                    $bootstrap-gray-600 !global;
+$gray-700:                    $bootstrap-gray-700 !global;
+$gray-800:                    $bootstrap-gray-800 !global;
+$gray-900:                    $bootstrap-gray-900 !global;
+$blue:                        $bootstrap-blue !global;
+$indigo:                      $bootstrap-indigo !global;
+$purple:                      $bootstrap-purple !global;
+$pink:                        $bootstrap-pink !global;
+$red:                         $bootstrap-red !global;
+$orange:                      $bootstrap-orange !global;
+$yellow:                      $bootstrap-yellow !global;
+$green:                       $bootstrap-green !global;
+$teal:                        $bootstrap-teal !global;
+$cyan:                        $bootstrap-cyan !global;
+$primary:                     $bootstrap-primary !global;
+$secondary:                   $bootstrap-secondary !global;
+$success:                     $bootstrap-success !global;
+$info:                        $bootstrap-info !global;
+$warning:                     $bootstrap-warning !global;
+$danger:                      $bootstrap-danger !global;
+$light:                       $bootstrap-light !global;
+$dark:                        $bootstrap-dark !global;
+/* Color Settings */
+
+/* Link Settings */
+$link-color:                  $bootstrap-link-color !global;
+$link-decoration:             $bootstrap-link-decoration !global;
+$link-hover-color:            $bootstrap-link-hover-color !global;
+$link-hover-decoration:       $bootstrap-link-hover-decoration !global;
+/* Link Settings */
+
+/* Font Settings */
+$font-size-base:              $bootstrap-font-size-base !global;
+$font-size-lg:                $bootstrap-font-size-lg !global;
+$font-size-sm:                $bootstrap-font-size-sm !global;
+$h1-font-size:                $bootstrap-h1-font-size !global;
+$h2-font-size:                $bootstrap-h2-font-size !global;
+$h3-font-size:                $bootstrap-h3-font-size !global;
+$h4-font-size:                $bootstrap-h4-font-size !global;
+$h5-font-size:                $bootstrap-h5-font-size !global;
+$h6-font-size:                $bootstrap-h6-font-size !global;
+$font-weight-lighter:         $bootstrap-font-weight-lighter !global;
+$font-weight-light:           $bootstrap-font-weight-light !global;
+$font-weight-normal:          $bootstrap-font-weight-normal !global;
+$font-weight-bold:            $bootstrap-font-weight-bold !global;
+$font-weight-bolder:          $bootstrap-font-weight-bolder !global;
+$paragraph-margin-bottom:     $bootstrap-paragraph-margin-bottom !global;
+$line-height-base:            $bootstrap-line-height-base !global;
+$line-height-lg:              $bootstrap-line-height-lg !global;
+$line-height-sm:              $bootstrap-line-height-sm !global;
+/* Font Settings */
+
+/* Border Settings */
+$border-width:                $bootstrap-border-width !global;
+$border-color:                $bootstrap-border-color !global;
+$border-radius:               $bootstrap-border-radius !global;
+$border-radius-lg:            $bootstrap-border-radius-lg !global;
+$border-radius-sm:            $bootstrap-border-radius-sm !global;
+$rounded-pill:                $bootstrap-rounded-pill !global;
+$box-shadow-sm:               $bootstrap-box-shadow-sm !global;
+$box-shadow:                  $bootstrap-box-shadow !global;
+$box-shadow-lg:               $bootstrap-box-shadow-lg !global;
+/* Border Settings */
+
+/* Input Buttons Settings */
+$input-btn-font-family:       $bootstrap-input-btn-font-family !global;
+$input-btn-font-size:         $bootstrap-input-btn-font-size !global;
+$input-btn-font-size-sm:      $bootstrap-input-btn-font-size-sm !global;
+$input-btn-font-size-lg:      $bootstrap-input-btn-font-size-lg !global;
+$input-btn-padding-y:         $bootstrap-input-btn-padding-y !global;
+$input-btn-padding-x:         $bootstrap-input-btn-padding-x !global;
+$input-btn-padding-y-sm:      $bootstrap-input-btn-padding-y-sm !global;
+$input-btn-padding-x-sm:      $bootstrap-input-btn-padding-x-sm !global;
+$input-btn-padding-y-lg:      $bootstrap-input-btn-padding-y-lg !global;
+$input-btn-padding-x-lg:      $bootstrap-input-btn-padding-x-lg !global;
+$input-btn-line-height:       $bootstrap-input-btn-line-height !global;
+$input-btn-line-height-sm:    $bootstrap-input-btn-line-height-sm !global;
+$input-btn-line-height-lg:    $bootstrap-input-btn-line-height-lg !global;
+$input-btn-border-width:      $bootstrap-input-btn-border-width !global;
+$input-btn-focus-width:       $bootstrap-input-btn-focus-width !global;
+$input-btn-focus-color:       $bootstrap-input-btn-focus-color !global;
+$input-btn-focus-box-shadow:  $bootstrap-input-btn-focus-box-shadow !global;
+$component-active-bg:         $bootstrap-component-active-bg !global;
+/* Input Buttons Settings */
+
+/* Button Settings */
+$btn-font-family:             $bootstrap-btn-font-family !global;
+$btn-font-weight:             $bootstrap-btn-font-weight !global;
+$btn-font-size:               $bootstrap-btn-font-size !global;
+$btn-font-size-sm:            $bootstrap-btn-font-size-sm !global;
+$btn-font-size-lg:            $bootstrap-btn-font-size-lg !global;
+$btn-padding-y:               $bootstrap-btn-padding-y !global;
+$btn-padding-x:               $bootstrap-btn-padding-x !global;
+$btn-padding-y-sm:            $bootstrap-btn-padding-y-sm !global;
+$btn-padding-x-sm:            $bootstrap-btn-padding-x-sm !global;
+$btn-padding-y-lg:            $bootstrap-btn-padding-y-lg !global;
+$btn-padding-x-lg:            $bootstrap-btn-padding-x-lg !global;
+$btn-line-height:             $bootstrap-btn-line-height !global;
+$btn-line-height-sm:          $bootstrap-btn-line-height-sm !global;
+$btn-line-height-lg:          $bootstrap-btn-line-height-lg !global;
+$btn-border-width:            $bootstrap-btn-border-width !global;
+$btn-border-radius:           $bootstrap-btn-border-radius !global;
+$btn-border-radius-lg:        $bootstrap-btn-border-radius-lg !global;
+$btn-border-radius-sm:        $bootstrap-btn-border-radius-sm !global;
+$btn-focus-width:             $bootstrap-btn-focus-width !global;
+$btn-focus-box-shadow:        $bootstrap-btn-focus-box-shadow !global;
+$btn-box-shadow:              $bootstrap-btn-box-shadow !global;
+$btn-active-box-shadow:       $bootstrap-btn-active-box-shadow !global;
+$btn-disabled-opacity:        $bootstrap-btn-disabled-opacity !global;
+$btn-link-disabled-color:     $bootstrap-btn-link-disabled-color !global;
+/* Button Settings */
+
+/* Form Settings */
+$input-padding-y:                                             $bootstrap-input-padding-y !global;
+$input-padding-x:                                             $bootstrap-input-padding-x !global;
+$input-font-family:                                           $bootstrap-input-font-family !global;
+$input-font-size:                                             $bootstrap-input-font-size !global;
+$input-padding-y-sm:                                          $bootstrap-input-padding-y-sm !global;
+$input-padding-x-sm:                                          $bootstrap-input-padding-x-sm !global;
+$input-font-size-sm:                                          $bootstrap-input-font-size-sm !global;
+$input-padding-y-lg:                                          $bootstrap-input-padding-y-lg !global;
+$input-padding-x-lg:                                          $bootstrap-input-padding-x-lg !global;
+$input-line-height:                                           $bootstrap-input-btn-line-height !global;
+$input-line-height-sm:                                        $bootstrap-input-btn-line-height-sm !global;
+$input-line-height-lg:                                        $bootstrap-input-btn-line-height-lg !global;
+$input-font-size-lg:                                          $bootstrap-input-font-size-lg !global;
+$input-bg:                                                    $bootstrap-input-bg !global;
+$input-disabled-bg:                                           $bootstrap-input-disabled-bg !global;
+$input-color:                                                 $bootstrap-input-color !global;
+$input-border-color:                                          $bootstrap-input-border-color !global;
+$input-border-width:                                          $bootstrap-input-border-width !global;
+$input-box-shadow:                                            $bootstrap-input-box-shadow !global;
+$input-border-radius:                                         $bootstrap-input-border-radius !global;
+$input-border-radius-lg:                                      $bootstrap-input-border-radius-lg !global;
+$input-border-radius-sm:                                      $bootstrap-input-border-radius-sm !global;
+$input-focus-bg:                                              $bootstrap-input-focus-bg !global;
+$input-focus-border-color:                                    $bootstrap-input-focus-border-color !global;
+$input-focus-color:                                           $bootstrap-input-focus-color !global;
+$input-focus-width:                                           $bootstrap-input-focus-width !global;
+$input-focus-box-shadow:                                      $bootstrap-input-focus-box-shadow !global;
+$input-placeholder-color:                                     $bootstrap-input-placeholder-color !global;
+$input-plaintext-color:                                       $bootstrap-input-plaintext-color !global;
+
+$custom-select-padding-y:                                     $bootstrap-custom-select-padding-y !global;
+$custom-select-padding-x:                                     $bootstrap-custom-select-padding-x !global;
+$custom-select-font-family:                                   $bootstrap-custom-select-font-family !global;
+$custom-select-font-size:                                     $bootstrap-custom-select-font-size !global;
+$custom-select-indicator-padding:                             $bootstrap-custom-select-indicator-padding !global;
+$custom-select-color:                                         $bootstrap-custom-select-color !global;
+$custom-select-disabled-color:                                $bootstrap-custom-select-disabled-color !global;
+$custom-select-bg:                                            $bootstrap-custom-select-bg !global;
+$custom-select-disabled-bg:                                   $bootstrap-custom-select-disabled-bg !global;
+$custom-select-bg-size:                                       $bootstrap-custom-select-bg-size !global;
+$custom-select-border-width:                                  $bootstrap-custom-select-border-width !global;
+$custom-select-border-color:                                  $bootstrap-custom-select-border-color !global;
+$custom-select-border-radius:                                 $bootstrap-custom-select-border-radius !global;
+$custom-select-box-shadow:                                    $bootstrap-custom-select-box-shadow !global;
+$custom-select-focus-border-color:                            $bootstrap-custom-select-focus-border-color !global;
+$custom-select-focus-width:                                   $bootstrap-custom-select-focus-width !global;
+$custom-select-focus-box-shadow:                              $bootstrap-custom-select-focus-box-shadow !global;
+$custom-select-padding-y-sm:                                  $bootstrap-custom-select-padding-y-sm !global;
+$custom-select-padding-x-sm:                                  $bootstrap-custom-select-padding-x-sm !global;
+$custom-select-font-size-sm:                                  $bootstrap-custom-select-font-size-sm !global;
+$custom-select-padding-y-lg:                                  $bootstrap-custom-select-padding-y-lg !global;
+$custom-select-padding-x-lg:                                  $bootstrap-custom-select-padding-x-lg !global;
+$custom-select-font-size-lg:                                  $bootstrap-custom-select-font-size-lg !global;
+
+$custom-control-gutter:                                       $bootstrap-custom-control-gutter !global;
+$custom-control-spacer-x:                                     $bootstrap-custom-control-spacer-x !global;
+$custom-control-cursor:                                       $bootstrap-custom-control-cursor !global;
+$custom-control-indicator-size:                               $bootstrap-custom-control-indicator-size !global;
+$custom-control-indicator-bg:                                 $bootstrap-custom-control-indicator-bg !global;
+$custom-control-indicator-box-shadow:                         $bootstrap-custom-control-indicator-box-shadow !global;
+$custom-control-indicator-border-color:                       $bootstrap-custom-control-indicator-border-color !global;
+$custom-control-indicator-border-width:                       $bootstrap-custom-control-indicator-border-width !global;
+$custom-control-label-color:                                  $bootstrap-custom-control-label-color !global;
+$custom-control-indicator-disabled-bg:                        $bootstrap-custom-control-indicator-disabled-bg !global;
+$custom-control-label-disabled-color:                         $bootstrap-custom-control-label-disabled-color !global;
+$custom-control-indicator-checked-disabled-bg:                $bootstrap-custom-control-indicator-checked-disabled-bg !global;
+$custom-control-indicator-checked-box-shadow:                 $bootstrap-custom-control-indicator-checked-box-shadow !global;
+$custom-control-indicator-checked-border-color:               $bootstrap-custom-control-indicator-checked-border-color !global;
+$custom-control-indicator-focus-box-shadow:                   $bootstrap-custom-control-indicator-focus-box-shadow !global;
+$custom-control-indicator-focus-border-color:                 $bootstrap-custom-control-indicator-focus-border-color !global;
+$custom-control-indicator-active-color:                       $bootstrap-custom-control-indicator-active-color !global;
+$custom-control-indicator-active-bg:                          $bootstrap-custom-control-indicator-active-bg !global;
+$custom-control-indicator-active-box-shadow:                  $bootstrap-custom-control-indicator-active-box-shadow !global;
+$custom-control-indicator-active-border-color:                $bootstrap-custom-control-indicator-active-border-color !global;
+$custom-checkbox-indicator-border-radius:                     $bootstrap-custom-checkbox-indicator-border-radius !global;
+$custom-checkbox-indicator-indeterminate-bg:                  $bootstrap-custom-checkbox-indicator-indeterminate-bg !global;
+$custom-checkbox-indicator-indeterminate-color:               $bootstrap-custom-checkbox-indicator-indeterminate-color !global;
+$custom-checkbox-indicator-indeterminate-box-shadow:          $bootstrap-custom-checkbox-indicator-indeterminate-box-shadow !global;
+$custom-checkbox-indicator-indeterminate-border-color:        $bootstrap-custom-checkbox-indicator-indeterminate-border-color !global;
+$custom-radio-indicator-border-radius:                        $bootstrap-custom-radio-indicator-border-radius !global;
+
+$label-margin-bottom:                                         $bootstrap-label-margin-bottom !global;
+$form-grid-gutter-width:                                      $bootstrap-form-grid-gutter-width !global;
+$form-group-margin-bottom:                                    $bootstrap-form-group-margin-bottom !global;
+$input-group-addon-color:                                     $bootstrap-input-group-addon-color !global;
+$input-group-addon-bg:                                        $bootstrap-input-group-addon-bg !global;
+$input-group-addon-border-color:                              $bootstrap-input-group-addon-border-color !global;
+/* Form Settings */
+
+/* Table Settings */
+$table-cell-padding:                                          $bootstrap-table-cell-padding !global;
+$table-cell-padding-sm:                                       $bootstrap-table-cell-padding-sm !global;
+$table-color:                                                 $bootstrap-table-color !global;
+$table-bg:                                                    $bootstrap-table-bg !global;
+$table-accent-bg:                                             $bootstrap-table-accent-bg !global;
+$table-hover-color:                                           $bootstrap-table-hover-color !global;
+$table-hover-bg:                                              $bootstrap-table-hover-bg !global;
+$table-active-bg:                                             $bootstrap-table-active-bg !global;
+$table-border-width:                                          $bootstrap-table-border-width !global;
+$table-border-color:                                          $bootstrap-table-border-color !global;
+$table-head-bg:                                               $bootstrap-table-head-bg !global;
+$table-head-color:                                            $bootstrap-table-head-color !global;
+$table-dark-color:                                            $bootstrap-table-dark-color !global;
+$table-dark-bg:                                               $bootstrap-table-dark-bg !global;
+$table-dark-accent-bg:                                        $bootstrap-table-dark-accent-bg !global;
+$table-dark-hover-color:                                      $bootstrap-table-dark-hover-color !global;
+$table-dark-hover-bg:                                         $bootstrap-table-dark-hover-bg !global;
+$table-dark-border-color:                                     $bootstrap-table-dark-border-color !global;
+$table-striped-order:                                         $bootstrap-table-striped-order !global;
+$table-caption-color:                                         $bootstrap-table-caption-color !global;
+$table-bg-level:                                              $bootstrap-table-bg-level !global;
+$table-border-level:                                          $bootstrap-table-border-level !global;
+/* Table Settings */

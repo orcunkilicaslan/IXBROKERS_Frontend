@@ -1,0 +1,201 @@
+
+.footer{
+  color: #7f8690;
+  background-color: $global-clr-dark-black;
+
+  &-top{
+    background-color: $global-clr-green;
+
+    .row{
+      @include flexbox-align-items(center);
+      padding: 23px 0;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 15px 0;
+      }
+    }
+
+    &-logo{
+      img{
+        @include BootstrapMaxWidthResponsive(1k){
+          width: 160px;
+        }
+      }
+    }
+
+    &-social{
+      .sociallist{
+        @include flexbox-display-flex();
+
+        li{
+          margin-right: 5px;
+          width: 34px;
+          height: 34px;
+          border: 2px solid white;
+          @include border-radius(50%);
+
+          &:last-child{margin-right: 0;}
+
+          .socialicon{
+            width: 24px;
+            height: 24px;
+            background-image: url(#{$global-img-path-icons}/icons_spite_24_footer_social.svg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            display: block;
+            position: relative;
+            margin: 3px;
+            @include svg-filter(0%, 1, 0, 100%);
+
+            &.facebook{background-position: 0 0;}
+            &.twitter{background-position: -24px 0;}
+            &.linkedin{background-position: -48px 0;}
+            &.instagram{background-position: -72px 0;}
+          }
+        }
+      }
+    }
+  }
+
+  &-navigation{
+    padding: 60px 0;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 35px 0 40px;
+    }
+
+    &-col{}
+
+    h4, h5{
+      line-height: 1.2;
+      position: relative;
+    }
+
+    h4 + h4{
+      margin-top: 15px;
+    }
+
+    h4{
+      color: $global-clr-white;
+      font-size: 22px;
+      margin-bottom: 10px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 20px;
+      }
+
+      a{
+        color: $global-clr-white;
+        @include transition-multiple(color 0.15s ease-in-out);
+
+        &:hover{
+          color: $global-clr-green;
+        }
+      }
+    }
+
+    h5{
+      color: $global-clr-green;
+      font-size: 16px;
+      margin-bottom: 5px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 15px;
+      }
+
+      a{
+        color: $global-clr-green;
+      }
+    }
+
+    &-list{
+
+      li{
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 5px 0;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          font-size: 15px;
+        }
+
+        &:first-child{margin-top: 0;}
+        &:last-child{margin-bottom: 0;}
+
+        a{
+          color: #7f8690;
+          @include transition-multiple(color 0.15s ease-in-out);
+
+          &:hover{
+            color: $global-clr-white;
+          }
+        }
+      }
+    }
+  }
+
+  &-risk{
+
+    &-box{
+      padding: 15px;
+      border: 1px solid transparentize($global-clr-green, 0.5);
+      @include border-radius(3px);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 10px;
+      }
+    }
+
+    h6{
+      color: $global-clr-green;
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 5px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 15px;
+      }
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 1.25;
+      margin-bottom: 5px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 14px;
+      }
+
+      &:last-child{margin-bottom: 0;}
+
+      a{
+        color: $global-clr-green;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  &-bottom{
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 20px 0;
+
+    &-row{
+      @include flexbox-align-items(center);
+      @include flexbox-justify-content(space-between);
+    }
+
+    &-copyright{
+      i.copylogo svg{
+        width: auto;
+        height: 11px;
+        position: relative;
+        top: -2px;
+      }
+    }
+
+    &-contact{}
+  }
+
+}
