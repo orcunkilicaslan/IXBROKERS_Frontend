@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                        <form class="openaccount-formbox-form" autocomplete="off" novalidate id="openDemoAccountForm" errcontainer="openDemoAccountFormErrors" onsubmit="return submitForm('openDemoAccountForm')">
+                        <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm">
                             <div class="form-row">
                                 <div class="form-group col">
                                     <label>FIRST NAME</label>

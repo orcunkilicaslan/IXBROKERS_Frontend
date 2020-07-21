@@ -28,54 +28,35 @@
                                 <h2 class="openaccount-formbox-head-title">OPEN <span class="sitecolorgreen">LIVE ACCOUNT</span></h2>
                                 <p class="openaccount-formbox-head-desc">Open Account in seconds and begin trading now!</p>
                             </div>
-                            <div class="alert alert-bgdark alert-sweet alert-warning alert-dismissible fade show d-none" role="alert">
-                                <div class="alert-flex">
-                                    <div class="alert-icon">
-                                        <div class="animation-alert-icons">
-                                            <div class="alert-icons alert-icons-warning">
-                                                <div class="alert-icons-warning-body"></div>
-                                                <div class="alert-icons-warning-dot"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="alert-desc">
-                                        <h6 class="alert-heading">Warning!</h6>
-                                        <p>Aww yeah, you successfully read this important alert message.</p>
-                                    </div>
-                                </div>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <form class="openaccount-formbox-form" action="" autocomplete="off" novalidate>
+                            <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm">
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <label>FIRST NAME</label>
-                                        <input type="text" class="form-control" placeholder="">
+                                        <input type="text" name="first_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="">
                                     </div>
                                     <div class="form-group col">
                                         <label>LAST NAME</label>
-                                        <input type="text" class="form-control" placeholder="">
+                                        <input type="text" name="last_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <label>EMAIL</label>
-                                        <input type="email" class="form-control" placeholder="">
+                                        <input type="email" name="email" class="form-control fvalidate" frule="email" placeholder="">
                                     </div>
                                     <div class="form-group col">
                                         <label>PHONE</label>
-                                        <input type="text" class="form-control inputphonemasktr" placeholder="">
+                                        <input type="text" name="phone" class="form-control inputphonemasktr fvalidate" frule="phone" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <label>PASSWORD</label>
-                                        <input type="password" class="form-control" placeholder="">
+                                        <input type="password" name="pass" class="form-control fvalidate" frule="minl:8,maxl:32" placeholder="">
                                     </div>
                                     <div class="form-group col">
                                         <label>RE-PASSWORD</label>
-                                        <input type="password" class="form-control" placeholder="">
+                                        <input type="password" name="conf_pass" class="form-control fvalidate" frule="minl:8,maxl:32,same:pass" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-group custom-control-group-vertical">
@@ -95,7 +76,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-lg btn-success minwidthper100">OPEN LIVE ACCOUNT</button>
+                                    <button type="submit" class="btn btn-lg btn-success minwidthper100">OPEN LIVE ACCOUNT</button>
                                 </div>
                             </form>
                         </div>
