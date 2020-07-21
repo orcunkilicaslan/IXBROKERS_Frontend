@@ -13,6 +13,10 @@
     font-family: $global-font-family-cocogothic-heavy !important;
     font-size: 20px;
     line-height: 1.2;
+
+    @include BootstrapMaxWidthResponsive(hd){
+      font-size: 18px;
+    }
   }
 
   &-desc{
@@ -23,6 +27,10 @@
 
     @include BootstrapMaxWidthResponsive(1k){
       font-size: 16px;
+    }
+    @include BootstrapMaxWidthResponsive(hd){
+      font-size: 14px;
+      margin-top: 0;
     }
   }
 
@@ -69,6 +77,9 @@
 
       @include BootstrapMaxWidthResponsive(1k){
         font-size: 20px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        font-size: 18px;
       }
     }
 
@@ -261,31 +272,4 @@
     }
   }
 
-}
-
-.Firefox{
-
-  .platappdownbtns{
-    .btn{
-      &-platdown{
-        p{
-          strong{
-            font-weight: 500 !important;
-          }
-        }
-      }
-    }
-  }
-
-  .sectionfeaturebox{
-    &-icons{
-      font-weight: 500 !important;
-    }
-
-    &-title{
-      h3{
-        font-weight: 500 !important;
-      }
-    }
-  }
 }
