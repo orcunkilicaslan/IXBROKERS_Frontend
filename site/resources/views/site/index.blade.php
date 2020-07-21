@@ -253,7 +253,6 @@
 
                 <!-- TabNav -->
                 <ul class="summarytable-tabnav nav nav-tabs nav-space-between" role="tablist" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <li class="nav-item"><a class="nav-link active" id="tab-Popular" data-toggle="tab" href="#Popular" role="tab" aria-controls="Popular" aria-selected="true"><span>POPULAR</span></a></li>
                     <li class="nav-item"><a class="nav-link" id="tab-Forex" data-toggle="tab" href="#Forex" role="tab" aria-controls="Forex" aria-selected="false"><span>FOREX</span></a></li>
                     <li class="nav-item"><a class="nav-link" id="tab-Commodities" data-toggle="tab" href="#Commodities" role="tab" aria-controls="Commodities" aria-selected="false"><span>COMMODITIES</span></a></li>
                     <li class="nav-item"><a class="nav-link" id="tab-Indices" data-toggle="tab" href="#Indices" role="tab" aria-controls="Indices" aria-selected="false"><span>INDICES</span></a></li>
@@ -263,150 +262,30 @@
                 <!-- TabNav -->
                 <!-- TabContent -->
                 <div class="summarytable-tabcontent tab-content" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                    <div class="tab-pane fade show active" id="Popular" role="tabpanel" aria-labelledby="tab-Popular">
+                    <div class="tab-pane fade active show" id="Forex" role="tabpanel" aria-labelledby="tab-Forex">
                         <div class="summarytable-tablearea">
                             <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
                                 <thead>
                                 <tr>
                                     <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
+                                    <th><span>PREV. CLOSE</span></th>
+                                    <th><span>BID</span></th>
+                                    <th><span>ASK</span></th>
+                                    <th><span>SPREAD</span></th>
                                     <th class="centercell btncell"><span>FREE BONUS</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="Forex" role="tabpanel" aria-labelledby="tab-Forex">
-                        <div class="summarytable-tablearea">
-                            <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
-                                <thead>
-                                <tr>
-                                    <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
-                                    <th class="centercell btncell"><span>FREE BONUS</span></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
+                                    @foreach($marketPrices->where('type', 4) as $market)
+                                        <tr>
+                                            <td><span>{{ $market->market_name }}</span></td>
+                                            <td><span>{{sprintf('%0.4f', $market->previous_close) }}</span></td>
+                                            <td><span>{{ sprintf('%0.4f', $market->bid) }}</span></td>
+                                            <td><span>{{ sprintf('%0.4f', $market->ask) }}</span></td>
+                                            <td><span>{{ sprintf('%0.4f', ($market->ask - $market->bid)) }}</span></td>
+                                            <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -417,70 +296,28 @@
                                 <thead>
                                 <tr>
                                     <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
+                                    <th><span>PREV. CLOSE</span></th>
+                                    <th><span>OPEN</span></th>
+                                    <th><span>PRICE</span></th>
+                                    <th><span>CHANGE</span></th>
                                     <th class="centercell btncell"><span>FREE BONUS</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
+                                @foreach($marketPrices->where('type', 2) as $market)
+                                    @php
+                                    $changePercentage = ($market->current_price - $market->open) / $market->open * 100;
+                                    $rowClass = $changePercentage < 0 ? 'sitecolorred' : 'sitecolorgreen';
+                                    @endphp
+                                    <tr>
+                                        <td><span>{{ $market->market_name }}</span></td>
+                                        <td><span>{{sprintf('%0.4f', $market->previous_close) }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', $market->open) }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', $market->current_price) }}</span></td>
+                                        <td><span class="{{$rowClass}}">%{{ sprintf('%0.2f', ($changePercentage)) }}</span></td>
+                                        <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -491,70 +328,28 @@
                                 <thead>
                                 <tr>
                                     <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
+                                    <th><span>PREV. CLOSE</span></th>
+                                    <th><span>OPEN</span></th>
+                                    <th><span>PRICE</span></th>
+                                    <th><span>CHANGE</span></th>
                                     <th class="centercell btncell"><span>FREE BONUS</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
+                                @foreach($marketPrices->where('type', 1) as $market)
+                                    @php
+                                        $changePercentage = ($market->current_price - $market->open) / $market->open * 100;
+                                        $rowClass = $changePercentage < 0 ? 'sitecolorred' : 'sitecolorgreen';
+                                    @endphp
+                                    <tr>
+                                        <td><span>{{ $market->market_name }}</span></td>
+                                        <td><span>{{sprintf('%0.4f', $market->previous_close) }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', $market->open) }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', $market->current_price) }}</span></td>
+                                        <td><span class="{{$rowClass}}">%{{ sprintf('%0.2f', ($changePercentage)) }}</span></td>
+                                        <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -565,70 +360,24 @@
                                 <thead>
                                 <tr>
                                     <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
+                                    <th><span>VOLUME</span></th>
+                                    <th><span>BID</span></th>
+                                    <th><span>ASK</span></th>
+                                    <th><span>SPREAD</span></th>
                                     <th class="centercell btncell"><span>FREE BONUS</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
+                                @foreach($marketPrices->where('type', 3) as $market)
+                                    <tr>
+                                        <td><span>{{ $market->market_name }}</span></td>
+                                        <td><span>{{ $market->volume  }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', $market->bid) }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', $market->ask) }}</span></td>
+                                        <td><span>{{ sprintf('%0.4f', ($market->ask - $market->bid)) }}</span></td>
+                                        <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

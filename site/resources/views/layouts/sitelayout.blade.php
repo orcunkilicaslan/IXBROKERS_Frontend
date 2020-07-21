@@ -4,7 +4,7 @@
     <title>IXBROKERS</title>
     <meta charset="utf-8">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-    <meta name="viewport" content="width=1920">
+    <meta name="viewport" content="width=1400">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
     <link id="css-bootstrap" rel="stylesheet" href="/assets/dist/css/bootstrap.css">
     <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css">
@@ -15,15 +15,22 @@
     <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 
     <style>
-        .form-group.invalid input{
+        .form-group.invalid input,
+        .form-group.invalid select,
+        .form-group.invalid textarea{
             border-color: red !important;
         }
+
         .form-group.invalid label{
             color: red !important;
         }
-        .form-group.valid input{
+
+        .form-group.valid input,
+        .form-group.valid select,
+        .form-group.valid textarea{
             border-color: green !important;
         }
+
         .form-group.valid label{
             color: green !important;
         }

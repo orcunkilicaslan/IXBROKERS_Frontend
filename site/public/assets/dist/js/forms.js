@@ -1,3 +1,10 @@
+$(function(){
+   $("form.ajaxAutoValidate").submit(function(evnt){
+       evnt.preventDefault();
+       submitForm($(this).attr('id'));
+   })
+});
+
 let submitForm = (formID) => {
     let form = document.getElementById(formID);
     clearFormErrorsAndHighlights(form);
@@ -93,14 +100,20 @@ let willApplyRule = (form, value, rule) => {
         case 'same':
             let reference = form.querySelector(`input[name="${rVal}"]`);
             return reference.value === value;
+
+        case 'minv':
+            return Number(value) >= Number(rVal);
+
+        case 'maxv':
+            return Number(value) <= Number(rVal);
+
+        case 'not':
+            return value !== rVal;
     }
     return true;
 }
 
 let clearFormErrorsAndHighlights = (form) => {
-    let formErrorElement = document.getElementById(form.getAttribute('errcontainer'));
-    formErrorElement.classList.add("d-none");
-
     let validateFields = form.querySelectorAll('.fvalidate');
     validateFields.forEach( field => {
         findAncestorByClass(field, 'form-group').classList.remove('invalid');
