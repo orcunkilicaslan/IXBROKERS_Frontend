@@ -15,6 +15,9 @@
     @include BootstrapMaxWidthResponsive(1k){
       font-size: 17px;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      font-size: 16px;
+    }
     @include BootstrapMaxWidthResponsive(lg){
       background-color: darken($global-clr-dark-black, 5%);
     }
