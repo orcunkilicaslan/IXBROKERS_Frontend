@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Market;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -12,7 +13,12 @@ class SiteController extends Controller
      * @return void
      */
     public function __construct(){}
-    public function index() { return view('site.index'); }
+    public function index() {
+        $marketPrices = Market::where('status', 1)->orderBy('type','asc')->orderBy('market_name','asc')->get();
+        return view('site.index', [
+            'marketPrices' => $marketPrices
+        ]);
+    }
     public function account_opendemoaccount() { return view('site.account.open_demo_account'); }
     public function account_openliveaccount() { return view('site.account.open_live_account'); }
     public function account_accounttypes() { return view('site.account.account_types'); }
