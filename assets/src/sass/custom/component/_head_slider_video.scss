@@ -29,7 +29,7 @@
         padding-bottom: 35px;
       }
       @include BootstrapMaxWidthResponsive(hd){
-        padding-top: 250px;
+        padding-top: 215px;
         padding-bottom: 30px;
       }
 
@@ -98,7 +98,7 @@
           top: calc(50% + 70px);
         }
         @include BootstrapMaxWidthResponsive(hd){
-          top: calc(50% + 50px);
+          top: calc(50% + 35px);
         }
 
         button[class*='owl-']{
@@ -240,7 +240,7 @@
             font-size: 18px;
           }
           @include BootstrapMaxWidthResponsive(hd){
-            font-size: 16px;
+            font-size: 17px;
           }
         }
       }
@@ -255,7 +255,7 @@
       width: 420px;
     }
     @include BootstrapMaxWidthResponsive(hd){
-      width: 380px;
+      width: 400px;
     }
 
     .openaccountbox{
@@ -265,10 +265,6 @@
       text-align: center;
       @include border-radius(3px);
       @include backdrop-filter-multiple(blur(5px));
-
-      @include BootstrapMaxWidthResponsive(hd){
-        padding: 25px 20px;
-      }
     }
 
     .openaccountbtns{

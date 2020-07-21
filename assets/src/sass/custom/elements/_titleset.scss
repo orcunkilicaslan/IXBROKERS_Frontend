@@ -30,6 +30,11 @@
       h1,h2,h3{font-size: 34px;}
       p{font-size: 18px;}
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      h1,h2,h3{font-size: 32px;}
+      p{font-size: 17px;}
+      h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 5px;}
+    }
   }
 
   &-md{
@@ -40,6 +45,11 @@
     @include BootstrapMaxWidthResponsive(1k){
       h1,h2,h3{font-size: 28px;}
       p{font-size: 16px;}
+    }
+    @include BootstrapMaxWidthResponsive(hd){
+      h1,h2,h3{font-size: 26px;}
+      p{font-size: 15px;}
+      h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 5px;}
     }
   }
 
