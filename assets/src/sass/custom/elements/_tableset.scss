@@ -20,6 +20,9 @@
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 16px;
         }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 15px;
+        }
       }
     }
   }
@@ -37,9 +40,13 @@
         font-size: 18px;
         padding-top: 10px;
         padding-bottom: 10px;
+        vertical-align: unset;
 
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 16px;
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 15px;
         }
       }
     }
@@ -91,6 +98,11 @@
     thead tr th{
       padding-top: 18px;
       padding-bottom: 18px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
     }
     tbody tr td{
       padding-top: 12px;
@@ -99,6 +111,10 @@
       @include BootstrapMaxWidthResponsive(1k){
         padding-top: 10px;
         padding-bottom: 10px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-top: 8px;
+        padding-bottom: 8px;
       }
     }
   }

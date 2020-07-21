@@ -8,6 +8,9 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 60px 0;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 50px 0;
+    }
 
     .component-siteaccounttypes{
       margin-top: 80px;
@@ -16,18 +19,33 @@
       @include BootstrapMaxWidthResponsive(1k){
         margin-top: 60px;
       }
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 50px;
+      }
     }
   }
 
   &-summarytable{
     padding: 40px 0;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 30px 0;
+    }
+
     .sitetitle-xl{
       padding-bottom: 30px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-bottom: 15px;
+      }
     }
 
     .component-summarytable{
       padding: 30px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 15px;
+      }
     }
 
   }
@@ -39,11 +57,17 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 50px 0;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 40px 0;
+    }
 
     .sitetitle-xl{
       padding-bottom: 50px;
-    }
 
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-bottom: 40px;
+      }
+    }
   }
 
   &-news{
@@ -52,34 +76,22 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 50px 0;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 40px 0;
+    }
 
-    &-box{
-      background-color: $global-clr-white;
-      padding: 50px;
-      @include border-radius(4px);
-      @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
-
-      @include BootstrapMaxWidthResponsive(1k){
-        padding: 40px;
-      }
-
-      .sitetitle-xl{
-        padding-bottom: 40px;
-      }
-
-      .bignewsbox{
-        background-color: $global-clr-white;
-        padding-right: 40px;
-        border-right: 2px solid $global-border-light-gray-opacity;
-      }
+    .component-newsbox{
 
       .smallnewsbox{
-        background-color: $global-clr-white;
-        padding-left: 40px;
+        .sitetitle-xl{
+          padding-bottom: 40px;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            padding-bottom: 30px;
+          }
+        }
       }
+
     }
   }
-
-  &-aboutus{}
-
 }

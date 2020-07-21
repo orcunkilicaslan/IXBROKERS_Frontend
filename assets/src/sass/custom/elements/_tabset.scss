@@ -25,6 +25,9 @@
       @include BootstrapMaxWidthResponsive(1k){
         margin-bottom: 15px;
       }
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-bottom: 10px;
+      }
     }
 
     &-item{
@@ -44,6 +47,10 @@
 
       @include BootstrapMaxWidthResponsive(1k){
         font-size: 16px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        font-size: 15px;
+        padding: 18px 5px;
       }
 
       &:hover{
