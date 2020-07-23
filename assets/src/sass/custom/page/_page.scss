@@ -1,6 +1,9 @@
 // Custom
 @import "custom";
 
+// Component
+@import "component";
+
 // Homepage
 @import "home";
 
@@ -16,11 +19,17 @@
 // Platforms
 @import "platforms";
 
+// Investments
+@import "investments";
+
 // Partners
 @import "partners";
 
 // Company
 @import "company";
+
+// Section Layout
+@import "section_layout";
 
 // Browser Bug Fixed
 @import "zzz_bugfixed_firefox";
