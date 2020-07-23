@@ -19,6 +19,7 @@
  - [Platforms_MT5_Desktop](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT5_Desktop.html)
  - [Platforms_MT5_Web](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT5_Web.html)
  - [Platforms_MT5_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT5_Mobile.html)
+ - [Research_Morning](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Research_Morning.html)
  - [Partnership_Affiliate_IB](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Partnership_Affiliate_IB.html)
  - [Partnership_Affiliate_Partner](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Partnership_Affiliate_Partner.html)
  - [Company](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Company.html)
