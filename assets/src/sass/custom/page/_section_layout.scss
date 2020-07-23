@@ -1,0 +1,127 @@
+
+.sectionlayout{
+  padding-top: 0 !important;
+  padding-bottom: 40px !important;
+  $sectionlayoutclassname: ".sectionlayout";
+
+  &-start{
+    padding: 60px 0;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 40px 0;
+    }
+
+    > .container .row{
+      @include flexbox-align-items(center);
+    }
+
+    &-text{
+
+      .sitetitle-xl{
+        .btn{
+          margin-top: 10px;
+        }
+      }
+
+    }
+
+    &-img{}
+
+  }
+
+  &-body{
+    background-color: $global-border-light-gray-opacity;
+    padding: 60px 0;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      padding: 40px 0;
+    }
+
+    .sitetitle-xl{
+      margin-bottom: 30px;
+    }
+
+    &-wrp{
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      &:first-child{padding-top: 0;}
+      &:last-child{padding-bottom: 0;}
+
+      &.layoutleft{
+        #{$sectionlayoutclassname}-body-text{
+          @include BootstrapMinWidthResponsive(lg){
+            @include flexbox-flex-order(1);
+          }
+        }
+        #{$sectionlayoutclassname}-body-img{
+          @include BootstrapMinWidthResponsive(lg){
+            @include flexbox-flex-order(2);
+          }
+        }
+      }
+
+      &.layoutright{
+        #{$sectionlayoutclassname}-body-text{
+          @include BootstrapMinWidthResponsive(lg){
+            @include flexbox-flex-order(2);
+          }
+        }
+        #{$sectionlayoutclassname}-body-img{
+          @include BootstrapMinWidthResponsive(lg){
+            @include flexbox-flex-order(1);
+          }
+        }
+      }
+
+      .container{
+        max-width: 1200px;
+        padding: 50px;
+        border: 1px dotted $global-border-light-gray-focus;
+        @include border-radius(3px);
+
+        @include BootstrapMaxWidthResponsive(1k){
+          max-width: 1000px;
+          padding: 35px;
+        }
+
+        .row{
+          @include flexbox-align-items(center);
+        }
+      }
+
+    }
+
+
+
+    &-text{
+
+      h4 + ul.ullist{
+        margin-top: 20px;
+      }
+
+      ul.ullist{
+        li{
+          margin-bottom: 15px;
+
+          &:last-child{margin-bottom: 0;}
+        }
+      }
+
+    }
+
+    &-img{
+      text-align: center;
+
+      img{
+        max-width: 400px;
+      }
+    }
+  }
+
+}

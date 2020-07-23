@@ -12,6 +12,7 @@
  - [Products_CFD](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/23_Products_CFD.html)
  - [Products_Stocks](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Products_Stocks.html)
  - [Products_Crypto](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Products_Crypto.html)
+ - [Investments_PAMM](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Investments_PAMM.html)
  - [Platforms_MT4_Desktop](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT4_Desktop.html)
  - [Platforms_MT4_Web](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT4_Web.html)
  - [Platforms_MT4_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT4_Mobile.html)
