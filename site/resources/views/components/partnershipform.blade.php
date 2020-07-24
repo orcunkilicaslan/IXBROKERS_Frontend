@@ -58,7 +58,7 @@
                 </div>
                 <div class="recaptcha-area">
                     <div class="recaptcha-check">
-                        <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                        <div class="g-recaptcha" data-theme="dark" data-sitekey="{{ env('GCAPTCHASITEKEY') }}"></div>
                     </div>
                     <label>I'm Not Robot</label>
                 </div>
