@@ -37,7 +37,7 @@
                                 <li>Extended version for tablets</li>
                             </ul>
                             <div class="platappdownbtns">
-                                <a href="#" class="btn btn-platdown" title="DOWNLOAD GOOGLE PLAY" rel="bookmark">
+                                <a href="https://download.mql5.com/cdn/mobile/mt5/android?server=IXBrokersFinancial-MT5Demo,IXBrokersFinancial-MT5Live" class="btn btn-platdown" title="DOWNLOAD GOOGLE PLAY" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                             <g id="Icon_GooglePlay" transform="translate(0 -12)">
@@ -61,7 +61,7 @@
 
                         <!-- Imaage -->
                         <div class="col-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
-                            <img src="assets/img/section/platforms_detail_mt_cont_img_android.jpg" alt="MT5 ANDROID" width="600" height="500" />
+                            <img src="/assets/img/section/platforms_detail_mt_cont_img_android.jpg" alt="MT5 ANDROID" width="600" height="500" />
                         </div>
                         <!-- Image -->
 
@@ -84,7 +84,7 @@
                                 <li>Extended version for iPad</li>
                             </ul>
                             <div class="platappdownbtns">
-                                <a href="#" class="btn btn-platdown" title="DOWNLOAD APP STORE" rel="bookmark">
+                                <a href="https://download.mql5.com/cdn/mobile/mt5/ios?server=IXBrokersFinancial-MT5Demo,IXBrokersFinancial-MT5Live" class="btn btn-platdown" title="DOWNLOAD APP STORE" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                             <g id="Icon_AppStore" transform="translate(0 -12)">
@@ -120,7 +120,7 @@
 
                         <!-- Imaage -->
                         <div class="col-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
-                            <img src="assets/img/section/platforms_detail_mt_cont_img_ios.jpg" alt="MT5 IOS" width="600" height="500" />
+                            <img src="/assets/img/section/platforms_detail_mt_cont_img_ios.jpg" alt="MT5 IOS" width="600" height="500" />
                         </div>
                         <!-- Image -->
 

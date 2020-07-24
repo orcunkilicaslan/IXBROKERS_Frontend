@@ -388,70 +388,22 @@
                                 <thead>
                                 <tr>
                                     <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
+                                    <th><span>BID</span></th>
+                                    <th><span>ASK</span></th>
+                                    <th><span>PRICE</span></th>
                                     <th class="centercell btncell"><span>FREE BONUS</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
+                                @foreach($cryptoPrices as $market)
+                                    <tr>
+                                        <td><span>{{ $market->market_name }}</span></td>
+                                        <td><span>{{ sprintf('%0.8f', $market->bid) }}</span></td>
+                                        <td><span>{{ sprintf('%0.8f', $market->ask) }}</span></td>
+                                        <td><span>{{ sprintf('%0.8f', $market->price) }}</span></td>
+                                        <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>
