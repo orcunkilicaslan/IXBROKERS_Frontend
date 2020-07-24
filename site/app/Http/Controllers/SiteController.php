@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\CryptoMarket;
 use App\Market;
 use Illuminate\Http\Request;
 
@@ -15,8 +16,10 @@ class SiteController extends Controller
     public function __construct(){}
     public function index() {
         $marketPrices = Market::where('status', 1)->orderBy('type','asc')->orderBy('market_name','asc')->get();
+        $cryptoPrices = CryptoMarket::where('status', 1)->select('market_name','price','bid','ask')->orderBy('price', 'desc')->get();
         return view('site.index', [
-            'marketPrices' => $marketPrices
+            'marketPrices' => $marketPrices,
+            'cryptoPrices' => $cryptoPrices
         ]);
     }
     public function account_opendemoaccount() { return view('site.account.open_demo_account'); }
@@ -25,8 +28,7 @@ class SiteController extends Controller
     public function products_forex() { return view('site.products.forex'); }
     public function products_commodities() { return view('site.products.commodities'); }
     public function products_indices() { return view('site.products.indices'); }
-    public function products_cfd() { return view('site.products.cfd'); }
-    public function products_stocks() { return view('site.products.stocks'); }
+    public function products_stocks_cfd() { return view('site.products.stockscfd'); }
     public function products_cryptocurrencies() { return view('site.products.crypto_currencies'); }
     public function platforms_mt4_desktop() { return view('site.platforms.mt4_desktop'); }
     public function platforms_mt4_web() { return view('site.platforms.mt4_web'); }
@@ -47,4 +49,5 @@ class SiteController extends Controller
     public function legal_termsandconditions() { return view('site.legal.terms_and_conditions'); }
     public function legal_privacypolicy() { return view('site.legal.privacy_policy'); }
     public function legal_cookiepolicy() { return view('site.legal.cookie_policy'); }
+    public function investments_pamm() { return view('site.investments.pamm'); }
 }

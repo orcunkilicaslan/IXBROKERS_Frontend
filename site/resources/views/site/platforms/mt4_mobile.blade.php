@@ -124,7 +124,7 @@
 
                         <!-- Imaage -->
                         <div class="col-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
-                            <img src="assets/img/section/platforms_detail_mt_cont_img_ios.jpg" alt="MT4 IOS" width="600" height="500" />
+                            <img src="/assets/img/section/platforms_detail_mt_cont_img_ios.jpg" alt="MT4 IOS" width="600" height="500" />
                         </div>
                         <!-- Image -->
 

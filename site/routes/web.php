@@ -21,8 +21,7 @@ Route::get('/account/account-types', 'SiteController@account_accounttypes');
 Route::get('/products/forex', 'SiteController@products_forex');
 Route::get('/products/commodities', 'SiteController@products_commodities');
 Route::get('/products/indices', 'SiteController@products_indices');
-Route::get('/products/cfd', 'SiteController@products_cfd');
-Route::get('/products/stocks', 'SiteController@products_stocks');
+Route::get('/products/stocks-cfd', 'SiteController@products_stocks_cfd');
 Route::get('/products/crypto-currencies', 'SiteController@products_cryptocurrencies');
 Route::get('/platforms/meta-trader-4/desktop', 'SiteController@platforms_mt4_desktop');
 Route::get('/platforms/meta-trader-4/web', 'SiteController@platforms_mt4_web');
@@ -43,6 +42,7 @@ Route::get('/company', 'SiteController@company');
 Route::get('/legal/terms-and-conditions', 'SiteController@legal_termsandconditions');
 Route::get('/legal/privacy-policy', 'SiteController@legal_privacypolicy');
 Route::get('/legal/cookie-policy', 'SiteController@legal_cookiepolicy');
+Route::get('/investments/pamm', 'SiteController@investments_pamm');
 
 
 Auth::routes();

@@ -111,8 +111,7 @@
                                                                     <li><a href="/products/forex" title="FOREX" rel="category">FOREX</a></li>
                                                                     <li><a href="/products/commodities" title="COMMODITIES" rel="category">COMMODITIES</a></li>
                                                                     <li><a href="/products/indices" title="INDICES" rel="category">INDICES</a></li>
-                                                                    <li><a href="/products/cfd" title="CFD" rel="category">CFD</a></li>
-                                                                    <li><a href="/products/stocks" title="STOCKS" rel="category">STOCKS</a></li>
+                                                                    <li><a href="/products/stocks-cfd" title="CFD" rel="category">STOCKS CFD</a></li>
                                                                     <li><a href="/products/crypto-currencies" title="CRYPTOCURRENCIES" rel="category">CRYPTOCURRENCIES</a></li>
                                                                 </ul>
                                                             </div>
@@ -157,6 +156,7 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="dfn-menu-list-item"><a href="/investments/pamm" title="PAMM" rel="category">PAMM</a></li>
                                     <li class="dfn-menu-list-item">
                                         <a href="javascript:;" title="ANALYSIS" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANALYSIS</a>
                                         <div class="dropdown-menu animated">
@@ -266,8 +266,7 @@
                                 <li><a href="/products/forex" title="FOREX" rel="category">FOREX</a></li>
                                 <li><a href="/products/commodities" title="COMMODITIES" rel="category">COMMODITIES</a></li>
                                 <li><a href="/products/indices" title="INDICES" rel="category">INDICES</a></li>
-                                <li><a href="/products/cfd" title="CFD" rel="category">CFD</a></li>
-                                <li><a href="/products/stocks" title="STOCKS" rel="category">STOCKS</a></li>
+                                <li><a href="/products/stocks-cfd" title="CFD" rel="category">STOCKS CFD</a></li>
                                 <li><a href="/products/crypto-currencies" title="CRYPTOCURRENCIES" rel="category">CRYPTOCURRENCIES</a></li>
                             </ul>
                         </div>
@@ -303,6 +302,7 @@
                     </ul>
                 </div>
                 <div class="footer-navigation-col col-lg-2">
+                    <h4><a href="/investments/pamm" title="PAMM" rel="category">PAMM</a></h4>
                     <h4><a href="/education" title="EDUCATION" rel="category">EDUCATION</a></h4>
                     <h4><a href="/company" title="COMPANY" rel="category">COMPANY</a></h4>
                 </div>
