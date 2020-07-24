@@ -1,7 +1,6 @@
 @extends('layouts.sitelayout')
 
 @section('content')
-
     <!-- Slider Start -->
     <div class="headslidervideo">
 
@@ -317,6 +316,8 @@
                                         <td><span class="{{$rowClass}}">%{{ sprintf('%0.2f', ($changePercentage)) }}</span></td>
                                         <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
                                     </tr>
+
+
                                 @endforeach
                                 </tbody>
                             </table>
