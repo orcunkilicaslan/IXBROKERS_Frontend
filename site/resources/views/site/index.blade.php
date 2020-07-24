@@ -39,7 +39,7 @@
                         <p class="openaccountbox-desc">Open Account in seconds and begin trading now!</p>
                         <div class="openaccountbtns">
                             <div>
-                                <a href="12_Account_Open_Live.html" class="btn btn-success" title="@lang('common.account_cta.live_btn_titles')" rel="bookmark">
+                                <a href="/account/open-live-account" class="btn btn-success" title="@lang('common.account_cta.live_btn_titles')" rel="bookmark">
                                     <span>@lang('common.account_cta.live_btn_title')</span>
                                     <small>@lang('common.account_cta.live_btn_titles')</small>
                                     <i class="rightarrow">
@@ -48,7 +48,7 @@
                                         </svg>
                                     </i>
                                 </a>
-                                <a href="11_Account_Open_Demo.html" class="btn btn-info" title="@lang('common.account_cta.demo_btn_titles')" rel="bookmark">
+                                <a href="/account/open-demo-account" class="btn btn-info" title="@lang('common.account_cta.demo_btn_titles')" rel="bookmark">
                                     <span>@lang('common.account_cta.demo_btn_title')</span>
                                     <small>@lang('common.account_cta.demo_btn_titles')</small>
                                     <i class="rightarrow">
@@ -58,7 +58,7 @@
                                     </i>
                                 </a>
                             </div>
-                            <a class="infolink" href="13_Account_Types.html" title="Simply because it is pain?">Simply because it is <span class="sitecolorwhite">pain?</span></a>
+                            <a class="infolink" href="/account/account-types" title="Simply because it is pain?">Simply because it is <span class="sitecolorwhite">pain?</span></a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                                 <li>Spreads for majors are as low as 1 pips.</li>
                                 <li>No commission</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-success" href="13_Account_Types.html" title="Read More" rel="bookmark">Read More</a>
+                            <a class="accounttypesbox-btn btn btn-outline-success" href="/account/account-types" title="Read More" rel="bookmark">Read More</a>
                         </div>
                     </li>
                     <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="750">
@@ -178,7 +178,7 @@
                                 <li>No commission</li>
                                 <li>Crypto currencies</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-info" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-info" href="/account/account-types" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
@@ -202,7 +202,7 @@
                                 <li>Crypto currencies</li>
                                 <li>US and Europe stocks</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-warning" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-warning" href="/account/account-types" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
@@ -224,7 +224,7 @@
                                 <li>3 USD per side commission</li>
                                 <li>Crypto currencies</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-danger" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-danger" href="/account/account-types" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>

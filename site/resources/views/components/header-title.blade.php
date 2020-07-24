@@ -12,7 +12,7 @@
                     <div class="openaccountbox">
                         <div class="openaccountbtns">
                             <div>
-                                <a href="12_Account_Open_Live.html" class="btn btn-success" title="{!! __('common.account_cta.live_btn_titles') !!}" rel="bookmark">
+                                <a href="/account/open-live-account" class="btn btn-success" title="{!! __('common.account_cta.live_btn_titles') !!}" rel="bookmark">
                                     <span>{!! __('common.account_cta.live_btn_title') !!}</span>
                                     <small>{!! __('common.account_cta.live_btn_titles') !!}</small>
                                     <i class="rightarrow">
@@ -21,7 +21,7 @@
                                         </svg>
                                     </i>
                                 </a>
-                                <a href="11_Account_Open_Demo.html" class="btn btn-info" title="{!! __('common.account_cta.demo_btn_titles') !!}" rel="bookmark">
+                                <a href="/account/open-demo-account" class="btn btn-info" title="{!! __('common.account_cta.demo_btn_titles') !!}" rel="bookmark">
                                     <span>{!! __('common.account_cta.demo_btn_title') !!}</span>
                                     <small>{!! __('common.account_cta.demo_btn_titles') !!}</small>
                                     <i class="rightarrow">
