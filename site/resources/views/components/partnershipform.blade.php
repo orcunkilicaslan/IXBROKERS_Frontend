@@ -35,10 +35,10 @@
                     <label>INTERESTED PRODUCTS</label>
                     <select class="form-control custom-select fvalidate" frule="not:-1">
                         <option selected value="-1">CHOOSE</option>
-                        <option value="FX">FX</option>
-                        <option value="CFD">CFD</option>
+                        <option value="FX">FOREX</option>
+                        <option value="CFD">COMMODITIES</option>
                         <option value="INDICES">INDICES</option>
-                        <option value="SINGLE SHARES">SINGLE SHARES</option>
+                        <option value="SINGLE SHARES">STOCKS CFD</option>
                         <option value="CRYPTO CURRENCIES">CRYPTO CURRENCIES</option>
                     </select>
                 </div>
