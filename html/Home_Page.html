@@ -41,14 +41,58 @@
                     </div>
                     <!-- Logo -->
 
-                    <!-- UserArea -->
-                    <div class="header-userarea col-auto">
-                        <div class="header-userarea-icons">
-                            <a class="userareaiconscall" href="#" title="CALL" rel="bookmark"><i class="iconscall"></i></a>
-                            <a class="userareaiconslang" href="#" title="ENGLISH" rel="bookmark"><span>EN</span></a>
+                    <!-- TopHeadRight -->
+                    <div class="header-web-top-headright col-auto">
+                        <div class="header-web-top-headright-row row">
+
+                            <!-- Ticker -->
+                            <div class="header-ticker col-auto">
+                                <ul id="headtickersowl" class="headticker-owl owl-carousel owl-theme">
+                                    <li>
+                                        <small class="headticker-symbol">EURCHF</small>
+                                        <span class="headticker-price">1.0866</span>
+                                    </li>
+                                    <li>
+                                        <small class="headticker-symbol">EURGBP</small>
+                                        <span class="headticker-price">0.8914</span>
+                                    </li>
+                                    <li>
+                                        <small class="headticker-symbol">EURJPY</small>
+                                        <span class="headticker-price">123.7390</span>
+                                    </li>
+                                    <li>
+                                        <small class="headticker-symbol">EURTRY</small>
+                                        <span class="headticker-price">7.6440</span>
+                                    </li>
+                                    <li>
+                                        <small class="headticker-symbol">EURUSD</small>
+                                        <span class="headticker-price">1.1292</span>
+                                    </li>
+                                    <li>
+                                        <small class="headticker-symbol">GBPTRY</small>
+                                        <span class="headticker-price">8.5777</span>
+                                    </li>
+                                    <li>
+                                        <small class="headticker-symbol">USDCAD</small>
+                                        <span class="headticker-price">1.3423</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Ticker -->
+
+                            <!-- UserArea -->
+                            <div class="header-userarea col-auto">
+                                <div class="header-userarea-icons">
+                                    <a class="userareaiconslive livechatstartbtn" href="#" data-toggle="tooltip" data-placement="bottom" title="LIVECHAT" rel="bookmark"><i class="iconslive"></i></a>
+                                    <a class="userareaiconscall d-none" href="#" data-toggle="tooltip" data-placement="bottom" title="CALL" rel="bookmark"><i class="iconscall"></i></a>
+                                    <a class="userareaiconswhatsapp" href="#" data-toggle="tooltip" data-placement="bottom" title="WHATSAPP" rel="bookmark"><i class="iconswp"></i></a>
+                                </div>
+                            </div>
+                            <!-- UserArea -->
+
                         </div>
                     </div>
-                    <!-- UserArea -->
+                    <!-- TopHeadRight -->
 
                 </div>
             </div>
@@ -1460,10 +1504,10 @@
                 </div>
                 <div class="footer-top-social col-auto">
                     <ul class="sociallist">
-                        <li><a href="#" title="Facebook" rel="external nofollow"><i class="socialicon facebook"></i></a></li>
-                        <li><a href="#" title="Twitter" rel="external nofollow"><i class="socialicon twitter"></i></a></li>
-                        <li><a href="#" title="Linkedin" rel="external nofollow"><i class="socialicon linkedin"></i></a></li>
-                        <li><a href="#" title="Instagram" rel="external nofollow"><i class="socialicon instagram"></i></a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook" rel="external nofollow"><i class="socialicon facebook"></i></a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter" rel="external nofollow"><i class="socialicon twitter"></i></a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin" rel="external nofollow"><i class="socialicon linkedin"></i></a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram" rel="external nofollow"><i class="socialicon instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -1566,7 +1610,7 @@
 </footer>
 <!-- Footer End -->
 
-<!--Start of Tawk.to Script-->
+<!-- Live Chat Script Start -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -1577,8 +1621,12 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+$('.livechatstartbtn').on('click', function(){
+    Tawk_API.showWidget();
+    Tawk_API.maximize();
+});
 </script>
-<!--End of Tawk.to Script-->
+<!-- Live Chat Script End -->
 
 <!-- JavaScript Start -->
 <script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
