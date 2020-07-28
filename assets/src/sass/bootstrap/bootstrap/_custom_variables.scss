@@ -48,7 +48,7 @@ $link-hover-decoration:       $bootstrap-link-hover-decoration !global;
 /* Link Settings */
 
 /* Font Settings */
-//$font-family-base             $bootstrap-font-family-default !global;
+$font-family-base:            $bootstrap-font-family-default !global;
 $font-size-base:              $bootstrap-font-size-base !global;
 $font-size-lg:                $bootstrap-font-size-lg !global;
 $font-size-sm:                $bootstrap-font-size-sm !global;

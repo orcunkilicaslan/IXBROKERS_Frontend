@@ -2,7 +2,7 @@
 /* Head Tickers */
 $('#headtickersowl').owlCarousel({
     loop:true,
-    nav:false,
+    nav:true,
     dots:false,
     autoplay:true,
     autoplayTimeout:2000,
