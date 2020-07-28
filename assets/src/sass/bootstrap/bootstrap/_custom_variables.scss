@@ -48,7 +48,7 @@ $link-hover-decoration:       $bootstrap-link-hover-decoration !global;
 /* Link Settings */
 
 /* Font Settings */
-//$font-family-base             $bootstrap-font-family-default !global;
+$font-family-base:            $bootstrap-font-family-default !global;
 $font-size-base:              $bootstrap-font-size-base !global;
 $font-size-lg:                $bootstrap-font-size-lg !global;
 $font-size-sm:                $bootstrap-font-size-sm !global;
@@ -243,3 +243,46 @@ $table-caption-color:                                         $bootstrap-table-c
 $table-bg-level:                                              $bootstrap-table-bg-level !global;
 $table-border-level:                                          $bootstrap-table-border-level !global;
 /* Table Settings */
+
+/* Tooltips Settings */
+$tooltip-font-size:                                           $bootstrap-tooltip-font-size !global;
+$tooltip-max-width:                                           $bootstrap-tooltip-max-width !global;
+$tooltip-color:                                               $bootstrap-tooltip-color !global;
+$tooltip-bg:                                                  $bootstrap-tooltip-bg !global;
+$tooltip-border-radius:                                       $bootstrap-tooltip-border-radius !global;
+$tooltip-opacity:                                             $bootstrap-tooltip-opacity !global;
+$tooltip-padding-y:                                           $bootstrap-tooltip-padding-y !global;
+$tooltip-padding-x:                                           $bootstrap-tooltip-padding-x !global;
+$tooltip-margin:                                              $bootstrap-tooltip-margin !global;
+$tooltip-arrow-width:                                         $bootstrap-tooltip-arrow-width !global;
+$tooltip-arrow-height:                                        $bootstrap-tooltip-arrow-height !global;
+$tooltip-arrow-color:                                         $bootstrap-tooltip-arrow-color !global;
+$form-feedback-tooltip-padding-y:                             $bootstrap-form-feedback-tooltip-padding-y   !global;
+$form-feedback-tooltip-padding-x:                             $bootstrap-form-feedback-tooltip-padding-x !global;
+$form-feedback-tooltip-font-size:                             $bootstrap-form-feedback-tooltip-font-size !global;
+$form-feedback-tooltip-line-height:                           $bootstrap-form-feedback-tooltip-line-height !global;
+$form-feedback-tooltip-opacity:                               $bootstrap-form-feedback-tooltip-opacity !global;
+$form-feedback-tooltip-border-radius:                         $bootstrap-form-feedback-tooltip-border-radius !global;
+/* Tooltips Settings */
+
+/* Popovers Settings */
+$popover-font-size:                                           $bootstrap-popover-font-size !global;
+$popover-bg:                                                  $bootstrap-popover-bg !global;
+$popover-max-width:                                           $bootstrap-popover-max-width !global;
+$popover-border-width:                                        $bootstrap-popover-border-width !global;
+$popover-border-color:                                        $bootstrap-popover-border-color !global;
+$popover-border-radius:                                       $bootstrap-popover-border-radius !global;
+$popover-inner-border-radius:                                 $bootstrap-popover-inner-border-radius !global;
+$popover-box-shadow:                                          $bootstrap-popover-box-shadow !global;
+$popover-header-bg:                                           $bootstrap-popover-header-bg !global;
+$popover-header-color:                                        $bootstrap-popover-header-color !global;
+$popover-header-padding-y:                                    $bootstrap-popover-header-padding-y !global;
+$popover-header-padding-x:                                    $bootstrap-popover-header-padding-x !global;
+$popover-body-color:                                          $bootstrap-popover-body-color !global;
+$popover-body-padding-y:                                      $bootstrap-popover-body-padding-y !global;
+$popover-body-padding-x:                                      $bootstrap-popover-body-padding-x !global;
+$popover-arrow-width:                                         $bootstrap-popover-arrow-width !global;
+$popover-arrow-height:                                        $bootstrap-popover-arrow-height !global;
+$popover-arrow-color:                                         $bootstrap-popover-arrow-color !global;
+$popover-arrow-outer-color:                                   $bootstrap-popover-arrow-outer-color !global;
+/* Popovers Settings */

@@ -1,4 +1,19 @@
 
+/* Head Tickers */
+$('#headtickersowl').owlCarousel({
+    loop:true,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    items:5,
+    margin:0,
+    autoWidth:false,
+    mouseDrag:false
+});
+/* Head Tickers */
+
 /* Head Big Slider */
 $('#headbigsliderowl').owlCarousel({
     loop:true,

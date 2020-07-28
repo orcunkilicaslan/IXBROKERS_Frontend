@@ -16,9 +16,29 @@
     min-height: 1030px;
   }
 
+  &-wrp{
+    @include flexbox-display-flex();
+    @include flexbox-flex-direction(column);
+    @include flexbox-justify-content(space-between);
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &::after{
+      content: "";
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      opacity: 0.5;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      @include background-linear(transparent, $global-clr-black, -90);
+    }
+  }
+
   &-top{
     &.container{
-      height: 100%;
       padding-top: 330px;
       padding-bottom: 120px;
       position: relative;
@@ -35,8 +55,7 @@
 
       .row{
         @include flexbox-align-items(center);
-        height: 100%;
-        position: static;
+        position: relative;
       }
     }
   }
@@ -45,27 +64,11 @@
     width: 100%;
     padding: 75px 0 0;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     @include background-linear(transparent, $global-clr-black, -90);
 
     @include BootstrapMaxWidthResponsive(hd){
       padding: 30px 0 0;
-    }
-
-    &::after{
-      content: "";
-      width: 100%;
-      height: 75%;
-      position: absolute;
-      opacity: 0.5;
-      left: 0;
-      bottom: 0;
-      @include background-linear(transparent, $global-clr-black, -90);
-    }
-
-    .container{
-      position: relative;
-      z-index: 1;
     }
   }
 
@@ -91,14 +94,10 @@
         padding: 0;
         position: absolute;
         left: 0;
-        top: calc(50% + 75px);
-        @include translateY(-50%);
+        top: calc(50% - 25px);
 
-        @include BootstrapMaxWidthResponsive(1k){
-          top: calc(50% + 70px);
-        }
         @include BootstrapMaxWidthResponsive(hd){
-          top: calc(50% + 35px);
+          top: 110px;
         }
 
         button[class*='owl-']{

@@ -245,4 +245,45 @@ $bootstrap-table-striped-order:                                         odd;
 $bootstrap-table-caption-color:                                         $bootstrap-gray-600;
 $bootstrap-table-bg-level:                                              -9;
 $bootstrap-table-border-level:                                          -6;
+
+
+$bootstrap-tooltip-font-size:                                           $bootstrap-font-size-sm * 0.8;
+$bootstrap-tooltip-max-width:                                           200px;
+$bootstrap-tooltip-color:                                               $bootstrap-white;
+$bootstrap-tooltip-bg:                                                  $bootstrap-black;
+$bootstrap-tooltip-border-radius:                                       $bootstrap-border-radius;
+$bootstrap-tooltip-opacity:                                             .9;
+$bootstrap-tooltip-padding-y:                                           .25rem;
+$bootstrap-tooltip-padding-x:                                           .5rem;
+$bootstrap-tooltip-margin:                                              0;
+$bootstrap-tooltip-arrow-width:                                         .8rem;
+$bootstrap-tooltip-arrow-height:                                        .4rem;
+$bootstrap-tooltip-arrow-color:                                         $bootstrap-tooltip-bg;
+$bootstrap-form-feedback-tooltip-padding-y:                             $bootstrap-tooltip-padding-y;
+$bootstrap-form-feedback-tooltip-padding-x:                             $bootstrap-tooltip-padding-x;
+$bootstrap-form-feedback-tooltip-font-size:                             $bootstrap-tooltip-font-size;
+$bootstrap-form-feedback-tooltip-line-height:                           $bootstrap-line-height-base;
+$bootstrap-form-feedback-tooltip-opacity:                               $bootstrap-tooltip-opacity;
+$bootstrap-form-feedback-tooltip-border-radius:                         $bootstrap-tooltip-border-radius;
+
+
+$bootstrap-popover-font-size:                                           $bootstrap-font-size-sm * 0.8;
+$bootstrap-popover-bg:                                                  $bootstrap-white;
+$bootstrap-popover-max-width:                                           276px;
+$bootstrap-popover-border-width:                                        $bootstrap-border-width;
+$bootstrap-popover-border-color:                                        rgba($bootstrap-black, .2);
+$bootstrap-popover-border-radius:                                       $bootstrap-border-radius-lg;
+$bootstrap-popover-inner-border-radius:                                 subtract($bootstrap-popover-border-radius, $bootstrap-popover-border-width);
+$bootstrap-popover-box-shadow:                                          0 .25rem .5rem rgba($bootstrap-black, .2);
+$bootstrap-popover-header-bg:                                           darken($bootstrap-popover-bg, 3%);
+$bootstrap-popover-header-color:                                        null;
+$bootstrap-popover-header-padding-y:                                    .5rem;
+$bootstrap-popover-header-padding-x:                                    .75rem;
+$bootstrap-popover-body-color:                                          $bootstrap-body-clr;
+$bootstrap-popover-body-padding-y:                                      $bootstrap-popover-header-padding-y;
+$bootstrap-popover-body-padding-x:                                      $bootstrap-popover-header-padding-x;
+$bootstrap-popover-arrow-width:                                         1rem;
+$bootstrap-popover-arrow-height:                                        .5rem;
+$bootstrap-popover-arrow-color:                                         $bootstrap-popover-bg;
+$bootstrap-popover-arrow-outer-color:                                   fade-in($bootstrap-popover-border-color, .05);
 /* Bootstrap Variables Settings */
