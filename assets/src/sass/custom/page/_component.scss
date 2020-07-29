@@ -94,6 +94,10 @@
             font-size: 34px;
             height: 26px;
           }
+          @include BootstrapMaxWidthResponsive(xl){
+            font-size: 30px;
+            height: 22px;
+          }
         }
 
         &-pulse{
@@ -170,6 +174,9 @@
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 16px;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 15px;
+        }
       }
 
     }
@@ -179,6 +186,11 @@
       @include flexbox-flex-wrap(wrap);
       margin-left: -40px;
       margin-right: -40px;
+
+      @include BootstrapMaxWidthResponsive(xl){
+        margin-left: 0;
+        margin-right: 0;
+      }
 
       > li{
         @include flexbox-flex-basis(0);
@@ -191,9 +203,16 @@
         @include BootstrapMaxWidthResponsive(1k){
           padding: 35px 30px 30px;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding: 22px 20px 20px;
+        }
 
         &:nth-of-type(even){
           @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+
+          @include BootstrapMaxWidthResponsive(xl){
+            @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+          }
         }
       }
 
@@ -218,6 +237,11 @@
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 15px;
           min-height: 240px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 14px;
+          min-height: 240px;
+          margin-top: 20px;
         }
 
         li{
@@ -349,6 +373,10 @@
     @include BootstrapMaxWidthResponsive(hd){
       padding: 30px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 20px;
+      @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+    }
 
     .bignewsbox{
       width: 100%;
@@ -363,6 +391,11 @@
       @include BootstrapMaxWidthResponsive(hd){
         max-width: 520px;
         padding-right: 30px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        max-width: 50%;
+        padding-right: 20px;
+        border-right-width: 1px;
       }
 
       &-videos{
@@ -387,6 +420,11 @@
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 15px;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 14px;
+          height: auto;
+          margin-top: 15px;
+        }
 
         h3{
           color: $global-clr-text-dark;
@@ -399,6 +437,10 @@
           }
           @include BootstrapMaxWidthResponsive(hd){
             font-size: 20px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            font-size: 18px;
+            margin-bottom: 5px;
           }
         }
 
@@ -418,6 +460,9 @@
 
       @include BootstrapMaxWidthResponsive(hd){
         padding-left: 30px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-left: 20px;
       }
 
       .listnews{
@@ -464,6 +509,9 @@
           @include BootstrapMaxWidthResponsive(1k){
             height: 245px;
           }
+          @include BootstrapMaxWidthResponsive(xl){
+            height: auto;
+          }
 
           h4{
             color: $global-clr-text-dark;
@@ -477,6 +525,10 @@
             @include BootstrapMaxWidthResponsive(hd){
               font-size: 18px;
             }
+            @include BootstrapMaxWidthResponsive(xl){
+              font-size: 16px;
+              margin-bottom: 5px;
+            }
           }
 
           p{
@@ -488,6 +540,9 @@
             }
             @include BootstrapMaxWidthResponsive(hd){
               font-size: 15px;
+            }
+            @include BootstrapMaxWidthResponsive(xl){
+              font-size: 14px;
             }
           }
 
@@ -505,10 +560,18 @@
 
           &-date{
             color: $global-clr-green;
+
+            @include BootstrapMaxWidthResponsive(xl){
+              font-size: 14px;
+            }
           }
 
           &-more{
             font-weight: 700;
+
+            @include BootstrapMaxWidthResponsive(xl){
+              font-size: 14px;
+            }
 
             svg{
               line,
@@ -533,18 +596,22 @@
       @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
       position: absolute;
       top: 0;
+
+      @include BootstrapMaxWidthResponsive(xl){
+        @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+      }
     }
 
-    &::before{left: -5045px;}
-    &::after{right: -5045px;}
+    &::before{left: -5030px;}
+    &::after{right: -5030px;}
 
     @include BootstrapMaxWidthResponsive(1k){
-      &::before{left: -5020px;}
-      &::after{right: -5020px;}
+      &::before{left: -5015px;}
+      &::after{right: -5015px;}
     }
     @include BootstrapMaxWidthResponsive(hd){
-      &::before{left: -5010px;}
-      &::after{right: -5010px;}
+      &::before{left: -5005px;}
+      &::after{right: -5005px;}
     }
 
     .nav{
@@ -559,6 +626,9 @@
         }
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 26px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 22px;
         }
       }
 
@@ -575,29 +645,109 @@
         @include BootstrapMaxWidthResponsive(hd){
           padding: 30px 0;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding: 25px 0;
+        }
 
         &-sub{
           @include flexbox-flex-direction(column);
+          position: relative;
+          z-index: 2;
         }
 
         .nav-link{
+
           @include BootstrapMaxWidthResponsive(hd){
             font-size: 15px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            font-size: 14px;
+          }
+
+          &.active{
+            background-color: $global-clr-green;
+            position: relative;
+
+            &::before,
+            &::after{
+              content: "";
+              background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC44NDUiIGhlaWdodD0iMjguOTQ2IiB2aWV3Qm94PSIwIDAgMTguODQ1IDI4Ljk0NiI+DQogIDxwYXRoIGlkPSJQYXRoXzk0IiBkYXRhLW5hbWU9IlBhdGggOTQiIGQ9Ik0yOTMuMTM0LDkxLjQ5MmwtMTAtMTMuNTgxLDguOTc5LTEzLjU3NGExLDEsMCwwLDAsLjIzNC0uNmMwLS4yLS4xNTQtLjI5Mi0uNDY4LS4yOTJoLTcuMDQ2YTMuMzg4LDMuMzg4LDAsMCwwLS43ODUuMDc2LDEuMzcsMS4zNywwLDAsMC0uNjY2LjU0OGwtOC41NjIsMTMuMTU3YTEuMywxLjMsMCwwLDAtLjI3Ny42OTMsMS4xNjcsMS4xNjcsMCwwLDAsLjE0MS41NjhsOS41NjMsMTMuMDQ3YTIuMDI1LDIuMDI1LDAsMCwwLC41MDcuNjQyLDEuMTA4LDEuMTA4LDAsMCwwLC43MDYuMjE1aDcuNGMuNiwwLC42OS0uMy4yNzEtLjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5My4zOTEgOTIuMzg4KSByb3RhdGUoMTgwKSIgZmlsbD0iIzBlYWYzNCIvPg0KPC9zdmc+DQo=");
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              width: 34px;
+              height: 52px;
+              position: absolute;
+              //top: 50%;
+
+              @include BootstrapMaxWidthResponsive(xl){
+                width: 28px;
+                height: 40px;
+              }
+            }
+
+            &::after{
+              @include svg-filter(0%, 1, 0, 100%);
+            }
           }
         }
       }
 
       &-mt4{
-        @include BootstrapMinWidthResponsive(xl){
+        @include BootstrapMinWidthResponsive(lg){
           text-align: left;
           order: 1;
+        }
+
+        .nav-link.active{
+
+          &::before,
+          &::after{
+            @include transform-multiple(translateY(-50%) rotate(0deg));
+          }
+
+          &::before{
+            right: -22px;
+            @include animation-multi(PlatformsNavLinkArrowLeft .3s);
+
+            @include keyframes(PlatformsNavLinkArrowLeft){
+              0%   {right: -15px; opacity: 0;}
+              100% {right: -22px; opacity: 1;}
+            }
+          }
+
+          &::after{
+            right: -14px;
+          }
         }
       }
 
       &-mt5{
-        @include BootstrapMinWidthResponsive(xl){
+        @include BootstrapMinWidthResponsive(lg){
           text-align: right;
           order: 2;
+        }
+
+        .nav-link.active{
+
+          &::before,
+          &::after{
+            @include transform-multiple(translateY(-50%) rotate(180deg));
+          }
+
+          &::before{
+            left: -22px;
+            @include animation-multi(PlatformsNavLinkArrowRight .3s);
+
+            @include keyframes(PlatformsNavLinkArrowRight){
+              0%   {left: -15px; opacity: 0;}
+              100% {left: -22px; opacity: 1;}
+            }
+          }
+
+          &::after{
+            left: -14px;
+          }
         }
       }
 
@@ -622,7 +772,7 @@
       &-mt{
         background-color: transparentize($global-border-light-gray-opacity, 0.85);
         min-height: 350px;
-        margin: 0 335px;
+        margin: 0 285px;
         padding: 60px 50px 30px;
         @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
         @include border-radius(4px);
@@ -630,12 +780,15 @@
         z-index: 1;
 
         @include BootstrapMaxWidthResponsive(1k){
-          margin: 0 320px;
           padding: 40px 30px 20px;
         }
         @include BootstrapMaxWidthResponsive(hd){
-          margin: 0 270px;
+          margin: 0 245px;
           padding: 30px 25px 15px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding: 25px 25px 10px;
+          @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
         }
 
         &-content{}
@@ -645,6 +798,10 @@
         .platappdownbtns{
           @include flexbox-justify-content(center);
           margin-top: 30px;
+
+          @include BootstrapMaxWidthResponsive(xl){
+            margin-top: 20px;
+          }
         }
 
         .openaccountbtns{
@@ -656,12 +813,18 @@
             margin-top: 20px;
             padding-top: 20px;
           }
+          @include BootstrapMaxWidthResponsive(xl){
+            border-top-width: 1px;
+          }
 
           .infolink{
             margin-top: 15px;
 
             @include BootstrapMaxWidthResponsive(hd){
               margin-top: 12px;
+            }
+            @include BootstrapMaxWidthResponsive(xl){
+              margin-top: 8px;
             }
           }
         }
@@ -693,12 +856,21 @@
       .sitetitle{
         height: 100%;
         padding-right: 50px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          padding-right: 20px;
+        }
       }
 
       .openaccountbtns{
         max-width: 600px;
         margin-top: 50px;
         padding-right: 50px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-top: 20px;
+          padding-right: 20px;
+        }
       }
     }
 
@@ -711,6 +883,9 @@
         }
         @include BootstrapMaxWidthResponsive(hd){
           max-width: 560px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          max-width: 450px;
         }
       }
     }
@@ -766,6 +941,9 @@
 
           @include BootstrapMaxWidthResponsive(1k){
             padding: 30px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
           }
 
           #{$formclassname}-control{

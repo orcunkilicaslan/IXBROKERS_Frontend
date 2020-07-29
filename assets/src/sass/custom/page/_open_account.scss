@@ -29,6 +29,12 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 110px 0;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 60px 0;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 30px 0;
+    }
 
     > .container .row{
       position: relative;
@@ -62,6 +68,13 @@
     padding: 40px 35px;
     @include border-radius(3px);
 
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 30px 25px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 25px 20px;
+    }
+
     &-head{
       text-align: center;
       margin-bottom: 20px;
@@ -75,6 +88,9 @@
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 22px;
         }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 20px;
+        }
       }
 
       &-desc{
@@ -86,6 +102,10 @@
 
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 16px;
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 15px;
+          margin-top: 0;
         }
       }
     }

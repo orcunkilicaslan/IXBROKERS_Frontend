@@ -19,6 +19,9 @@
       @include BootstrapMaxWidthResponsive(1k){
         padding: 30px 40px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+      }
 
       &:first-child{margin-top: 0}
 

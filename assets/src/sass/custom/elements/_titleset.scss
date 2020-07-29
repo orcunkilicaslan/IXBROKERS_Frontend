@@ -6,6 +6,11 @@
   h1,h2,h3,h4,h5,h6,p{position: relative;}
   p{
     margin-bottom: 15px;
+
+    @include BootstrapMaxWidthResponsive(xl){
+      margin-bottom: 10px;
+    }
+
     &:last-child{
       margin-bottom: 0;
     }
@@ -35,6 +40,10 @@
       p{font-size: 17px;}
       h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 5px;}
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      h1,h2,h3{font-size: 28px;}
+      p{font-size: 16px;}
+    }
   }
 
   &-md{
@@ -50,6 +59,10 @@
       h1,h2,h3{font-size: 26px;}
       p{font-size: 15px;}
       h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 5px;}
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      h1,h2,h3{font-size: 22px;}
+      p{font-size: 14px;}
     }
   }
 
@@ -74,6 +87,9 @@
 
   @include BootstrapMaxWidthResponsive(1k){
     &-width900{max-width: 750px;}
+  }
+  @include BootstrapMaxWidthResponsive(xl){
+    &-width900{max-width: 660px;}
   }
 
 }

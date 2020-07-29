@@ -11,16 +11,21 @@
     @include BootstrapMaxWidthResponsive(hd){
       padding: 50px 0;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 30px 0;
+    }
 
-    .component-siteaccounttypes{
-      margin-top: 80px;
-      position: relative;
+    .sitetitle-xl{
+      padding-bottom: 80px;
 
       @include BootstrapMaxWidthResponsive(1k){
-        margin-top: 60px;
+        padding-bottom: 60px;
       }
       @include BootstrapMaxWidthResponsive(hd){
-        margin-top: 50px;
+        padding-bottom: 50px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding-bottom: 30px;
       }
     }
   }
@@ -31,12 +36,18 @@
     @include BootstrapMaxWidthResponsive(hd){
       padding: 30px 0;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 20px 0;
+    }
 
     .sitetitle-xl{
       padding-bottom: 30px;
 
       @include BootstrapMaxWidthResponsive(hd){
         padding-bottom: 15px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-bottom: 20px;
       }
     }
 
@@ -45,6 +56,9 @@
 
       @include BootstrapMaxWidthResponsive(hd){
         padding: 15px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding: 0;
       }
     }
 
@@ -60,12 +74,18 @@
     @include BootstrapMaxWidthResponsive(hd){
       padding: 40px 0;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 30px 0;
+    }
 
     .sitetitle-xl{
       padding-bottom: 50px;
 
       @include BootstrapMaxWidthResponsive(hd){
         padding-bottom: 40px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-bottom: 30px;
       }
     }
   }
@@ -79,6 +99,9 @@
     @include BootstrapMaxWidthResponsive(hd){
       padding: 40px 0;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 30px 0;
+    }
 
     .component-newsbox{
 
@@ -88,6 +111,9 @@
 
           @include BootstrapMaxWidthResponsive(hd){
             padding-bottom: 30px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            padding-bottom: 20px;
           }
         }
       }

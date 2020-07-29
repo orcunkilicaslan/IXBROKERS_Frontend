@@ -24,6 +24,9 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 40px 30px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+    }
 
     &-wrp{
       max-width: 800px;

@@ -67,21 +67,19 @@ $('#newssmalllistowl').owlCarousel({
     autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
-    items:2,
-    margin:30,
     autoWidth:false,
     mouseDrag:false,
-    animateIn: 'fadeInUp',
-    animateOut: 'fadeOutUp',
+    animateIn: 'fadeInLeft',
+    animateOut: 'fadeOutRight',
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
-            loop:true,
-            autoplay:true,
+            margin:0
         },
-        767:{
-            items:2
+        1379:{
+            items:2,
+            margin:30
         },
         1939:{
             margin:50

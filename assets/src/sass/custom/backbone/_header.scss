@@ -67,6 +67,9 @@
       @include BootstrapMaxWidthResponsive(hd){
         width: 140px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        width: 130px;
+      }
     }
   }
 
@@ -100,6 +103,10 @@
               margin-top: 2px;
               position: relative;
               z-index: 1;
+
+              @include BootstrapMaxWidthResponsive(hd){
+                margin-top: 0;
+              }
 
               &::before,
               &::after{
@@ -335,6 +342,11 @@
           font-size: 14px;
           line-height: 1.4;
           height: 32px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 13px;
+          line-height: 1.2;
+          height: 28px;
         }
       }
     }
