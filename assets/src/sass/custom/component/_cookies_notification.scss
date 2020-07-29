@@ -17,6 +17,13 @@
     z-index: 2;
     @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
     @include border-radius(3px);
+
+    @include BootstrapMaxWidthResponsive(1k){
+      max-width: 210px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+    }
   }
 
   &.fade{
@@ -33,10 +40,18 @@
       @include flexbox-display-flex();
       @include flexbox-align-items(flex-end);
       margin-bottom: 15px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        margin-bottom: 10px;
+      }
     }
 
     &-body{
       padding: 15px 20px 20px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 10px 15px 15px;
+      }
 
       i.cookiesnotificon{
         width: 46px;

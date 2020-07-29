@@ -18,6 +18,9 @@
     @include BootstrapMaxWidthResponsive(hd){
       font-size: 16px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      font-size: 15px;
+    }
     @include BootstrapMaxWidthResponsive(lg){
       background-color: darken($global-clr-dark-black, 5%);
     }
@@ -143,6 +146,9 @@
               font-size: 15px;
               line-height: 1.6;
             }
+            @include BootstrapMaxWidthResponsive(xl){
+              font-size: 14px;
+            }
 
             ul{
               li{
@@ -216,6 +222,17 @@
               max-width: 100%;
               min-width: 200px;
               padding-right: 75px;
+
+              @include BootstrapMaxWidthResponsive(hd){
+                padding-right: 60px;
+              }
+              @include BootstrapMaxWidthResponsive(xl){
+                padding-right: 40px;
+              }
+
+              &:last-child{
+                padding-right: 0;
+              }
             }
 
             &-desc{
@@ -227,6 +244,9 @@
                 text-align: left;
 
                 @include BootstrapMaxWidthResponsive(1k){
+                  font-size: 15px;
+                }
+                @include BootstrapMaxWidthResponsive(xl){
                   font-size: 15px;
                 }
               }

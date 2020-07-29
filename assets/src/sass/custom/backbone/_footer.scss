@@ -16,6 +16,9 @@
       @include BootstrapMaxWidthResponsive(hd){
         padding: 13px 0;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding: 8px 0;
+      }
     }
 
     &-logo{
@@ -27,6 +30,9 @@
           width: 140px;
           position: relative;
           top: -1px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          width: 130px;
         }
       }
     }
@@ -45,6 +51,10 @@
           @include BootstrapMaxWidthResponsive(hd){
             margin-right: 2px;
             @include scale(0.9);
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            margin-right: -2px;
+            @include scale(0.8);
           }
 
           &:last-child{margin-right: 0;}
@@ -79,8 +89,38 @@
     @include BootstrapMaxWidthResponsive(hd){
       padding: 30px 0 35px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 0 0 5px;
+    }
 
-    &-col{}
+    &-col{
+
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &.col-md-6{
+          border-bottom: 1px solid transparentize($global-clr-white, 0.9);
+        }
+      }
+
+      &.navmtmenu{
+        @include BootstrapMinWidthResponsive(xl){
+
+          > .row{
+            @include flexbox-flex-direction(column);
+
+            .col + .col{
+              margin-top: 5px;
+            }
+
+            h5{display: none;}
+          }
+
+        }
+      }
+
+    }
 
     h4, h5{
       line-height: 1.2;
@@ -89,6 +129,10 @@
 
     h4 + h4{
       margin-top: 15px;
+
+      @include BootstrapMaxWidthResponsive(xl){
+        margin-top: 10px;
+      }
     }
 
     h4{
@@ -101,6 +145,9 @@
       }
       @include BootstrapMaxWidthResponsive(hd){
         font-size: 18px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        font-size: 16px;
       }
 
       a{
@@ -121,6 +168,9 @@
       @include BootstrapMaxWidthResponsive(1k){
         font-size: 15px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        font-size: 14px;
+      }
 
       a{
         color: $global-clr-green;
@@ -136,6 +186,9 @@
 
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 14px;
         }
 
         &:first-child{margin-top: 0;}
@@ -184,6 +237,9 @@
       @include BootstrapMaxWidthResponsive(1k){
         font-size: 14px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        font-size: 13px;
+      }
 
       &:last-child{margin-bottom: 0;}
 
@@ -202,6 +258,9 @@
 
     @include BootstrapMaxWidthResponsive(hd){
       padding: 15px 0;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 13px 0;
     }
 
     &-row{

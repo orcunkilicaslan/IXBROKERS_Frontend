@@ -1,4 +1,4 @@
-@include BootstrapMinWidthResponsive(hd){
+@include BootstrapMinWidthResponsive(lg){
   body{
     @include flexbox-display-flex();
     @include flexbox-flex-direction(column);

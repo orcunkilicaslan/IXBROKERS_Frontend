@@ -17,6 +17,9 @@
     @include BootstrapMaxWidthResponsive(hd){
       font-size: 18px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      font-size: 16px;
+    }
   }
 
   &-desc{
@@ -32,6 +35,9 @@
       font-size: 15px;
       margin-top: 0;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      font-size: 14px;
+    }
   }
 
   .openaccountbtns{
@@ -39,6 +45,10 @@
 
     .btn{
       margin: 10px 0;
+
+      @include BootstrapMaxWidthResponsive(xl){
+        margin: 7px 0;
+      }
 
       &:first-child{margin-top: 0;}
       &:last-child{margin-bottom: 0;}
@@ -62,6 +72,10 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 7px 12px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      font-size: 16px;
+      padding: 5px 10px 7px;
+    }
 
     span, small{
       display: block;
@@ -80,6 +94,9 @@
       }
       @include BootstrapMaxWidthResponsive(hd){
         font-size: 18px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        font-size: 16px;
       }
     }
 
@@ -117,6 +134,10 @@
       font-size: 15px;
       margin-top: 10px;
     }
+    @include BootstrapMaxWidthResponsive(xl){
+      font-size: 14px;
+      margin-top: 7px;
+    }
   }
 
   .inforisk{
@@ -142,9 +163,18 @@
       border: 1px solid $global-clr-green;
       @include transition-multiple(none);
 
+      @include BootstrapMaxWidthResponsive(xl){
+        padding: 6px 8px;
+      }
+
       i.platdownicon{
         width: 34px;
         height: 34px;
+
+        @include BootstrapMaxWidthResponsive(xl){
+          width: 30px;
+          height: 30px;
+        }
 
         svg{
           fill: $global-clr-text-dark;
@@ -164,10 +194,18 @@
           color: $global-clr-green;
           font-size: 11px;
           font-weight: 500;
+
+          @include BootstrapMaxWidthResponsive(xl){
+            font-size: 10px;
+          }
         }
 
         strong{
           font-size: 16px;
+
+          @include BootstrapMaxWidthResponsive(xl){
+            font-size: 14px;
+          }
         }
 
       }
@@ -216,6 +254,9 @@
 
     @include BootstrapMaxWidthResponsive(1k){
       padding: 20px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
     }
   }
 

@@ -52,6 +52,9 @@
         font-size: 15px;
         padding: 18px 5px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding: 15px 5px;
+      }
 
       &:hover{
         color: $global-clr-text-dark;

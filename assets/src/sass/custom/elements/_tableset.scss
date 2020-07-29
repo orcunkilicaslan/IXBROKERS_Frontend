@@ -23,6 +23,9 @@
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 15px;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 14px;
+        }
       }
     }
   }
@@ -47,6 +50,9 @@
         }
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 14px;
         }
       }
     }
@@ -103,6 +109,10 @@
         padding-top: 15px;
         padding-bottom: 15px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
     tbody tr td{
       padding-top: 12px;
@@ -115,6 +125,17 @@
       @include BootstrapMaxWidthResponsive(hd){
         padding-top: 8px;
         padding-bottom: 8px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .btn-sm{
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 100%;
+          line-height: 1.5;
+        }
       }
     }
   }
