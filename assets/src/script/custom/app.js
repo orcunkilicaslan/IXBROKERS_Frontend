@@ -67,6 +67,7 @@ $('#newssmalllistowl').owlCarousel({
     autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
+    items:2,
     autoWidth:false,
     mouseDrag:false,
     animateIn: 'fadeInLeft',
@@ -78,7 +79,6 @@ $('#newssmalllistowl').owlCarousel({
             margin:0
         },
         1379:{
-            items:2,
             margin:30
         },
         1939:{
