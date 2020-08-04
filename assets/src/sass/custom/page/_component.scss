@@ -184,13 +184,6 @@
     .accounttypesbox{
       @include flexbox-display-flex();
       @include flexbox-flex-wrap(wrap);
-      margin-left: -40px;
-      margin-right: -40px;
-
-      @include BootstrapMaxWidthResponsive(xl){
-        margin-left: 0;
-        margin-right: 0;
-      }
 
       > li{
         @include flexbox-flex-basis(0);
@@ -285,6 +278,9 @@
       @include BootstrapMaxWidthResponsive(1k){
         font-size: 15px;
       }
+      @include BootstrapMaxWidthResponsive(xl){
+        font-size: 14px;
+      }
 
       thead tr th,
       tbody tr td{
@@ -294,6 +290,12 @@
 
         @include BootstrapMaxWidthResponsive(1k){
           padding: 12px;
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          padding: 10px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          padding: 7px;
         }
 
         &:first-child{
@@ -321,6 +323,12 @@
                 @include BootstrapMaxWidthResponsive(1k){
                   font-size: 20px;
                 }
+                @include BootstrapMaxWidthResponsive(hd){
+                  font-size: 18px;
+                }
+                @include BootstrapMaxWidthResponsive(xl){
+                  font-size: 16px;
+                }
 
                 span{
                   font-size: 28px;
@@ -329,6 +337,13 @@
 
                   @include BootstrapMaxWidthResponsive(1k){
                     font-size: 26px;
+                  }
+                  @include BootstrapMaxWidthResponsive(hd){
+                    font-size: 24px;
+                    margin-top: 2px;
+                  }
+                  @include BootstrapMaxWidthResponsive(xl){
+                    font-size: 22px;
                   }
                 }
               }
@@ -349,6 +364,21 @@
               }
               &:last-child{
                 @include border-radii(0,6px,6px,0);
+              }
+            }
+          }
+
+          @include BootstrapMaxWidthResponsive(xl){
+            &:nth-of-type(odd){
+              @include border-radius(3px);
+
+              td{
+                &:first-child{
+                  @include border-radii(3px,0,0,3px);
+                }
+                &:last-child{
+                  @include border-radii(0,3px,3px,0);
+                }
               }
             }
           }
@@ -898,6 +928,12 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 50px 0;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 40px 0;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding: 30px 0;
+    }
 
     .call2actionform{
       color: $global-clr-dark-black;
@@ -906,12 +942,21 @@
 
       &-text{
         padding-right: 30px;
+
         .sitetitle-xl{
           padding-top: 40px;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            padding-top: 20px;
+          }
         }
 
         .sitecontent-desc{
           padding-top: 40px;
+
+          @include BootstrapMaxWidthResponsive(hd){
+            padding-top: 30px;
+          }
         }
       }
 
@@ -942,7 +987,11 @@
           @include BootstrapMaxWidthResponsive(1k){
             padding: 30px;
           }
+          @include BootstrapMaxWidthResponsive(hd){
+            padding: 25px;
+          }
           @include BootstrapMaxWidthResponsive(xl){
+            padding: 20px;
             @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
           }
 

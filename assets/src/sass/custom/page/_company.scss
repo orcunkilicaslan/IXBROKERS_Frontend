@@ -2,9 +2,21 @@
 .company{
 
   &-section{
+    border-bottom: 2px solid $global-border-light-gray-opacity;
+
+    @include BootstrapMaxWidthResponsive(xl){
+      border-bottom-width: 1px;
+    }
 
     .company-support{
       padding: 70px 0;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 50px 0;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 30px 0;
+      }
     }
   }
 

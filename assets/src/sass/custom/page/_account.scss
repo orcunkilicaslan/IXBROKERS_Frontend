@@ -9,6 +9,12 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding-top: 40px;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 30px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 20px;
+    }
 
     .component-siteaccounttypes{
       padding: 25px 30px;
@@ -18,7 +24,11 @@
       @include BootstrapMaxWidthResponsive(1k){
         padding: 20px 25px;
       }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 15px 20px;
+      }
       @include BootstrapMaxWidthResponsive(xl){
+        padding: 10px 15px;
         @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
       }
     }

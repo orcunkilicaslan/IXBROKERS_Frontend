@@ -35,6 +35,17 @@
       p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
       p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 30px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 15px;}
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      h3{font-size: 24px;}
+      p, ul, ol{font-size: 15px;}
+      p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 20px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 10px;}
+      p+h1,p+h2,p+h3,p+h4,ul+h1,ul+h2,ul+h3,ul+h4{margin-top: 20px;} p+h5,p+h6,ul+h5,ul+h6{margin-top: 10px;}
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      h3{font-size: 22px;}
+      h1+p,h2+p,h3+p,h1+ul,h2+ul,h3+ul{margin-top: 5px;} h4+p,h5+p,h6+p,h4+ul,h5+ul,h6+ul{margin-top: 3px;}
+    }
+
 
     ul.ullist{
 
