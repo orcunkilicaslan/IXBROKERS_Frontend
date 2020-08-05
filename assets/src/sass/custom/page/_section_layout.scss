@@ -2,7 +2,11 @@
 .sectionlayout{
   padding-top: 0 !important;
   padding-bottom: 40px !important;
-  $sectionlayoutclassname: ".sectionlayout";
+  $sectionlayoutclassname: &;
+
+  @include BootstrapMaxWidthResponsive(hd){
+    padding-bottom: 20px !important;
+  }
 
   &-start{
     padding: 60px 0;
@@ -39,6 +43,10 @@
 
     .sitetitle-xl{
       margin-bottom: 30px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-bottom: 20px;
+      }
     }
 
     &-wrp{
@@ -89,6 +97,9 @@
           max-width: 1000px;
           padding: 35px;
         }
+        @include BootstrapMaxWidthResponsive(hd){
+          padding: 25px;
+        }
 
         .row{
           @include flexbox-align-items(center);
@@ -109,6 +120,10 @@
         li{
           margin-bottom: 15px;
 
+          @include BootstrapMaxWidthResponsive(hd){
+            margin-bottom: 10px;
+          }
+
           &:last-child{margin-bottom: 0;}
         }
       }
@@ -120,6 +135,10 @@
 
       img{
         max-width: 400px;
+
+        @include BootstrapMaxWidthResponsive(hd){
+          max-width: 320px;
+        }
       }
     }
   }

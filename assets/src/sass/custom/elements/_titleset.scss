@@ -7,8 +7,11 @@
   p{
     margin-bottom: 15px;
 
-    @include BootstrapMaxWidthResponsive(xl){
+    @include BootstrapMaxWidthResponsive(hd){
       margin-bottom: 10px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      margin-bottom: 5px;
     }
 
     &:last-child{
@@ -27,8 +30,8 @@
   }
 
   &-xl{
-    h1,h2,h3{font-size: 40px; font-weight: 700;}
-    p{font-size: 20px; line-height: 1.2;}
+    h1,h2,h3{font-size: 40px; font-weight: 700; line-height: 1.2;}
+    p{font-size: 20px; line-height: 1.4;}
     h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 10px;}
 
     @include BootstrapMaxWidthResponsive(1k){
@@ -47,8 +50,8 @@
   }
 
   &-md{
-    h1,h2,h3{font-size: 32px; font-weight: 700;}
-    p{font-size: 18px; line-height: 1.2;}
+    h1,h2,h3{font-size: 32px; font-weight: 700; line-height: 1.2;}
+    p{font-size: 18px; line-height: 1.4;}
     h1+p,h2+p,h3+p,p+h1,p+h2,p+h3{margin-top: 10px;}
 
     @include BootstrapMaxWidthResponsive(1k){
@@ -87,9 +90,11 @@
 
   @include BootstrapMaxWidthResponsive(1k){
     &-width900{max-width: 750px;}
+    &-width1100{max-width: 960px;}
   }
   @include BootstrapMaxWidthResponsive(xl){
     &-width900{max-width: 660px;}
+    &-width1100{max-width: 780px;}
   }
 
 }

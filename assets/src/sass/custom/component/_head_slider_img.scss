@@ -104,7 +104,7 @@
         .sliderdesc{
           font-size: 24px;
           font-weight: normal;
-          line-height: 1.2;
+          line-height: 1.4;
           margin-top: 15px;
           @include text-stroke(3, rgba(0, 2, 16, 0.03));
           //@include text-stroke(1, transparentize($global-clr-dark-black, 0.3));

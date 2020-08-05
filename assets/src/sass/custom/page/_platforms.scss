@@ -9,6 +9,12 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding-top: 50px;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 40px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 25px;
+    }
 
     &-box{
       padding: 40px 50px;
@@ -19,7 +25,11 @@
       @include BootstrapMaxWidthResponsive(1k){
         padding: 30px 40px;
       }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 25px 30px;
+      }
       @include BootstrapMaxWidthResponsive(xl){
+        padding: 20px;
         @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
       }
 
@@ -34,12 +44,22 @@
           @include BootstrapMaxWidthResponsive(1k){
             max-width: 600px;
           }
+          @include BootstrapMaxWidthResponsive(hd){
+            max-width: 500px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            max-width: 400px;
+          }
         }
       }
     }
 
     .platappdownbtns{
       margin-top: 20px;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 15px;
+      }
     }
   }
 

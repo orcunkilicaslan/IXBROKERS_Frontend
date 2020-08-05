@@ -9,6 +9,9 @@
       @include BootstrapMaxWidthResponsive(1k){
         padding: 40px 0;
       }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 30px 0 35px;
+      }
     }
   }
 
@@ -24,6 +27,9 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 40px 30px;
     }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding: 35px 25px;
+    }
     @include BootstrapMaxWidthResponsive(xl){
       @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
     }
@@ -31,6 +37,10 @@
     &-wrp{
       max-width: 800px;
       margin: auto;
+
+      @include BootstrapMaxWidthResponsive(hd){
+        max-width: 680px;
+      }
     }
 
     &-head{
@@ -46,6 +56,9 @@
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 26px;
         }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 24px;
+        }
       }
 
       &-desc{
@@ -57,6 +70,10 @@
 
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 18px;
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 16px;
+          margin-top: 0;
         }
       }
     }
@@ -82,6 +99,9 @@
       position: relative;
       z-index: 1;
 
+      @include BootstrapMaxWidthResponsive(hd){
+        margin-top: 25px;
+      }
       @include BootstrapMaxWidthResponsive(sm){
         margin-top: 10px;
       }
@@ -142,6 +162,9 @@
 
       @include BootstrapMaxWidthResponsive(1k){
         padding: 10px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 5px;
       }
 
       @include BootstrapMinWidthResponsive(lg){

@@ -2,25 +2,6 @@
   height: 40px;
   white-space: nowrap;
 
-  &-sm{
-    height: 30px;
-  }
-
-  &-lg{
-    height: 50px;
-
-    @include BootstrapMaxWidthResponsive(xl){
-      height: 46px;
-      font-size: 16px;
-      padding: .38rem 1.2rem;
-    }
-    @include BootstrapMaxWidthResponsive(md){
-      height: 42px;
-      font-size: 14px;
-      padding: .3rem 0.75rem;
-    }
-  }
-
   &:focus{@include box-shadow(none !important);}
   &:hover{@include box-shadow(none !important);}
   &:not(:disabled):not(.disabled).active:focus,
@@ -34,5 +15,69 @@
     &.active{
       i{@include svg-filter(0%, 1, 0, 100%);}
     }
+  }
+}
+
+.btn-sm{
+  height: 30px;
+}
+
+.btn-lg{
+  height: 50px;
+
+  @include BootstrapMaxWidthResponsive(hd){
+    height: 46px;
+    font-size: 16px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  @include BootstrapMaxWidthResponsive(xl){
+    height: 44px;
+    font-size: 15px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  @include BootstrapMaxWidthResponsive(md){
+    height: 42px;
+    font-size: 14px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  &.rounded-pill{
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-left: calc(1.2rem * 1.5);
+      padding-right: calc(1.2rem * 1.5);
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-left: calc(0.8rem * 1.5);
+      padding-right: calc(0.8rem * 1.5);
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      padding-left: calc(0.75rem * 1.5);
+      padding-right: calc(0.75rem * 1.5);
+    }
+  }
+}
+
+button.btn-lg{
+  @include BootstrapMaxWidthResponsive(hd){
+    padding-top: 0.38rem;
+    padding-bottom: 0.38rem;
+  }
+  @include BootstrapMaxWidthResponsive(md){
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+a.btn-lg{
+  @include BootstrapMaxWidthResponsive(hd){
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @include BootstrapMaxWidthResponsive(md){
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 }
