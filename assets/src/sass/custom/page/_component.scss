@@ -95,7 +95,7 @@
             height: 26px;
           }
           @include BootstrapMaxWidthResponsive(xl){
-            font-size: 30px;
+            font-size: 28px;
             height: 22px;
           }
         }
@@ -234,7 +234,7 @@
         @include BootstrapMaxWidthResponsive(xl){
           font-size: 14px;
           min-height: 240px;
-          margin-top: 20px;
+          margin-top: 15px;
         }
 
         li{

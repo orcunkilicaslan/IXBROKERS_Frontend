@@ -59,6 +59,9 @@
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 24px;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 22px;
+        }
       }
 
       &-desc{
@@ -74,6 +77,9 @@
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 16px;
           margin-top: 0;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 15px;
         }
       }
     }
@@ -202,6 +208,9 @@
           @include scale(0.6);
           margin: 0 auto;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          @include scale(0.5);
+        }
       }
 
       h4{
@@ -211,6 +220,12 @@
 
         @include BootstrapMaxWidthResponsive(1k){
           font-size: 16px;
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          font-size: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          font-size: 14px;
         }
       }
     }

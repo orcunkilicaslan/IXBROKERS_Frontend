@@ -10,6 +10,10 @@
     padding-top: 110px;
     min-height: 110px;
   }
+  @include BootstrapMaxWidthResponsive(xl){
+    padding-top: 100px;
+    min-height: 100px;
+  }
 
   &-bg{
 
@@ -44,7 +48,7 @@
         margin: 10px auto 30px;
       }
       @include BootstrapMaxWidthResponsive(hd){
-        margin: 0 auto 20px;
+        margin: 15px auto 25px;
       }
       @include BootstrapMaxWidthResponsive(xl){
         @include flexbox-align-items(flex-start);
@@ -60,6 +64,7 @@
 
       @include BootstrapMaxWidthResponsive(xl){
         padding-right: 80px;
+        padding-top: 10px;
       }
 
       h1{
@@ -86,7 +91,7 @@
           font-size: 34px;
         }
         @include BootstrapMaxWidthResponsive(xl){
-          font-size: 30px;
+          font-size: 28px;
         }
       }
       p{
@@ -127,9 +132,16 @@
         @include BootstrapMaxWidthResponsive(hd){
           margin-top: 10px;
         }
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-top: 0;
+        }
       }
 
-      .openaccountbtns{}
+      .openaccountbtns{
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-top: 0;
+        }
+      }
     }
   }
 
