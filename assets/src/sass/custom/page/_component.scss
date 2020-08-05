@@ -185,11 +185,36 @@
       @include flexbox-display-flex();
       @include flexbox-flex-wrap(wrap);
 
+      @include BootstrapMaxWidthResponsive(lg){
+        margin-left: -5px;
+        margin-right: -5px;
+      }
+
       > li{
         @include flexbox-flex-basis(0);
         @include flexbox-flex-grow(1);
         min-width: 0;
         max-width: 100%;
+
+        @include BootstrapMaxWidthResponsive(lg){
+          @include flexbox-flex(0 0 50%);
+          max-width: 50%;
+          padding: 5px;
+        }
+        @include BootstrapMinWidthResponsive(lg){
+          &:nth-of-type(even){
+            .accounttypesbox-content{
+              @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
+
+              @include BootstrapMaxWidthResponsive(xl){
+                @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+              }
+            }
+          }
+        }
+      }
+
+      &-content{
         padding: 50px 40px 40px;
         @include border-radius(6px);
 
@@ -199,17 +224,10 @@
         @include BootstrapMaxWidthResponsive(xl){
           padding: 22px 20px 20px;
         }
-
-        &:nth-of-type(even){
-          @include box-shadow(0 0 0 2px $global-border-light-gray-opacity);
-
-          @include BootstrapMaxWidthResponsive(xl){
-            @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
-          }
+        @include BootstrapMaxWidthResponsive(lg){
+          @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
         }
       }
-
-      &-content{}
 
       &-head{
         @include flexbox-display-flex();
@@ -235,6 +253,10 @@
           font-size: 14px;
           min-height: 240px;
           margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          min-height: 190px;
         }
 
         li{
@@ -407,6 +429,9 @@
       padding: 20px;
       @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding: 15px;
+    }
 
     .bignewsbox{
       width: 100%;
@@ -426,6 +451,13 @@
         max-width: 50%;
         padding-right: 20px;
         border-right-width: 1px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        max-width: 100%;
+        padding-right: 15px;
+        border-right-width: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $global-border-light-gray-opacity;
       }
 
       &-videos{
@@ -454,6 +486,9 @@
           font-size: 14px;
           height: auto;
           margin-top: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          text-align: center;
         }
 
         h3{
@@ -493,6 +528,10 @@
       }
       @include BootstrapMaxWidthResponsive(xl){
         padding-left: 20px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-left: 15px;
+        padding-top: 15px;
       }
 
       .listnews{
@@ -630,6 +669,9 @@
       @include BootstrapMaxWidthResponsive(xl){
         @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        display: none;
+      }
     }
 
     &::before{left: -5030px;}
@@ -660,6 +702,9 @@
         @include BootstrapMaxWidthResponsive(xl){
           font-size: 22px;
         }
+        @include BootstrapMaxWidthResponsive(lg){
+          display: none;
+        }
       }
 
       &-mt{
@@ -677,6 +722,11 @@
         }
         @include BootstrapMaxWidthResponsive(xl){
           padding: 25px 0;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          @include flexbox-flex-direction(column);
+          position: relative;
+          padding: 0;
         }
 
         &-sub{
@@ -713,6 +763,9 @@
               @include BootstrapMaxWidthResponsive(xl){
                 width: 28px;
                 height: 40px;
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                display: none;
               }
             }
 
@@ -789,6 +842,10 @@
         @include BootstrapMaxWidthResponsive(hd){
           width: 260px;
         }
+        @include BootstrapMaxWidthResponsive(lg){
+          width: 100%;
+          padding: 0;
+        }
       }
 
     }
@@ -819,6 +876,9 @@
         @include BootstrapMaxWidthResponsive(xl){
           padding: 25px 25px 10px;
           @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          margin: 0;
         }
 
         &-content{}
@@ -879,16 +939,24 @@
 
     > .container .row{
       @include flexbox-align-items(center);
+
+      @include BootstrapMaxWidthResponsive(lg){
+        @include flexbox-flex-direction(column);
+      }
     }
 
     .aboutustxt{
 
-      .sitetitle{
+      .sitetitle-xl{
         height: 100%;
         padding-right: 50px;
 
         @include BootstrapMaxWidthResponsive(xl){
           padding-right: 20px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          padding-right: 0;
+          text-align: center;
         }
       }
 
@@ -900,6 +968,12 @@
         @include BootstrapMaxWidthResponsive(xl){
           margin-top: 20px;
           padding-right: 20px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          max-width: 500px;
+          padding-right: 0;
+          margin: 20px auto;
+          text-align: center;
         }
       }
     }

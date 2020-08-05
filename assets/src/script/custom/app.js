@@ -10,7 +10,20 @@ $('#headtickersowl').owlCarousel({
     items:5,
     margin:0,
     autoWidth:false,
-    mouseDrag:false
+    mouseDrag:false,
+    responsiveClass:true,
+    responsive:{
+        0:{},
+        819:{
+            items:1,
+            mouseDrag:true
+        },
+        1059:{},
+        1379:{
+            items:5
+        },
+        1939:{}
+    }
 });
 /* Head Tickers */
 
@@ -41,7 +54,17 @@ $('#headslidervideoowl').owlCarousel({
     autoWidth:false,
     mouseDrag:false,
     animateIn: 'fadeInUp',
-    animateOut: 'fadeOutUp'
+    animateOut: 'fadeOutUp',
+    responsiveClass:true,
+    responsive:{
+        0:{},
+        819:{
+            mouseDrag:true
+        },
+        1059:{},
+        1379:{},
+        1939:{}
+    }
 });
 /* Head Video Slider */
 
@@ -51,11 +74,23 @@ $('#headfeaturesiconsowl').owlCarousel({
     nav:false,
     dots:false,
     autoplay:false,
-    autoplayTimeout:1500,
+    autoplayTimeout:2000,
     autoplayHoverPause:false,
     items:6,
     margin:0,
-    autoWidth:false
+    autoWidth:false,
+    responsiveClass:true,
+    responsive:{
+        0:{},
+        819:{
+            items:4,
+            loop:true,
+            autoplay:true
+        },
+        1059:{},
+        1379:{},
+        1939:{}
+    }
 });
 /* Head Features Icons */
 
@@ -75,6 +110,14 @@ $('#newssmalllistowl').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
+            items:1,
+            margin:0
+        },
+        819:{
+            items:2,
+            margin:30
+        },
+        1059:{
             items:1,
             margin:0
         },
