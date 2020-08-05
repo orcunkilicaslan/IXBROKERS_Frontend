@@ -1,1 +1,58 @@
-.formresultbox{}
+.formresultbox{
+  color: $global-clr-dark-black;
+  background-color: $global-clr-white;
+  padding: 40px 35px;
+  @include border-radius(3px);
+
+  @include BootstrapMaxWidthResponsive(hd){
+    padding: 30px 25px;
+  }
+  @include BootstrapMaxWidthResponsive(xl){
+    padding: 25px 20px;
+  }
+
+  &-head{
+    text-align: center;
+
+    &-title{
+      color: $global-clr-text-dark;
+      font-family: $global-font-family-cocogothic-heavy !important;
+      font-size: 24px;
+      line-height: 1.2;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 22px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        font-size: 20px;
+      }
+    }
+
+    &-desc{
+      color: $global-clr-text-light;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-top: 5px;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        font-size: 16px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        font-size: 15px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-btnarea{
+    @include flexbox-display-flex();
+    @include flexbox-justify-content(center);
+    margin-top: 20px;
+
+    .btn{
+      margin: 0 5px;
+    }
+  }
+
+}
