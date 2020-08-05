@@ -1,0 +1,19 @@
+.form-group.invalid input,
+.form-group.invalid select,
+.form-group.invalid textarea{
+    border-color: red !important;
+}
+
+.form-group.invalid label{
+    color: red !important;
+}
+header-web-to
+.form-group.valid input,
+.form-group.valid select,
+.form-group.valid textarea{
+    border-color: green !important;
+}
+
+.form-group.valid label{
+    color: green !important;
+}

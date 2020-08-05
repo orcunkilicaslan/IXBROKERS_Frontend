@@ -5,47 +5,48 @@
             <h3 class="partners-formbox-head-title">IB <span class="sitecolorgreen">REGISTRATION FORM</span></h3>
             <p class="partners-formbox-head-desc">We’re glad you’re here. Complete this form to sign up for our partner programme.</p>
         </div>
-        <form class="partners-formbox-form ajaxAutoValidate" action="" autocomplete="off" novalidate id="partnerShipForm">
+        <form class="partners-formbox-form ajaxAutoValidate" action="" autocomplete="off" novalidate id="partnerShipForm" method="POST" action="l/partnership/become-introducing-broker">
+            @csrf
             <div class="form-row">
                 <div class="form-group col">
                     <label>FIRST NAME</label>
-                    <input type="text" name="first_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="">
+                    <input type="text" name="first_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="" value="Asım">
                 </div>
                 <div class="form-group col">
                     <label>LAST NAME</label>
-                    <input type="text" name="last_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="">
+                    <input type="text" name="last_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="" value="Gündüz">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col">
                     <label>EMAIL</label>
-                    <input type="email" name="email" class="form-control fvalidate" frule="email" placeholder="">
+                    <input type="email" name="email" class="form-control fvalidate" frule="email" placeholder="" value="yigitkula@gmail.com">
                 </div>
                 <div class="form-group col">
                     <label>PHONE</label>
-                    <input type="text" name="phone" class="form-control inputphonemasktr fvalidate" frule="phone" placeholder="">
+                    <input type="text" name="phone" class="form-control inputphonemasktr fvalidate" frule="phone" placeholder="" value="05555555555">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col">
                     <label>PROJECTED VOLUME (LOT)</label>
-                    <input type="text" name="lotvolume" class="form-control fvalidate"  frule="minv:1, maxv:1000" placeholder="">
+                    <input type="text" name="lotvolume" class="form-control fvalidate"  frule="minv:1, maxv:1000" placeholder="" value="10000">
                 </div>
                 <div class="form-group col">
                     <label>INTERESTED PRODUCTS</label>
-                    <select class="form-control custom-select fvalidate" frule="not:-1">
+                    <select class="form-control custom-select fvalidate" frule="not:-1" name="interest">
                         <option selected value="-1">CHOOSE</option>
-                        <option value="FX">FOREX</option>
-                        <option value="CFD">COMMODITIES</option>
-                        <option value="INDICES">INDICES</option>
-                        <option value="SINGLE SHARES">STOCKS CFD</option>
-                        <option value="CRYPTO CURRENCIES">CRYPTO CURRENCIES</option>
+                        <option value="Forex" selected>FOREX</option>
+                        <option value="Commodities">COMMODITIES</option>
+                        <option value="Indices">INDICES</option>
+                        <option value="Stocks/CFD">STOCKS CFD</option>
+                        <option value="Crypto Currencies">CRYPTO CURRENCIES</option>
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label>EXPECTATIONS</label>
-                <textarea class="form-control fvalidate" rows="3" frule="minl:5, maxl: 1000"></textarea>
+                <textarea class="form-control fvalidate" rows="3" frule="minl:5, maxl: 1000" name="expectations">Just testing baby</textarea>
             </div>
             <div class="form-group custom-control-group-vertical">
                 <div class="custom-control custom-checkbox d-none">

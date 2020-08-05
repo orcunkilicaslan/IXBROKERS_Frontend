@@ -28,7 +28,8 @@
                                 <h2 class="openaccount-formbox-head-title">OPEN <span class="sitecolorgreen">LIVE ACCOUNT</span></h2>
                                 <p class="openaccount-formbox-head-desc">Open Account in seconds and begin trading now!</p>
                             </div>
-                            <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm">
+                            <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm" method="POST" action="/account/open-live-account">
+                                @csrf
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <label>FIRST NAME</label>

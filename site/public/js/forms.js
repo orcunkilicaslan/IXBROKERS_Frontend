@@ -1,22 +1,54 @@
 $(function(){
     $("form.ajaxAutoValidate").submit(function(evnt){
         evnt.preventDefault();
-        submitForm($(this).attr('id'));
+        let formValid = isFormValid($(this).attr('id'));
+        if(formValid){
+            submitForm($(this).attr('id'));
+        }
+
     })
 });
 
 let submitForm = (formID) => {
+    let frm = $(`form#${formID}`);
+    let originalValue = frm.find(':submit').html();
+    frm.find(':submit').html('SENDING');
+
+    $.ajax({
+        type: 'POST',
+        url: frm.attr('action'),
+        data: frm.serialize(),
+        success: function (data) {
+            if(!data.success){
+                showFormError(document.getElementById(formID), "FORM HAS ERRORS", data.reason);
+            }
+            let container = document.getElementById(formID).parentNode;
+            container.innerHTML = '';
+            let html = generateFormResult(formID);
+            container.innerHTML = html;
+        },
+        error: function (data) {
+            console.log('An error occurred.');
+            console.log(data);
+            frm.find(':submit').html(originalValue);
+        },
+    });
+
+}
+
+let isFormValid = (formID) => {
     let form = document.getElementById(formID);
     clearFormErrorsAndHighlights(form);
     let validationResult = validateForm(form);
     highlightFields(form, validationResult);
     if(validationResult.invalidFields.length > 0){
-        showFormError(form);
+        showFormError(form, "FORM HAS MISSING/INVALID FIELDS", "Please check your information and try again");
+        return false;
     }
-    return false;
+    return true;
 }
 
-let showFormError = (form) => {
+let showFormError = (form, errorTitle, errorDesc) => {
     let html = '<div class="alert alert-sweet alert-warning alert-dismissible fade show fformerror" role="alert">\n' +
         '    <div class="alert-flex">\n' +
         '        <div class="alert-icon">\n' +
@@ -28,8 +60,8 @@ let showFormError = (form) => {
         '            </div>\n' +
         '        </div>\n' +
         '        <div class="alert-desc">\n' +
-        '            <h6 class="alert-heading">FORM HAS MISSING/INVALID FIELDS</h6>\n' +
-        '            <p>Please check your information and try again</p>\n' +
+        '            <h6 class="alert-heading">' + errorTitle + '</h6>\n' +
+        '            <p>' + errorDesc + '</p>\n' +
         '        </div>\n' +
         '    </div>\n' +
         '    <button type="button" class="close" data-dismiss="alert" aria-label="Close">\n' +
@@ -144,4 +176,35 @@ let createElementFromHTML = (htmlString) => {
     var div = document.createElement('div');
     div.innerHTML = htmlString.trim();
     return div.firstChild;
+}
+
+let generateFormResult = (formID) => {
+    let title = desc = buttonText = buttonLink = '';
+
+    switch (formID) {
+        case 'openDemoAccountForm':
+            title = 'ACCOUNT <span class="sitecolorgreen">READY</span>';
+            desc = 'Click the button below to sign in to your account';
+            buttonText = 'CLICK TO LOGIN';
+            buttonLink = '#';
+            break;
+
+        case 'partnerShipForm':
+            title = 'THANKS FOR <span class="sitecolorgreen">YOUR INTEREST</span>';
+            desc = 'Our representatives will contact you shortly';
+            break;
+    }
+    let html = '';
+    html += '<div class="formresultbox">';
+    html += '<div class="formresultbox-head">';
+    html += '<h3 class="formresultbox-head-title">' + title + '</h3>';
+    html += '<p class="formresultbox-head-desc">' + desc + '</p>';
+    html += '</div>';
+    if(buttonText !== ''){
+        html += '<div class="formresultbox-btnarea">';
+        html += '<a class="btn btn-lg btn-success" href="' + buttonLink + '" title="CLICK TO SIGN IN">' + buttonText + '</a>';
+        html += '</div>';
+    }
+    html += '</div>';
+    return html;
 }
