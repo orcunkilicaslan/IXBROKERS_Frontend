@@ -28,7 +28,8 @@
                                 <h2 class="openaccount-formbox-head-title">OPEN <span class="sitecolorgreen">LIVE ACCOUNT</span></h2>
                                 <p class="openaccount-formbox-head-desc">Open Account in seconds and begin trading now!</p>
                             </div>
-                            <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm">
+                            <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm" method="POST" action="/account/open-live-account">
+                                @csrf
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <label>FIRST NAME</label>
@@ -70,7 +71,7 @@
                                     </div>
                                     <div class="recaptcha-area">
                                         <div class="recaptcha-check">
-                                            <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                                            <div class="g-recaptcha" data-theme="dark" data-sitekey="{{ env('GCAPTCHASITEKEY') }}"></div>
                                         </div>
                                         <label>I'm Not Robot</label>
                                     </div>

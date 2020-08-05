@@ -9,32 +9,11 @@
     <link id="css-bootstrap" rel="stylesheet" href="/assets/dist/css/bootstrap.css">
     <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css">
     <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css">
+    <link id="be-custom-app" rel="stylesheet" href="/css/site.css">
     <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script id="script-bootstrap" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
-
-    <style>
-        .form-group.invalid input,
-        .form-group.invalid select,
-        .form-group.invalid textarea{
-            border-color: red !important;
-        }
-
-        .form-group.invalid label{
-            color: red !important;
-        }
-
-        .form-group.valid input,
-        .form-group.valid select,
-        .form-group.valid textarea{
-            border-color: green !important;
-        }
-
-        .form-group.valid label{
-            color: green !important;
-        }
-    </style>
 </head>
 <body class="dfn-megamenu">
 
@@ -63,14 +42,42 @@
                     </div>
                     <!-- Logo -->
 
-                    <!-- UserArea -->
-                    <div class="header-userarea col-auto">
-                        <div class="header-userarea-icons">
-                            <a class="userareaiconscall" href="#" title="CALL" rel="bookmark"><i class="iconscall"></i></a>
-                            <a class="userareaiconslang" href="#" title="ENGLISH" rel="bookmark"><span>EN</span></a>
+                    <!-- TopHeadRight -->
+                    <div class="header-web-top-headright col-auto">
+                        <div class="header-web-top-headright-row row">
+
+                            <!-- Ticker -->
+                            <div class="header-ticker col-auto">
+                                <ul id="headtickersowl" class="headticker-owl owl-carousel owl-theme">
+                                    @foreach($marketPrices as $market)
+                                        <li>
+                                            <small class="headticker-symbol">{{ $market->market_name }}</small>
+                                            <span class="headticker-price">{{ sprintf('%0.4f', $market->current_price) }}</span>
+                                        </li>
+                                    @endforeach
+                                        @foreach($cryptoPrices as $market)
+                                            <li>
+                                                <small class="headticker-symbol">{{ $market->market_name }}</small>
+                                                <span class="headticker-price">{{ sprintf('%0.4f', $market->price) }}</span>
+                                            </li>
+                                        @endforeach
+                                </ul>
+                            </div>
+                            <!-- Ticker -->
+
+                            <!-- UserArea -->
+                            <div class="header-userarea col-auto">
+                                <div class="header-userarea-icons">
+                                    <a class="userareaicons userareaicons-live livechatstartbtn" href="#" data-toggle="tooltip" data-placement="bottom" title="Connect to Live Chat" rel="bookmark"><i class="headtopicons headtopicons-live"></i></a>
+                                    <a class="userareaicons userareaicons-call d-none" href="#" data-toggle="tooltip" data-placement="bottom" title="CALL" rel="bookmark"><i class="headtopicons headtopicons-call"></i></a>
+                                    <a class="userareaicons userareaicons-whatsapp" href="#" data-toggle="tooltip" data-placement="bottom" title="Write to us on Whatsapp" rel="bookmark"><i class="headtopicons headtopicons-wp"></i></a>
+                                </div>
+                            </div>
+                            <!-- UserArea -->
+
                         </div>
                     </div>
-                    <!-- UserArea -->
+                    <!-- TopHeadRight -->
 
                 </div>
             </div>
@@ -111,8 +118,7 @@
                                                                     <li><a href="/products/forex" title="FOREX" rel="category">FOREX</a></li>
                                                                     <li><a href="/products/commodities" title="COMMODITIES" rel="category">COMMODITIES</a></li>
                                                                     <li><a href="/products/indices" title="INDICES" rel="category">INDICES</a></li>
-                                                                    <li><a href="/products/cfd" title="CFD" rel="category">CFD</a></li>
-                                                                    <li><a href="/products/stocks" title="STOCKS" rel="category">STOCKS</a></li>
+                                                                    <li><a href="/products/stocks-cfd" title="CFD" rel="category">STOCKS CFD</a></li>
                                                                     <li><a href="/products/crypto-currencies" title="CRYPTOCURRENCIES" rel="category">CRYPTOCURRENCIES</a></li>
                                                                 </ul>
                                                             </div>
@@ -157,23 +163,94 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="dfn-menu-list-item"><a href="/investments/pamm" title="PAMM" rel="category">PAMM</a></li>
                                     <li class="dfn-menu-list-item">
                                         <a href="javascript:;" title="ANALYSIS" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ANALYSIS</a>
                                         <div class="dropdown-menu animated">
                                             <div class="container megamenu">
-                                                <div class="megamenu-nav menunav">
-                                                    <ul>
-                                                        <li><a href="/analysis/morning-journals" title="MORNING JOURNALS" rel="category">MORNING JOURNALS</a></li>
-                                                        <li><a href="/analysis/daily-journals" title="DAILY JOURNALS" rel="category">DAILY JOURNALS</a></li>
-                                                        <li><a href="/analysis/instruments" title="INSTRUMENTS" rel="category">INSTRUMENTS</a></li>
-                                                        <li><a href="/analysis/tools" title="TOOLS" rel="category">TOOLS</a></li>
-                                                        <li><a href="/analysis/news" title="NEWS" rel="category">NEWS</a></li>
-                                                        <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
-                                                    </ul>
+                                                <div class="megamenu-nav">
+                                                    <div class="megamultimenu-row">
+                                                        <div class="megamultimenu-col">
+                                                            <div class="megamultimenu-desc">
+                                                                <span class="megamultimenu-desc-title">FOREX</span>
+                                                            </div>
+                                                            <div class="megamultimenu-nav menunav">
+                                                                <ul>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="XAU/USD" rel="category">XAU/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="EUR/TRY" rel="category">EUR/TRY</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="EUR/USD" rel="category">EUR/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="GBP/USD" rel="category">GBP/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="NZD/USD" rel="category">NZD/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="USD/CHF" rel="category">USD/CHF</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="USD/JPY" rel="category">USD/JPY</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="USD/TRY" rel="category">USD/TRY</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="megamultimenu-col">
+                                                            <div class="megamultimenu-desc">
+                                                                <span class="megamultimenu-desc-title">COMMODITIES</span>
+                                                            </div>
+                                                            <div class="megamultimenu-nav menunav">
+                                                                <ul>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="BRENT OIL" rel="category">BRENT OIL</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="OIL" rel="category">OIL</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="SUGAR" rel="category">SUGAR</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="WHEAT" rel="category">WHEAT</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="XAGUSD" rel="category">XAGUSD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="XAUUSD" rel="category">XAUUSD</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="megamultimenu-col">
+                                                            <div class="megamultimenu-desc">
+                                                                <span class="megamultimenu-desc-title">INDICES</span>
+                                                            </div>
+                                                            <div class="megamultimenu-nav menunav">
+                                                                <ul>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="DE 30" rel="category">DE 30</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="FRA 40" rel="category">FRA 40</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="NASDAQ 100" rel="category">NASDAQ 100</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="S%P 500" rel="category">S%P 500</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="US 30" rel="category">US 30</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="megamultimenu-col">
+                                                            <div class="megamultimenu-desc">
+                                                                <span class="megamultimenu-desc-title">EQUITY/CFD</span>
+                                                            </div>
+                                                            <div class="megamultimenu-nav menunav">
+                                                                <ul>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="AMAZON" rel="category">AMAZON</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="APPLE" rel="category">APPLE</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="BMW" rel="category">BMW</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="FACEBOOK" rel="category">FACEBOOK</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="GOOGLE" rel="category">GOOGLE</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="TESLA" rel="category">TESLA</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="megamultimenu-col">
+                                                            <div class="megamultimenu-desc">
+                                                                <span class="megamultimenu-desc-title">CRYPTO</span>
+                                                            </div>
+                                                            <div class="megamultimenu-nav menunav">
+                                                                <ul>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="BTC/USD" rel="category">BTC/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="ETH/USD" rel="category">ETH/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="LTC/USD" rel="category">LTC/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="XRP/USD" rel="category">XRP/USD</a></li>
+                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="XLM/USD" rel="category">XLM/USD</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
+
                                     <li class="dfn-menu-list-item"><a href="/education" title="EDUCATION" rel="category">EDUCATION</a></li>
                                     <li class="dfn-menu-list-item">
                                         <a href="javascript:;" title="PARTNERSHIP" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PARTNERSHIP</a>
@@ -183,6 +260,19 @@
                                                     <ul>
                                                         <li><a href="/partnership/become-introducing-broker" title="BE A INTRODUCING BROKER" rel="category">BE A INTRODUCING BROKER</a></li>
                                                         <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">BE AN AFFILIATE</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dfn-menu-list-item">
+                                        <a href="javascript:;" title="ECONOMIC CAL & NEWS" rel="category" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ECONOMIC CAL & NEWS</a>
+                                        <div class="dropdown-menu animated">
+                                            <div class="container megamenu">
+                                                <div class="megamenu-nav menunav">
+                                                    <ul>
+                                                        <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
+                                                        <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">NEWS</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -249,7 +339,7 @@
     <div class="footer-navigation">
         <div class="container">
             <div class="row">
-                <div class="footer-navigation-col col-lg-4">
+                <div class="footer-navigation-col col-md-6 col-xl-4">
                     <h4>TRADING</h4>
                     <div class="row">
                         <div class="col">
@@ -266,25 +356,34 @@
                                 <li><a href="/products/forex" title="FOREX" rel="category">FOREX</a></li>
                                 <li><a href="/products/commodities" title="COMMODITIES" rel="category">COMMODITIES</a></li>
                                 <li><a href="/products/indices" title="INDICES" rel="category">INDICES</a></li>
-                                <li><a href="/products/cfd" title="CFD" rel="category">CFD</a></li>
-                                <li><a href="/products/stocks" title="STOCKS" rel="category">STOCKS</a></li>
+                                <li><a href="/products/stocks-cfd" title="CFD" rel="category">STOCKS CFD</a></li>
                                 <li><a href="/products/crypto-currencies" title="CRYPTOCURRENCIES" rel="category">CRYPTOCURRENCIES</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="footer-navigation-col col-lg-2">
+                <div class="footer-navigation-col navmtmenu col-md-6 col-xl-2">
                     <h4>PLATFORMS</h4>
-                    <ul class="footer-navigation-list">
-                        <li><a href="/platforms/meta-trader-4/desktop" title="METATRADER 4 DESKTOP" rel="category">METATRADER 4 DESKTOP</a></li>
-                        <li><a href="/platforms/meta-trader-4/web" title="METATRADER 4 WEBTRADER" rel="category">METATRADER 4 WEBTRADER</a></li>
-                        <li><a href="/platforms/meta-trader-4/mobile" title="METATRADER 4 MOBILE" rel="category">METATRADER 4 MOBILE</a></li>
-                        <li><a href="/platforms/meta-trader-5/desktop" title="METATRADER 5 DESKTOP" rel="category">METATRADER 5 DESKTOP</a></li>
-                        <li><a href="/platforms/meta-trader-5/web" title="METATRADER 5 WEBTRADER" rel="category">METATRADER 5 WEBTRADER</a></li>
-                        <li><a href="/platforms/meta-trader-5/mobile" title="METATRADER 5 MOBILE" rel="category">METATRADER 5 MOBILE</a></li>
-                    </ul>
+                    <div class="row">
+                        <div class="col">
+                            <h5>METATRADER 4</h5>
+                            <ul class="footer-navigation-list">
+                                <li><a href="/platforms/meta-trader-4/desktop" title="METATRADER 4 DESKTOP" rel="category">MT4 DESKTOP</a></li>
+                                <li><a href="/platforms/meta-trader-4/web" title="METATRADER 4 WEBTRADER" rel="category">MT4 WEBTRADER</a></li>
+                                <li><a href="/platforms/meta-trader-4/mobile" title="METATRADER 4 MOBILE" rel="category">MT4 MOBILE</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>METATRADER 5</h5>
+                            <ul class="footer-navigation-list">
+                                <li><a href="/platforms/meta-trader-5/desktop" title="METATRADER 5 DESKTOP" rel="category">MT5 DESKTOP</a></li>
+                                <li><a href="/platforms/meta-trader-5/web" title="METATRADER 5 WEBTRADER" rel="category">MT5 WEBTRADER</a></li>
+                                <li><a href="/platforms/meta-trader-5/mobile" title="METATRADER 5 MOBILE" rel="category">MT5 MOBILE</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-navigation-col col-lg-2">
+                <div class="footer-navigation-col col-md-3 col-xl-2">
                     <h4>ANALYSIS</h4>
                     <ul class="footer-navigation-list">
                         <li><a href="/analysis/morning-journals" title="MORNING JOURNALS" rel="category">MORNING JOURNALS</a></li>
@@ -295,14 +394,15 @@
                         <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
                     </ul>
                 </div>
-                <div class="footer-navigation-col col-lg-2">
+                <div class="footer-navigation-col col-md-3 col-xl-2">
                     <h4>PARTNERSHIP</h4>
                     <ul class="footer-navigation-list">
                         <li><a href="/partnership/become-introducing-broker" title="BE A INTRODUCING BROKER" rel="category">BE A INTRODUCING BROKER</a></li>
                         <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">BE AN AFFILIATE</a></li>
                     </ul>
                 </div>
-                <div class="footer-navigation-col col-lg-2">
+                <div class="footer-navigation-col col-md-3 col-xl-2">
+                    <h4><a href="/investments/pamm" title="PAMM" rel="category">PAMM</a></h4>
                     <h4><a href="/education" title="EDUCATION" rel="category">EDUCATION</a></h4>
                     <h4><a href="/company" title="COMPANY" rel="category">COMPANY</a></h4>
                 </div>
@@ -339,7 +439,21 @@
 </footer>
 <!-- Footer End -->
 
-<!--Start of Tawk.to Script-->
+<!-- Cookies Notification Messages -->
+{{--TODO: Cookie yoksa göster varsa siktiret--}}
+<div class="cookies-notification alert alert-warning alert-dismissible fade show" role="alert">
+    <div class="notification-body">
+        <div class="notification-head">
+            <i class="cookiesnotificon"></i>
+            <h6>COOKIES <br />NOTIFICATION</h6>
+        </div>
+        <p>We use cookies on our site, limited to the purposes set out in our cookie policy and in accordance with the legislation. By visiting the site, you are deemed to have allowed cookies. For details <a class="urllink" href="Legal_Cookie_Policy.html" rel="noopener noreferrer nofollow" target="_blank">Cookie Policy </a> you can review.</p>
+    </div>
+    <a class="notification-close" href="#" title="Dismiss Notification" data-dismiss="alert" aria-label="Close">Close</a>
+</div>
+<!-- Cookies Notification Messages -->
+
+<!-- Live Chat Script Start -->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -350,8 +464,12 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
     })();
+    $('.livechatstartbtn').on('click', function(){
+        Tawk_API.showWidget();
+        Tawk_API.maximize();
+    });
 </script>
-<!--End of Tawk.to Script-->
+<!-- Live Chat Script End -->
 
 <!-- JavaScript Start -->
 <script id="script-owl-carousel" src="/assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
@@ -360,7 +478,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 <script id="script-plugin-app" src="/assets/dist/js/plugin-app.js"></script>
 <script id="script-mainpage-app" src="/assets/dist/js/custom-app.js"></script>
-<script id="script-mainpage-app" src="/assets/dist/js/forms.js"></script>
+<script id="script-mainpage-app" src="/js/forms.js"></script>
 
 <!-- JavaScript End -->
 

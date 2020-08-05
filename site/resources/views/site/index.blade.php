@@ -1,30 +1,22 @@
 @extends('layouts.sitelayout')
 
 @section('content')
-
     <!-- Slider Start -->
     <div class="headslidervideo">
 
+        <div class="headslidervideo-wrp">
         <!-- Slider Top Start -->
         <div class="headslidervideo-top container">
             <div class="row">
 
                 <!-- Owl Slider Start -->
                 <div class="headslidervideo-slider col">
-                    <ul id="headslidervideoowl" class="headslidervideo-slider-owl owl-carousel owl-theme">
+                    <ul id="headslidervideoowlx" class="headslidervideo-slider-owl owl-carouselx owl-themex">
                         <li class="headslidervideo-slider-item">
                             <div class="headslidervideo-slider-item-content">
                                 <div class="headslidervideo-slider-item-title">
-                                    <h2 class="slidertitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">LOREM IPSUM DOLOR <span class="sitecolorgreen">SIT AMET CONSECTETUR</span> ADIPISCING</h2>
-                                    <p class="sliderdesc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="headslidervideo-slider-item">
-                            <div class="headslidervideo-slider-item-content">
-                                <div class="headslidervideo-slider-item-title">
-                                    <h2 class="slidertitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">LOREM IPSUM DOLOR <span class="sitecolorgreen">SIT AMET CONSECTETUR</span> ADIPISCING</h2>
-                                    <p class="sliderdesc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                                    <h2 class="slidertitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><span class="sitecolorgreen"><span class="sitefontfamilydefault">50</span>% WELCOME BONUS</span> FROM IXBROKERS!</h2>
+                                    <p class="sliderdesc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Enjoy IXBrokers' unique, multi-asset trading platform with "50% Welcome Bonus". Trade confidently with a secure and regulated broker. </p>
                                 </div>
                             </div>
                         </li>
@@ -39,7 +31,7 @@
                         <p class="openaccountbox-desc">Open Account in seconds and begin trading now!</p>
                         <div class="openaccountbtns">
                             <div>
-                                <a href="12_Account_Open_Live.html" class="btn btn-success" title="@lang('common.account_cta.live_btn_titles')" rel="bookmark">
+                                <a href="/account/open-live-account" class="btn btn-success" title="@lang('common.account_cta.live_btn_titles')" rel="bookmark">
                                     <span>@lang('common.account_cta.live_btn_title')</span>
                                     <small>@lang('common.account_cta.live_btn_titles')</small>
                                     <i class="rightarrow">
@@ -48,7 +40,7 @@
                                         </svg>
                                     </i>
                                 </a>
-                                <a href="11_Account_Open_Demo.html" class="btn btn-info" title="@lang('common.account_cta.demo_btn_titles')" rel="bookmark">
+                                <a href="/account/open-demo-account" class="btn btn-info" title="@lang('common.account_cta.demo_btn_titles')" rel="bookmark">
                                     <span>@lang('common.account_cta.demo_btn_title')</span>
                                     <small>@lang('common.account_cta.demo_btn_titles')</small>
                                     <i class="rightarrow">
@@ -58,7 +50,7 @@
                                     </i>
                                 </a>
                             </div>
-                            <a class="infolink" href="13_Account_Types.html" title="Simply because it is pain?">Simply because it is <span class="sitecolorwhite">pain?</span></a>
+                            <a class="infolink" href="/account/account-types" title="Simply because it is pain?">Simply because it is <span class="sitecolorwhite">pain?</span></a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +114,7 @@
             <div class="headslidervideo-video-mask"></div>
         </div>
         <!-- Slider Video End -->
-
+        </div>
     </div>
     <!-- Slider End -->
 
@@ -157,7 +149,7 @@
                                 <li>Spreads for majors are as low as 1 pips.</li>
                                 <li>No commission</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-success" href="13_Account_Types.html" title="Read More" rel="bookmark">Read More</a>
+                            <a class="accounttypesbox-btn btn btn-outline-success" href="/account/account-types" title="Read More" rel="bookmark">Read More</a>
                         </div>
                     </li>
                     <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="750">
@@ -178,7 +170,7 @@
                                 <li>No commission</li>
                                 <li>Crypto currencies</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-info" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-info" href="/account/account-types" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
@@ -202,7 +194,7 @@
                                 <li>Crypto currencies</li>
                                 <li>US and Europe stocks</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-warning" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-warning" href="/account/account-types" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
@@ -224,7 +216,7 @@
                                 <li>3 USD per side commission</li>
                                 <li>Crypto currencies</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-danger" href="13_Account_Types.html" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-danger" href="/account/account-types" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
@@ -317,6 +309,8 @@
                                         <td><span class="{{$rowClass}}">%{{ sprintf('%0.2f', ($changePercentage)) }}</span></td>
                                         <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
                                     </tr>
+
+
                                 @endforeach
                                 </tbody>
                             </table>
@@ -388,70 +382,22 @@
                                 <thead>
                                 <tr>
                                     <th><span>SYMBOL</span></th>
-                                    <th><span>SELL</span></th>
-                                    <th><span>BUY</span></th>
-                                    <th><span>HIGH</span></th>
-                                    <th><span>LOW</span></th>
+                                    <th><span>BID</span></th>
+                                    <th><span>ASK</span></th>
+                                    <th><span>PRICE</span></th>
                                     <th class="centercell btncell"><span>FREE BONUS</span></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><span>EUR/USD</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td><span>58.61</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>APPLE INC</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>34</span></td>
-                                    <td><span>34</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>WS30</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td><span>67.3</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>AMAZON.COM</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td><span>90.1</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>DAX30</span></td>
-                                    <td><span class="sitecolorgreen">13239.30</span></td>
-                                    <td><span>13240.10</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>15</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>GBP/USD</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>60</span></td>
-                                    <td><span>60</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
-                                <tr>
-                                    <td><span>EUR/GBP</span></td>
-                                    <td><span>13239.30</span></td>
-                                    <td><span class="sitecolorred">13240.10</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td><span>12.6</span></td>
-                                    <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
-                                </tr>
+                                @foreach($cryptoPrices as $market)
+                                    <tr>
+                                        <td><span>{{ $market->market_name }}</span></td>
+                                        <td><span>{{ sprintf('%0.8f', $market->bid) }}</span></td>
+                                        <td><span>{{ sprintf('%0.8f', $market->ask) }}</span></td>
+                                        <td><span>{{ sprintf('%0.8f', $market->price) }}</span></td>
+                                        <td class="centercell btncell"><a href="#" class="btn btn-light btn-sm" title="START" rel="bookmark">START</a></td>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

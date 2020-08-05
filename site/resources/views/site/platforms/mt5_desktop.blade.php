@@ -37,7 +37,7 @@
                                 <li>MQL5</li>
                             </ul>
                             <div class="platappdownbtns">
-                                <a href="#" class="btn btn-platdown" title="METATRADER 5 DESKTOP" rel="bookmark">
+                                <a href="https://download.mql5.com/cdn/web/16649/mt5/ixbrokersfinancial5setup.exe" class="btn btn-platdown" title="METATRADER 5 DESKTOP" rel="bookmark">
                                     <i class="platdownicon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                                             <g id="Icon_Computer" transform="translate(0 -12)">
@@ -62,7 +62,7 @@
                                         </svg>
                                     </i>
                                     <p>
-                                        <small>DOWNLOAD FORM</small>
+                                        <small>DOWNLOAD FROM</small>
                                         <strong>METATRADER 5 DESKTOP</strong>
                                     </p>
                                 </a>
@@ -72,7 +72,7 @@
 
                         <!-- Imaage -->
                         <div class="col-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
-                            <img src="assets/img/section/platforms_detail_mt_cont_img_desktop.jpg" alt="MT5 DESKTOP" width="600" height="500" />
+                            <img src="/assets/img/section/platforms_detail_mt_cont_img_desktop.jpg" alt="MT5 DESKTOP" width="600" height="500" />
                         </div>
                         <!-- Image -->
 

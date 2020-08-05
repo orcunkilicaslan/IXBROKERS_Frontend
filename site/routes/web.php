@@ -21,8 +21,7 @@ Route::get('/account/account-types', 'SiteController@account_accounttypes');
 Route::get('/products/forex', 'SiteController@products_forex');
 Route::get('/products/commodities', 'SiteController@products_commodities');
 Route::get('/products/indices', 'SiteController@products_indices');
-Route::get('/products/cfd', 'SiteController@products_cfd');
-Route::get('/products/stocks', 'SiteController@products_stocks');
+Route::get('/products/stocks-cfd', 'SiteController@products_stocks_cfd');
 Route::get('/products/crypto-currencies', 'SiteController@products_cryptocurrencies');
 Route::get('/platforms/meta-trader-4/desktop', 'SiteController@platforms_mt4_desktop');
 Route::get('/platforms/meta-trader-4/web', 'SiteController@platforms_mt4_web');
@@ -43,8 +42,46 @@ Route::get('/company', 'SiteController@company');
 Route::get('/legal/terms-and-conditions', 'SiteController@legal_termsandconditions');
 Route::get('/legal/privacy-policy', 'SiteController@legal_privacypolicy');
 Route::get('/legal/cookie-policy', 'SiteController@legal_cookiepolicy');
+Route::get('/investments/pamm', 'SiteController@investments_pamm');
 
 
-Auth::routes();
-//ADNIN URLS
-Route::get('/home', 'AdminController@index')->name('home');
+Route::post('/account/open-demo-account', 'SiteController@handle_demo_form');
+Route::post('/account/open-live-account', 'SiteController@handle_real_form');
+Route::post('/partnership/become-introducing-broker', 'SiteController@handle_broker_application');
+
+
+Auth::routes(['register' => false]);
+// Admin Routes
+Route::get('/moneytalks',                           'AdminController@index')->name('moneytalks');
+Route::get('/moneytalks/logout',                    'AdminController@logout');
+Route::post('/moneytalks/media/upload',             'AdminController@media_upload');
+// Campaigns
+Route::get('/moneytalks/campaigns',                 'AdminController@campaign_list');
+Route::get('/moneytalks/campaigns/new',             'AdminController@campaign_new');
+Route::get('/moneytalks/campaigns/edit/{id}',       'AdminController@campaign_edit');
+Route::get('/moneytalks/campaigns/hide/{id}',       'AdminController@campaign_hide');
+Route::get('/moneytalks/campaigns/show/{id}',       'AdminController@campaign_show');
+Route::post('/moneytalks/campaigns/save',           'AdminController@campaign_save');
+Route::post('/moneytalks/campaigns/save/{id}',      'AdminController@campaign_update');
+// Journals
+Route::get('/moneytalks/journals',                  'AdminController@journals_list');
+Route::get('/moneytalks/journals/new',              'AdminController@journals_new');
+
+Route::get('/moneytalks/journals/hide/{id}',        'AdminController@journal_hide');
+Route::get('/moneytalks/journals/show/{id}',        'AdminController@journal_show');
+Route::get('/moneytalks/journals/edit/{id}',        'AdminController@journals_edit');
+Route::post('/moneytalks/journals/save',            'AdminController@journal_save');
+Route::post('/moneytalks/journals/save/{id}',       'AdminController@journal_update');
+
+Route::get('/moneytalks/updates',                   'AdminController@updates_list');
+Route::get('/moneytalks/updates/new',               'AdminController@updates_new');
+Route::get('/moneytalks/updates/hide/{id}',         'AdminController@update_hide');
+Route::get('/moneytalks/updates/show/{id}',         'AdminController@update_show');
+Route::get('/moneytalks/updates/edit/{id}',         'AdminController@update_edit');
+Route::post('/moneytalks/updates/save',             'AdminController@updates_save');
+Route::post('/moneytalks/updates/save/{id}',        'AdminController@updates_update');
+
+//Signals
+Route::get('/moneytalks/signals',                   'AdminController@signals');
+Route::post('/moneytalks/signals/save',              'AdminController@signals_save');
+Route::get('/convert_currency',                     'MainController@convert_currency');

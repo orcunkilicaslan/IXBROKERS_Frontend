@@ -45,7 +45,8 @@
                                 </div>
                             </div>
                         </div>
-                        <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm">
+                        <form class="openaccount-formbox-form ajaxAutoValidate" autocomplete="off" novalidate id="openDemoAccountForm" method="POST" action="/account/open-demo-account">
+                            @csrf
                             <div class="form-row">
                                 <div class="form-group col">
                                     <label>FIRST NAME</label>
@@ -87,14 +88,13 @@
                                 </div>
                                 <div class="recaptcha-area">
                                     <div class="recaptcha-check">
-                                        <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                                        <div class="g-recaptcha" data-theme="dark" data-sitekey="{{ env('GCAPTCHASITEKEY') }}"></div>
                                     </div>
                                     <label>I'm Not Robot</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-lg btn-success minwidthper100">OPEN DEMO ACCOUNT</button>
-{{--                                <button type="submit" class="btn btn-lg btn-success minwidthper100" onclick="submitForm('openDemoAccountForm')">OPEN DEMO ACCOUNT</button>--}}
                             </div>
                         </form>
                     </div>
