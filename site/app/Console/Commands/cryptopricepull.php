@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\CryptoMarket;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
 use Weidner\Goutte\GoutteFacade;
 
 class cryptopricepull extends Command
@@ -37,6 +38,7 @@ class cryptopricepull extends Command
                 $market->save();
             }
         }
+        Cache::forget('cryptoprices');
 
     }
 }

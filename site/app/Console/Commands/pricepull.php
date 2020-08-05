@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Market;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
 use Weidner\Goutte\GoutteFacade;
 
 class pricepull extends Command
@@ -56,6 +57,8 @@ class pricepull extends Command
                     break;
             }
         }
+
+        Cache::forget('marketprices');
     }
 
 
