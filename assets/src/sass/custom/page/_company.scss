@@ -17,6 +17,9 @@
       @include BootstrapMaxWidthResponsive(hd){
         padding: 30px 0;
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding: 15px 0;
+      }
     }
   }
 

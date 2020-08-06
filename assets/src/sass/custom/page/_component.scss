@@ -98,6 +98,10 @@
             font-size: 28px;
             height: 22px;
           }
+          @include BootstrapMaxWidthResponsive(lg){
+            font-size: 24px;
+            height: 18px;
+          }
         }
 
         &-pulse{
@@ -176,6 +180,9 @@
         }
         @include BootstrapMaxWidthResponsive(xl){
           font-size: 15px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          font-size: 14px;
         }
       }
 
@@ -303,6 +310,9 @@
       @include BootstrapMaxWidthResponsive(xl){
         font-size: 14px;
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        font-size: 13px;
+      }
 
       thead tr th,
       tbody tr td{
@@ -317,7 +327,10 @@
           padding: 10px;
         }
         @include BootstrapMaxWidthResponsive(xl){
-          padding: 7px;
+          padding: 9px 7px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          padding: 7px 5px;
         }
 
         &:first-child{
@@ -333,6 +346,10 @@
 
             .accounttypes-title{
               margin-top: 10px;
+
+              @include BootstrapMaxWidthResponsive(lg){
+                margin-top: 5px;
+              }
             }
 
             &.firsttitle{
@@ -351,6 +368,9 @@
                 @include BootstrapMaxWidthResponsive(xl){
                   font-size: 16px;
                 }
+                @include BootstrapMaxWidthResponsive(lg){
+                  font-size: 14px;
+                }
 
                 span{
                   font-size: 28px;
@@ -366,6 +386,9 @@
                   }
                   @include BootstrapMaxWidthResponsive(xl){
                     font-size: 22px;
+                  }
+                  @include BootstrapMaxWidthResponsive(lg){
+                    font-size: 18px;
                   }
                 }
               }
@@ -937,6 +960,10 @@
   &-aboutus{
     padding-top: 30px;
 
+    @include BootstrapMaxWidthResponsive(lg){
+      padding-top: 15px;
+    }
+
     > .container .row{
       @include flexbox-align-items(center);
 
@@ -970,9 +997,9 @@
           padding-right: 20px;
         }
         @include BootstrapMaxWidthResponsive(lg){
-          max-width: 500px;
+          max-width: 420px;
           padding-right: 0;
-          margin: 20px auto;
+          margin: 15px auto;
           text-align: center;
         }
       }
@@ -991,6 +1018,9 @@
         @include BootstrapMaxWidthResponsive(xl){
           max-width: 450px;
         }
+        @include BootstrapMaxWidthResponsive(lg){
+          max-width: 380px;
+        }
       }
     }
   }
@@ -1008,20 +1038,35 @@
     @include BootstrapMaxWidthResponsive(xl){
       padding: 30px 0;
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding: 20px 0;
+    }
 
     .call2actionform{
       color: $global-clr-dark-black;
 
-      &-row{}
+      &-row{
+        @include BootstrapMaxWidthResponsive(lg){
+          @include flexbox-flex-direction(column);
+        }
+      }
 
       &-text{
         padding-right: 30px;
+
+        @include BootstrapMaxWidthResponsive(lg){
+          padding-right: 15px;
+        }
 
         .sitetitle-xl{
           padding-top: 40px;
 
           @include BootstrapMaxWidthResponsive(hd){
             padding-top: 20px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            padding-top: 0;
+            text-align: center;
           }
         }
 
@@ -1031,10 +1076,18 @@
           @include BootstrapMaxWidthResponsive(hd){
             padding-top: 30px;
           }
+          @include BootstrapMaxWidthResponsive(lg){
+            padding-top: 20px;
+            text-align: center;
+          }
         }
       }
 
       &-form{
+
+        @include BootstrapMaxWidthResponsive(lg){
+          padding-top: 20px;
+        }
 
         .alert{
           margin-top: 20px;

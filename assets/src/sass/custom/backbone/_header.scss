@@ -31,7 +31,7 @@
 
       > .container{
         @include BootstrapMaxWidthResponsive(lg){
-          max-width: 100%;
+          //max-width: 100%;
         }
       }
 
@@ -67,7 +67,7 @@
 
       > .container{
         @include BootstrapMaxWidthResponsive(lg){
-          max-width: 100%;
+          //max-width: 100%;
         }
       }
 
@@ -109,9 +109,9 @@
         width: 130px;
       }
       @include BootstrapMaxWidthResponsive(lg){
-        width: 140px;
+        width: 130px;
         position: relative;
-        top: -2px;
+        top: -1px;
       }
     }
   }

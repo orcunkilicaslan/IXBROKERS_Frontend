@@ -10,9 +10,13 @@
     padding-top: 110px;
     min-height: 110px;
   }
-  @include BootstrapMaxWidthResponsive(xl){
+  @include BootstrapMaxWidthResponsive(hd){
     padding-top: 100px;
     min-height: 100px;
+  }
+  @include BootstrapMaxWidthResponsive(lg){
+    padding-top: 55px;
+    min-height: 55px;
   }
 
   &-bg{
@@ -30,6 +34,10 @@
       top: 0;
       overflow: hidden;
       opacity: 0.25;
+
+      @include BootstrapMaxWidthResponsive(lg){
+        background-position: center bottom;
+      }
     }
   }
 
@@ -40,18 +48,21 @@
       @include flexbox-display-flex();
       @include flexbox-justify-content(space-between);
       @include flexbox-align-items(center);
-      margin: 40px auto 70px;
+      padding: 40px 0 70px;
       position: relative;
       z-index: 1;
 
       @include BootstrapMaxWidthResponsive(1k){
-        margin: 10px auto 30px;
+        padding: 10px 0 30px;
       }
       @include BootstrapMaxWidthResponsive(hd){
-        margin: 15px auto 25px;
+        padding: 15px 0 25px;
       }
       @include BootstrapMaxWidthResponsive(xl){
-        @include flexbox-align-items(flex-start);
+        padding: 15px 0 20px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding: 15px 0;
       }
     }
 
@@ -64,7 +75,11 @@
 
       @include BootstrapMaxWidthResponsive(xl){
         padding-right: 80px;
-        padding-top: 10px;
+        padding-bottom: 25px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-right: 50px;
+        padding-bottom: 15px;
       }
 
       h1{
@@ -77,6 +92,9 @@
         }
         @include BootstrapMaxWidthResponsive(hd){
           font-size: 18px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          font-size: 16px;
         }
       }
       h2{
@@ -92,6 +110,9 @@
         }
         @include BootstrapMaxWidthResponsive(xl){
           font-size: 28px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          font-size: 24px;
         }
       }
       p{
@@ -110,6 +131,9 @@
           font-size: 15px;
           margin-top: 3px;
         }
+        @include BootstrapMaxWidthResponsive(lg){
+          font-size: 14px;
+        }
       }
 
     }
@@ -124,6 +148,9 @@
       }
       @include BootstrapMaxWidthResponsive(xl){
         width: 240px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        width: 200px;
       }
 
       .openaccountbox{
