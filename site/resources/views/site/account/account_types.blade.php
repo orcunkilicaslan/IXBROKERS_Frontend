@@ -5,7 +5,7 @@
     <x-header-title
         primaryTitle='ACCOUNT TYPES'
         secondaryTitle='COMPARE <span class="sitecolorgreen">ACCOUNTS</span>'
-        spot='Cras maximus ligula diam, ultricies porta lectus mattis malesuada.'></x-header-title>
+        spot='Compare the account types below and find the best for you.<br/>IX Brokers offers real STP / ECN environment for its clients.'></x-header-title>
 
     <!-- Account Start -->
     <section class="account-section section-content">

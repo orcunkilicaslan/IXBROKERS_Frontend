@@ -4,8 +4,8 @@
 
     <x-header-title
         primaryTitle='METATRADER 5 DESKTOP'
-        secondaryTitle='WELCOME TO THE MT<span class="sitecolororange">5</span> <span class="sitecolorgreen">DESKTOP</span> PLATFORM'
-        spot='The most advanced trading platform.'></x-header-title>
+        secondaryTitle='WELCOME TO THE MT<span class="sitecolororange">5</span> <span class="sitecolorgreen">DESKTOP</span> AGAIN'
+        spot='The newest trading platform of the world, Metatrader 5, is with you with IX Brokers.'></x-header-title>
 
     <!-- Metatrader Platforms Start -->
     <section class="platforms-section section-content">

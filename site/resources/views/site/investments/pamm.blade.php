@@ -16,12 +16,16 @@
             <div class="container">
                 <div class="row">
 
+
+
+
+
                     <!-- Title -->
                     <div class="sectionlayout-start-text col">
                         <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-left">
                             <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><span class="sitecolorgreen">MT</span><span class="sitecolororange">4</span>/<span class="sitecolorgreen">MT</span><span class="sitecolororange">5</span> PAMM</span></h2>
                             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">IX Brokers’s Percent Allocation Management Module is an advanced MT4/MT5 PAMM solution designed to attract quality money managers and investors with its sleek web-based UI and advanced investment management capabilities.</p>
-                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">As seen, The manager's trading activity results - including profits, losses and trades - are compounded among central asset accounts accordingly to the ratio of investment on an account. As the currency dealing and other types of arbitrage operations attain profit-making capacity within very straitened margins, this type of management enables more currency to be engaged in trading while the risk is distributed usually between investors."</p>
                             <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" href="#" class="btn btn-lg rounded-pill btn-success">TALK TO MANAGER</a>
                         </div>
                     </div>
@@ -47,7 +51,7 @@
             <div class="container">
                 <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width900">
                     <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><span class="sitecolorgreen">KEY</span> ADVANTAGES</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Using the PAMM Account as a means of pooling money into trading, the account manager can trade with larger volumes and therefore has the chance of receiving larger returns</p>
                 </div>
             </div>
             <!-- Title -->
@@ -88,7 +92,7 @@
                             <h4>PERFORMANCE</h4>
                             <ul class="ullist ullist-dotted">
                                 <li>IX Brokers’s MT4/MT5 PAMM solution contains both backend and frontend components, ensuring effortless integration into the trading platform.</li>
-                                <li>Unlike MAM plugin software, the solution’s architecture grants zero impact on trading platform performance, ensuring that even large amounts of trade operations do not lead to any technical hindrance.</li>
+                                <li>Unlike MAM plugin software, the solution’s architecture grants zero impact on trading platform performance, ensuring that even large amounts of trade operations do not lead to any technical hindrance. And money managers' trades are being placed below 40ms.</li>
                             </ul>
                         </div>
                         <!-- Title -->
@@ -153,32 +157,6 @@
                 </div>
             </div>
             <!-- Layout Text Left -->
-            <!-- Layout Text Right -->
-            <div class="sectionlayout-body-wrp layoutright" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-                <div class="container">
-                    <div class="row">
-
-                        <!-- Title -->
-                        <div class="sectionlayout-body-text sitecontent-desc col">
-                            <h4>WHITE LABEL FRIENDLY</h4>
-                            <ul class="ullist ullist-dotted">
-                                <li>IX Brokers’s cutting-edge MT4/MT5 PAMM solution is available to fully licensed MT4/MT5 brokers with administrator platform access, as well as MT4/MT5 white labels.</li>
-                                <li>Brokers can maximize brand awareness by applying corporate design to the solution’s frontend components.</li>
-                            </ul>
-                        </div>
-                        <!-- Title -->
-
-                        <!-- Image -->
-                        <div class="sectionlayout-body-img col">
-                            <img src="../assets/img/section/investments_pamm_layout_white_label.png" alt="White Label Friendly" width="699" height="384" />
-                        </div>
-                        <!-- Image -->
-
-                    </div>
-                </div>
-            </div>
-            <!-- Layout Text Right -->
-
         </div>
         <!-- Layout Body -->
 
