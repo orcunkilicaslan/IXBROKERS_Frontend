@@ -5,7 +5,7 @@
     <x-header-title
         primaryTitle='CFD'
         secondaryTitle='TRADE CFDS <span class="sitecolorgreen">WITH</span> IXBROKERS'
-        spot='Find your next opportunity from some of the world’s biggest companies.'></x-header-title>
+        spot="Invest to the world's largest and biggest companies with CFD products."></x-header-title>
 
     <!-- Products Start -->
     <section class="products-section section-content">
@@ -13,9 +13,8 @@
 
             <!-- Title -->
             <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width1100">
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">MEET WITH TH WORLD'S <span class="sitecolorgreen">MOST PROFOTABLE</span> MARKET!</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Trading price movements of shares from companies like Apple and Volkswagen offers you access to popular company stocks without having to purchase them outright.</p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Whatever your investment goals may be, make the most of today’s market action and start trading stock CFDs with IX Brokers.</p>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">EXPERIENCE BEING PARTNER OF <span class="sitecolorgreen">THE BIGGEST ONES.</span></h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Trade the movements of the stock prices of the companies like Apple, BMW, Tesla, Paypal, Ebay and more.</p>
             </div>
             <!-- Title -->
 
@@ -28,8 +27,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-leverage"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>USE LEVERAGE TO YOUR ADVANTAGE</h3>
-                                <p>Unlike direct stock trading, with CFDs you can use leverage to increase your potential for profits (knowing that the risk of making bigger losses exists too).</p>
+                                <h3>LEVERAGE THE ADVANTAGE</h3>
+                                <p>Unlike direct stock trading, with CFDs you can use leverage to increase your potential for profits.</p>
                             </div>
                         </div>
                     </li>
@@ -40,7 +39,7 @@
                             </div>
                             <div class="sectionfeaturebox-title">
                                 <h3>BENEFIT FROM FALLING PRICES</h3>
-                                <p>Unlike our stock trading service, you can go short on stock CFDs and take advantage of falling stock prices, not just rising ones.</p>
+                                <p>In the stocks trading, you have limitations to go short. In stock CFDs, you can buyr or sell any stock. </p>
                             </div>
                         </div>
                     </li>
@@ -50,8 +49,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-transparent"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>ULTIMATE TRANSPARENT</h3>
-                                <p>IX Brokers's Performance statistics, including Requote, Slippage and Order Execution, are checked by PwC.</p>
+                                <h3>REGULATED AND LICENSED</h3>
+                                <p>IX Brokers is a registered and regulated forex broker under SVGFSA with the license number of 38923.</p>
                             </div>
                         </div>
                     </li>
@@ -61,8 +60,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-tradelittle"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>TRADE WITH AS LITTLE AS $100</h3>
-                                <p>The stock CFDs account has one of the lowest deposit requirements, giving you access to price action from big companies without the need to invest big portions of your capital.</p>
+                                <h3>TRADE WITH MINIMUM</h3>
+                                <p>The stock CFDs does not require huge investments. You can trade CFDs with the amount of as low as 100 USD.</p>
                             </div>
                         </div>
                     </li>

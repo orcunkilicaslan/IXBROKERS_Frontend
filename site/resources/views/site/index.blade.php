@@ -132,8 +132,8 @@
             <!-- Account Types -->
             <div class="component-siteaccounttypes">
                 <ul class="accounttypesbox">
-                    <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500">
-                        <div class="accounttypesbox-content">
+                    <li>
+                        <div class="accounttypesbox-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500">
                             <div class="accounttypesbox-head">
                                 <div class="accounttypes-icons">
                                     <i class="accounttypes-icons-text sitecolorgreen">SV</i>
@@ -149,11 +149,11 @@
                                 <li>Spreads for majors are as low as 1 pips.</li>
                                 <li>No commission</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-success" href="/account/account-types" title="Read More" rel="bookmark">Read More</a>
+                            <a class="accounttypesbox-btn btn btn-outline-success" href="Account_Types.html" title="Read More" rel="bookmark">Read More</a>
                         </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="750">
-                        <div class="accounttypesbox-content">
+                    <li>
+                        <div class="accounttypesbox-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="750">
                             <div class="accounttypesbox-head">
                                 <div class="accounttypes-icons">
                                     <i class="accounttypes-icons-text sitecolorblue">FIX</i>
@@ -170,13 +170,13 @@
                                 <li>No commission</li>
                                 <li>Crypto currencies</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-info" href="/account/account-types" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-info" href="Account_Types.html" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="1000">
-                        <div class="accounttypesbox-content">
+                    <li>
+                        <div class="accounttypesbox-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="1000">
                             <div class="accounttypesbox-head">
                                 <div class="accounttypes-icons">
                                     <i class="accounttypes-icons-text sitecolororange">VIP</i>
@@ -194,13 +194,13 @@
                                 <li>Crypto currencies</li>
                                 <li>US and Europe stocks</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-warning" href="/account/account-types" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-warning" href="Account_Types.html" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="1250">
-                        <div class="accounttypesbox-content">
+                    <li>
+                        <div class="accounttypesbox-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="1250">
                             <div class="accounttypesbox-head">
                                 <div class="accounttypes-icons">
                                     <i class="accounttypes-icons-text sitecolorred">ZR</i>
@@ -216,7 +216,7 @@
                                 <li>3 USD per side commission</li>
                                 <li>Crypto currencies</li>
                             </ul>
-                            <a class="accounttypesbox-btn btn btn-outline-danger" href="/account/account-types" title="Read More" rel="bookmark">
+                            <a class="accounttypesbox-btn btn btn-outline-danger" href="Account_Types.html" title="Read More" rel="bookmark">
                                 <span>Read More</span>
                             </a>
                         </div>

@@ -176,14 +176,14 @@
                                                             </div>
                                                             <div class="megamultimenu-nav menunav">
                                                                 <ul>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="XAU/USD" rel="category">XAU/USD</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="EUR/TRY" rel="category">EUR/TRY</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="EUR/USD" rel="category">EUR/USD</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="GBP/USD" rel="category">GBP/USD</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="NZD/USD" rel="category">NZD/USD</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="USD/CHF" rel="category">USD/CHF</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="USD/JPY" rel="category">USD/JPY</a></li>
-                                                                    <li><a href="/platforms/meta-trader-4/desktop" title="USD/TRY" rel="category">USD/TRY</a></li>
+                                                                    <li><a href="/analysis/XAUUSD" title="XAU/USD" rel="category">XAU/USD</a></li>
+                                                                    <li><a href="/analysis/EURTRY" title="EUR/TRY" rel="category">EUR/TRY</a></li>
+                                                                    <li><a href="/analysis/EURUSD" title="EUR/USD" rel="category">EUR/USD</a></li>
+                                                                    <li><a href="/analysis/GBPUSD" title="GBP/USD" rel="category">GBP/USD</a></li>
+                                                                    <li><a href="/analysis/NZDUSD" title="NZD/USD" rel="category">NZD/USD</a></li>
+                                                                    <li><a href="/analysis/USDCHF" title="USD/CHF" rel="category">USD/CHF</a></li>
+                                                                    <li><a href="/analysis/USDJPY" title="USD/JPY" rel="category">USD/JPY</a></li>
+                                                                    <li><a href="/analysis/USDTRY" title="USD/TRY" rel="category">USD/TRY</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -288,7 +288,7 @@
                     <!-- UserArea -->
                     <div class="header-userarea col-auto">
                         <div class="header-userarea-btns">
-                            <a href="#" class="btn btn-success">CLIENT PORTAL</a>
+                            <a href="https://secure.ixbrokers.com/" class="btn btn-success">CLIENT PORTAL</a>
                         </div>
                     </div>
                     <!-- UserArea -->

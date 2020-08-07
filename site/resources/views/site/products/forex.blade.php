@@ -4,8 +4,8 @@
 
     <x-header-title
         primaryTitle='FOREX'
-        secondaryTitle='EXPLORE CURRENCY <span class="sitecolorgreen">TRADING WITH</span> IXBROKERS'
-        spot='Trade major, minor and exotic currency pairs with a global, trusted broker.'></x-header-title>
+        secondaryTitle=' MEET <span class="sitecolorgreen">THE BEST CONDITIONS</span> FOR FX MARKET'
+        spot='Trade hunderds of spot FX products with a global, trusted, regulated broker.'></x-header-title>
 
     <!-- Products Start -->
     <section class="products-section section-content">
@@ -13,9 +13,9 @@
 
             <!-- Title -->
             <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width1100">
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">MEET WITH TH WORLD'S <span class="sitecolorgreen">MOST PROFOTABLE</span> MARKET!</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">The forex market is the market in which participants can buy, sell, exchange, and speculate on currencies. The forex market is made up of banks, commercial companies, central banks, investment management firms, hedge funds, and retail forex brokers and investors.</p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">The currency market is considered to be the largest financial market with over $5 trillion in daily transactions, which is more than the futures and equity markets combined.</p>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> IX BROKERS DELIVERS YOU THE BEST OF THE BEST.<br/><span class="sitecolorgreen">ENJOY IT!</span></h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">The forex market is the largest and the biggest market in the world. All banks, financial institutions, hedge funds, brokers even central banks are contributor of this market.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Experience the most profitable market in the world with a regulated broker.</p>
             </div>
             <!-- Title -->
 
@@ -28,8 +28,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-licensed"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>GLOBALLY REGULATED & LICENSED</h3>
-                                <p>Our brand is regulated and licensed under the FSC of the Republic of Mauritius and UK’s FCA, among others.</p>
+                                <h3>REGULATED & LICENSED</h3>
+                                <p>IX Brokers is a registered and regulated forex broker under SVGFSA with the license number of 38923.</p>
                             </div>
                         </div>
                     </li>
@@ -39,8 +39,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-support"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>DEDICATED SUPPORT IN 18 LANGUAGES</h3>
-                                <p>We speak your language so that you can feel at home while trading with us.</p>
+                                <h3>WORLDWIDE SERVICE</h3>
+                                <p>We are dedicated to bring you the best service in all around the world. 3 continents 6 countries. </p>
                             </div>
                         </div>
                     </li>
@@ -50,8 +50,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-transparent"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>ULTIMATE TRANSPARENT</h3>
-                                <p>IX Brokers's Performance statistics, including Requote, Slippage and Order Execution, are checked by PwC.</p>
+                                <h3>BEST CONDITIONS</h3>
+                                <p>Hundreds of products including cryptos and stocks. Tightest spreads. Market swap ratios. No commission.</p>
                             </div>
                         </div>
                     </li>
@@ -61,8 +61,8 @@
                                 <i class="icons-sprite sprite-80-products-features icons-secure"></i>
                             </div>
                             <div class="sectionfeaturebox-title">
-                                <h3>SECURE & SAFE</h3>
-                                <p>Your funds are kept in segregated accounts, and your trades are secured by negative balance protection.</p>
+                                <h3>FAST OF THE FASTEST</h3>
+                                <p>IX Brokers is fast. Real fast. In execution. In deposit and withdrawals. Just try and see for yourself. </p>
                             </div>
                         </div>
                     </li>

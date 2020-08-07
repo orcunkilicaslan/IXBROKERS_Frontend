@@ -3,9 +3,9 @@
 @section('content')
 
     <x-header-title
-        primaryTitle='METATRADER 5 MOBILE'
-        secondaryTitle='WELCOME TO THE MT<span class="sitecolororange">5</span> <span class="sitecolorgreen">MOBILE</span> PLATFORM'
-        spot='The most advanced trading platform.'></x-header-title>
+        primaryTitle='METATRADER 5 MOBILE TRADER'
+        secondaryTitle='WELCOME TO THE MT<span class="sitecolororange">5</span> <span class="sitecolorgreen">MOBILE</span> AGAIN'
+        spot='Anywhere. Anytime. Metatrader 5 is with you.'></x-header-title>
 
     <!-- Metatrader Platforms Start -->
     <section class="platforms-section section-content">

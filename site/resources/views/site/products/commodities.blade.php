@@ -4,8 +4,8 @@
 
     <x-header-title
         primaryTitle="COMMODITIES"
-        secondaryTitle='<span class="sitecolorgreen">TRADE OIL AND GAS</span> WITH IXBROKERS'
-        spot="Discover trading opportunities in some of the world’s biggest oil and natural gas markets."></x-header-title>
+        secondaryTitle='<span class="sitecolorgreen">TRADE ALL COMMODITIES.</span> SAFE AND FAST'
+        spot="Discover and enjoy the deepest and profitable commodity markets with IX Brokers"></x-header-title>
 
     <!-- Products Start -->
     <section class="products-section section-content">
@@ -13,9 +13,9 @@
 
             <!-- Title -->
             <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width1100">
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">MEET WITH TH WORLD'S <span class="sitecolorgreen">MOST PROFOTABLE</span> MARKET!</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Trading CFDs on commodities like oil and gas is a great way to diversify your portfolio, and offers you access to those markets without having to purchase the product outright.</p>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Whatever your investment goals may be, make the most of today’s market action and start trading popular oil and gas products with IX Brokers.</p>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> IX BROKERS DELIVERS YOU THE BEST OF THE BEST.<br/><span class="sitecolorgreen">ENJOY IT!</span></h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">IX Brokers brings you all commodity products including natural gas, oils, metals and soft commodities. With the unique trading environment of IX Brokers, one can enjoy with the swings of oil market and benefit the wheat's price rally. </p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Open an account now and grab the commodity markets' chances. Now. </p>
             </div>
             <!-- Title -->
 
