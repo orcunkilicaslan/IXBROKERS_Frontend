@@ -6,6 +6,11 @@
   min-height: 120px;
   position: relative;
 
+  @include BootstrapMinWidthResponsive(lg){
+    @include flexbox-display-flex();
+    @include flexbox-justify-content(center);
+    @include flexbox-align-items(center);
+  }
   @include BootstrapMaxWidthResponsive(lg){
     padding-top: 80px;
   }

@@ -18,7 +18,7 @@
 
     &-menu{
       position:fixed;
-      background-color:#333333;
+      background-color: #072b5d;
       width:260px;
       height:100%;
       top:0;
@@ -34,7 +34,7 @@
 
     &-mobilemenu{
       &-mask{
-        background-color: transparentize($global-clr-dark-black, 0.5);
+        background-color: transparentize($global-clr-white, 0.2);
         position:fixed;
         display:none;
         width:100%;
@@ -43,7 +43,7 @@
         top:0;
         cursor:pointer;
         z-index:1;
-        @include backdrop-filter-multiple(blur(5px));
+        @include backdrop-filter-multiple(blur(2px));
       }
       &-btn{
         @include flexbox-display-flex();
@@ -101,7 +101,8 @@
 
       #{$dfnnavclassname}-mobilemenu-btn{
         position: fixed;
-        left: 20px;
+        left: 15px;
+        top: 10px;
 
         .btntext{
           opacity: 0;

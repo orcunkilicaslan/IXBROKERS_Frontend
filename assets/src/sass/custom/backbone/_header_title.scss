@@ -1,5 +1,6 @@
 
 .headtitle{
+  @include flexbox-flex(0);
   color: $global-clr-white;
   background-color: transparentize($global-clr-black, 0.05);
   padding-top: 120px;

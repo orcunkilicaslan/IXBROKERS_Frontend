@@ -68,6 +68,31 @@ $('#headslidervideoowl').owlCarousel({
 });
 /* Head Video Slider */
 
+/* Account Types Box */
+$('#accounttypesboxowl').owlCarousel({
+    loop:false,
+    nav:false,
+    dots:false,
+    autoplay:false,
+    autoplayTimeout:2000,
+    autoplayHoverPause:false,
+    items:4,
+    margin:0,
+    autoWidth:false,
+    responsiveClass:true,
+    responsive:{
+        0:{},
+        819:{
+            items:2,
+            dots:true
+        },
+        1059:{},
+        1379:{},
+        1939:{}
+    }
+});
+/* Account Types Box */
+
 /* Head Features Icons */
 $('#headfeaturesiconsowl').owlCarousel({
     loop:false,

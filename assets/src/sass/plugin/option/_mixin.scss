@@ -488,6 +488,10 @@
   @include transform(translateY($y));
 }
 
+@mixin translate3d ($x, $y, $z) {
+  @include transform(translate3d($x, $y, $z));
+}
+
 @mixin skew ($x, $y) {
   @include transform(skew(#{$x}deg, #{$y}deg));
 }
