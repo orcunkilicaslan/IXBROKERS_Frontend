@@ -4,8 +4,8 @@
 
     <x-header-title
         primaryTitle='INDICES'
-        secondaryTitle='TRADE <span class="sitecolorgreen">GLOBAL MARKET</span> INDICES WITH A <span class="sitecolorgreen">GLOBAL BROKER'
-        spot='Discover your trading opportunity with popular stock portfolios.'></x-header-title>
+        secondaryTitle='TRADE <span class="sitecolorgreen">DAX, SP500, ITA40, SHANGAI COMP.</span> TRADE ALL'
+        spot='Trade the indices and the world's leading indices with IX Brokers'></x-header-title>
 
     <!-- Products Start -->
     <section class="products-section section-content">
@@ -13,8 +13,8 @@
 
             <!-- Title -->
             <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center sitetitle-width1100">
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">MEET WITH TH WORLD'S <span class="sitecolorgreen">MOST PROFOTABLE</span> MARKET!</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">When you trade indices with an industry-leading broker, you can expect to choose from an industry-leading selection of indices. IX Brokers offer CFD trading for spot indices on some of the world’s most active securities, meaning that you can choose to buy and sell indices at their spot price to suit you and your trading strategy.</p>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">TIGHEST SPREADS <span class="sitecolorgreen">FASTEST EXECUTION</span></h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">IX Brokers delivers you the industry-leading selection of indices including major European, American and Asian regions'.  IX Brokers offers CFD trading for spot indices on the major and most liquid indices. So that you can buy and sell the related countries macro economies. Hedge yourself, trade direction or catch-and-go. Find your trading strategy and make it real in IX Brokers.</p>
             </div>
             <!-- Title -->
 

@@ -4,8 +4,8 @@
 
     <x-header-title
         primaryTitle='METATRADER 4 WEBTRADER'
-        secondaryTitle='WELCOME TO THE MT<span class="sitecolororange">4</span> <span class="sitecolorgreen">WEBTRADER</span> PLATFORM'
-        spot='Introducing trading’s most popular platform.'></x-header-title>
+        secondaryTitle='WELCOME TO THE MT<span class="sitecolororange">4</span> <span class="sitecolorgreen">WEBTRADER</span> AGAIN'
+        spot='Trade in any operating system. No troubles.'></x-header-title>
 
     <!-- Metatrader Platforms Start -->
     <section class="platforms-section section-content">

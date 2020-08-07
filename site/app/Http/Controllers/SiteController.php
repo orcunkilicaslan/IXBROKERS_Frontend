@@ -132,8 +132,8 @@ class SiteController extends Controller
         ]);
     }
 
-    public function analysis_morningjournals() {
-        return view('site.analysis.morning_journals', [
+    public function analysis($symbol, Request $request) {
+        return view('site.analysis.symbolanalysis', [
             'marketPrices' => $this->marketPrices,
             'cryptoPrices' => $this->cryptoPrices
         ]);
