@@ -21,9 +21,6 @@
     @include BootstrapMaxWidthResponsive(xl){
       font-size: 15px;
     }
-    @include BootstrapMaxWidthResponsive(lg){
-      background-color: darken($global-clr-dark-black, 5%);
-    }
 
     &.activenavbar{}
 
@@ -43,7 +40,7 @@
       &-item{
 
         @include BootstrapMaxWidthResponsive(lg){
-          border-bottom: 1px solid $global-clr-dark-black;
+          border-bottom: 1px solid transparentize($global-clr-white, 0.9);
         }
 
         > a{
@@ -66,8 +63,10 @@
             font-size: 14px;
           }
           @include BootstrapMaxWidthResponsive(lg){
+            font-size: 15px;
+            font-weight: 500;
             margin: 0;
-            padding: 10px 0;
+            padding: 12px 15px 10px;
           }
 
           &[data-toggle="dropdown"]{
@@ -126,6 +125,10 @@
           @include BootstrapMaxWidthResponsive(hd){
             padding-top: 95px;
           }
+          @include BootstrapMaxWidthResponsive(lg){
+            background-color: transparentize($global-clr-dark-black, 0.75) !important;
+            padding-top: 0;
+          }
 
           a{
             color: lighten($global-clr-text-light, 30%);
@@ -153,8 +156,14 @@
             ul{
               li{
                 position: relative;
-                padding-left: 15px;
                 padding-left: 0;
+
+                @include BootstrapMaxWidthResponsive(lg){
+                  padding: 3px 0;
+
+                  &:first-child{padding-top: 0;}
+                  &:last-child{padding-bottom: 0;}
+                }
 
                 &:hover::after{
                   border-color: $global-clr-white;
@@ -201,6 +210,9 @@
               }
               @include BootstrapMaxWidthResponsive(hd){
                 padding-bottom: 20px;
+              }
+              @include BootstrapMaxWidthResponsive(lg){
+                padding: 10px 15px;
               }
             }
           }
@@ -337,7 +349,7 @@
               &-col{
                 min-width: inherit;
                 padding: 0;
-                margin-top: 15px;
+                margin-top: 10px;
                 &:first-child{
                   margin-top: 0;
                 }
@@ -345,7 +357,7 @@
               &-desc{
                 margin-bottom: 2px;
                 &-title{
-                  font-size: 16px;
+                  font-size: 14px;
                 }
               }
             }

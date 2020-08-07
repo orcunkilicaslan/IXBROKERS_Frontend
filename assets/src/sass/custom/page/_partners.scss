@@ -147,6 +147,7 @@
   }
 
   &-whypartner{
+    @include flexbox-flex(0);
     background-color: $global-border-light-gray-opacity;
     padding: 60px 0;
     height: 100%;

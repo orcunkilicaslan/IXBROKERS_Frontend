@@ -16,6 +16,15 @@
     height: calc(100vh - 275px);
     min-height: 1030px;
   }
+  @include BootstrapMaxWidthResponsive(1k){
+    max-height: 975px;
+  }
+  @include BootstrapMaxWidthResponsive(hd){
+    max-height: 850px;
+  }
+  @include BootstrapMaxWidthResponsive(lg){
+    max-height: 620px;
+  }
 
   &-wrp{
     @include flexbox-display-flex();
@@ -317,7 +326,6 @@
     }
     @include BootstrapMaxWidthResponsive(lg){
       width: 100%;
-      padding-top: 20px;
     }
 
     .openaccountbox{
