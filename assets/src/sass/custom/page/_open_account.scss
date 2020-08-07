@@ -6,6 +6,10 @@
   min-height: 120px;
   position: relative;
 
+  @include BootstrapMaxWidthResponsive(lg){
+    padding-top: 80px;
+  }
+
   &-bg{
     &::before{
       content: "";
@@ -53,9 +57,11 @@
     @include BootstrapMaxWidthResponsive(lg){
       max-width: inherit;
       height: inherit;
+      padding-right: 0;
+      padding-bottom: 30px;
     }
 
-    .sitetitle{
+    .sitetitle-xl{
       @include BootstrapMaxWidthResponsive(lg){
         text-align: center;
       }

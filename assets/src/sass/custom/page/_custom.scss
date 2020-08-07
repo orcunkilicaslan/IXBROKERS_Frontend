@@ -11,6 +11,9 @@
   @include BootstrapMaxWidthResponsive(xl){
     padding: 30px 0;
   }
+  @include BootstrapMaxWidthResponsive(lg){
+    padding: 25px 0;
+  }
 }
 
 .openaccountbox{
@@ -85,6 +88,10 @@
       font-size: 16px;
       padding: 6px 10px 8px;
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      font-size: 14px;
+      padding: 3px 10px 5px;
+    }
 
     span, small{
       display: block;
@@ -107,6 +114,9 @@
       @include BootstrapMaxWidthResponsive(xl){
         font-size: 16px;
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        font-size: 14px;
+      }
     }
 
     small{
@@ -118,6 +128,10 @@
       right: 15px;
       top: calc(50% - 1px);
       @include translateY(-50%);
+
+      @include BootstrapMaxWidthResponsive(lg){
+        right: 10px;
+      }
 
       svg{
         fill: $global-clr-white;
@@ -147,6 +161,10 @@
       font-size: 14px;
       margin-top: 7px;
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      font-size: 12px;
+      margin-top: 5px;
+    }
   }
 
   .inforisk{
@@ -154,6 +172,11 @@
     font-size: 14px;
     font-weight: 300;
     margin-top: 10px;
+
+    @include BootstrapMaxWidthResponsive(lg){
+      font-size: 12px;
+      margin-top: 5px;
+    }
   }
 }
 
@@ -258,8 +281,14 @@
 
 .sectionfeaturebox{
   @include flexbox-display-flex();
+  @include flexbox-flex-wrap(wrap);
   margin-left: -15px;
   margin-right: -15px;
+
+  @include BootstrapMaxWidthResponsive(lg){
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 
   &-box{
     @include flexbox-flex-basis(0);
@@ -267,6 +296,12 @@
     min-width: 0;
     max-width: 100%;
     padding: 0 15px;
+
+    @include BootstrapMaxWidthResponsive(lg){
+      @include flexbox-flex(0 0 50%);
+      max-width: 50%;
+      padding: 5px;
+    }
   }
 
   &-wpr{

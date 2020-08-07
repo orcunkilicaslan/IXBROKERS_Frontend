@@ -1,6 +1,7 @@
 
 .cookies-notification{
   @include transition(all, 0.3s, ease-in-out);
+  display: none !important;
 
   &.alert{
     background-color: $global-clr-white !important;

@@ -47,7 +47,7 @@ $(function() {
 
 /* Header Web Navbar Fixed */
 jQuery(function($) {
-    if($(window).width() > 991){
+    if($(window).width() > 1059){
 
         $(window).on("load resize scroll",function(e){
 
@@ -85,7 +85,7 @@ jQuery(function($) {
 /* Header Web Navbar Fixed */
 
 /* Header Web Navbar Dropdown Menu */
-$(window).on("load resize",function(e){if($(window).width() > 991){
+$(window).on("load resize",function(e){if($(window).width() > 1059){
 
     /* Dropdown Megamenu Start */
     $('.dfn-menu .dfn-menu-list .dfn-menu-list-item > a[data-toggle="dropdown"]').click(function() {

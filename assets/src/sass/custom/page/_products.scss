@@ -20,6 +20,9 @@
       @include BootstrapMaxWidthResponsive(xl){
         padding: 25px 0;
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding: 15px 0;
+      }
     }
   }
 
@@ -35,6 +38,9 @@
     @include BootstrapMaxWidthResponsive(xl){
       padding: 30px 0;
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding: 20px 0;
+    }
 
     .sitetitle-xl{
       padding-bottom: 50px;
@@ -44,6 +50,9 @@
       }
       @include BootstrapMaxWidthResponsive(xl){
         padding-bottom: 30px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-bottom: 20px;
       }
     }
 

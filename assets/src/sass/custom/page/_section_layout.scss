@@ -14,14 +14,26 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 40px 0;
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding: 20px 0;
+    }
 
     > .container .row{
       @include flexbox-align-items(center);
+
+      @include BootstrapMaxWidthResponsive(lg){
+        @include flexbox-flex-direction(column);
+      }
     }
 
     &-text{
 
       .sitetitle-xl{
+
+        @include BootstrapMaxWidthResponsive(lg){
+          text-align: center;
+        }
+
         .btn{
           margin-top: 10px;
         }
@@ -29,7 +41,19 @@
 
     }
 
-    &-img{}
+    &-img{
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-top: 20px;
+      }
+
+      img{
+        @include BootstrapMaxWidthResponsive(lg){
+          max-width: 500px;
+          margin: auto;
+          display: block;
+        }
+      }
+    }
 
   }
 
@@ -40,12 +64,18 @@
     @include BootstrapMaxWidthResponsive(1k){
       padding: 40px 0;
     }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding: 20px 0;
+    }
 
     .sitetitle-xl{
       margin-bottom: 30px;
 
       @include BootstrapMaxWidthResponsive(hd){
         margin-bottom: 20px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        margin-bottom: 5px;
       }
     }
 
@@ -56,6 +86,10 @@
       @include BootstrapMaxWidthResponsive(1k){
         padding-top: 10px;
         padding-bottom: 10px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
 
       &:first-child{padding-top: 0;}
@@ -88,13 +122,19 @@
       }
 
       .container{
-        max-width: 1200px;
         padding: 50px;
         border: 1px dotted $global-border-light-gray-focus;
         @include border-radius(3px);
 
-        @include BootstrapMaxWidthResponsive(1k){
+
+        @include BootstrapMinWidthResponsive(xl){
           max-width: 1000px;
+        }
+        @include BootstrapMinWidthResponsive(hd){
+          max-width: 1200px;
+        }
+
+        @include BootstrapMaxWidthResponsive(1k){
           padding: 35px;
         }
         @include BootstrapMaxWidthResponsive(hd){
@@ -142,6 +182,9 @@
 
         @include BootstrapMaxWidthResponsive(hd){
           max-width: 320px;
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          max-width: 260px;
         }
       }
     }
