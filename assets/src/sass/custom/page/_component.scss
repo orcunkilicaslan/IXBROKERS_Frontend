@@ -783,15 +783,102 @@
           padding: 25px 0;
         }
         @include BootstrapMaxWidthResponsive(lg){
-          @include flexbox-flex-direction(column);
-          position: relative;
           padding: 0;
+          position: relative;
+          border: 1px solid $global-border-light-gray-opacity;
+          @include border-radius(3px);
         }
 
         &-sub{
           @include flexbox-flex-direction(column);
           position: relative;
           z-index: 2;
+
+          @include BootstrapMaxWidthResponsive(lg){
+            @include flexbox-flex-direction(row);
+          }
+
+          .nav-item{
+            @include BootstrapMaxWidthResponsive(lg){
+              @include flexbox-flex-basis(0);
+              @include flexbox-flex-grow(1);
+              min-width: 0;
+              max-width: 100%;
+              width: auto;
+              position: relative;
+            }
+
+            .active{
+              .tabsplaticon{
+                svg{
+                  fill: $global-clr-white;
+                  opacity: 0.75;
+                }
+              }
+              .sitecolororange{
+                color: $global-clr-white !important;
+              }
+            }
+          }
+
+          &-web{
+            display: block;
+
+            @include BootstrapMaxWidthResponsive(lg){
+              display: none;
+            }
+          }
+
+          &-mobile{
+            display: none;
+
+            @include BootstrapMaxWidthResponsive(lg){
+              display: block;
+              font-size: 16px;
+              line-height: 1;
+              text-align: center;
+              padding: 5px 0;
+
+              strong, small{
+                display: block;
+              }
+
+              strong{
+                font-weight: 500;
+              }
+            }
+
+            i.tabsplaticon{
+              overflow: hidden;
+              display: block;
+              position: relative;
+              margin: 0 auto 8px;
+
+              svg{
+                fill: $global-clr-orange;
+                opacity: 1;
+                width: 44px;
+                height: 44px;
+                @include transition-multiple(opacity 0.15s ease-in-out);
+
+                @include BootstrapMaxWidthResponsive(md){
+                  width: 30px;
+                  height: 30px;
+                }
+                @include BootstrapMaxWidthResponsive(sm){
+                  width: 28px;
+                  height: 28px;
+                }
+              }
+
+              &-desktop{}
+
+              &-webtrader{}
+
+              &-mobile{}
+            }
+          }
+
         }
 
         .nav-link{
@@ -817,7 +904,7 @@
               width: 34px;
               height: 52px;
               position: absolute;
-              //top: 50%;
+              top: 10px;
 
               @include BootstrapMaxWidthResponsive(xl){
                 width: 28px;
@@ -902,11 +989,15 @@
           width: 260px;
         }
         @include BootstrapMaxWidthResponsive(lg){
-          width: 100%;
+          @include flexbox-flex-basis(0);
+          @include flexbox-flex-grow(1);
+          min-width: 0;
+          max-width: 100%;
+          width: auto;
+          position: relative;
           padding: 0;
         }
       }
-
     }
 
     .tab{
@@ -937,7 +1028,10 @@
           @include box-shadow(0 0 0 1px $global-border-light-gray-opacity);
         }
         @include BootstrapMaxWidthResponsive(lg){
+          background-color: $global-clr-white;
+          padding: 25px 0 0;
           margin: 0;
+          @include box-shadow(none);
         }
 
         &-content{}
@@ -964,6 +1058,11 @@
           }
           @include BootstrapMaxWidthResponsive(xl){
             border-top-width: 1px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            padding: 15px;
+            border: 1px solid $global-border-light-gray-opacity;
+            @include border-radius(3px);
           }
 
           .infolink{
