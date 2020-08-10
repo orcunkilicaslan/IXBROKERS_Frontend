@@ -93,6 +93,9 @@
       @include BootstrapMaxWidthResponsive(xl){
         padding-bottom: 30px;
       }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-bottom: 25px;
+      }
     }
   }
 
