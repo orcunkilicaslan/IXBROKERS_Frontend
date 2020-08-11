@@ -11,13 +11,15 @@
     <section class="research-section section-content">
         <div class="container">
             <p>Current Time: 07:21 GMT+0</p>
-            <ul class="summarytable-tabnav nav nav-tabs nav-space-between" role="tablist" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                <li class="nav-item"><a class="nav-link" id="tab-Forex" data-toggle="tab" href="#Forex" role="tab" aria-controls="Forex" aria-selected="false"><span>TODAY</span></a></li>
-                <li class="nav-item"><a class="nav-link" id="tab-Commodities" data-toggle="tab" href="#Commodities" role="tab" aria-controls="Commodities" aria-selected="false"><span>TOMORROW</span></a></li>
-                <li class="nav-item"><a class="nav-link" id="tab-Indices" data-toggle="tab" href="#Indices" role="tab" aria-controls="Indices" aria-selected="false"><span>THIS WEEK</span></a></li>
-                <li class="nav-item"><a class="nav-link" id="tab-EquityCFD" data-toggle="tab" href="#EquityCFD" role="tab" aria-controls="EquityCFD" aria-selected="false"><span>NEXT WEEK</span></a></li>
+
+            <ul class="summarytable-tabnav nav nav-pills nav-space-between" role="tablist" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <li class="nav-item"><a data-range="today" class="nav-link active" href="#" id="tab-Forex"><span>TODAY</span></a></li>
+                <li class="nav-item"><a data-range="tomorrow" class="nav-link" href="#" id="tab-Commodities"><span>TOMORROW</span></a></li>
+                <li class="nav-item"><a data-range="thisweek" class="nav-link" href="#" id="tab-Indices" ><span>THIS WEEK</span></a></li>
+                <li class="nav-item"><a data-range="nextweek" class="nav-link" href="#" id="tab-EquityCFD" ><span>NEXT WEEK</span></a></li>
             </ul>
-            <table class="summarytable-table sitetable linetable fixedtable hovergreentable table">
+
+            <table class="summarytable-table sitetable linetable fixedtable hovergreentable table" id="calendarTable">
                 <thead>
                 <tr>
                     <th><span>TIME</span></th>
@@ -29,72 +31,7 @@
                     <th><span>PREVIOUS</span></th>
                 </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>3</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>1</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>2</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>3</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>3</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>3</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>00:30</span></td>
-                        <td><span>AUD</span></td>
-                        <td><span>3</span></td>
-                        <td><span>RBA Interest Rate Decision (Aug)</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                        <td><span>0.25%</span></td>
-                    </tr>
-
-                </tbody>
+                <tbody></tbody>
             </table>
 
 
@@ -104,4 +41,78 @@
 
     <x-about-us></x-about-us>
 
+    <script>
+        let startDate = moment().format('YYYY-MM-DD 00:00:01');
+        let endDate = moment().format('YYYY-MM-DD 23:59:59');
+
+        let calendarEvents = JSON.parse('{!! json_encode($calendarEvents) !!}');
+
+        $(function(){
+            updateTable(startDate, endDate);
+
+            $(document).on('click', "ul.summarytable-tabnav .nav-link", function(event){
+                event.preventDefault();
+                let start, end;
+
+                switch ($(this).data('range')) {
+                    case "today":
+                        start = moment().format('YYYY-MM-DD 00:00:01');
+                        end = moment().format('YYYY-MM-DD 23:59:59');
+                        break;
+                    case "tomorrow":
+                        start = moment().add(1, 'days').format('YYYY-MM-DD 00:00:01');
+                        end = moment().add(1, 'days').format('YYYY-MM-DD 23:59:59');
+                        break;
+                    case "thisweek":
+                        start = moment().subtract(moment().weekday() - 1, 'days').format('YYYY-MM-DD 00:00:01');
+                        end = moment().subtract(moment().weekday() - 1, 'days').add(7, 'days').format('YYYY-MM-DD 23:59:59');
+                        break;
+                    case "nextweek":
+                        start = moment().subtract(moment().weekday() - 1, 'days').add(7, 'days').format('YYYY-MM-DD 00:00:01');
+                        end = moment().subtract(moment().weekday() - 1, 'days').add(14, 'days').format('YYYY-MM-DD 23:59:59');
+                        break;
+                }
+                $("ul.summarytable-tabnav .nav-link").removeClass('active');
+                $(this).addClass('active');
+                updateTable(start, end);
+            });
+        })
+
+        function updateTable(startDate, endDate){
+            clearTable();
+            let start = moment(startDate, 'YYYY-MM-DD HH:mm:ss');
+            let end = moment(endDate, 'YYYY-MM-DD HH:mm:ss');
+            calendarEvents.forEach(calendarEvent => {
+                let eventDate = moment(calendarEvent.date, 'YYYY-MM-DD HH:mm:ss');
+                console.log(start.format('YYYY-MM-DD HH:mm'), end.format('YYYY-MM-DD HH:mm'), eventDate.format('YYYY-MM-DD HH:mm'));
+                console.log(eventDate.isSameOrAfter(start));
+                console.log(eventDate.isSameOrBefore(end));
+
+                if(eventDate.isSameOrAfter(start) && eventDate.isSameOrBefore(end) ){
+                    let html = getTableRow(calendarEvent);
+                    $("table#calendarTable tbody").append(html);
+                }
+            })
+        }
+
+        function clearTable(){
+            $("table#calendarTable tbody").empty();
+        }
+
+        function getTableRow(calendarEvent){
+            let html = '<tr>';
+            html += `<td><span>${moment(calendarEvent.date, 'YYYY-MM-DD HH:mm:ss').format('HH:mm')}</span></td>`;
+            html += `<td><span>${calendarEvent.currency}</span></td>`;
+            html += `<td><span>${calendarEvent.impact}</span></td>`;
+            html += `<td><span><a href="#">${calendarEvent.title}</a></span></td>`;
+            html += `<td><span>${calendarEvent.actual}</span></td>`;
+            html += `<td><span>${calendarEvent.forecast}</span></td>`;
+            html += `<td><span>${calendarEvent.previous}</span></td>`;
+            html += '</tr>';
+            return html;
+        }
+
+    </script>
+
 @endsection
+

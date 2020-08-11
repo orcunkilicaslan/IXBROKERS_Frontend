@@ -10,6 +10,7 @@
     <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css">
     <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css">
     <link id="be-custom-app" rel="stylesheet" href="/css/site.css">
+    <script id="script-mainpage-app" src="/js/moment-with-locales.js"></script>
     <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script id="script-bootstrap" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -176,17 +177,17 @@
                                                             </div>
                                                             <div class="megamultimenu-nav menunav">
                                                                 <ul>
-                                                                    <li><a href="/analysis/XAUUSD" title="XAU/USD" rel="category">XAU/USD</a></li>
-                                                                    <li><a href="/analysis/EURTRY" title="EUR/TRY" rel="category">EUR/TRY</a></li>
                                                                     <li><a href="/analysis/EURUSD" title="EUR/USD" rel="category">EUR/USD</a></li>
                                                                     <li><a href="/analysis/GBPUSD" title="GBP/USD" rel="category">GBP/USD</a></li>
                                                                     <li><a href="/analysis/NZDUSD" title="NZD/USD" rel="category">NZD/USD</a></li>
                                                                     <li><a href="/analysis/USDCHF" title="USD/CHF" rel="category">USD/CHF</a></li>
                                                                     <li><a href="/analysis/USDJPY" title="USD/JPY" rel="category">USD/JPY</a></li>
-                                                                    <li><a href="/analysis/USDTRY" title="USD/TRY" rel="category">USD/TRY</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                        @php
+                                                        /*
+
                                                         <div class="megamultimenu-col">
                                                             <div class="megamultimenu-desc">
                                                                 <span class="megamultimenu-desc-title">COMMODITIES</span>
@@ -245,6 +246,8 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                        */
+                                                        @endphp
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,7 +274,7 @@
                                             <div class="container megamenu">
                                                 <div class="megamenu-nav menunav">
                                                     <ul>
-                                                        <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
+                                                        <li><a href="/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
                                                         <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">NEWS</a></li>
                                                     </ul>
                                                 </div>
