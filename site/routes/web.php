@@ -35,7 +35,7 @@ Route::get('/analysis/{symbols}', 'SiteController@analysis');
 //Route::get('/analysis/instruments', 'SiteController@analysis_instruments');
 //Route::get('/analysis/tools', 'SiteController@analysis_tools');
 Route::get('/analysis/news', 'SiteController@analysis_news');
-Route::get('/analysis/economic-calendar', 'SiteController@analysis_economiccalendar');
+Route::get('/economic-calendar', 'SiteController@economiccalendar');
 
 Route::get('/education', 'SiteController@education');
 Route::get('/partnership/become-introducing-broker', 'SiteController@partnership_becomeintroducingbroker');

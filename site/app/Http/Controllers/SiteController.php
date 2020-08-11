@@ -133,9 +133,32 @@ class SiteController extends Controller
     }
 
     public function analysis($symbol, Request $request) {
+
+        $request_url = 'http://localhost:3000/analysis/' . $symbol;
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request_url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+
+        if ($err) {
+            abort(500);
+        }
+        $responsejson = json_decode($response);
         return view('site.analysis.symbolanalysis', [
             'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
+            'cryptoPrices' => $this->cryptoPrices,
+            'analysisData' => $responsejson,
+            'symbol' => $symbol
         ]);
     }
 
@@ -167,10 +190,33 @@ class SiteController extends Controller
         ]);
     }
 
-    public function analysis_economiccalendar() {
+    public function economiccalendar() {
+        $request_url = 'http://localhost:3000/economic_calendar';
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request_url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+
+        if ($err) {
+            abort(500);
+        }
+
+        $responsejson = json_decode($response);
+
         return view('site.analysis.economic_calendar', [
             'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
+            'cryptoPrices' => $this->cryptoPrices,
+            'calendarEvents' => $responsejson,
         ]);
     }
 
