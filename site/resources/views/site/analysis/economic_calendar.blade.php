@@ -10,7 +10,7 @@
     <!-- Research Start -->
     <section class="research-section section-content">
         <div class="container">
-            <p>Current Time: 07:21 GMT+0</p>
+            <p>Current Time: {{ $current_time }} GMT</p>
 
             <ul class="summarytable-tabnav nav nav-pills nav-space-between" role="tablist" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <li class="nav-item"><a data-range="today" class="nav-link active" href="#" id="tab-Forex"><span>TODAY</span></a></li>
@@ -82,15 +82,22 @@
             clearTable();
             let start = moment(startDate, 'YYYY-MM-DD HH:mm:ss');
             let end = moment(endDate, 'YYYY-MM-DD HH:mm:ss');
+            let lastYMD = '';
+
             calendarEvents.forEach(calendarEvent => {
                 let eventDate = moment(calendarEvent.date, 'YYYY-MM-DD HH:mm:ss');
-                console.log(start.format('YYYY-MM-DD HH:mm'), end.format('YYYY-MM-DD HH:mm'), eventDate.format('YYYY-MM-DD HH:mm'));
-                console.log(eventDate.isSameOrAfter(start));
-                console.log(eventDate.isSameOrBefore(end));
 
                 if(eventDate.isSameOrAfter(start) && eventDate.isSameOrBefore(end) ){
-                    let html = getTableRow(calendarEvent);
+                    let ymd = moment(calendarEvent.date, 'YYYY-MM-DD HH:mm:ss').format('YYYY-MM-DD');
+                    if(lastYMD == '' || ymd !== lastYMD){
+                        lastYMD = ymd;
+                        let html = getDateTableRow(lastYMD);
+                        $("table#calendarTable tbody").append(html)
+                    }
+
+                    let html = getEventTableRow(calendarEvent);
                     $("table#calendarTable tbody").append(html);
+
                 }
             })
         }
@@ -99,7 +106,7 @@
             $("table#calendarTable tbody").empty();
         }
 
-        function getTableRow(calendarEvent){
+        function getEventTableRow(calendarEvent){
             let html = '<tr>';
             html += `<td><span>${moment(calendarEvent.date, 'YYYY-MM-DD HH:mm:ss').format('HH:mm')}</span></td>`;
             html += `<td><span>${calendarEvent.currency}</span></td>`;
@@ -108,6 +115,13 @@
             html += `<td><span>${calendarEvent.actual}</span></td>`;
             html += `<td><span>${calendarEvent.forecast}</span></td>`;
             html += `<td><span>${calendarEvent.previous}</span></td>`;
+            html += '</tr>';
+            return html;
+        }
+
+        function getDateTableRow(dateString){
+            let html = '<tr>';
+            html += `<td colspan="7" style="text-align: center;background: #efefef;"><span>${dateString}</span></td>`;
             html += '</tr>';
             return html;
         }
