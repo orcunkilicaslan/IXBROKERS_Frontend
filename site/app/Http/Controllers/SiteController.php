@@ -163,7 +163,8 @@ class SiteController extends Controller
     }
 
     public function news() {
-        $request_url = 'http://localhost:3000/news';
+        $request_url = env('APIURL') . '/news/';
+
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -193,7 +194,7 @@ class SiteController extends Controller
     }
 
     public function news_detail($newsid) {
-        $request_url = 'http://localhost:3000/news/' . $newsid;
+        $request_url = env('APIURL') . '/news/'. $newsid;
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -223,7 +224,8 @@ class SiteController extends Controller
     }
 
     public function economiccalendar() {
-        $request_url = 'http://localhost:3000/economic_calendar';
+        $request_url = env('APIURL') . '/economic_calendar';
+
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
