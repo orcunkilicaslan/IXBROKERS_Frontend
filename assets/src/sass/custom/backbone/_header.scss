@@ -132,9 +132,13 @@
     color: $global-clr-white;
     font-size: 14px;
     line-height: 1;
-    max-width: 500px;
+    max-width: 540px;
     padding-right: 30px;
 
+    @include BootstrapMaxWidthResponsive(hd){
+      font-size: 13px;
+      max-width: 520px;
+    }
     @include BootstrapMaxWidthResponsive(lg){
       max-width: 150px;
       padding-right: 15px;
@@ -232,8 +236,8 @@
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: contain;
-                width: 12px;
-                height: 12px;
+                width: 14px;
+                height: 14px;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -251,13 +255,13 @@
             }
 
             button[class*="-prev"]{
-              left: -10px;
+              left: -15px;
               &::before{
                 @include transform-multiple(translate(-50%, -50%) rotate(180deg));
               }
             }
             button[class*="-next"]{
-              right: -10px;
+              right: -15px;
               &::before{
                 @include transform-multiple(translate(-50%, -50%) rotate(0deg));
               }
@@ -268,6 +272,7 @@
 
       &-symbol{
         display: block;
+        text-transform: uppercase;
       }
 
       &-price{
