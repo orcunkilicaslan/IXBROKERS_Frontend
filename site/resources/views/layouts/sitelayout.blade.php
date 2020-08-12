@@ -275,7 +275,7 @@
                                                 <div class="megamenu-nav menunav">
                                                     <ul>
                                                         <li><a href="/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
-                                                        <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">NEWS</a></li>
+                                                        <li><a href="/news" title="NEWS" rel="category">NEWS</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

@@ -31,10 +31,8 @@ Route::get('/platforms/meta-trader-5/web', 'SiteController@platforms_mt5_web');
 Route::get('/platforms/meta-trader-5/mobile', 'SiteController@platforms_mt5_mobile');
 
 Route::get('/analysis/{symbols}', 'SiteController@analysis');
-//Route::get('/analysis/daily-journals', 'SiteController@analysis_dailyjournals');
-//Route::get('/analysis/instruments', 'SiteController@analysis_instruments');
-//Route::get('/analysis/tools', 'SiteController@analysis_tools');
-Route::get('/analysis/news', 'SiteController@analysis_news');
+Route::get('/news', 'SiteController@news');
+Route::get('/news/{newsid}', 'SiteController@news_detail');
 Route::get('/economic-calendar', 'SiteController@economiccalendar');
 
 Route::get('/education', 'SiteController@education');
