@@ -99,8 +99,13 @@
         padding-top: 20px;
         padding-bottom: 20px;
 
-        &.col-md-6{
-          border-bottom: 1px solid transparentize($global-clr-white, 0.9);
+        &.col-sm-6{
+          border-bottom: 1px solid transparentize($global-clr-white, 0.95);
+        }
+      }
+      @include BootstrapMaxWidthResponsive(sm){
+        &:last-child{
+          padding-bottom: 0;
         }
       }
 
@@ -120,6 +125,36 @@
         }
       }
 
+      &.navanalysismenu{
+        padding-top: 20px;
+        margin-top: 30px;
+        border-top: 1px solid transparentize($global-clr-white, 0.95);
+
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-top: 0;
+        }
+        @include BootstrapMaxWidthResponsive(sm){
+          .col-xm-4{
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      &.navmultimenu{
+        @include BootstrapMinWidthResponsive(xl){
+
+          > .row > div[class*="-12"]{
+            margin-top: 20px;
+
+            &:first-child{margin-top: 0;}
+          }
+
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          border-bottom: none;
+        }
+      }
+
     }
 
     h4, h5{
@@ -135,10 +170,14 @@
       }
     }
 
+    ul + h4{
+      margin-top: 20px;
+    }
+
     h4{
       color: $global-clr-white;
       font-size: 22px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
 
       @include BootstrapMaxWidthResponsive(1k){
         font-size: 20px;
@@ -179,7 +218,7 @@
 
     &-list{
 
-      li{
+      > li{
         font-size: 16px;
         line-height: 1.2;
         margin: 5px 0;
@@ -203,6 +242,40 @@
           }
         }
       }
+
+      &.ulanalysisforexmenu{
+        @include flexbox-display-flex();
+        @include flexbox-flex-wrap(wrap);
+        margin-left: -15px;
+        margin-right: -15px;
+
+        > li{
+          @include flexbox-flex(0 0 calc(100%/2));
+          max-width: calc(100%/2);
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &:nth-child(2){
+            margin-top: 0;
+          }
+        }
+
+        @include BootstrapMaxWidthResponsive(sm){
+          display: block;
+          margin: 0;
+
+          > li{
+            max-width: calc(100%/1);
+            padding-left: 0;
+            padding-right: 0;
+
+            &:nth-child(2){
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+
     }
   }
 
