@@ -79,11 +79,13 @@ $('#accounttypesboxowl').owlCarousel({
     items:4,
     margin:0,
     autoWidth:false,
+    mouseDrag:false,
     responsiveClass:true,
     responsive:{
         0:{},
         819:{
             items:2,
+            mouseDrag:true,
             dots:true
         },
         1059:{},
