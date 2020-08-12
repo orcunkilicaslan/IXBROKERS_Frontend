@@ -133,44 +133,123 @@ class SiteController extends Controller
     }
 
     public function analysis($symbol, Request $request) {
+
+        $request_url = 'http://localhost:3000/analysis/' . $symbol;
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request_url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+
+        if ($err) {
+            abort(500);
+        }
+        $responsejson = json_decode($response);
         return view('site.analysis.symbolanalysis', [
             'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
+            'cryptoPrices' => $this->cryptoPrices,
+            'analysisData' => $responsejson,
+            'symbol' => $symbol
         ]);
     }
 
-    public function analysis_dailyjournals() {
-        return view('site.analysis.daily_journals', [
-            'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
-        ]);
-    }
+    public function news() {
+        $request_url = 'http://localhost:3000/news';
+        $curl = curl_init();
 
-    public function analysis_instruments() {
-        return view('site.analysis.instruments', [
-            'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
-        ]);
-    }
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request_url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
 
-    public function analysis_tools() {
-        return view('site.analysis.tools', [
-            'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
-        ]);
-    }
+        if ($err) {
+            abort(500);
+        }
 
-    public function analysis_news() {
+        $responsejson = json_decode($response);
+
         return view('site.analysis.news', [
             'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
+            'cryptoPrices' => $this->cryptoPrices,
+            'news' => $responsejson->items
         ]);
     }
 
-    public function analysis_economiccalendar() {
+    public function news_detail($newsid) {
+        $request_url = 'http://localhost:3000/news/' . $newsid;
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request_url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+
+        if ($err) {
+            abort(500);
+        }
+
+        $responsejson = json_decode($response);
+
+        return view('site.analysis.news_detail', [
+            'marketPrices' => $this->marketPrices,
+            'cryptoPrices' => $this->cryptoPrices,
+            'news' => $responsejson
+        ]);
+    }
+
+    public function economiccalendar() {
+        $request_url = 'http://localhost:3000/economic_calendar';
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request_url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30000,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+
+        if ($err) {
+            abort(500);
+        }
+
+        $responsejson = json_decode($response);
+
         return view('site.analysis.economic_calendar', [
             'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
+            'cryptoPrices' => $this->cryptoPrices,
+            'calendarEvents' => $responsejson,
+            'current_time' => date('H:i')
         ]);
     }
 
