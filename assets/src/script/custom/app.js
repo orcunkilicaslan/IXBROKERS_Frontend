@@ -121,7 +121,7 @@ $('#headfeaturesiconsowl').owlCarousel({
 });
 /* Head Features Icons */
 
-/* News Smal List Owl Carousel */
+/* News Small List Owl Carousel */
 $('#newssmalllistowl').owlCarousel({
     loop:true,
     nav:false,
@@ -156,7 +156,7 @@ $('#newssmalllistowl').owlCarousel({
         }
     }
 });
-/* News Smal List Owl Carousel */
+/* News Small List Owl Carousel */
 
 /* Features Icons Component */
 $('#productsfeaturesiconsowl').owlCarousel({
@@ -186,33 +186,43 @@ $('#sitefeaturesboxsowl').owlCarousel({
 });
 /* Features Icons Component */
 
-/* Home Instruments Carousel */
-$(document).ready(function(){
-
-    $('#HomeInstrumentsCarousel').carousel({
-        interval: 20000,
-        pause: "hover"
-    });
-
-    var clickEvent = false;
-    $('#HomeInstrumentsCarousel').on('click', '.nav a', function() {
-        clickEvent = true;
-        $('.nav li').removeClass('active');
-        $(this).parent().addClass('active');
-    }).on('slide.bs.carousel', function(e) {
-        if(!clickEvent) {
-            var count = $('.nav').children().length -1;
-            var current = $('.nav li.active');
-            current.removeClass('active').next().addClass('active');
-            var id = parseInt(current.data('slide-to'));
-            if(count == id) {
-                $('.nav li').first().addClass('active');
-            }
+/* Research News Category List Owl Carousel */
+$('.researchnewscatlistowl').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    items:4,
+    autoWidth:false,
+    mouseDrag:true,
+    animateIn: 'fadeInLeft',
+    animateOut: 'fadeOutRight',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            margin:0
+        },
+        819:{
+            items:2,
+            margin:30
+        },
+        1059:{
+            items:1,
+            margin:0
+        },
+        1379:{
+            margin:30
+        },
+        1939:{
+            margin:30
         }
-        clickEvent = false;
-    });
+    }
 });
-/* Home Instruments Carousel */
+/* Research News Category List Owl Carousel */
+
 
 /* Loading Info */
 // console.log("Custom App Javascript Loading Successful");

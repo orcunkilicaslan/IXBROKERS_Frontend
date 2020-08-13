@@ -20,6 +20,24 @@
 
 .btn-sm{
   height: 30px;
+  font-size: 90%;
+  font-weight: 500;
+}
+
+button.btn-sm{}
+
+a.btn-sm{
+  padding-top: 0.30rem;
+  padding-bottom: 0.30rem;
+
+  @include BootstrapMaxWidthResponsive(hd){
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @include BootstrapMaxWidthResponsive(md){
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
 }
 
 .btn-lg{
