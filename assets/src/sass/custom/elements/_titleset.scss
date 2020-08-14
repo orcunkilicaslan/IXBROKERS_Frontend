@@ -19,16 +19,6 @@
     }
   }
 
-  &-dark{
-    h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark;}
-    p{color: $global-clr-text-light;}
-  }
-
-  &-soft{
-    h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
-    p{color: $global-clr-white;}
-  }
-
   &-xl{
     h1,h2,h3{font-size: 40px; font-weight: 700; line-height: 1.2;}
     p{font-size: 20px; line-height: 1.4;}
@@ -80,12 +70,28 @@
     h3,h4,h5{font-size: 24px; font-weight: 700; line-height: 1.2;}
     p{font-size: 16px; line-height: 1.4;}
     h3+p,h4+p,h5+p,p+h3,p+h4,p+h5{margin-top: 10px;}
+
+    @include BootstrapMaxWidthResponsive(1k){
+      h3,h4,h5{font-size: 22px;}
+      p{font-size: 15px;}
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      h3,h4,h5{font-size: 20px;}
+      p{font-size: 14px;}
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      h3,h4,h5{font-size: 18px;}
+    }
   }
 
   &-line{
     h1,h2,h3,h4,h5,h6{
       position: relative;
       padding-bottom: 10px;
+
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-bottom: 5px;
+      }
 
       &::before,
       &::after{
@@ -98,14 +104,43 @@
       &::before{
         width: 100%;
         height: 1px;
+        background-color: transparent;
+      }
+      &::after{
+        width: 20%;
+        min-width: 60px;
+        height: 2px;
+        background-color: transparent;
+      }
+
+    }
+  }
+
+  &-dark{
+    h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark;}
+    p{color: $global-clr-text-light;}
+
+    h1,h2,h3,h4,h5,h6{
+      &::before{
         background-color: $global-border-light-gray-opacity;
       }
       &::after{
-        width: 120px;
-        height: 2px;
         background-color: $global-clr-green;
       }
+    }
+  }
 
+  &-soft{
+    h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
+    p{color: $global-clr-white;}
+
+    h1,h2,h3,h4,h5,h6{
+      &::before{
+        background-color: transparentize($global-clr-white, 0.85);
+      }
+      &::after{
+        background-color: $global-clr-white;
+      }
     }
   }
 

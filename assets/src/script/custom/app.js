@@ -207,13 +207,18 @@ $('.researchnewscatlistowl').owlCarousel({
         },
         819:{
             items:2,
-            margin:30
+            margin:20
         },
         1059:{
-            items:1,
-            margin:0
+            items:3,
+            margin:20
         },
         1379:{
+            items:3,
+            margin:25
+        },
+        1619:{
+            items:4,
             margin:30
         },
         1939:{
