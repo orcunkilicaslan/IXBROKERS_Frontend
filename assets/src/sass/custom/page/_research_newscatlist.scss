@@ -447,60 +447,177 @@
   }
 
   &-listbox{
-    padding-top: 25px;
+    padding-top: 30px;
 
-    &-ul{
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 20px;
+    }
+
+    &-row{
       @include flexbox-display-flex();
       @include flexbox-flex-wrap(wrap);
-      margin-left: -15px;
-      margin-right: -15px;
 
-      li{
-        @include flexbox-flex(0 0 calc(100%/4));
-        max-width: calc(100%/4);
-        padding: 20px 15px;
+      @include BootstrapMaxWidthResponsive(lg){
+        display: block;
       }
     }
 
-    &-cont{
-      border-bottom: 2px solid $global-border-light-gray-opacity;
-      padding-bottom: 20px;
-      @include transition-multiple(border 0.3s ease-in-out);
+    &-infoarea{
+      background-color: $global-clr-green;
+      @include flexbox-flex(0 0 auto);
+      width: 300px;
+      max-width: 100%;
+      padding: 30px 30px 70px;
+      @include border-radius(6px);
 
-      &:hover{
-        border-color: $global-border-light-gray-focus;
+      @include BootstrapMaxWidthResponsive(1k){
+        width: 280px;
+        padding: 25px 25px 70px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        width: 260px;
+        padding: 20px 20px 65px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        width: 230px;
+        @include border-radius(3px);
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        width: 100%;
+        background-color: transparent;
+        padding: 20px 0 15px;
 
-        .newsimgbg{
-          @include scale(1.05);
+        .sitetitle-soft{
+
+          h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark;}
+          p{display: none;}
+
+          h1,h2,h3,h4,h5,h6{
+            &::before{
+              background-color: $global-border-light-gray-opacity;
+            }
+            &::after{
+              background-color: $global-clr-green;
+            }
+          }
+
+          .sitecolorwhite{
+            color: $global-clr-green !important;
+          }
         }
       }
     }
 
-    .listnewstopimg{
-      width: 100%;
-      height: 200px;
-      @include border-radius(6px);
-      margin-bottom: 10px;
-      overflow: hidden;
+    &-listarea{
+      @include flexbox-flex-basis(0);
+      @include flexbox-flex-grow(1);
+      min-width: 0;
+      max-width: 100%;
+      padding-left: 30px;
 
       @include BootstrapMaxWidthResponsive(xl){
-        @include border-radius(3px);
+        padding-left: 20px;
       }
-    }
+      @include BootstrapMaxWidthResponsive(lg){
+        padding-left: 0;
+      }
 
-    .sitecontent-desc{
-      overflow: hidden;
-      height: 95px;
+      &-ul{
+        @include flexbox-display-flex();
+        @include flexbox-flex-wrap(wrap);
+        margin-left: -15px;
+        margin-right: -15px;
 
-      h1,h2,h3,h4,h5,h6{font-size: 18px; font-weight: 700;}
-    }
+        @include BootstrapMaxWidthResponsive(xl){
+          margin-left: -10px;
+          margin-right: -10px;
+        }
 
-    .listnewsinfodate{
-      font-size: 12px;
-    }
+        li{
+          @include flexbox-flex(0 0 calc(100%/3));
+          max-width: calc(100%/3);
+          padding: 0 15px 30px;
 
-    .listnewsreadbtn{
-      padding-top: 5px;
+          @include BootstrapMaxWidthResponsive(xl){
+            padding: 0 10px 20px;
+          }
+          @include BootstrapMaxWidthResponsive(lg){
+            @include flexbox-flex(0 0 calc(100%/2));
+            max-width: calc(100%/2);
+          }
+        }
+      }
+
+      &-cont{
+        border-bottom: 2px solid $global-border-light-gray-opacity;
+        padding-bottom: 20px;
+        @include transition-multiple(border 0.3s ease-in-out);
+
+        @include BootstrapMaxWidthResponsive(xl){
+          border-bottom-width: 1px;
+          padding-bottom: 15px;
+        }
+
+        &:hover{
+          border-color: $global-border-light-gray-focus;
+
+          .newsimgbg{
+            @include scale(1.05);
+          }
+        }
+      }
+
+      .listnewstopimg{
+        width: 100%;
+        height: 180px;
+        @include border-radius(6px);
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        @include BootstrapMaxWidthResponsive(1k){
+          height: 160px;
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          height: 150px;
+        }
+        @include BootstrapMaxWidthResponsive(xl){
+          height: 130px;
+          margin-bottom: 5px;
+          @include border-radius(3px);
+        }
+      }
+
+      .sitecontent-desc{
+        overflow: hidden;
+        height: 85px;
+
+        @include BootstrapMaxWidthResponsive(lg){
+          height: 60px;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+          font-size: 16px;
+          font-weight: 700;
+
+          @include BootstrapMaxWidthResponsive(1k){
+            font-size: 16px;
+          }
+          @include BootstrapMaxWidthResponsive(hd){
+            font-size: 15px;
+          }
+          @include BootstrapMaxWidthResponsive(xl){
+            font-size: 14px;
+          }
+        }
+      }
+
+      .listnewsinfodate{
+        font-size: 12px;
+      }
+
+      .listnewsreadbtn{
+        padding-top: 5px;
+      }
     }
   }
 }
