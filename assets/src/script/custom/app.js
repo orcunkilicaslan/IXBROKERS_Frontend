@@ -13,7 +13,10 @@ $('#headtickersowl').owlCarousel({
     mouseDrag:false,
     responsiveClass:true,
     responsive:{
-        0:{},
+        0:{
+            items:1,
+            mouseDrag:true
+        },
         819:{
             items:1,
             mouseDrag:true
