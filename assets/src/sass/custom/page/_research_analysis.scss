@@ -1,0 +1,36 @@
+
+.research{
+
+  &-analysis{
+
+    .tradingview-widget-container{
+      background-color: transparentize(#d9dadb, 0.85);
+      margin: 15px 0 25px;
+      padding: 30px 30px 0;
+      @include border-radius(6px);
+      @include box-shadow(0 0 0 1px #d9dadb);
+
+      @include BootstrapMaxWidthResponsive(1k){
+        padding: 25px 25px 0;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        padding: 20px 20px 0;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        padding: 15px 15px 0;
+        @include border-radius(3px);
+      }
+
+      .tradingview-widget-copyright{
+        a[href*="tradingview"]{
+          pointer-events: none;
+          text-decoration: none;
+
+          .blue-text{
+            color: $global-clr-green !important;
+          }
+        }
+      }
+    }
+  }
+}
