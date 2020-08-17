@@ -56,6 +56,7 @@
         tr{
           td{
             font-size: 16px;
+            vertical-align: middle;
 
             @include BootstrapMaxWidthResponsive(1k){
               font-size: 15px;
@@ -63,7 +64,101 @@
             @include BootstrapMaxWidthResponsive(hd){
               font-size: 14px;
             }
+
+            .calendarimpact{
+              width: 50px;
+              background-color: $global-clr-white;
+              border: 1px solid $global-clr-green;
+              height: 10px;
+              @include border-radius(0);
+
+              @include BootstrapMaxWidthResponsive(1k){
+                width: 48px;
+                height: 8px;
+              }
+              @include BootstrapMaxWidthResponsive(hd){
+                width: 40px;
+                height: 6px;
+              }
+
+              .progress-bar{
+                background-color: $global-clr-green;
+              }
+
+              &-01{
+                //border-color: $global-input-border-light-focus;
+
+                .progress-bar{
+                  //background-color: $global-input-border-light-focus;
+                  width: 33%;
+                }
+              }
+              &-02{
+                //border-color: $global-clr-cyan;
+
+                .progress-bar{
+                  //background-color: $global-clr-cyan;
+                  width: 66%;
+                }
+              }
+              &-03{
+                //border-color: $global-clr-green;
+
+                .progress-bar{
+                  //background-color: $global-clr-green;
+                  width: 100%;
+                }
+              }
+            }
+
+            a[href="#"]{
+              pointer-events: none;
+              text-decoration: none;
+            }
           }
+        }
+      }
+
+      .calendartd{
+        &-curreny{
+          color: $global-clr-green;
+          min-width: 45px;
+          display: inline-block;
+          font-weight: 500;
+        }
+      }
+
+      .calendartable{
+        &-time{width: 70px;}
+        &-event{}
+        &-impact{width: 120px;}
+        &-actual{width: 120px;}
+        &-forecast{width: 120px;}
+        &-previous{width: 120px;}
+
+        @include BootstrapMaxWidthResponsive(1k){
+          &-time{width: 60px;}
+          &-event{}
+          &-impact{width: 110px;}
+          &-actual{width: 110px;}
+          &-forecast{width: 110px;}
+          &-previous{width: 110px;}
+        }
+        @include BootstrapMaxWidthResponsive(hd){
+          &-time{width: 55px;}
+          &-event{}
+          &-impact{width: 100px;}
+          &-actual{width: 100px;}
+          &-forecast{width: 100px;}
+          &-previous{width: 100px;}
+        }
+        @include BootstrapMaxWidthResponsive(lg){
+          &-time,
+          &-impact,
+          &-event,
+          &-actual,
+          &-forecast,
+          &-previous{width: auto;}
         }
       }
 
