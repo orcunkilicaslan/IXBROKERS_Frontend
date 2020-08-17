@@ -421,4 +421,45 @@
     #{$headerclassname}-web-btm{}
   }
 
+  + .noheadtitle{
+    padding-top: 180px;
+    position: relative;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      padding-top: 150px;
+    }
+    @include BootstrapMaxWidthResponsive(hd){
+      padding-top: 130px;
+    }
+    @include BootstrapMaxWidthResponsive(xl){
+      padding-top: 120px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      padding-top: 80px;
+    }
+
+    &::before{
+      content: "";
+      width: 100%;
+      height: 118px;
+      background-color: transparentize($global-clr-dark-black, 0.15);
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @include BootstrapMaxWidthResponsive(1k){
+        height: 112px;
+      }
+      @include BootstrapMaxWidthResponsive(hd){
+        height: 94px;
+      }
+      @include BootstrapMaxWidthResponsive(xl){
+        height: 90px;
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+        display: none;
+      }
+    }
+  }
+
 }
