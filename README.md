@@ -19,6 +19,7 @@
  - [Platforms_MT5_Desktop](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT5_Desktop.html)
  - [Platforms_MT5_Web](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT5_Web.html)
  - [Platforms_MT5_Mobile](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Platforms_MT5_Mobile.html)
+ - [Research_Economic_Calendar](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Research_Economic_Calendar.html)
  - [Research_News](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Research_News.html)
  - [Research_News_CatList](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Research_News_CatList.html)
  - [Research_News_Detail](https://orcunkilicaslan.github.io/IXBROKERS_Frontend/html/Research_News_Detail.html)
