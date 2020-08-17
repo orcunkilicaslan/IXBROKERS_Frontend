@@ -33,6 +33,13 @@
   tbody{
     tr{
 
+      &.tdcolspan{
+        td{
+          background-color: $global-border-light-gray;
+          font-weight: 500;
+        }
+      }
+
       &:last-child{
         td{
           border-bottom: 1px solid transparent;
@@ -144,8 +151,12 @@
 
     thead tr th,
     tbody tr td{
-      padding-left: 0;
-      padding-right: 0;
+      &:first-child{
+        padding-left: 2px;
+      }
+      &:last-child{
+        padding-right: 2px;
+      }
     }
 
     thead tr th{
@@ -161,6 +172,14 @@
         td{
           border-bottom: 1px solid;
           border-color: $global-clr-green;
+        }
+      }
+
+      &.tdcolspan{
+        &:hover{
+          td{
+            border-color: $global-border-light-gray;
+          }
         }
       }
     }
