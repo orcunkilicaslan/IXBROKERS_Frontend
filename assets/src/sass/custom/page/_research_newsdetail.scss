@@ -27,6 +27,7 @@
       }
 
       .newsdetailtopinfo{
+        text-transform: uppercase;
 
         .listnewsinfodate{
           @include BootstrapMaxWidthResponsive(xl){

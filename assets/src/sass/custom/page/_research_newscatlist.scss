@@ -200,6 +200,8 @@
         }
 
         .headnewsinfodate{
+          text-transform: uppercase;
+
           @include BootstrapMaxWidthResponsive(hd){
             font-size: 15px;
           }
@@ -382,6 +384,7 @@
         }
 
         .listnewsinfodate{
+          text-transform: uppercase;
           font-size: 12px;
         }
 
@@ -609,6 +612,7 @@
       }
 
       .listnewsinfodate{
+        text-transform: uppercase;
         font-size: 12px;
       }
 
