@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
     <title>IXBROKERS</title>
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
     <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css">
     <link id="be-custom-app" rel="stylesheet" href="/css/site.css">
     <script id="script-mainpage-app" src="/js/moment-with-locales.js"></script>
-    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script id="script-bootstrap" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script id="script-jquery" src="/assets/cdn/jquery/jquery.3.4.1.min.js"></script>
+    <script id="script-popper" src="/assets/cdn/popper/popper.1.16.1.min.js"></script>
+    <script id="script-bootstrap" src="/assets/cdn/bootstrap/bootstrap.4.4.1.min.js"></script>
     <script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 </head>
 <body class="dfn-megamenu">
@@ -342,7 +342,7 @@
     <div class="footer-navigation">
         <div class="container">
             <div class="row">
-                <div class="footer-navigation-col col-md-6 col-xl-4">
+                <div class="footer-navigation-col col-sm-6 col-xl-4">
                     <h4>TRADING</h4>
                     <div class="row">
                         <div class="col">
@@ -365,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-navigation-col navmtmenu col-md-6 col-xl-2">
+                <div class="footer-navigation-col navmtmenu col-sm-6 col-xl-2">
                     <h4>PLATFORMS</h4>
                     <div class="row">
                         <div class="col">
@@ -386,28 +386,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-navigation-col col-md-3 col-xl-2">
-                    <h4>ANALYSIS</h4>
-                    <ul class="footer-navigation-list">
-                        <li><a href="/analysis/morning-journals" title="MORNING JOURNALS" rel="category">MORNING JOURNALS</a></li>
-                        <li><a href="/analysis/daily-journals" title="DAILY JOURNALS" rel="category">DAILY JOURNALS</a></li>
-                        <li><a href="/analysis/instruments" title="INSTRUMENTS" rel="category">INSTRUMENTS</a></li>
-                        <li><a href="/analysis/tools" title="TOOLS" rel="category">TOOLS</a></li>
-                        <li><a href="/analysis/news" title="NEWS" rel="category">NEWS</a></li>
-                        <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
-                    </ul>
+                <div class="footer-navigation-col navmultimenu col-sm-9 col-md-6 col-xl-3">
+                    <div class="row">
+                        <div class="col-xm-6 col-xl-12">
+                            <h4>PARTNERSHIP</h4>
+                            <ul class="footer-navigation-list">
+                                <li><a href="/partnership/become-introducing-broker" title="BE A INTRODUCING BROKER" rel="category">BE A INTRODUCING BROKER</a></li>
+                                <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">BE AN AFFILIATE</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xm-6 col-xl-12">
+                            <h4>ECONOMIC CAL & NEWS</h4>
+                            <ul class="footer-navigation-list">
+                                <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
+                                <li><a href="/analysis/news" title="NEWS" rel="category">NEWS</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-navigation-col col-md-3 col-xl-2">
-                    <h4>PARTNERSHIP</h4>
-                    <ul class="footer-navigation-list">
-                        <li><a href="/partnership/become-introducing-broker" title="BE A INTRODUCING BROKER" rel="category">BE A INTRODUCING BROKER</a></li>
-                        <li><a href="/partnership/become-affiliate" title="BE AN AFFILIATE" rel="category">BE AN AFFILIATE</a></li>
-                    </ul>
-                </div>
-                <div class="footer-navigation-col col-md-3 col-xl-2">
+                <div class="footer-navigation-col col-sm-3 col-xl-2">
                     <h4><a href="/investments/pamm" title="PAMM" rel="category">PAMM</a></h4>
                     <h4><a href="/education" title="EDUCATION" rel="category">EDUCATION</a></h4>
                     <h4><a href="/company" title="COMPANY" rel="category">COMPANY</a></h4>
+                </div>
+                <div class="footer-navigation-col navanalysismenu col-sm-12 col-xl-12">
+                    <h4>ANALYSIS</h4>
+                    <div class="row">
+                        <div class="col-xm-4 col-sm-6 col-lg-4">
+                            <h5>FOREX</h5>
+                            <ul class="footer-navigation-list ulanalysisforexmenu">
+                                <li><a href="/analysis/EURUSD" title="EUR/USD" rel="category">EUR/USD</a></li>
+                                <li><a href="/analysis/GBPUSD" title="GBP/USD" rel="category">GBP/USD</a></li>
+                                <li><a href="/analysis/NZDUSD" title="NZD/USD" rel="category">NZD/USD</a></li>
+                                <li><a href="/analysis/USDCHF" title="USD/CHF" rel="category">USD/CHF</a></li>
+                                <li><a href="/analysis/USDJPY" title="USD/JPY" rel="category">USD/JPY</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xm-4 col-sm-3 col-lg-2">
+                            <h5>COMMODITIES</h5>
+                            <ul class="footer-navigation-list">
+                                <li><a href="#" title="BRENT OIL" rel="category">BRENT OIL</a></li>
+                                <li><a href="#" title="OIL" rel="category">OIL</a></li>
+                                <li><a href="#" title="SUGAR" rel="category">SUGAR</a></li>
+                                <li><a href="#" title="WHEAT" rel="category">WHEAT</a></li>
+                                <li><a href="#" title="XAGUSD" rel="category">XAGUSD</a></li>
+                                <li><a href="#" title="XAUUSD" rel="category">XAUUSD</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xm-4 col-sm-3 col-lg-2">
+                            <h5>INDICES</h5>
+                            <ul class="footer-navigation-list">
+                                <li><a href="#" title="DE 30" rel="category">DE 30</a></li>
+                                <li><a href="#" title="FRA 40" rel="category">FRA 40</a></li>
+                                <li><a href="#" title="NASDAQ 100" rel="category">NASDAQ 100</a></li>
+                                <li><a href="#" title="S%P 500" rel="category">S%P 500</a></li>
+                                <li><a href="#" title="US 30" rel="category">US 30</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xm-4 col-sm-3 col-lg-2">
+                            <h5>EQUITY/CFD</h5>
+                            <ul class="footer-navigation-list">
+                                <li><a href="#" title="AMAZON" rel="category">AMAZON</a></li>
+                                <li><a href="#" title="APPLE" rel="category">APPLE</a></li>
+                                <li><a href="#" title="BMW" rel="category">BMW</a></li>
+                                <li><a href="#" title="FACEBOOK" rel="category">FACEBOOK</a></li>
+                                <li><a href="#" title="GOOGLE" rel="category">GOOGLE</a></li>
+                                <li><a href="#" title="TESLA" rel="category">TESLA</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xm-4 col-sm-3 col-lg-2">
+                            <h5>CRYPTO</h5>
+                            <ul class="footer-navigation-list">
+                                <li><a href="#" title="BTC/USD" rel="category">BTC/USD</a></li>
+                                <li><a href="#" title="ETH/USD" rel="category">ETH/USD</a></li>
+                                <li><a href="#" title="LTC/USD" rel="category">LTC/USD</a></li>
+                                <li><a href="#" title="XRP/USD" rel="category">XRP/USD</a></li>
+                                <li><a href="#" title="XLM/USD" rel="category">XLM/USD</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

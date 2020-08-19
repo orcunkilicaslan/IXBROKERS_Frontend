@@ -2,39 +2,59 @@
 
 @section('content')
 
-    <x-header-title
-        primaryTitle='NEWS'
-        secondaryTitle='VIVAMUS <span class="sitecolorgreen">SED VELID</span> FAUCIBUS'
-        spot='Curabitur consectetur turpis sollicitudin, lacinia metus consequat, congue est.'></x-header-title>
-
     <!-- Research Start -->
-    <section class="research-section section-content">
+    <section class="research-section section-content noheadtitle">
         <div class="container">
-            <h3>{{$news->title}}</h3>
-            @switch($news->type)
-                @case("forex_news")
-                <p>FOREX NEWS</p>
-                @break
+            <div class="research-news">
 
-                @case("economic_indicators")
-                <p>ECONOMIC INDICATORS</p>
-                @break
+                <!-- News Detail -->
+                <div class="research-newsdetail">
+                    <div class="research-newsdetail-row">
 
-                @case("economy_news")
-                <p>ECONOMY NEWS</p>
-                @break
-            @endswitch
+                        <!-- Detail -->
+                        <div class="research-newsdetail-detail sitecontent-desc">
+                            <div class="newsdetailtopinfo">
+                                <strong class="listnewsinfodate">{{ date('d F Y', strtotime($news->publish_date)) }}</strong>
+                                @switch($news->type)
+                                    @case("forex_news")
+                                    <h5 class="sitecolorgreen">FOREX NEWS</h5>
+                                    @break
 
-            <img src="{{$news->image_url}}" alt="{{$news->title}}">
+                                    @case("economic_indicators")
+                                    <h5 class="sitecolorgreen">ECONOMIC INDICATORS</h5>
+                                    @break
 
-            @foreach($news->news_detail as $item)
-                <p>{!! $item !!}</p>
-            @endforeach
+                                    @case("economy_news")
+                                    <h5 class="sitecolorgreen">ECONOMY NEWS</h5>
+                                    @break
+                                @endswitch
+
+
+                            </div>
+                            <h1>{{$news->title}}</h1>
+                            @if($news->image_url != '')
+                                <div class="newsdetailtopimg" style="background-image: url({{$news->image_url}});"></div>
+                            @endif
+
+                            @foreach($news->news_detail as $item)
+                                <p>{!! $item !!}</p>
+                            @endforeach
+                        </div>
+                        <!-- Detail -->
+
+                        <!-- Sidebar -->
+                        <div class="research-newsdetail-sidebar"></div>
+                        <!-- Sidebar -->
+
+                    </div>
+                </div>
+                <!-- News Detail-->
+
+            </div>
 
         </div>
     </section>
     <!-- Research End -->
 
-    <x-about-us></x-about-us>
 
 @endsection
