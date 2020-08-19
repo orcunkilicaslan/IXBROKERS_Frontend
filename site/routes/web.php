@@ -32,6 +32,7 @@ Route::get('/platforms/meta-trader-5/mobile', 'SiteController@platforms_mt5_mobi
 
 Route::get('/analysis/{symbols}', 'SiteController@analysis');
 Route::get('/news', 'SiteController@news');
+Route::get('/news/category/{category}', 'SiteController@news_category');
 Route::get('/news/{newsid}', 'SiteController@news_detail');
 Route::get('/economic-calendar', 'SiteController@economiccalendar');
 

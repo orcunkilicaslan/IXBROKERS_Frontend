@@ -133,37 +133,42 @@ class SiteController extends Controller
     }
 
     public function analysis($symbol, Request $request) {
+        $cache_key = $symbol . 'analysis';
+        $analysisData = Cache::has($cache_key) ? Cache::get($cache_key) : Cache::remember($cache_key, 3600, function() use($symbol) {
+            Log::info('Making request for getting analysis');
+            $request_url = env('APIURL') . '/analysis/' . $symbol;
+            $curl = curl_init();
 
-        $request_url = 'http://localhost:3000/analysis/' . $symbol;
-        $curl = curl_init();
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => $request_url,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30000,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "GET",
+            ));
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+            curl_close($curl);
 
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => $request_url,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => "",
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 30000,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => "GET",
-        ));
-        $response = curl_exec($curl);
-        $err = curl_error($curl);
-        curl_close($curl);
+            if ($err) {
+                abort(500);
+            }
+            $responsejson = json_decode($response);
+            return $responsejson;
+        });
 
-        if ($err) {
-            abort(500);
-        }
-        $responsejson = json_decode($response);
         return view('site.analysis.symbolanalysis', [
             'marketPrices' => $this->marketPrices,
             'cryptoPrices' => $this->cryptoPrices,
-            'analysisData' => $responsejson,
+            'analysisData' => $analysisData,
             'symbol' => $symbol
         ]);
     }
 
-    public function news() {
-        $request_url = env('APIURL') . '/news/';
+    private function loadNews($type, $count){
+        $request_url = env('APIURL') . '/news?type=' . $type . '&count=' . $count;
 
         $curl = curl_init();
 
@@ -185,15 +190,47 @@ class SiteController extends Controller
         }
 
         $responsejson = json_decode($response);
+        return $responsejson->items;
+    }
+
+    public function news() {
+        $fxnews = Cache::has('fxnews5') ? Cache::get('fxnews5') : Cache::remember('fxnews5', 3600, function() {
+            return $this->loadNews('forex_news', 5);
+        });
+
+        $econews = Cache::has('econews5') ? Cache::get('econews5') : Cache::remember('econews5', 3600, function() {
+            return $this->loadNews('economy_news', 5);
+        });
+
+        $ecoind = Cache::has('ecoind5') ? Cache::get('ecoind5') : Cache::remember('ecoind5', 3600, function() {
+            return $this->loadNews('economic_indicators', 5);
+        });
 
         return view('site.analysis.news', [
             'marketPrices' => $this->marketPrices,
             'cryptoPrices' => $this->cryptoPrices,
-            'news' => $responsejson->items
+            'fxnews' => $fxnews,
+            'econews' => $econews,
+            'ecoind' => $ecoind
         ]);
     }
 
-    public function news_detail($newsid) {
+    public function news_category($category) {
+        $cache_key = $category . '_nc';
+        $news = Cache::has($cache_key) ? Cache::get($cache_key) : Cache::remember($cache_key, 3600, function() use($category) {
+            return $this->loadNews($category, 10);
+        });
+
+        return view('site.analysis.news_category', [
+            'marketPrices' => $this->marketPrices,
+            'cryptoPrices' => $this->cryptoPrices,
+            'news' => $news,
+            'category' => $category,
+            'paginationEnabled' => false
+        ]);
+    }
+
+    protected function loadNewsDetail($newsid){
         $request_url = env('APIURL') . '/news/'. $newsid;
         $curl = curl_init();
 
@@ -215,11 +252,19 @@ class SiteController extends Controller
         }
 
         $responsejson = json_decode($response);
+        return $responsejson;
+    }
+
+    public function news_detail($newsid) {
+        $cache_key = $newsid . '_nd';
+        $news = Cache::has($cache_key) ? Cache::get($cache_key) : Cache::rememberForever($cache_key, function() use($newsid) {
+            return $this->loadNewsDetail($newsid);
+        });
 
         return view('site.analysis.news_detail', [
             'marketPrices' => $this->marketPrices,
             'cryptoPrices' => $this->cryptoPrices,
-            'news' => $responsejson
+            'news' => $news
         ]);
     }
 
