@@ -398,8 +398,8 @@
                         <div class="col-xm-6 col-xl-12">
                             <h4>ECONOMIC CAL & NEWS</h4>
                             <ul class="footer-navigation-list">
-                                <li><a href="/analysis/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
-                                <li><a href="/analysis/news" title="NEWS" rel="category">NEWS</a></li>
+                                <li><a href="/economic-calendar" title="ECONOMIC CALENDAR" rel="category">ECONOMIC CALENDAR</a></li>
+                                <li><a href="/news" title="NEWS" rel="category">NEWS</a></li>
                             </ul>
                         </div>
                     </div>

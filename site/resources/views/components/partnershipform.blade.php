@@ -10,27 +10,27 @@
             <div class="form-row">
                 <div class="form-group col">
                     <label>FIRST NAME</label>
-                    <input type="text" name="first_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="" value="Asım">
+                    <input type="text" name="first_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="" value="">
                 </div>
                 <div class="form-group col">
                     <label>LAST NAME</label>
-                    <input type="text" name="last_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="" value="Gündüz">
+                    <input type="text" name="last_name" class="form-control fvalidate" frule="minl:2,maxl:30" placeholder="" value="">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col">
                     <label>EMAIL</label>
-                    <input type="email" name="email" class="form-control fvalidate" frule="email" placeholder="" value="yigitkula@gmail.com">
+                    <input type="email" name="email" class="form-control fvalidate" frule="email" placeholder="" value="">
                 </div>
                 <div class="form-group col">
                     <label>PHONE</label>
-                    <input type="text" name="phone" class="form-control inputphonemasktr fvalidate" frule="phone" placeholder="" value="05555555555">
+                    <input type="text" name="phone" class="form-control inputphonemasktr fvalidate" frule="phone" placeholder="" value="">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col">
                     <label>PROJECTED VOLUME (LOT)</label>
-                    <input type="text" name="lotvolume" class="form-control fvalidate"  frule="minv:1, maxv:1000" placeholder="" value="10000">
+                    <input type="text" name="lotvolume" class="form-control fvalidate"  frule="minv:1, maxv:1000" placeholder="" value="">
                 </div>
                 <div class="form-group col">
                     <label>INTERESTED PRODUCTS</label>
@@ -46,7 +46,7 @@
             </div>
             <div class="form-group">
                 <label>EXPECTATIONS</label>
-                <textarea class="form-control fvalidate" rows="3" frule="minl:5, maxl: 1000" name="expectations">Just testing baby</textarea>
+                <textarea class="form-control fvalidate" rows="3" frule="minl:5, maxl: 1000" name="expectations"></textarea>
             </div>
             <div class="form-group custom-control-group-vertical">
                 <div class="custom-control custom-checkbox d-none">
