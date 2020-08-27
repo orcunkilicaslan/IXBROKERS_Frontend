@@ -158,7 +158,11 @@ class SiteController extends Controller
             $responsejson = json_decode($response);
             return $responsejson;
         });
-
+//
+//        echo "<pre>";
+//        print_r($analysisData);
+//        echo "</pre>";
+//        exit();
         return view('site.analysis.symbolanalysis', [
             'marketPrices' => $this->marketPrices,
             'cryptoPrices' => $this->cryptoPrices,
