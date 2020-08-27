@@ -124,43 +124,6 @@ $('#headfeaturesiconsowl').owlCarousel({
 });
 /* Head Features Icons */
 
-/* News Small List Owl Carousel */
-$('#newssmalllistowl').owlCarousel({
-    loop:true,
-    nav:false,
-    dots:true,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-    items:2,
-    autoWidth:false,
-    mouseDrag:false,
-    animateIn: 'fadeInLeft',
-    animateOut: 'fadeOutRight',
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            margin:0
-        },
-        819:{
-            items:2,
-            margin:30
-        },
-        1059:{
-            items:1,
-            margin:0
-        },
-        1379:{
-            margin:30
-        },
-        1939:{
-            margin:50
-        }
-    }
-});
-/* News Small List Owl Carousel */
-
 /* Features Icons Component */
 $('#productsfeaturesiconsowl').owlCarousel({
     loop:false,
