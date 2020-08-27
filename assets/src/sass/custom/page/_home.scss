@@ -112,24 +112,15 @@
       padding: 30px 0;
     }
 
-    .component-newsbox{
+    .sitetitle-xl{
+      padding-bottom: 40px;
 
-      .smallnewsbox{
-        .sitetitle-xl{
-          padding-bottom: 40px;
-
-          @include BootstrapMaxWidthResponsive(hd){
-            padding-bottom: 30px;
-          }
-          @include BootstrapMaxWidthResponsive(xl){
-            padding-bottom: 20px;
-          }
-          @include BootstrapMaxWidthResponsive(lg){
-            display: none;
-          }
-        }
+      @include BootstrapMaxWidthResponsive(1k){
+        padding-bottom: 30px;
       }
-
+      @include BootstrapMaxWidthResponsive(xl){
+        padding-bottom: 15px;
+      }
     }
   }
 }
