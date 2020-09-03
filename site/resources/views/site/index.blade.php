@@ -417,113 +417,142 @@
     <!-- News Component Start -->
     <section class="home-news">
         <div class="container">
-            <div class="home-news-box">
 
-                <!-- News List -->
-                <div class="component-newsbox">
-                    <div class="row">
+            <!-- News List -->
+            <div class="component-newsbox">
+                <div class="component-newsbox-row row">
 
-                        <!-- Videos Box -->
-                        <div class="bignewsbox col-auto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
-                            <div class="bignewsbox-videos">
-                                <script id="script-plugin-prettyembed" src="assets/thirdparty/jquery.prettyembed.min.js"></script>
-                                <script>
-                                    $(document).ready(function() {
-                                        $('#homenewsvideo').prettyEmbed({
-                                            videoID: '_k6aNZ0df6g',
-                                            //useFitVids: true,
-                                            playerControls: false,
-                                            playerInfo: false
-                                        });
-                                    });
-                                </script>
-                                <div id="homenewsvideo"></div>
-                            </div>
-                            <div class="bignewsbox-content">
-                                <h3><a href="#" title="" rel="bookmark">Neque Porro Quisquam Est Qui Dolorem Ipsum Quia Dolor Sit Amet...</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <a href="#" class="btn btn-outline-success d-none" title="Read More" rel="bookmark">Read More</a>
-                            </div>
+                    <!-- Title -->
+                    <div class="col-12">
+                        <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center">
+                            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">LATEST <span class="sitecolorgreen">NEWS</span></h2>
+                            @php
+                                //<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. tempor incididunt ut labore et dolore</p>
+                            @endphp
                         </div>
-                        <!-- Videos Box -->
-
-                        <!-- List Box -->
-                        <div class="smallnewsbox col" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
-
-                            <!-- Title -->
-                            <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-left">
-                                <h2>FOREX <span class="sitecolorgreen">NEWS</span></h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. tempor incididunt ut labore et dolore</p>
-                            </div>
-                            <!-- Title -->
-
-                            <!-- List -->
-                            <ul id="newssmalllistowl" class="listnews owl-carousel owl-theme">
-                                <li>
-                                    <div class="listnews-title">
-                                        <h4><a href="#" title="" rel="bookmark">Maecenas Suscipit Lorem Ac Augue Vehicula Tempor...</a></h4>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia...</p>
-                                    </div>
-                                    <div class="listnews-info">
-                                        <time class="listnews-info-date">14 November 2019</time>
-                                        <a href="#" class="listnews-info-more" title="Read More" rel="bookmark">
-                                            <span>Read More</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14.421" height="13.273" viewBox="0 0 14.421 13.273">
-                                                <g id="arrow" transform="translate(1 1.414)">
-                                                    <line id="Line_24" data-name="Line 24" x2="11.512" transform="translate(0 5.127)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
-                                                    <path id="Path_9592" data-name="Path 9592" d="M0,0V7.475H7.3" transform="translate(6.721 10.444) rotate(-135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="listnews-title">
-                                        <h4><a href="#" title="" rel="bookmark">Duis Eget Lectus Non Mi Posuere Accumsan Ut Eu Lacus...</a></h4>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
-                                    </div>
-                                    <div class="listnews-info">
-                                        <time class="listnews-info-date">14 November 2019</time>
-                                        <a href="#" class="listnews-info-more" title="Read More" rel="bookmark">
-                                            <span>Read More</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14.421" height="13.273" viewBox="0 0 14.421 13.273">
-                                                <g id="arrow" transform="translate(1 1.414)">
-                                                    <line id="Line_24" data-name="Line 24" x2="11.512" transform="translate(0 5.127)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
-                                                    <path id="Path_9592" data-name="Path 9592" d="M0,0V7.475H7.3" transform="translate(6.721 10.444) rotate(-135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="listnews-title">
-                                        <h4><a href="#" title="" rel="bookmark">Donec Sed Tortor Luctus Nisl Aliquam Condimentum Nec Varius Erat...</a></h4>
-                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham...</p>
-                                    </div>
-                                    <div class="listnews-info">
-                                        <time class="listnews-info-date">14 November 2019</time>
-                                        <a href="#" class="listnews-info-more" title="Read More" rel="bookmark">
-                                            <span>Read More</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14.421" height="13.273" viewBox="0 0 14.421 13.273">
-                                                <g id="arrow" transform="translate(1 1.414)">
-                                                    <line id="Line_24" data-name="Line 24" x2="11.512" transform="translate(0 5.127)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
-                                                    <path id="Path_9592" data-name="Path 9592" d="M0,0V7.475H7.3" transform="translate(6.721 10.444) rotate(-135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                                </g>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- List -->
-
-                        </div>
-                        <!-- List Box -->
-
                     </div>
-                </div>
-                <!-- News List -->
+                    <!-- Title -->
 
+                    @php
+                        /*
+ (
+                    [news_detail] => Array
+                    (
+                    [0] => LONDON (Reuters) - British finance minister Rishi Sunak said there were some "promising signs" that the country's economy was recovering from its record economic crash during the coronavirus lockdown which was announced earlier on Wednesday.
+                    [1] => Sunak said growth of 8.7% in gross domestic product in June was encouraging, even as official data showed the economy contracted by 20.4% in the second quarter as a whole.
+                    [2] => Sunak told broadcasters there was too much uncertainty to know if Britain would have a swift, V-shaped economic recovery.
+                    [3] => "What we do know is that there are promising signs," he said. "There's still work to do and even as we recover many people are going to lose their jobs, already have lost their jobs, and we need to make sure that we are constantly focused on providing new opportunities for those people."
+                    [4] => Sunak reiterated his opposition to extending the government's huge job retention scheme which is due to expire at the end of October. Economists expect a sharp rise in unemployment as the state-funded jobs subsidies end.
+                    [5] => Sunak also said he expected to see more people returning to their workplace in the coming weeks after the government recently changed its guidance.
+                    [6] => On Brexit, he said good progress had been made in several areas of the negotiations for a trade deal with the European Union but there were gaps on "a couple of big issues."
+                    [7] => He said asking Brussels for an extension of Britain's no-change transition period - which is due to expire on Dec. 31 - was not the right thing to do and the government had to prepare for all eventualities
+                    [8] =>
+                    [9] =>
+                    )
+
+                    [_id] => 5f33a9802c956331001383bc
+                    [type] => economy_news
+                    [title] => UK finance minister Sunak sees promising signs after record GDP hit
+                    [image_url] => https://i-invdn-com.akamaized.net/trkd-images/LYNXNPEG7B0GB_L.jpg
+                    [publish_date] => 2020-08-12 07:55:24
+                    )
+ */
+                    @endphp
+
+                    <!-- Video and Image Box -->
+                    <div class="bignewsbox col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="bignewsbox-image">
+                            <a href="/news/{{ $news[0]->_id }}" class="newsimgbg" style="background-image: url({{ $news[0]->image_url }});" title="{{ $news[0]->title }}" rel="bookmark"></a>
+                        </div>
+                        <div class="bignewsbox-content">
+                            <div class="newstopinfo">
+                                <strong class="listnewsinfodate">{{ date('d F Y', strtotime($news[0]->publish_date)) }}</strong>
+                                @switch($news[0]->type)
+                                    @case("forex_news")
+                                    <h5 class="sitecolorgreen">FOREX NEWS</h5>
+                                    @break
+
+                                    @case("economic_indicators")
+                                    <h5 class="sitecolorgreen">ECONOMIC INDICATORS</h5>
+                                    @break
+
+                                    @case("economy_news")
+                                    <h5 class="sitecolorgreen">ECONOMY NEWS</h5>
+                                    @break
+                                @endswitch
+                            </div>
+                            <div class="sitecontent-desc">
+                                <h3><a href="Research_News_Detail.html" title="{{ $news[0]->title }}" rel="bookmark">{{ $news[0]->title }}</a></h3>
+                                @php
+                                    $newsSpot = $news[0]->news_detail[1];
+                                    $newsSpot = str_replace('Investing.com - ', '', $newsSpot);
+                                    $newsSpot = str_replace('Investing.com -- ', '', $newsSpot);
+                                    $newsSpot = str_replace('TAIPEI (Reuters) - ', '', $newsSpot);
+                                    $newsSpot = str_replace('SINGAPORE (Reuters) - ', '', $newsSpot);
+                                    $newsSpot = str_replace('(Bloomberg) -- ', '', $newsSpot);
+                                @endphp
+                                <p>{{ $newsSpot }}</p>
+                            </div>
+                            <div class="listreadbtn">
+                                <a href="/news/{{ $news[0]->_id }}" class="btn btn-outline-info" title="CONTINUE READING" rel="bookmark">CONTINUE READING</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video and Image Box -->
+
+                    <!-- List Box -->
+                    <div class="smallnewsbox col" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+                        <ul class="listnews listnews-ul">
+                            @php $isFirst = true @endphp
+                            @foreach($news as $n)
+                                @if(!$isFirst)
+                                    <li>
+                                        <div class="listnews-cont">
+                                            <div class="listnewstopimg">
+                                                <a href="/news/{{ $n->_id }}" class="newsimgbg" style="background-image: url({{ $n->image_url }});" title="{{ $n->title }}" rel="bookmark"></a>
+                                            </div>
+                                            <div class="newstopinfo">
+                                                <strong class="listnewsinfodate">{{ date('d F Y', strtotime($n->publish_date)) }}</strong>
+                                                @switch($n->type)
+                                                    @case("forex_news")
+                                                    <h5 class="sitecolorgreen">FOREX NEWS</h5>
+                                                    @break
+
+                                                    @case("economic_indicators")
+                                                    <h5 class="sitecolorgreen">ECONOMIC INDICATORS</h5>
+                                                    @break
+
+                                                    @case("economy_news")
+                                                    <h5 class="sitecolorgreen">ECONOMY NEWS</h5>
+                                                    @break
+                                                @endswitch
+                                            </div>
+                                            <div class="sitecontent-desc">
+                                                <h5><a href="/news/{{ $n->_id }}" title="" rel="bookmark">{{ $n->title }}</a></h5>
+                                            </div>
+                                            <div class="listnewsreadbtn">
+                                                <a href="/news/{{ $n->_id }}" class="btn btn-sm btn-outline-info" title="CONTINUE READING" rel="bookmark">CONTINUE READING</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endif
+                                @php $isFirst = false; @endphp
+                            @endforeach
+
+                        </ul>
+                    </div>
+                    <!-- List Box -->
+
+                    <!-- Bottom Button -->
+                    <div class="bottombtnnews col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                        <a href="/news" class="btn btn-lg btn-success rounded-pill" title="ALL NEWS IN CATEGORIES" rel="bookmark">ALL NEWS IN CATEGORIES</a>
+                    </div>
+                    <!-- Bottom Button -->
+
+                </div>
             </div>
+            <!-- News List -->
+
         </div>
     </section>
     <!-- News Component End -->

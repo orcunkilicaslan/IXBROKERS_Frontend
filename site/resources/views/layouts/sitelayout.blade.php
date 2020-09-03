@@ -6,10 +6,10 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     <meta name="viewport" content="width=820">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
-    <link id="css-bootstrap" rel="stylesheet" href="/assets/dist/css/bootstrap.css">
-    <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css">
-    <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css">
-    <link id="be-custom-app" rel="stylesheet" href="/css/site.css">
+    <link id="css-bootstrap" rel="stylesheet" href="/assets/dist/css/bootstrap.css?v=2">
+    <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css?v=2">
+    <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css?v=2">
+    <link id="be-custom-app" rel="stylesheet" href="/css/site.css?v=2">
     <script id="script-mainpage-app" src="/js/moment-with-locales.js"></script>
     <script id="script-jquery" src="/assets/cdn/jquery/jquery.3.4.1.min.js"></script>
     <script id="script-popper" src="/assets/cdn/popper/popper.1.16.1.min.js"></script>
@@ -536,9 +536,9 @@
 <script id="script-inputmask" src="/assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
 <script id="script-aos" src="/assets/vendor/aos/dist/aos.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-<script id="script-plugin-app" src="/assets/dist/js/plugin-app.js"></script>
-<script id="script-mainpage-app" src="/assets/dist/js/custom-app.js"></script>
-<script id="script-mainpage-app" src="/js/forms.js"></script>
+<script id="script-plugin-app" src="/assets/dist/js/plugin-app.js?v=2"></script>
+<script id="script-mainpage-app" src="/assets/dist/js/custom-app.js?v=2"></script>
+<script id="script-mainpage-app" src="/js/forms.js?v=2"></script>
 
 <!-- JavaScript End -->
 
