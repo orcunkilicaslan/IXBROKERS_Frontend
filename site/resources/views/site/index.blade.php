@@ -466,7 +466,7 @@
                         </div>
                         <div class="bignewsbox-content">
                             <div class="newstopinfo">
-                                <strong class="listnewsinfodate">{{ $news[0]->publish_date }}</strong>
+                                <strong class="listnewsinfodate">{{ date('d F Y', strtotime($news[0]->publish_date)) }}</strong>
                                 @switch($news[0]->type)
                                     @case("forex_news")
                                     <h5 class="sitecolorgreen">FOREX NEWS</h5>
@@ -512,7 +512,7 @@
                                                 <a href="/news/{{ $n->_id }}" class="newsimgbg" style="background-image: url({{ $n->image_url }});" title="{{ $n->title }}" rel="bookmark"></a>
                                             </div>
                                             <div class="newstopinfo">
-                                                <strong class="listnewsinfodate">{{ $news[0]->publish_date }}</strong>
+                                                <strong class="listnewsinfodate">{{ date('d F Y', strtotime($n->publish_date)) }}</strong>
                                                 @switch($n->type)
                                                     @case("forex_news")
                                                     <h5 class="sitecolorgreen">FOREX NEWS</h5>
