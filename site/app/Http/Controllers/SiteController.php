@@ -28,9 +28,11 @@ class SiteController extends Controller
         });
     }
     public function index() {
+        $news = $this->loadNews('all', 5);
         return view('site.index', [
             'marketPrices' => $this->marketPrices,
-            'cryptoPrices' => $this->cryptoPrices
+            'cryptoPrices' => $this->cryptoPrices,
+            'news' => $news
         ]);
     }
 
@@ -170,6 +172,8 @@ class SiteController extends Controller
             'symbol' => $symbol
         ]);
     }
+
+
 
     private function loadNews($type, $count){
         $request_url = env('APIURL') . '/news?type=' . $type . '&count=' . $count;
