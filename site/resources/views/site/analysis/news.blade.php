@@ -18,6 +18,9 @@
                                 <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-left sitetitle-line">
                                     <h2><a href="/news/category/forex_news" title="FOREX NEWS" rel="bookmark">FOREX <span class="sitecolorgreen">NEWS</span></a></h2>
                                 </div>
+                                <div class="headnewstopimg">
+                                    <a href="/news/{{ $fxnews[0]->_id }}" class="newsimgbg" @if($fxnews[0]->image_url != '') style="background-image: url({{ $fxnews[0]->image_url }});" @endif title="{{ $fxnews[0]->title }}" rel="bookmark"></a>
+                                </div>
                                 <div class="sitecontent-desc">
                                     <strong class="headnewsinfodate sitecolorgreen">{{ date('d F Y', strtotime($fxnews[0]->publish_date)) }}</strong>
                                     <h3><a href="/news/{{ $fxnews[0]->_id }}" title="" rel="bookmark">{{ $fxnews[0]->title }}</a></h3>
@@ -97,6 +100,9 @@
                             <div class="research-newscat-head-textarea">
                                 <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-left sitetitle-line">
                                     <h2><a href="/news/category/economy_news" title="ECONOMY NEWS" rel="bookmark">ECONOMY <span class="sitecolorgreen">NEWS</span></a></h2>
+                                </div>
+                                <div class="headnewstopimg">
+                                    <a href="/news/{{ $econews[0]->_id }}" class="newsimgbg" @if($econews[0]->image_url != '') style="background-image: url({{ $econews[0]->image_url }});" @endif title="{{ $econews[0]->title }}" rel="bookmark"></a>
                                 </div>
                                 <div class="sitecontent-desc">
                                     <strong class="headnewsinfodate sitecolorgreen">{{ date('d F Y', strtotime($econews[0]->publish_date)) }}</strong>
@@ -180,6 +186,9 @@
                             <div class="research-newscat-head-textarea">
                                 <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-left sitetitle-line">
                                     <h2><a href="/news/category/economic_indicators" title="ECONOMIC INDICATORS" rel="bookmark">ECONOMIC <span class="sitecolorgreen">INDICATORS</span></a></h2>
+                                </div>
+                                <div class="headnewstopimg">
+                                    <a href="/news/{{ $ecoind[0]->_id }}" class="newsimgbg" @if($ecoind[0]->image_url != '') style="background-image: url({{ $ecoind[0]->image_url }});" @endif title="{{ $ecoind[0]->title }}" rel="bookmark"></a>
                                 </div>
                                 <div class="sitecontent-desc">
                                     <strong class="headnewsinfodate sitecolorgreen">{{ date('d F Y', strtotime($ecoind[0]->publish_date)) }}</strong>
