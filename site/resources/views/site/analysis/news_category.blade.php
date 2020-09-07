@@ -28,7 +28,7 @@
                                     @endswitch
                                 </div>
                                 <div class="headnewstopimg">
-                                    <a href="/news/{{ $news[0]->_id }}" class="newsimgbg" style="background-image: url(https://i-invdn-com.akamaized.net/trkd-images/LYNXNPEG7B08Q_L.jpg);" title="{{ $news[0]->title }}" rel="bookmark"></a>
+                                    <a href="/news/{{ $news[0]->_id }}" class="newsimgbg" @if($news[0]->image_url != '') style="background-image: url({{ $news[0]->image_url }});" @endif  title="{{ $news[0]->title }}" rel="bookmark"></a>
                                 </div>
                                 <div class="sitecontent-desc">
                                     <strong class="headnewsinfodate sitecolorgreen">{{ date('d F Y', strtotime($news[0]->publish_date)) }}</strong>
