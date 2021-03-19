@@ -312,6 +312,9 @@
         @include BootstrapMaxWidthResponsive(lg){
           width: 215px;
         }
+        @include BootstrapMaxWidthResponsive(xs){
+          width: 90%;
+        }
       }
 
       &-listarea{
@@ -593,6 +596,10 @@
 
         @include BootstrapMaxWidthResponsive(lg){
           height: 60px;
+        }
+
+        @include BootstrapMaxWidthResponsive(xs){
+          height: 90px;
         }
 
         h1,h2,h3,h4,h5,h6{

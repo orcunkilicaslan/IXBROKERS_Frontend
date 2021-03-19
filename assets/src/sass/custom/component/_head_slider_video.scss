@@ -26,6 +26,10 @@
     max-height: 620px;
   }
 
+  @include BootstrapMaxWidthResponsive(xs){
+    max-height: 850px;
+  }
+
   &-wrp{
     @include flexbox-display-flex();
     @include flexbox-flex-direction(column);

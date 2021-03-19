@@ -12,7 +12,14 @@
         background-color: $global-clr-white;
       }
 
-      &-tablearea{}
+      &-tablearea{
+        @include BootstrapMaxWidthResponsive(xs){
+              table td {
+                vertical-align: middle;
+                span { word-break: break-all; }
+              }
+          }
+      }
 
       &-table{
 
@@ -26,6 +33,10 @@
 
         .btncell{
           width: 120px;
+
+          @include BootstrapMaxWidthResponsive(xs){
+              width:80px;
+          }
 
           .btn{
             display: block;
@@ -891,6 +902,10 @@
               max-width: 100%;
               width: auto;
               position: relative;
+            }
+
+            @include BootstrapMaxWidthResponsive(xs){
+              min-width:51%;
             }
 
             .active{
