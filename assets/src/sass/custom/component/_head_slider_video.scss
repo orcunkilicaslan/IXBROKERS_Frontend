@@ -344,6 +344,9 @@
       @include BootstrapMaxWidthResponsive(xl){
         padding: 20px 15px;
       }
+       @include BootstrapMaxWidthResponsive(xs){
+          padding: 20px 5px;
+       }
     }
 
     .openaccountbtns{
@@ -446,6 +449,10 @@
 
       @include BootstrapMaxWidthResponsive(hd){
         padding: 15px;
+      }
+
+      @include BootstrapMaxWidthResponsive(xs){
+        padding: 8px;
       }
 
       &:hover{
