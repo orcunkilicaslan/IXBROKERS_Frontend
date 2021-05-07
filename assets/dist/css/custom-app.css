@@ -747,6 +747,10 @@
     -webkit-transform: rotate(45deg);
     -khtml-transform: rotate(45deg); }
 
+@media only screen and (max-width: 575px) {
+  button.btn-lg {
+    font-size: 13px; } }
+
 .sitedropdown-toggle[data-toggle="dropdown"] {
   color: #111927;
   background-color: transparent;
@@ -2398,6 +2402,9 @@
       @media (max-width: 1379px) {
         .headslidervideo-account .openaccountbox {
           padding: 20px 15px; } }
+      @media (max-width: 519px) {
+        .headslidervideo-account .openaccountbox {
+          padding: 20px 5px; } }
     @media (max-width: 1059px) {
       .headslidervideo-account .openaccountbtns > div {
         display: -ms-flexbox;
@@ -2506,6 +2513,9 @@
       @media (max-width: 1619px) {
         .headslidervideo-feature-box {
           padding: 15px; } }
+      @media (max-width: 519px) {
+        .headslidervideo-feature-box {
+          padding: 8px; } }
       .headslidervideo-feature-box:hover {
         top: -10px; }
         .headslidervideo-feature-box:hover .boxcontent-title {
@@ -4194,11 +4204,50 @@
 .component-summarytable .summarytable-tabcontent {
   background-color: #FFFFFF; }
 
-@media (max-width: 519px) {
-  .component-summarytable .summarytable-tablearea table td {
-    vertical-align: middle; }
-    .component-summarytable .summarytable-tablearea table td span {
-      word-break: break-all; } }
+.component-summarytable .summarytable-tablearea {
+  /* @include BootstrapMaxWidthResponsive(xs){
+              table td {
+                vertical-align: middle;
+                span { word-break: break-all; }
+              }
+          } */ }
+
+@media only screen and (max-width: 575px) {
+  .component-summarytable .summarytable-table table, .component-summarytable .summarytable-table thead, .component-summarytable .summarytable-table tbody, .component-summarytable .summarytable-table th, .component-summarytable .summarytable-table td, .component-summarytable .summarytable-table tr {
+    display: block; }
+  .component-summarytable .summarytable-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .component-summarytable .summarytable-table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px; }
+  .component-summarytable .summarytable-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding-left: 0 !important;
+    margin-left: 90px;
+    position: relative; }
+  .component-summarytable .summarytable-table td:before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 70px;
+    padding-right: 40px;
+    white-space: nowrap;
+    margin-left: -90px; }
+  .component-summarytable .summarytable-table td:nth-of-type(1):before {
+    content: "SYMBOL"; }
+  .component-summarytable .summarytable-table td:nth-of-type(2):before {
+    content: "SELL"; }
+  .component-summarytable .summarytable-table td:nth-of-type(3):before {
+    content: "BUYY"; }
+  .component-summarytable .summarytable-table td:nth-of-type(4):before {
+    content: "HIGH"; }
+  .component-summarytable .summarytable-table td:nth-of-type(5):before {
+    content: "LOW"; }
+  .component-summarytable .summarytable-table td:nth-of-type(6):before {
+    content: "BONUS"; } }
 
 .component-summarytable .summarytable-table thead tr th {
   border-top-width: 0; }
@@ -5747,6 +5796,9 @@
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px;
           -khtml-border-radius: 3px; } }
+      @media (max-width: 519px) {
+        .component-platforms .tab-mt .openaccountbtns {
+          padding: 15px 5px; } }
       .component-platforms .tab-mt .openaccountbtns .infolink {
         margin-top: 15px; }
         @media (max-width: 1619px) {
@@ -5817,6 +5869,9 @@
     @media (max-width: 1059px) {
       .component-aboutus .aboutusimg img {
         max-width: 380px; } }
+    @media (max-width: 519px) {
+      .component-aboutus .aboutusimg img {
+        max-width: 100%; } }
 
 .component-call2action {
   -ms-flex: 0;
