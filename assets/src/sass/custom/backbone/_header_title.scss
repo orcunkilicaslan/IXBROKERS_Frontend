@@ -45,6 +45,22 @@
   .headcontent{
     position: relative;
 
+    .openaccountbox {
+      @include BootstrapMaxWidthResponsive(xs){
+        .btn {
+          display: inline-block;
+          // margin:0 !important;
+          margin-top:0 !important;
+          margin-bottom:0 !important;
+          width:47%;
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
     &-wrapper{
       @include flexbox-display-flex();
       @include flexbox-justify-content(space-between);
@@ -65,6 +81,9 @@
       @include BootstrapMaxWidthResponsive(lg){
         padding: 15px 0;
       }
+      @include BootstrapMaxWidthResponsive(xs){
+        flex-wrap: wrap
+      }
     }
 
     &-title{
@@ -81,6 +100,13 @@
       @include BootstrapMaxWidthResponsive(lg){
         padding-right: 50px;
         padding-bottom: 15px;
+      }
+
+      @include BootstrapMaxWidthResponsive(xs){
+        min-width: 100%;
+        padding-top: 40px;
+        padding-right:0;
+        text-align: center;
       }
 
       h1{
@@ -152,6 +178,9 @@
       }
       @include BootstrapMaxWidthResponsive(lg){
         width: 200px;
+      }
+      @include BootstrapMaxWidthResponsive(xs){
+        width: 100%;
       }
 
       .openaccountbox{

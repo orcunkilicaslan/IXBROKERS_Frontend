@@ -52,6 +52,9 @@
           margin: auto;
           display: block;
         }
+        @include BootstrapMaxWidthResponsive(xs){
+          max-width: 100%;
+        }
       }
     }
 

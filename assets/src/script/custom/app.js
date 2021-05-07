@@ -85,7 +85,10 @@ $('#accounttypesboxowl').owlCarousel({
     mouseDrag:false,
     responsiveClass:true,
     responsive:{
-        0:{},
+        0: {
+            items: 1,
+            loop: true
+        },
         819:{
             items:2,
             mouseDrag:true,
@@ -111,7 +114,10 @@ $('#headfeaturesiconsowl').owlCarousel({
     autoWidth:false,
     responsiveClass:true,
     responsive:{
-        0:{},
+        0: {
+            items: 3,
+            loop: trueD
+        },
         819:{
             items:4,
             loop:true,

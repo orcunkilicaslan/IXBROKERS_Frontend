@@ -18,6 +18,11 @@
   &-web{
     position: relative;
 
+    @include BootstrapMaxWidthResponsive(xs){
+        // border:1px solid goldenrod;
+        width:100vw;
+      }
+
     &-top{
       background-color: transparentize($global-clr-dark-black, 0.25);
       padding: 15px 0;
@@ -44,6 +49,10 @@
         @include BootstrapMaxWidthResponsive(lg){
           position: relative;
           right: 135px;
+        }
+        @include BootstrapMaxWidthResponsive(xs){
+          position: relative;
+          right: -80px;
         }
         &-row{
           @include flexbox-align-items(center);
@@ -82,6 +91,12 @@
           right: 15px;
           top: -41px;
         }
+
+        @include BootstrapMaxWidthResponsive(xs){
+          right: 10px;
+          top: -70px;
+        }
+
       }
 
     }

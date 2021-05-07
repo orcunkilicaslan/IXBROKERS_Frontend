@@ -59,6 +59,10 @@
           @include BootstrapMaxWidthResponsive(lg){
             max-width: 220px;
           }
+          @include BootstrapMaxWidthResponsive(xs){
+            max-width: 60%;
+            margin:20px auto;
+          }
         }
       }
     }

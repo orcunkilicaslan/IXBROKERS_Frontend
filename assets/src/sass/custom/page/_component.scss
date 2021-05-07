@@ -12,9 +12,50 @@
         background-color: $global-clr-white;
       }
 
-      &-tablearea{}
+      &-tablearea{
+        /* @include BootstrapMaxWidthResponsive(xs){
+              table td {
+                vertical-align: middle;
+                span { word-break: break-all; }
+              }
+          } */
+      }
 
       &-table{
+
+        @media only screen and (max-width: 575px) {
+            table, thead, tbody, th, td, tr {
+              display: block;
+            }
+            thead tr {
+              position: absolute;
+              top: -9999px;
+              left: -9999px;
+            }
+            tr { border: 1px solid #ccc; margin-bottom: 10px; }
+            td {
+              border: none;
+              border-bottom: 1px solid #eee;
+              padding-left: 0 !important;
+              margin-left: 90px;
+              position: relative;
+            }
+            td:before {
+              position: absolute;
+              top: 12px;
+              left: 6px;
+              width: 70px;
+              padding-right: 40px;
+              white-space: nowrap;
+              margin-left: -90px;
+            }
+            td:nth-of-type(1):before { content: "SYMBOL"; }
+            td:nth-of-type(2):before { content: "SELL"; }
+            td:nth-of-type(3):before { content: "BUYY"; }
+            td:nth-of-type(4):before { content: "HIGH"; }
+            td:nth-of-type(5):before { content: "LOW"; }
+            td:nth-of-type(6):before { content: "BONUS"; }
+          }
 
         thead{
           tr{
@@ -26,6 +67,10 @@
 
         .btncell{
           width: 120px;
+
+          @include BootstrapMaxWidthResponsive(xs){
+              width:80px;
+          }
 
           .btn{
             display: block;
@@ -893,6 +938,10 @@
               position: relative;
             }
 
+            @include BootstrapMaxWidthResponsive(xs){
+              min-width:51%;
+            }
+
             .active{
               .tabsplaticon{
                 svg{
@@ -1150,6 +1199,10 @@
             @include border-radius(3px);
           }
 
+          @include BootstrapMaxWidthResponsive(xs){
+            padding: 15px 5px;
+          }
+
           .infolink{
             margin-top: 15px;
 
@@ -1241,6 +1294,9 @@
         }
         @include BootstrapMaxWidthResponsive(lg){
           max-width: 380px;
+        }
+        @include BootstrapMaxWidthResponsive(xs){
+          max-width: 100%;
         }
       }
     }
